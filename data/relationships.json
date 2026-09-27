@@ -841,10 +841,10 @@
       "A4",
       "A13"
     ],
-    "type": "Nephew and Niece",
+    "type": "Uncle and Niece",
     "title": "All in the Family",
     "specificTitle": "NOT REGISTERED YET",
-    "bio": "Megumi finds a genuine sense of family warmth in  her Uncle-Brother Riku, a comforting bond she never got to experience in her own troubled household. For Riku, spending time with his niece offers something just as deeply meaningful, as he constantly sees the clear, living reflection of his elder sister Minna in her, fulfilling a quiet wish to stay connected to his sister's presence."
+    "bio": "Megumi finds a genuine sense of family warmth in  her Uncle Riku, a comforting bond she never got to experience in her own troubled household. For Riku, spending time with his niece offers something just as deeply meaningful, as he constantly sees the clear, living reflection of his elder sister Minna in her, fulfilling a quiet wish to stay connected to his sister's presence."
   },
   {
     "id": "riku-mea",
@@ -1560,5 +1560,225 @@
     "title": "The Glory Days",
     "specificTitle": "NOT REGISTERED YET",
     "bio": "Bound by their shared journeys as authors, Meili and Leng have navigated countlessly wild, creative adventures together. Meili thrives in this collaborative dynamic, having the absolute time of her life as part of their tight-knit storytelling circle."
+  },
+  {
+    "id": "riku-min",
+    "pair": [
+      "A4",
+      "B7"
+    ],
+    "type": "Siblings",
+    "title": "When She Was Happier",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Minna was a radiant presence in the family and an exceptional elder sister, making every moment Riku and his siblings spent with her unforgettable.\n\nHearing that she hit her absolute lowest point and chose complete isolation cut Riku to his core, shattering a piece of him in the process. His priorities are clear: once he ensures his sister is safe and whole again, he intends to track down and exact quiet, precise retribution on whoever drove her to that state."
+  },
+  {
+    "id": "emm-kar",
+    "pair": [
+      "A5",
+      "A6"
+    ],
+    "type": "Best Friends",
+    "title": "Soul Sisters",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Emma and Karin share an unbreakable, deep friendship where Emma constantly serves as Karin's ultimate savior, shielding her from the consequences of oversleeping and tidying up her disastrous room whenever she visits. Their affection and synergy are so seamless and intense that Vyse once genuinely assumed the two were in a romantic relationship."
+  },
+  {
+    "id": "mea-mic",
+    "pair": [
+      "B1",
+      "B4"
+    ],
+    "type": "Confidants / Sisters-in-law",
+    "title": "Destined Sisters",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "As two childhood friends, they always planned to have their children to be born at the same time. Thanks to them, their families grew together with the twins getting to spend the time they've lost, and Fumio and Alicia developed a sibling-bond."
+  },
+  {
+    "id": "mea-len",
+    "pair": [
+      "B1",
+      "B15"
+    ],
+    "type": "Friends",
+    "title": "Name Your Price",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Meari holds immense respect for Leng's lethal assassin skill set, trusting his abilities enough to hire him legally whenever her children require absolute protection from imminent threat. In return, when Leng sought an extra side gig at her restaurant, Meari gladly brought him on board, granting him a position as her trusted bartender."
+  },
+  {
+    "id": "han-mic",
+    "pair": [
+      "B2",
+      "B4"
+    ],
+    "type": "Siblings-in-Law",
+    "title": "Something Ain't Right...",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Michan frequently fell victim to confusing the twins, accidentally mistaking Hanzo for her lover during their identical-looking phase. To spare everyone from the awkward unprompted hugs and Meari chewing his wife out, Satoshi was ultimately forced to change his hairstyle just to establish a clear visual difference."
+  },
+  {
+    "id": "han-mat",
+    "pair": [
+      "B2",
+      "B5"
+    ],
+    "type": "Close Friends",
+    "title": "The Better Twin",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Matsuda stood out as one of Hanzo's greatest advocates, actively pushing him to overcome his deep-seated inferiority complex and opening his eyes to the reality that Meari loved him back. Despite Hanzo's repeated efforts to reward or repay him for his guidance, Matsuda consistently refused every gesture, asking for nothing in return except that Hanzo learn to finally believe in himself."
+  },
+  {
+    "id": "emm-aki",
+    "pair": [
+      "A5",
+      "B12"
+    ],
+    "type": "Distant Guardian",
+    "title": "Is that what the Mask is for?",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "To Emma, Akira is an enigmatic figure from her father's circle whose face remains hidden behind a helmet. Beneath his impenetrable exterior, she senses a deep, quiet loneliness and often reaches out to bridge the gap.\n\nHowever, Akira’s relentless operational schedule and commitment to total risk mitigation force him to maintain his distance."
+  },
+  {
+    "id": "fko-set",
+    "pair": [
+      "A7",
+      "A8"
+    ],
+    "type": "Best Friends",
+    "title": "The Prez and The Secretary",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Setsuna places absolute, unshakeable trust in Fumiko, viewing her as one of the most reliable and adaptable assets in the field. On duty, they execute missions with seamless, uncompromising professionalism and mutual precision. Once the assignments end and the armor comes off, their dynamic relaxes into a comfortable camaraderie where they share quiet downtime and step out of their demanding roles to unwind."
+  },
+  {
+    "id": "fko-shi",
+    "pair": [
+      "A7",
+      "A9"
+    ],
+    "type": "Best Friends",
+    "title": "Perspective Duality",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "They share a genuine friendship rooted in mutual respect, even as they acknowledge the clear flaws in each other's lifestyle. While Fumiko admires Shioriko's discipline, she worries that Shioriko rarely allows herself to simply have fun. Conversely, Shioriko respects Fumiko's remarkable efficiency on duty, yet remains critical of her tendency to chase unnecessary distractions. \n\nDespite these contrasting mindsets, their time together is built on a deep understanding of each other's core values, using their differences to keep one another grounded."
+  },
+  {
+    "id": "fko-geo",
+    "pair": [
+      "A7",
+      "A11"
+    ],
+    "type": "Friends",
+    "title": "A Setsuna Oshi?",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Fumiko has long been George’s primary point of contact whenever he needs to track down Setsuna, a routine that quickly led her to piece together his true feelings. Every time he asks, the obvious flush on his face betrays his intentions, prompting a smug, knowing smirk from Fumiko that instantly flusters him and throws him off balance. Though she enjoys teasing him, she quietly keeps his secret while playing along with his attempts to stay composed."
+  },
+  {
+    "id": "fko-mak",
+    "pair": [
+      "A7",
+      "A12"
+    ],
+    "type": "Co-Workers",
+    "title": "Offloader from Hell",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "As co-secretaries on the Student Council, Fumiko and Makoto sit on opposite ends of the operational spectrum. Makoto takes immense delight in discreetly slipping his unfinished duties onto Fumiko’s desk, treating her growing irritation as prime entertainment. While Makoto's slacking has fostered genuine resentment in Fumiko, her strict personal standard forces her to swallow her anger and maintain a crisp, uncompromising level of professionalism—even as she looks for ways to settle the score without breaking protocol."
+  },
+  {
+    "id": "fko-meg",
+    "pair": [
+      "A7",
+      "A13"
+    ],
+    "type": "Friends",
+    "title": "A Stark Contrast",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Whenever Makoto brings Megumi along to the Student Council room, Megumi takes the opportunity to check in on Fumiko, asking if her brother has been causing her any trouble. Faced with the reality of Makoto's persistent slacking and prankster habits, Fumiko confirms that he is indeed a handful, prompting Megumi to offer sincere apologies on his behalf. The stark difference between Megumi's considerate demeanor and Makoto's infuriating antics leaves Fumiko genuinely bewildered as to how two such drastically different people could come from the same family."
+  },
+  {
+    "id": "fko-mea",
+    "pair": [
+      "A7",
+      "B1"
+    ],
+    "type": "Partner's Parent",
+    "title": "Echoes of My Youth",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Meari takes immense pride in her son Fumio’s choice, fully expecting nothing less than a complete total package like Fumiko to catch his eye. Observing the quiet dynamic and devotion between Fumio and Fumiko brings back fond memories of Meari's own teenage romance. Seeing the young couple together fills her with a warm, nostalgic satisfaction, and she warmly embraces Fumiko as an irreplaceable part of her son's life."
+  },
+  {
+    "id": "fko-han",
+    "pair": [
+      "A7",
+      "B2"
+    ],
+    "type": "Partner's Parent",
+    "title": "The Fum-Fum Paradox",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Hanzo takes frequent delight in the playful similarity of their names, using it as a recurring running joke between them. Fumiko naturally gravitated toward Hanzo, finding his character, experiences, and magnetic personality genuinely fascinating. Unfiltered in her praise, she often compliments his innate charisma, while Hanzo appreciates her close presence and sharp mind."
+  },
+  {
+    "id": "fko-sat",
+    "pair": [
+      "A7",
+      "B3"
+    ],
+    "type": "Acquaintances",
+    "title": "A Small World",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Satoshi first took note of Fumiko while attending Alicia's student-athlete events, recognizing her presence in the school administration. His surprise came later when he connected the dots and realized that the extremely capable Student Council secretary was actually in a relationship with his nephew, Fumio."
+  },
+  {
+    "id": "set-shi",
+    "pair": [
+      "A8",
+      "A9"
+    ],
+    "type": "Foster Sisters",
+    "title": "Chase or Concentrate?",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Raised under the same roof as foster sisters, Setsuna and Shioriko share an unstoppable drive—once either sets her mind to a goal, total execution is practically guaranteed. Despite their deep sisterly bond, their fundamental philosophies once fiercely collided.\n\nSetsuna fought for reckless passion and grand dreams, while Shioriko stood firm on cold efficiency, pragmatic choices, and guaranteed outcomes."
+  },
+  {
+    "id": "set-geo",
+    "pair": [
+      "A8",
+      "A11"
+    ],
+    "type": "Confidants",
+    "title": "Always Meet Your Idols",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "How their dynamic began remains a closely guarded secret that George stubbornly refuses to share, though rumors suggest he was simply a dedicated fan who happened to run into the star herself at the right moment. Today, Setsuna freely drags him along to assist with production, relying on his support to pull off her absolute best live performances. While George remains content helping behind the scenes, standing so close to the spotlit icon has undoubtedly put a massive target on his back from an army of jealous fans."
+  },
+  {
+    "id": "set-mak",
+    "pair": [
+      "A8",
+      "A12"
+    ],
+    "type": "Co-Workers",
+    "title": "Deny Him from Cancel Culture",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Setsuna is fully aware of the constant stream of complaints regarding Makoto’s behavior and has been repeatedly urged to kick him off the Student Council. However, she refuses, recognizing the harsh reality that no one else is willing to handle his workload, making his removal a massive logistical disaster. She compromises by constantly pleading with him to maintain basic professionalism and avoid pissing off the staff—a minimal standard Makoto is currently failing at spectacular levels."
+  },
+  {
+    "id": "mak-meg",
+    "pair": [
+      "A12",
+      "A13"
+    ],
+    "type": "Twin Siblings",
+    "title": "Jealous Onii-chan",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Having relied solely on each other for most of their lives, Makoto harbors a deeply rooted, overprotective instinct toward Megumi, wanting nothing more than to shield her from harm. However, as Megumi found her stride within a new social group, she began carving out her own independence and asserting her autonomy. Makoto frequently warns her that her new friends will eventually let her down, but Megumi counters without hesitation, teasingly firing back that he is simply envious of her close place alongside Emma and the rest of the circle."
+  },
+  {
+    "id": "mak-min",
+    "pair": [
+      "A12",
+      "B7"
+    ],
+    "type": "Estranged Parent and Child",
+    "title": "No Milk in Sight",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Makoto harbors deep-seated hatred and bitterness toward his mother, viewing her as weak-willed for abandoning her responsibility when he and Megumi needed her most. Forcing himself to step into the guardian role at a young age, he holds Minna entirely accountable for their hard upbringing, unable to forgive her absence or respect her choice to leave them to navigate the world alone."
   }
 ]
