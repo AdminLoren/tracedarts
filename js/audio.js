@@ -133,6 +133,18 @@ COTA.audio = (function () {
 
     setVolume(DEFAULT_VOLUME);
     updateHeaderText();
+
+    const resumeOnFirstInteraction = () => {
+      if (currentMusic && currentMusic.paused && !muted) {
+        currentMusic.play().catch(() => {});
+      }
+      document.removeEventListener("click", resumeOnFirstInteraction);
+      document.removeEventListener("keydown", resumeOnFirstInteraction);
+      document.removeEventListener("touchstart", resumeOnFirstInteraction);
+    };
+    document.addEventListener("click", resumeOnFirstInteraction);
+    document.addEventListener("keydown", resumeOnFirstInteraction);
+    document.addEventListener("touchstart", resumeOnFirstInteraction);
   }
 
   return { init, playMusic, stopMusic, playSfx, toggleMute, setVolume, getVolume };
