@@ -87,7 +87,7 @@
     "birthdate": "November 5",
     "occupation": "Student",
     "cherishes": [
-      "Snow Days",
+      "Playing the Guitar",
       "The art of Sculpture"
     ],
     "dislikes": [
@@ -651,7 +651,7 @@
     "nickname": "Matsuda Yuukashi",
     "bio": "The son of an Author God, Matsuda was subjected to ruthless, military-grade firearms training from a young age to forge him into an elite S-Class Soldier. His life became entirely defined by a single-minded vow: to protect his sister from any further pain, regardless of the toll it took on his own safety.\n\nAfter integrating into Michan’s circle, he slowly unlearned his hyper-vigilance, let down his guard, and built genuine trust with others. Today, he lives as a calm, settled family man, resting easy with the peace he fought so hard to secure and the knowledge that his sister is is in the hands of a good, semi-tolerable man",
     "birthdate": "November 7",
-    "occupation": "NOT REGISTERED YET",
+    "occupation": "Senior Operations Agent",
     "cherishes": [
       "Firearms Collection",
       "reading"
@@ -687,24 +687,30 @@
     "gen": 1,
     "name": "Kaito",
     "nickname": "Kaito Haruto",
-    "bio": "NOT REGISTERED YET",
-    "birthdate": "NOT REGISTERED YET",
-    "occupation": "NOT REGISTERED YET",
+    "bio": "Gentle and submissive by nature, Kaito stands out as the calm, rational center of the Author group. Beneath his mild demeanor lies a master strategist with exceptional mastery across a broad arsenal of weapons. Even after suffering the tragic loss of his love interest at a young age, he maintains strict emotional control, earning a reputation among his peers as the most sane and grounded member of the team.\n\nBecause he lacks the intimidating presence and overt toughness of his comrades, younger recruits often underestimate and pick on him. However, those doubts vanish the moment he steps into battle, demonstrating precisely why his tactical genius and combat skills make him an irreplaceable asset. When he isn't executing high-stakes operations, he simply wishes the Author God he serves would grant him an occasional break.",
+    "birthdate": "May 4",
+    "occupation": "Author Strategist",
     "cherishes": [
       "French Toast",
-      "Pay Day"
+      "Pay Day",
+      "Memories"
     ],
     "dislikes": [
-      "Attention"
+      "Last-Minute Work",
+      "Driving"
     ],
     "abilities": [
       {
-        "name": "NOT REGISTERED YET",
-        "desc": "NOT REGISTERED YET"
+        "name": "Arsenal Mastery",
+        "desc": "Adapts instantly to virtually any weapon, switching fluidly between firearms, melee, and specialized gear mid-combat."
       },
       {
-        "name": "NOT REGISTERED YET",
-        "desc": "NOT REGISTERED YET"
+        "name": "Grand Strategist",
+        "desc": "Calculates high-level tactics on the fly, predicting enemy movements and devising flawless battlefield plans."
+      },
+      {
+        "name": "Endless Endurance",
+        "desc": "Operates with near-limitless stamina, sustaining focus and effort far longer than even the most extreme night owls."
       }
     ],
     "color": "#FFFFFF",
@@ -765,27 +771,29 @@
     "gen": 1,
     "name": "Rikka",
     "nickname": "Rikka Asaka (née Takahashi)",
-    "bio": "NOT REGISTERED YET",
+    "bio": "Grounded, razor-sharp, and perpetually five steps ahead of everyone else, Rikka is the undisputed bedrock of her group. Having carried her unmatched organizational talents from her days as a legendary Student Council President into adulthood, she balances her terrifying foresight with a warm, dry-witted humor that keeps her peers grounded. Rather than ruling with an iron fist, she guides others through deadpan wisdom, casual teasing, and an innate ability to read people instantly.\n\nBehind her cool demeanor and relentless work ethic lies a woman who simply wants her team to survive their own chaos—mostly so she can actually finish her paperwork and enjoy a quiet moment. Whenever someone in her circle loses their way or faces a complete catastrophe, Rikka is the very first person they call to fix it.",
     "birthdate": "December 24",
-    "occupation": "NOT REGISTERED YET",
+    "occupation": "Chief of Staff / Strategic Operations Manager",
     "cherishes": [
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET"
+      "Ambitious Dreams",
+      "Quiet Evenings"
     ],
     "dislikes": [
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET"
+      "Short-Sightedness",
+      "Wasted Potential"
     ],
     "abilities": [
       {
-        "name": "NOT REGISTERED YET",
-        "desc": "NOT REGISTERED YET"
+        "name": "Umbral Echolocation",
+        "desc": "Emits silent acoustic pulses through shadows and air, mapping out entire structures, tracking heartbeats, and detecting enemy movements through solid barriers."
       },
       {
-        "name": "NOT REGISTERED YET",
-        "desc": "NOT REGISTERED YET"
+        "name": "Shadow-Acoustic Intercept",
+        "desc": "Pinpoints sound signatures with absolute accuracy, allowing her to move instantaneously through dark spaces and intercept hostiles before they can harm her allies."
+      },
+      {
+        "name": "Sonic Umbra",
+        "desc": "Manipulates shadow-bound soundwaves to mute surrounding noise for stealth extractions or release localized sonic bursts that disorient and neutralize attackers in close quarters."
       }
     ],
     "color": "#FFFFFF",
@@ -844,28 +852,28 @@
     "code": "aik",
     "gen": 1,
     "name": "Aika",
-    "nickname": "Aika Yuukashi nee Kobayashi",
-    "bio": "NOT REGISTERED YET",
-    "birthdate": "NOT REGISTERED YET",
-    "occupation": "NOT REGISTERED YET",
+    "nickname": "Aika Yuukashi (née Kobayashi)",
+    "bio": "Bright, jovial, and resilient, Aika carries a warm energy that belies a heavy past. Having spent almost her entire life operating within military ranks, she spent years being treated as a trophy and an object to be possessed—a reality that constantly threatened the safety of those she cared about most. To break the cycle and safeguard her loved ones, she stepped away from her past to rebuild her life from the ground up. She found a fresh start at the Irregular Hunter base, discovering a familiar operational environment that finally offered her a healthy, safe, and supportive community.",
+    "birthdate": "April 11",
+    "occupation": "Military Liaison / Irregular Hunter Navigator",
     "cherishes": [
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET"
+      "Shopping with Emma"
     ],
     "dislikes": [
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET"
+      "Objectification"
     ],
     "abilities": [
       {
-        "name": "NOT REGISTERED YET",
-        "desc": "NOT REGISTERED YET"
+        "name": "Master Comms Relay",
+        "desc": "Coordinates team communications flawlessly under extreme battlefield conditions, maintaining secure, real-time command loops across complex operational zones."
       },
       {
-        "name": "NOT REGISTERED YET",
-        "desc": "NOT REGISTERED YET"
+        "name": "Close-Quarters Specialist",
+        "desc": "Highly proficient in personal hand-to-hand combat and defensive tactics, allowing her to rapidly neutralize threats and hold her ground in tight spaces."
+      },
+      {
+        "name": "Disarming Charm",
+        "desc": "Uses her striking appearance and charismatic presence to manipulate, distract, or deceive targets into revealing crucial intelligence and granting access."
       }
     ],
     "color": "#FFFFFF",
@@ -880,27 +888,29 @@
     "gen": 1,
     "name": "Akira",
     "nickname": "NOT REGISTERED YET",
-    "bio": "NOT REGISTERED YET",
-    "birthdate": "NOT REGISTERED YET",
-    "occupation": "NOT REGISTERED YET",
+    "bio": "Shrouded in mystery to most who meet him, Akira is at core an exceptionally disciplined soldier who simply executes every mission with absolute perfection. Frequently deployed on high-stakes military operations, he serves directly under an Author God—whose relentless demands leave him quietly wishing for a break from time to time.\nRelentlessly methodical, Akira refuses to rely on luck or bravado. \n\nHe adheres strictly to the safest, most consistent tactical strategies, shutting down any plan that carries even the smallest percentage of uncalculated risk. For him, mission success and total risk mitigation are non-negotiable.",
+    "birthdate": "Unknown",
+    "occupation": "Special Operations Field Agent",
     "cherishes": [
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET"
+      "Quiet Downtime",
+      "Guaranteed Outcomes"
     ],
     "dislikes": [
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET"
+      "Oppressiveness",
+      "Low Percentage Numbers"
     ],
     "abilities": [
       {
-        "name": "NOT REGISTERED YET",
-        "desc": "NOT REGISTERED YET"
+        "name": "Anatomic Neutralization",
+        "desc": "Leverages exact physical mechanics and minimal force to instantaneously disarm, incapacitate, or kill a target with micro-adjustments and joint manipulation."
       },
       {
-        "name": "NOT REGISTERED YET",
-        "desc": "NOT REGISTERED YET"
+        "name": "Demolitions Expert",
+        "desc": "Demonstrates complete mastery over high-grade explosives, enabling precise breach-and-clear maneuvers, rapid terrain destruction, and ordnance disposal."
+      },
+      {
+        "name": "Ultimatum Resolution",
+        "desc": "Evaluates extreme binary choices and forced trade-offs under high pressure, instantly identifying and selecting the mathematically optimal outcome every single time."
       }
     ],
     "color": "#FFFFFF",
@@ -915,27 +925,29 @@
     "gen": 1,
     "name": "Mira",
     "nickname": "Mira Liang",
-    "bio": "NOT REGISTERED YET",
-    "birthdate": "NOT REGISTERED YET",
-    "occupation": "NOT REGISTERED YET",
+    "bio": "Raised in a family-owned fish business, Mira started out as a sweet, timid student helper whose clumsiness and anxiety constantly got the better of her. Her quiet life took an unexpected turn when Leng stopped to help her pick up dropped papers, instantly awakening her hidden affinity for brooding, goth aesthetics. Driven by this new fascination, she pushed past her nervous nature to reach out and forge a bond with him, ultimately getting pulled into the wild dynamics of his circle.\n\nIn adulthood, Mira embraced her roots while growing into her own confidence, transforming into an extraordinarily skilled fisherman and master fish butcherer. Fulfilling her lifelong heart’s desire, she balances her craft with being a devoted, deeply loving mother.",
+    "birthdate": "June 11",
+    "occupation": "Master Fisher / Angler / Butcherer",
     "cherishes": [
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET"
+      "Marine Life",
+      "Seafood"
     ],
     "dislikes": [
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET"
+      "Thunderstorms",
+      "Man-o'-Wars"
     ],
     "abilities": [
       {
-        "name": "NOT REGISTERED YET",
-        "desc": "NOT REGISTERED YET"
+        "name": "Master Angler",
+        "desc": "Possesses absolute mastery over fishing techniques, water navigation, and marine life behavior across all aquatic environments."
       },
       {
-        "name": "NOT REGISTERED YET",
-        "desc": "NOT REGISTERED YET"
+        "name": "Precision Processing",
+        "desc": "Executes flawless, highly efficient butchering on any sea creature, instantly identifying vital weak spots and maximizing high-yield harvesting."
+      },
+      {
+        "name": "Ocean Intuition",
+        "desc": "Reads subtle atmospheric and oceanic shifts to predict storms, heavy waves, and sudden environmental hazards long before they arrive."
       }
     ],
     "color": "#FFFFFF",
@@ -950,27 +962,29 @@
     "gen": 1,
     "name": "Leng",
     "nickname": "Leng Tian",
-    "bio": "NOT REGISTERED YET",
-    "birthdate": "NOT REGISTERED YET",
-    "occupation": "NOT REGISTERED YET",
+    "bio": "Raised within a clan that takes fierce pride in forging cold, lethal assassins, Leng was conditioned from birth to execute every contract without failure. That streak ended when a target protected by the Author Gods foiled his assignment. Anticipating ruthless punishment from his own family for his failure, Leng was instead offered a path of mercy by the Author Gods: serve them in exchange for his life. Recognizing the far healthier, more humane environment they offered, he accepted and quietly severed all ties with his clan.\n\nAs an adult, Leng operates as a versatile and tireless provider. To support his family, he balances his duties as a direct servant to the Author Gods alongside selective freelance assassination contracts and various side jobs.",
+    "birthdate": "December 1",
+    "occupation": "Author Gods' Servitor / Freelance Assassin / Multi-Job Contractor",
     "cherishes": [
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET"
+      "Artifact Collecting",
+      "\"Pimp\" Fashion"
     ],
     "dislikes": [
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET",
-      "NOT REGISTERED YET"
+      "Delayed Salary",
+      "Spicy Meals"
     ],
     "abilities": [
       {
-        "name": "NOT REGISTERED YET",
-        "desc": "NOT REGISTERED YET"
+        "name": "Dollar-Store Staff",
+        "desc": "Channels frost energy through his staff to manipulate ice effortlessly, generating freezing fields and constructs without draining his stamina."
       },
       {
-        "name": "NOT REGISTERED YET",
-        "desc": "NOT REGISTERED YET"
+        "name": "Glacial Glide",
+        "desc": "Lays down smooth paths of ice to speed-skate across terrain, achieving high-velocity mobility without needing to sprint or run."
+      },
+      {
+        "name": "Absolute Presence Erasure",
+        "desc": "Suppresses all auditory and physical presence at will, allowing him to move in total, dead silence during infiltrations and executions."
       }
     ],
     "color": "#FFFFFF",
