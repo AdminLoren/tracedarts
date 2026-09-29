@@ -5,7 +5,7 @@
     "gen": 2,
     "name": "Fumio",
     "nickname": "Fumio Hasashi",
-    "bio": "A mischievous boy who thrives on his over-the-top confidence, optimism and unhinged humor.\n\nUpon receiving the news that the Author Gods requested structured training for him and his friends following a devastating loss, Fumio fully grasped the gravity of the stakes, and yet never hesitated to step forward. Driven by a desire to forge his own distinct identity rather than remaining an ordinary kid, he approached his mother with absolute resolve, convincing her to train him in her former craft and pass down the grueling path of the Spirit World Warrior. As a kid influenced by his treasured memories and passions, Fum-Fum faces the new abnormal world he lives in with a smile that, in his own words, could probably last him a decade or two.",
+    "bio": "A mischievous boy who thrives on his over-the-top confidence, optimism and unhinged humor.\n\nUpon receiving the news that the Author Gods requested structured training for him and his friends following a devastating loss, Fumio fully grasped the gravity of the stakes, and yet never hesitated to step forward. Driven by a desire to forge his own distinct identity rather than remaining an ordinary kid, he approached his mother with absolute resolve, convincing her to train him in her former craft and pass down the grueling path of the Spirit World Warrior. \n\nAs a kid influenced by his treasured memories and passions, Fum-Fum faces the new abnormal world he lives in with a smile that, in his own words, could probably last him a decade or two.",
     "birthdate": "September 16",
     "occupation": "Student / Spirit World Warrior in Training",
     "cherishes": [
@@ -716,7 +716,7 @@
     "color": "#FFFFFF",
     "bgm": {
       "file": "bgm_kai.mp3",
-      "title": "TO BE ASSIGNED"
+      "title": "Sweet Sweet Canyon (Mario Kart 8)"
     }
   },
   {
@@ -916,7 +916,7 @@
     "color": "#FFFFFF",
     "bgm": {
       "file": "bgm_aki.mp3",
-      "title": "TO BE ASSIGNED"
+      "title": "Storm Fukuroul (Rockman X4)"
     }
   },
   {
@@ -953,7 +953,7 @@
     "color": "#FFFFFF",
     "bgm": {
       "file": "bgm_mir.mp3",
-      "title": "TO BE ASSIGNED"
+      "title": "Aquarium Park Act 2 (Sonic Colors)"
     }
   },
   {
