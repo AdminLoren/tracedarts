@@ -665,8 +665,8 @@
       "A3",
       "B6"
     ],
-    "type": "NOT REGISTERED YET",
-    "title": "The Unspoken Herritage",
+    "type": "Acquaintances",
+    "title": "The Unspoken Heritage",
     "specificTitle": "NOT REGISTERED YET",
     "bio": "Kaito could recognize Vyse as Leng's son from a mile away, seeing his father's unmistakable resemblance every time they train together. Despite Leng being the sole Author who adamantly opposed passing down their arts to his offspring, Kaito actively helps keep the secret, honoring the silent pact to train Vyse in the arts behind his father's back."
   },
@@ -1218,7 +1218,7 @@
     "type": "Parent and Child",
     "title": "The Black Sheep",
     "specificTitle": "NOT REGISTERED YET",
-    "bio": "Karin does seem to only inherit her mum's looks. Her choice of solitude and disinterest in being a Student Council Member seems to be stemmed from her dad..."
+    "bio": "While Karin unmistakably inherited Rikka’s stunning looks and polished physical elegance, the similarity largely stops there. Her preference for quiet solitude and her complete disinterest in joining the Student Council mirror her father instead.\n\nEither way, Rikka is proud her daughter is self-sufficient at an early age."
   },
   {
     "id": "kar-hir",
@@ -1375,6 +1375,17 @@
     "bio": "Setsuna is fully aware of the constant stream of complaints regarding Makoto’s behavior and has been repeatedly urged to kick him off the Student Council. However, she refuses, recognizing the harsh reality that no one else is willing to handle his workload, making his removal a massive logistical disaster. She compromises by constantly pleading with him to maintain basic professionalism and avoid pissing off the staff—a minimal standard Makoto is currently failing at spectacular levels."
   },
   {
+    "id": "set-meg",
+    "pair": [
+      "A8",
+      "A13"
+    ],
+    "type": "Best Friends",
+    "title": "The Otaku Mine",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Setsuna initially maintained a strictly professional demeanor around Megumi, keeping her true interests under wraps. However, the second Megumi dropped a subtle hint revealing her own deep knowledge of anime and manga, Setsuna's formal exterior completely dissolved. \n\nUnveiling her fiercely passionate otaku side, Setsuna quickly formed an intense, enthusiastic bond with Megumi, creating a space where both could fully relate over their shared obsessions."
+  },
+  {
     "id": "shi-rik",
     "pair": [
       "A9",
@@ -1501,7 +1512,7 @@
       "A12",
       "B5"
     ],
-    "type": "NOT REGISTERED YET",
+    "type": "Enemies",
     "title": "The Day the Devil Shivers",
     "specificTitle": "NOT REGISTERED YET",
     "bio": "To Matsuda, Makoto represents the exact type of reckless, unstable element he swore to keep far away from his family—and of all the potential targets in the world, Makoto had to set his sights on his daughter. \n\nWhile Makoto stubbornly tries to charm his way into his self-proclaimed \"father-in-law's\" good graces, Matsuda's patience wears paper-thin. Every time Makoto opens his mouth to bridge the gap, Matsuda finds himself a split second away from pulling the trigger right between his eyes."
@@ -1870,6 +1881,17 @@
     "bio": "Bound by a shared trial, the two siblings survived their own temporary hell by clinging to each other as their sole reason to keep living. Though Matsuda’s protective instincts can border on overbearing, Michan somehow always manages to get away with things she definitely shouldn't, they're held together by an unbreakable sibling bond that endures through every hardship."
   },
   {
+    "id": "mic-kai",
+    "pair": [
+      "B4",
+      "B6"
+    ],
+    "type": "Childhood Friends",
+    "title": "The Safest Target",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Kaito is one of the few people Michan feels completely comfortable teasing and bantering with on a regular basis. She genuinely appreciates that he's sweet enough not to harbor real malice toward her despite her constant teasing, and she considers his exasperated reactions to be some of the absolute funniest moments of her daily life."
+  },
+  {
     "id": "mic-min",
     "pair": [
       "B4",
@@ -1879,6 +1901,50 @@
     "title": "Dawn of an Unbreakable Bond",
     "specificTitle": "NOT REGISTERED YET",
     "bio": "Michan initially harbored a quiet resentment toward Minna, convinced she had been brought in to replace her as Meari's new best friend. That insecurity melted away as the two spent more time together, revealing a far deeper, natural compatibility between them, evolving into two first-years running side-by-side, leaving past doubts behind to live life entirely to the fullest by eating the biggest meals."
+  },
+  {
+    "id": "mat-kai",
+    "pair": [
+      "B5",
+      "B6"
+    ],
+    "type": "Childhood Friends",
+    "title": "B̶a̶d̶ ̶B̶o̶y̶s̶ Good Guys",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Though their contrasting temperaments might suggest otherwise, Matsuda and Kaito boast one of the most powerful dynamics in the entire roster. \n\nHaving grown up together as close friends before stepping into the fray as eventual co-workers, their bond is built on years of absolute trust. Kaito's brilliant, high-level tactical strategies paired with Matsuda's flawless, lethal execution make them an extraordinary and formidable duo on the field."
+  },
+  {
+    "id": "mat-min",
+    "pair": [
+      "B5",
+      "B7"
+    ],
+    "type": "Friends",
+    "title": "Keep Your Head Up, Kid",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Their bond began under chaotic circumstances when Matsuda accidentally kidnapped Minna for a dirty assignment, only to immediately turn around and free her himself upon realizing the mistake. As they spent time together in the aftermath, a genuine trust blossomed between them; Matsuda went on to become a vital pillar of support in Minna's life, offering the consistent encouragement she needed to step out of her shell and build true self-confidence."
+  },
+  {
+    "id": "mat-mei",
+    "pair": [
+      "B5",
+      "B11"
+    ],
+    "type": "Comrades",
+    "title": "Uncanny Substitute",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "As core members of their new group, Matsuda and Meili unintentionally step into the precise roles left vacant by each other's former comrades.\n\nFor Meili, Matsuda serves as the familiar sarcastic, unshakeable presence she used to rely on. For Matsuda, Meili perfectly fills the spot of the delightfully annoying woman who takes endless pleasure in shattering his ego whenever she pleases."
+  },
+  {
+    "id": "mat-aki",
+    "pair": [
+      "B5",
+      "B12"
+    ],
+    "type": "Comrades",
+    "title": "Parallel Minds",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "They are remarkably close comrades and operating partners who think so much alike they practically share a single mindset on the job. Yet despite this profound mental synergy and shared history, life pulled them toward wildly different destinations—paths neither of them ever intended, envisioned, or expected to walk."
   },
   {
     "id": "mat-aik",
