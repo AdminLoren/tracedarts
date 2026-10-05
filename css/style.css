@@ -732,6 +732,9 @@ img { max-width: 100%; display: block; }
   text-align: center;
 }
 .rel-roster-card.is-picked { opacity: 0.35; filter: grayscale(1); pointer-events: none; }
+/* Characters with no pairing with the first pick: greyed out and locked */
+.rel-roster-card.is-unavailable { opacity: 0.25; filter: grayscale(1); cursor: not-allowed; }
+.rel-roster-card.is-unavailable:hover { transform: none; }
 
 .rel-display-screen {
   position: relative;
