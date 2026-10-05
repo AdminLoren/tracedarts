@@ -5,7 +5,7 @@
     "gen": 2,
     "name": "Fumio",
     "nickname": "Fumio Hasashi",
-    "bio": "A mischievous boy who thrives on his over-the-top confidence, optimism and unhinged humor.\n\nUpon receiving the news that the Author Gods requested structured training for him and his friends following a devastating loss, Fumio fully grasped the gravity of the stakes, and yet never hesitated to step forward. Driven by a desire to forge his own distinct identity rather than remaining an ordinary kid, he approached his mother with absolute resolve, convincing her to train him in her former craft and pass down the grueling path of the Spirit World Warrior. \n\nAs a kid influenced by his treasured memories and passions, Fum-Fum faces the new abnormal world he lives in with a smile that, in his own words, could probably last him a decade or two.",
+    "bio": "A mischievous boy who thrives on his over-the-top confidence, optimism and unhinged humor.\n\nUpon receiving the news that the Author Gods requested structured training for him and his friends following a devastating loss, Fumio fully grasped the gravity of the stakes, and yet never hesitated to step forward. Driven by a desire to forge his own distinct identity rather than remaining an ordinary kid, he approached his mother with absolute resolve, convincing her to train him in her former craft and pass down the grueling path of the Spirit World Warrior. As a kid influenced by his treasured memories and passions, Fum-Fum faces the new abnormal world he lives in with a smile that, in his own words, could probably last him a decade or two.",
     "birthdate": "September 16",
     "occupation": "Student / Spirit World Warrior in Training",
     "cherishes": [
@@ -102,7 +102,7 @@
       },
       {
         "name": "Figure Skater",
-        "desc": "Zero-friction across any terrain at will, allows him to skate effortlessly (and gracefully) at high speeds.\n Ability 3: Phase Submersion - Can temporarily phase through solid structures like walls or ground by holding his breath, treating solid matter like a liquid medium."
+        "desc": "Zero-friction across any terrain at will, allows him to skate effortlessly (and gracefully) at high speeds."
       },
       {
         "name": "Phase Submersion",
@@ -180,7 +180,7 @@
       },
       {
         "name": "Maid Persona",
-        "desc": "\"Big sister\" personality lets her help people regardless of intense tasks.\n\nOWNED BY LOVE LIVE NIJIGASAKI"
+        "desc": "\"Big sister\" personality lets her help people regardless of intense tasks."
       }
     ],
     "color": "#FFFFFF",
@@ -196,7 +196,7 @@
     "gen": 2,
     "name": "Karin",
     "nickname": "Karin Asaka",
-    "bio": "The sophisticated beauty hailing from the countryside, Karin is the absolute manifestation of the word \"alluring.\" On the surface, her cool, seductive composure makes her appear completely unshakeable—though those who manage to get closer quickly realize her demeanor is far more akin to being hilariously \"aloof.\" Whether that contrast is a turn-off or the complete opposite is entirely up to the observer, but Karin is determined not to let just anyone see past her polished exterior.\n\nBehind closed doors, Karin keeps her private life strictly under wraps, with only a select, trusted handful within her circle aware of the unexpectedly grounding lifestyle she actually lives. Yet despite her guarded nature and preference for privacy, she treasures her bonds deeply; when it comes to hanging out and socializing, she wouldn't trade her chaotic group of friends for anything in the world.",
+    "bio": "The sophisticated beauty hailing from the countryside, Karin is the absolute manifestation of the word \"alluring.\" On the surface, her cool, seductive composure makes her appear completely unshakeable—though those who manage to get closer quickly realize her demeanor is far more akin to being hilariously \"aloof.\" Whether that contrast is a turn-off or the complete opposite is entirely up to the observer, but Karin guards that clumsy side fiercely, determined not to let just anyone see past her polished exterior.\n\nBehind closed doors, Karin keeps her private life strictly under wraps, with only a select, trusted handful within her circle aware of the unexpectedly grounding lifestyle she actually lives. Yet despite her guarded nature and preference for privacy, she treasures her bonds deeply; when it comes to hanging out and socializing, she wouldn't trade her chaotic group of friends for anything in the world.",
     "birthdate": "June 29",
     "occupation": "Student / Amateur Model",
     "cherishes": [
@@ -218,7 +218,7 @@
       },
       {
         "name": "Psychological Subterfuge",
-        "desc": "Master of social deception, seamlessly extracting high-value intelligence from targets for her and her team's benefit.\n\nOWNED BY LOVE LIVE NIJIGASAKI"
+        "desc": "Master of social deception, seamlessly extracting high-value intelligence from targets for her and her team's benefit."
       }
     ],
     "color": "#FFFFFF",
@@ -427,7 +427,7 @@
     "gen": 2,
     "name": "Makoto",
     "nickname": "Makoto Williams",
-    "bio": "Arrogant, calculating, and dangerously intelligent, Makoto operates on the single belief that the world is a stage meant for him to rule. He directs that intellect entirely toward personal dominance. \n\nA master of subtle manipulation, gaslighting, and truth-bending, He smoothly rewrites narratives to turn allies against each other and position himself as indispensable. He treats every interaction as a transaction and every person as a piece on a board, stopping at absolute nothing to seize total authority.",
+    "bio": "Arrogant, calculating, and dangerously intelligent, Makoto operates on the single belief that the world is a stage meant for him to rule. He directs that intellect entirely toward personal dominance.\n\nA master of subtle manipulation, gaslighting, and truth-bending, He smoothly rewrites narratives to turn allies against each other and position himself as indispensable. He treats every interaction as a transaction and every person as a piece on a board, stopping at absolute nothing to seize total authority.",
     "birthdate": "May 2",
     "occupation": "Student Council Member",
     "cherishes": [
@@ -464,7 +464,7 @@
     "gen": 2,
     "name": "Megumi",
     "nickname": "Megumi Williams",
-    "bio": "Raised in a strictly controlled environment, Megumi grew up isolated from standard childhood experiences, leaving her quiet, guarded, and unsure of how to express her feelings. The only constant presence she found comfort in was her protective, highly restrictive older twin-brother. \n\nHer worldview shifted permanently after crossing paths with the 2nd Generation crew, whose chaotic warmth exposed her to everything she missed, forcing her out of her shell to experience the real world for the first time.",
+    "bio": "Raised in a strictly controlled environment, Megumi grew up isolated from standard childhood experiences, leaving her quiet, guarded, and unsure of how to express her feelings. The only constant presence she found comfort in was her protective, highly restrictive older twin-brother.\n\nHer worldview shifted permanently after crossing paths with the 2nd Generation crew, whose chaotic warmth exposed her to everything she missed, forcing her out of her shell to experience the real world for the first time.",
     "birthdate": "May 2",
     "occupation": "Student",
     "cherishes": [
@@ -485,7 +485,7 @@
       },
       {
         "name": "Reserved Endurance",
-        "desc": "Possesses exceptional patience and mental focus under pressure, allowing her to stay calm and rational when chaos breaks out around her."
+        "desc": "Possesses exceptional patience and mental focus under pressure, allowing her to stay calm and rational when chaos breaks out around her. [ 1st Generation ]"
       }
     ],
     "color": "#FFFFFF",
@@ -499,8 +499,8 @@
     "code": "mea",
     "gen": 1,
     "name": "Meari",
-    "nickname": "Meari Hasashi (née Watanabe)",
-    "bio": "Abducted at a young age, Meari was forced into the brutal training of a Spirit World Warrior, molded specifically as an instrument for world destruction. The immense trauma fractured her psyche, splitting her original whimsical, lighthearted spirit off into a distinct alternate personality while her primary persona turned cold, distant, and survival-driven. \n\nAfter escaping the exploiter's grasp, she found a warm, nurturing environment during her teenage years that allowed her past wounds to heal, eventually enabling both fractured sides of her identity to reconcile and merge into a single, complete self. Today, she has buried her dark past to fulfill her true dream as a well-renowned chef.",
+    "nickname": "Meari Watanabe",
+    "bio": "Abducted at a young age, Meari was forced into the brutal training of a Spirit World Warrior, molded specifically as an instrument for world destruction. The immense trauma fractured her psyche, splitting her original whimsical, lighthearted spirit off into a distinct alternate personality while her primary persona turned cold, distant, and survival-driven.\n\nAfter escaping the exploiter's grasp, she found a warm, nurturing environment during her teenage years that allowed her past wounds to heal, eventually enabling both fractured sides of her identity to reconcile and merge into a single, complete self. Today, she has buried her dark past to fulfill her true dream as a well-renowned chef.",
     "birthdate": "September 8",
     "occupation": "Restaurateur / Spirit World Warrior",
     "cherishes": [
@@ -538,7 +538,7 @@
     "gen": 1,
     "name": "Hanzo",
     "nickname": "Jubei \"Hanzo\" Hasashi",
-    "bio": "Born into a wealthy and influential lineage, Jubei was labeled from birth as the harbinger of a ruinous prophecy, stranding him with an unnerving streak of perpetual bad luck. Shunned by his family and subjected to harsh labor while his siblings thrived, his ordeal culminated in a death sentence by drowning. \n\nSurrounding circumstances allowed him to survive the execution, escape his family's shadow, and forged a new path. Though his early life was defined by cruelty, he eventually found the genuine warmth and affection he was denied as a child, now standing as the proud co-owner of the renowned restaurant brand Parhelion.",
+    "bio": "Born into a wealthy and influential lineage, Jubei was labeled from birth as the harbinger of a ruinous prophecy, stranding him with an unnerving streak of perpetual bad luck. Shunned by his family and subjected to harsh labor while his siblings thrived, his ordeal culminated in a death sentence by drowning.\n\nSurrounding circumstances allowed him to survive the execution, escape his family's shadow, and forged a new path. Though his early life was defined by cruelty, he eventually found the genuine warmth and affection he was denied as a child, now standing as the proud co-owner of the renowned restaurant brand Parhelion.",
     "birthdate": "August 8",
     "occupation": "Restaurateur / Active Reservist",
     "cherishes": [
@@ -574,7 +574,7 @@
     "gen": 1,
     "name": "Satoshi",
     "nickname": "Satoshi Hasashi",
-    "bio": "Blessed with exceptional talent and physical prowess from a young age, Satoshi was widely expected to achieve greatness. Despite the constant praise, encounters with people in poverty during his childhood taught him to remain grounded, humble, and deeply appreciative of his gifts. His life took a drastic turn when he uncovered a long-kept family secret: the existence of a twin brother hidden from both him and his younger sister. \n\nAbandoning his comfortable life, he embarked on a lengthy search that eventually led him to Uranoshiya High School. He now works as the school’s gym teacher and varsity basketball coach, determined to instill the discipline and mentality needed to bring the institution its very first championship.",
+    "bio": "Blessed with exceptional talent and physical prowess from a young age, Satoshi was widely expected to achieve greatness. Despite the constant praise, encounters with people in poverty during his childhood taught him to remain grounded, humble, and deeply appreciative of his gifts. His life took a drastic turn when he uncovered a long-kept family secret: the existence of a twin brother hidden from both him and his younger sister.\n\nAbandoning his comfortable life, he embarked on a lengthy search that eventually led him to Uranoshiya High School. He now works as the school’s gym teacher and varsity basketball coach, determined to instill the discipline and mentality needed to bring the institution its very first championship.",
     "birthdate": "August 8",
     "occupation": "PhysEd Teacher / Active Reservist",
     "cherishes": [
@@ -583,7 +583,7 @@
     ],
     "dislikes": [
       "Pessimism",
-      "Biased Referees"
+      "Referees"
     ],
     "abilities": [
       {
@@ -610,8 +610,8 @@
     "code": "mic",
     "gen": 1,
     "name": "Michan",
-    "nickname": "Michan Hasashi (née Yuukashi)",
-    "bio": "The gentle and sweet-natured daughter of an Author God, Michan’s early years were overshadowed by deceptive and malicious individuals who took advantage of her innocence, tricking her into believing their mistreatment was normal. The resulting trauma left her with a deep-seated fear of men and severe personal insecurities. \n\nHowever, through the unwavering support of genuine connections and a safe environment, she slowly unlearned her trauma, reclaimed her autonomy, and grew past her fears. Today, she lives a peaceful, fulfilling life, content and satisfied with the quiet happiness she earned for herself.",
+    "nickname": "Michan Yuukashi",
+    "bio": "The gentle and sweet-natured daughter of an Author God, Michan’s early years were overshadowed by deceptive and malicious individuals who took advantage of her innocence, tricking her into believing their mistreatment was normal. The resulting trauma left her with a deep-seated fear of men and severe personal insecurities.\n\nHowever, through the unwavering support of genuine connections and a safe environment, she slowly unlearned her trauma, reclaimed her autonomy, and grew past her fears. Today, she lives a peaceful, fulfilling life, content and satisfied with the quiet happiness she earned for herself.",
     "birthdate": "Feb 14",
     "occupation": "Housewife / Professional Model",
     "cherishes": [
@@ -725,7 +725,7 @@
     "gen": 1,
     "name": "Minna",
     "nickname": "Minna Shindou (née Takashima)",
-    "bio": "Born into the Takashima family, Minna was disowned early in life and sought refuge in literature, using books to cope with isolation while developing an exceptionally high IQ. Despite being shy and plagued by self-doubt, her warmth naturally draws people to her, making her surprisingly adept at forging deep connections.\n\nIn her adulthood, she believed she was living her absolute dream beside her childhood crush, only to suffer a devastating betrayal when she was abandoned and replaced once he grew bored of her. Devastated by the heartbreak, Minna now lives in complete isolation, cutting off all contact from both her friends and family.",
+    "bio": "Born into the Takashima family, Minna was disowned early in life and sought refuge in literature, using books to cope with isolation while developing an exceptionally high IQ. Despite being shy and plagued by self-doubt, her warmth naturally draws people to her, making her surprisingly adept at forging deep connections. In her adulthood, she believed she was living her absolute dream beside her childhood crush, only to suffer a devastating betrayal when she was abandoned and replaced once he grew bored of her. Devastated by the heartbreak, Minna now lives in complete isolation, cutting off all contact from both her friends and family.",
     "birthdate": "March 25",
     "occupation": "Unknown",
     "cherishes": [
@@ -853,7 +853,7 @@
     "gen": 1,
     "name": "Aika",
     "nickname": "Aika Yuukashi (née Kobayashi)",
-    "bio": "Bright, jovial, and resilient, Aika carries a warm energy that belies a heavy past. Having spent almost her entire life operating within military ranks, she spent years being treated as a trophy and an object to be possessed—a reality that constantly threatened the safety of those she cared about most. \n\nTo break the cycle and safeguard her loved ones, she stepped away from her past to rebuild her life from the ground up. She found a fresh start at the Irregular Hunter base, discovering a familiar operational environment that finally offered her a healthy, safe, and supportive community.",
+    "bio": "Bright, jovial, and resilient, Aika carries a warm energy that belies a heavy past. Having spent almost her entire life operating within military ranks, she spent years being treated as a trophy and an object to be possessed—a reality that constantly threatened the safety of those she cared about most. To break the cycle and safeguard her loved ones, she stepped away from her past to rebuild her life from the ground up. She found a fresh start at the Irregular Hunter base, discovering a familiar operational environment that finally offered her a healthy, safe, and supportive community.",
     "birthdate": "April 11",
     "occupation": "Military Liaison / Irregular Hunter Navigator",
     "cherishes": [
@@ -887,7 +887,7 @@
     "code": "aki",
     "gen": 1,
     "name": "Akira",
-    "nickname": "NOT REGISTERED YET",
+    "nickname": "Code Name: \"Nighthawk\"",
     "bio": "Shrouded in mystery to most who meet him, Akira is at core an exceptionally disciplined soldier who simply executes every mission with absolute perfection. Frequently deployed on high-stakes military operations, he serves directly under an Author God—whose relentless demands leave him quietly wishing for a break from time to time.\n\nRelentlessly methodical, Akira refuses to rely on luck or bravado. He adheres strictly to the safest, most consistent tactical strategies, shutting down any plan that carries even the smallest percentage of uncalculated risk. For him, mission success and total risk mitigation are non-negotiable.",
     "birthdate": "Unknown",
     "occupation": "Special Operations Field Agent",
@@ -976,7 +976,7 @@
     "abilities": [
       {
         "name": "Dollar-Store Staff",
-        "desc": "Channels frost energy through his cane to manipulate ice effortlessly, generating freezing fields and constructs without draining his stamina."
+        "desc": "Channels frost energy through his staff to manipulate ice effortlessly, generating freezing fields and constructs without draining his stamina."
       },
       {
         "name": "Glacial Glide",
