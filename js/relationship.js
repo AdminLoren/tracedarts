@@ -29,9 +29,27 @@ COTA.relationship = (function () {
     refreshRosterHighlight();
   }
 
+  // Returns true if these two characters have a pairing in relationships.json
+  function hasPairing(idA, idB) {
+    return COTA.data.findRelationship(allRelationships, idA, idB) !== undefined;
+  }
+
   function refreshRosterHighlight() {
+    // Is exactly one character picked so far? If yes, remember who.
+    const filled = slots.filter(Boolean);
+    const firstPick = filled.length === 1 ? filled[0] : null;
+
     document.querySelectorAll(".rel-roster-card").forEach((el) => {
-      el.classList.toggle("is-picked", slots.includes(el.dataset.id));
+      const id = el.dataset.id;
+
+      // Grey out the cards that are already picked (same as before)
+      el.classList.toggle("is-picked", slots.includes(id));
+
+      // Grey out and lock the cards that have NO pairing with the first pick.
+      // (If nobody is picked yet, firstPick is null, so nothing is locked.)
+      const noPairing = firstPick !== null && id !== firstPick && !hasPairing(firstPick, id);
+      el.classList.toggle("is-unavailable", noPairing);
+      el.disabled = noPairing; // a disabled button cannot be clicked
     });
   }
 
@@ -79,6 +97,7 @@ COTA.relationship = (function () {
 
   function onRosterPick(id) {
     if (slots.includes(id)) return;
+    if (document.querySelector(`.rel-roster-card[data-id="${id}"]`).disabled) return; // locked card
     const emptyIndex = slots.findIndex((s) => s === null);
     if (emptyIndex === -1) return;
     slots[emptyIndex] = id;
