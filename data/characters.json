@@ -1026,6 +1026,14 @@
     "color": "#FFFFFF"
   },
   {
+    "id": "C8",
+    "code": "zya",
+    "name": "Zyane",
+    "comingSoon": true,
+    "comingSoonGroup": "2nd Gen",
+    "color": "#FFFFFF"
+  },
+  {
     "id": "C5",
     "code": "ama",
     "name": "Amane",
