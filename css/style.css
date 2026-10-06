@@ -548,6 +548,13 @@ img { max-width: 100%; display: block; }
   filter: drop-shadow(3px 3px 0 rgba(0,0,0,0.5));
 }
 
+/* Mira's name art has no empty border, so it looks bigger than the others. Shrink it. */
+.index-graffiti-name[data-code="mir"] {
+  width: 85%;
+  object-fit: contain;
+  object-position: left;
+}
+
 .index-fullname { color: var(--accent-cyan); font-weight: 700; font-size: 22px; margin: 4px 0 20px; text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.85); }
 .index-bio { line-height: 1.6; color: var(--text-main); max-width: 62ch; white-space: pre-line; text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.85); }
 
@@ -818,6 +825,12 @@ img { max-width: 100%; display: block; }
   width: auto;
   height: auto;
   filter: drop-shadow(3px 3px 0 rgba(0,0,0,0.5));
+}
+
+/* Same fix for Mira on the Relationship Chart tab */
+.rel-char-name[data-code="mir"] {
+  max-width: min(25vw, 265px);
+  max-height: 80px;
 }
 
 .rel-center-text {
