@@ -137,6 +137,7 @@ COTA.lore = (function () {
     const graffitiImg = document.getElementById("lore-index-graffiti-name");
     graffitiImg.src = `assets/images/graffiti_${character.code}.png`;
     graffitiImg.alt = character.name;
+    graffitiImg.dataset.code = character.code; // lets the CSS resize one character's name art
     document.getElementById("lore-index-fullname").textContent =
       character.nickname && character.nickname !== "NOT REGISTERED YET"
         ? character.nickname
