@@ -122,11 +122,13 @@ COTA.relationship = (function () {
     document.getElementById("rel-char-a-render").alt = charA.name;
     document.getElementById("rel-char-a-name").src = `assets/images/graffiti_${charA.code}.png`;
     document.getElementById("rel-char-a-name").alt = charA.name;
+    document.getElementById("rel-char-a-name").dataset.code = charA.code; // lets the CSS resize one character's name art
 
     document.getElementById("rel-char-b-render").src = `assets/images/render_${charB.code}.png`;
     document.getElementById("rel-char-b-render").alt = charB.name;
     document.getElementById("rel-char-b-name").src = `assets/images/graffiti_${charB.code}.png`;
     document.getElementById("rel-char-b-name").alt = charB.name;
+    document.getElementById("rel-char-b-name").dataset.code = charB.code; // lets the CSS resize one character's name art
 
     const type = rel ? rel.type : "N/A";
     const title = rel ? rel.title : "NOT REGISTERED YET";
