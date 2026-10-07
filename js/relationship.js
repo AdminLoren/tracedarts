@@ -113,6 +113,14 @@ COTA.relationship = (function () {
     }
   }
 
+  // Shrinks a character picture to match their real height.
+  // heightScale (in characters.json) is 1 for the tallest character, smaller for shorter ones.
+  // The picture shrinks from its feet, so everyone still stands on the same ground.
+  function setHeight(imgId, character) {
+    const scale = character.heightScale || 1; // no heightScale = normal size
+    document.getElementById(imgId).style.transform = `scale(${scale})`;
+  }
+
   function showRelationship(idA, idB) {
     const charA = COTA.data.findCharacter(allCharacters, idA);
     const charB = COTA.data.findCharacter(allCharacters, idB);
@@ -120,12 +128,14 @@ COTA.relationship = (function () {
 
     document.getElementById("rel-char-a-render").src = `assets/images/render_${charA.code}.png`;
     document.getElementById("rel-char-a-render").alt = charA.name;
+    setHeight("rel-char-a-render", charA); // real height, relative to the others
     document.getElementById("rel-char-a-name").src = `assets/images/graffiti_${charA.code}.png`;
     document.getElementById("rel-char-a-name").alt = charA.name;
     document.getElementById("rel-char-a-name").dataset.code = charA.code; // lets the CSS resize one character's name art
 
     document.getElementById("rel-char-b-render").src = `assets/images/render_${charB.code}.png`;
     document.getElementById("rel-char-b-render").alt = charB.name;
+    setHeight("rel-char-b-render", charB); // real height, relative to the others
     document.getElementById("rel-char-b-name").src = `assets/images/graffiti_${charB.code}.png`;
     document.getElementById("rel-char-b-name").alt = charB.name;
     document.getElementById("rel-char-b-name").dataset.code = charB.code; // lets the CSS resize one character's name art
