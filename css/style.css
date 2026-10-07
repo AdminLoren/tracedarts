@@ -754,6 +754,12 @@ img { max-width: 100%; display: block; }
 }
 .rel-display-screen.fade-in { animation: fadeIn 0.4s ease; }
 
+/* Characters taller than Fumio grow upward, so leave room at the top (computers only)
+   so their heads don't get cut off. Make this number bigger if a head still gets cut. */
+@media (min-width: 801px) {
+  .rel-display-screen.active { padding-top: 100px; }
+}
+
 .rel-bg {
   position: absolute;
   inset: 0;
@@ -812,7 +818,7 @@ img { max-width: 100%; display: block; }
   max-width: 100%;
   margin: 0 auto;
   object-fit: contain;
-  transform-origin: bottom center; /* heightScale shrinks the picture from the feet up */
+  transform-origin: bottom center; /* heightScale resizes the picture from the feet up */
   filter: drop-shadow(0 16px 30px rgba(0,0,0,0.6));
 }
 .rel-char-name {
