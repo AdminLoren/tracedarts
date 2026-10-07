@@ -812,6 +812,7 @@ img { max-width: 100%; display: block; }
   max-width: 100%;
   margin: 0 auto;
   object-fit: contain;
+  transform-origin: bottom center; /* heightScale shrinks the picture from the feet up */
   filter: drop-shadow(0 16px 30px rgba(0,0,0,0.6));
 }
 .rel-char-name {
