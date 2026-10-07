@@ -754,10 +754,14 @@ img { max-width: 100%; display: block; }
 }
 .rel-display-screen.fade-in { animation: fadeIn 0.4s ease; }
 
+/* Fumio's picture height. Everyone else is sized from this (see heightScale in characters.json).
+   Make this bigger or smaller to resize ALL characters on the pairing page together. */
+.rel-display-screen { --rel-char-height: min(78vh, 760px, 44vw); }
+
 /* Characters taller than Fumio grow upward, so leave room at the top (computers only)
-   so their heads don't get cut off. Make this number bigger if a head still gets cut. */
+   so their heads don't get cut off. */
 @media (min-width: 801px) {
-  .rel-display-screen.active { padding-top: 100px; }
+  .rel-display-screen.active { padding-top: calc(var(--rel-char-height) * 0.15); }
 }
 
 .rel-bg {
@@ -783,13 +787,13 @@ img { max-width: 100%; display: block; }
   margin: 0 auto;
   padding: 12px 24px;
   display: grid;
-  grid-template-columns: 1fr minmax(300px, 480px) 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 480px) minmax(0, 1fr);
   gap: 32px;
   align-items: center;
 }
 @media (max-width: 800px) {
-    .rel-pair-visual {
-    grid-template-columns: 1fr 1fr;
+  .rel-pair-visual {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     grid-template-areas:
       "charA charB"
       "info  info";
@@ -800,44 +804,61 @@ img { max-width: 100%; display: block; }
   .rel-pair-visual > .rel-center-text { grid-area: info; }
   .rel-pair-visual > .rel-char-card:nth-child(3) { grid-area: charB; }
 
-    .rel-char-render { height: 32vh; max-height: 32vh; }
+  /* phones: the picture is as wide as its column */
+  .rel-char-render { width: 100%; height: auto; }
 }
 
 .rel-char-card {
   text-align: center;
   position: relative;
   z-index: 1;
+  min-width: 0;
 }
 @media (min-width: 801px) {
   .rel-pair-visual > .rel-char-card:nth-of-type(1) { margin-right: -60px; }
   .rel-pair-visual > .rel-char-card:nth-of-type(3) { margin-left: -60px; }
 }
+
+/* keeps the picture centered even if it is wider than its column */
+.rel-char-card .rel-char-render-wrap {
+  display: flex;
+  justify-content: center;
+}
 .rel-char-render {
-  height: min(80vh, 880px);
+  height: var(--rel-char-height);
   width: auto;
-  max-width: 100%;
-  margin: 0 auto;
-  object-fit: contain;
-  transform-origin: bottom center; /* heightScale resizes the picture from the feet up */
+  flex-shrink: 0;
   filter: drop-shadow(0 16px 30px rgba(0,0,0,0.6));
+  /* relationship.js sets transform + transform-origin so each character has their real height
+     and everyone's feet stand on the same ground line */
+}
+
+/* The two graffiti names, in the middle card above the title: graffiti 1 & graffiti 2 */
+.rel-names {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+.rel-names-amp {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 2.4vw, 34px);
+  color: var(--accent-gold);
+  text-shadow: 2px 2px 0 rgba(0,0,0,0.5);
 }
 .rel-char-name {
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 5;
-  max-width: min(30vw, 320px);
-  max-height: 96px;
+  min-width: 0;
+  max-width: 42%;
+  max-height: 80px;
   width: auto;
   height: auto;
   filter: drop-shadow(3px 3px 0 rgba(0,0,0,0.5));
 }
-
-/* Same fix for Mira on the Relationship Chart tab */
+/* Mira's name art has no empty border, so it looks bigger than the others. Shrink it. */
 .rel-char-name[data-code="mir"] {
-  max-width: min(25vw, 265px);
-  max-height: 80px;
+  max-width: 35%;
+  max-height: 66px;
 }
 
 .rel-center-text {
