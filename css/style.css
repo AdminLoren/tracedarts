@@ -801,7 +801,7 @@ img { max-width: 100%; display: block; }
     padding: 30px 16px 30px;
   }
   .rel-pair-visual > .rel-char-card:nth-child(1) { grid-area: charA; }
-  .rel-pair-visual > .rel-center-text { grid-area: info; }
+  .rel-pair-visual > .rel-center-col { grid-area: info; }
   .rel-pair-visual > .rel-char-card:nth-child(3) { grid-area: charB; }
 
   /* phones: the picture is as wide as its column */
@@ -827,19 +827,31 @@ img { max-width: 100%; display: block; }
 .rel-char-render {
   height: var(--rel-char-height);
   width: auto;
+  max-width: none;      /* IMPORTANT: stops the picture from being squeezed (stretched) */
   flex-shrink: 0;
   filter: drop-shadow(0 16px 30px rgba(0,0,0,0.6));
   /* relationship.js sets transform + transform-origin so each character has their real height
      and everyone's feet stand on the same ground line */
 }
 
-/* The two graffiti names, in the middle card above the title: graffiti 1 & graffiti 2 */
+/* Middle column = graffiti names on top, description card underneath */
+.rel-center-col {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.rel-center-col .rel-center-text { width: 100%; }
+
+/* The two graffiti names above the description card: graffiti 1 & graffiti 2 */
 .rel-names {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 18px;
+  width: 100%;
 }
 .rel-names-amp {
   font-family: var(--font-display);
