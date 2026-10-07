@@ -804,6 +804,16 @@ img { max-width: 100%; display: block; }
   .rel-pair-visual > .rel-center-col { grid-area: info; }
   .rel-pair-visual > .rel-char-card:nth-child(3) { grid-area: charB; }
 
+  /* phones: the names go back into the normal flow, on top of the card */
+  .rel-names {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-bottom: 14px;
+  }
+  .rel-char-name { max-height: 70px; }
+  .rel-char-name[data-code="mir"] { max-height: 58px; }
+
   /* phones: the picture is as wide as its column */
   .rel-char-render { width: 100%; height: auto; }
 }
@@ -834,24 +844,26 @@ img { max-width: 100%; display: block; }
      and everyone's feet stand on the same ground line */
 }
 
-/* Middle column = graffiti names on top, description card underneath */
+/* Middle column = just the description card, which stays in the exact center.
+   The graffiti names float ABOVE it, so they never push the card (or anything else) around. */
 .rel-center-col {
   position: relative;
   z-index: 10;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 18px;
 }
 .rel-center-col .rel-center-text { width: 100%; }
 
 /* The two graffiti names above the description card: graffiti 1 & graffiti 2 */
 .rel-names {
+  position: absolute;
+  bottom: 100%;                 /* sits right on top of the card */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 125%;                  /* a bit wider than the card, so the names can be bigger */
+  margin-bottom: 18px;          /* gap between the names and the card */
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  width: 100%;
+  gap: 12px;
 }
 .rel-names-amp {
   font-family: var(--font-display);
@@ -861,16 +873,16 @@ img { max-width: 100%; display: block; }
 }
 .rel-char-name {
   min-width: 0;
-  max-width: 42%;
-  max-height: 80px;
+  max-width: 44%;
+  max-height: 110px;
   width: auto;
   height: auto;
   filter: drop-shadow(3px 3px 0 rgba(0,0,0,0.5));
 }
 /* Mira's name art has no empty border, so it looks bigger than the others. Shrink it. */
 .rel-char-name[data-code="mir"] {
-  max-width: 35%;
-  max-height: 66px;
+  max-width: 37%;
+  max-height: 92px;
 }
 
 .rel-center-text {
