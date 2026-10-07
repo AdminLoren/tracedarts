@@ -114,7 +114,8 @@ COTA.relationship = (function () {
   }
 
   // Shrinks a character picture to match their real height.
-  // heightScale (in characters.json) is 1 for the tallest character, smaller for shorter ones.
+  // heightScale (in characters.json) is 1 for Fumio (the standard size).
+  // Characters taller than Fumio are bigger than 1, shorter ones are smaller than 1.
   // The picture shrinks from its feet, so everyone still stands on the same ground.
   function setHeight(imgId, character) {
     const scale = character.heightScale || 1; // no heightScale = normal size
