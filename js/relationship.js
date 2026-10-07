@@ -113,13 +113,19 @@ COTA.relationship = (function () {
     }
   }
 
-  // Shrinks a character picture to match their real height.
-  // heightScale (in characters.json) is 1 for Fumio (the standard size).
-  // Characters taller than Fumio are bigger than 1, shorter ones are smaller than 1.
-  // The picture shrinks from its feet, so everyone still stands on the same ground.
+  // Fumio's feet line (how far down his picture his feet are, 0 = top, 1 = bottom).
+  // Everyone's feet are moved to this same line so nobody looks lifted off the ground.
+  const GROUND_LINE = 0.982;
+
+  // Gives a character picture their real height and puts their feet on the ground line.
+  // heightScale (characters.json): 1 = Fumio's size, bigger = taller, smaller = shorter.
+  // feetLine (characters.json): where this character's feet are inside their picture.
   function setHeight(imgId, character) {
-    const scale = character.heightScale || 1; // no heightScale = normal size
-    document.getElementById(imgId).style.transform = `scale(${scale})`;
+    const scale = character.heightScale || 1;       // no heightScale = Fumio's size
+    const feet = character.feetLine || GROUND_LINE;  // no feetLine = same as Fumio
+    const img = document.getElementById(imgId);
+    img.style.transformOrigin = `50% ${feet * 100}%`; // resize around the feet
+    img.style.transform = `translateY(${(GROUND_LINE - feet) * 100}%) scale(${scale})`;
   }
 
   function showRelationship(idA, idB) {
