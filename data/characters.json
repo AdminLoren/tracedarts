@@ -37,7 +37,8 @@
       "title": "Casino Park (Sonic Heroes)"
     },
     "isDefault": true,
-    "heightScale": 1.0
+    "heightScale": 1.0,
+    "feetLine": 0.982
   },
   {
     "id": "A2",
@@ -77,7 +78,8 @@
       "file": "bgm_ali.mp3",
       "title": "Tropical Resort Act 2 (Sonic Colors)"
     },
-    "heightScale": 1.0
+    "heightScale": 1.0,
+    "feetLine": 0.967
   },
   {
     "id": "A3",
@@ -116,7 +118,8 @@
       "file": "bgm_vys.mp3",
       "title": "Blizzard Valley (Sonic Racing Crossworlds)"
     },
-    "heightScale": 1.047
+    "heightScale": 1.047,
+    "feetLine": 0.981
   },
   {
     "id": "A4",
@@ -153,7 +156,8 @@
       "file": "bgm_riku.mp3",
       "title": "Cyber Kujacker (Rockman X4)"
     },
-    "heightScale": 1.004
+    "heightScale": 1.004,
+    "feetLine": 0.987
   },
   {
     "id": "A5",
@@ -193,7 +197,8 @@
       "title": "Emma's theme (LL! SIFAS)"
     },
     "franchiseLogo": "nijigasaki_logo.svg",
-    "heightScale": 0.975
+    "heightScale": 0.975,
+    "feetLine": 0.989
   },
   {
     "id": "A6",
@@ -232,7 +237,8 @@
       "title": "Karin's theme (LL! SIFAS)"
     },
     "franchiseLogo": "nijigasaki_logo.svg",
-    "heightScale": 1.004
+    "heightScale": 1.004,
+    "feetLine": 0.99
   },
   {
     "id": "A7",
@@ -271,7 +277,8 @@
       "file": "bgm_fko.mp3",
       "title": "Sakura's theme (SF Alpha 2)"
     },
-    "heightScale": 1.0
+    "heightScale": 1.0,
+    "feetLine": 0.98
   },
   {
     "id": "A8",
@@ -312,7 +319,8 @@
       "title": "Setsuna's theme (LL! SIFAS)"
     },
     "franchiseLogo": "nijigasaki_logo.svg",
-    "heightScale": 0.958
+    "heightScale": 0.958,
+    "feetLine": 0.992
   },
   {
     "id": "A9",
@@ -352,7 +360,8 @@
       "title": "Shioriko's theme (LL! SIFAS)"
     },
     "franchiseLogo": "nijigasaki_logo.svg",
-    "heightScale": 1.011
+    "heightScale": 1.011,
+    "feetLine": 0.985
   },
   {
     "id": "A10",
@@ -391,7 +400,8 @@
       "title": "Acid Man (Rockman 11)"
     },
     "birthdateLabel": "Fostered Date",
-    "heightScale": 1.028
+    "heightScale": 1.028,
+    "feetLine": 0.977
   },
   {
     "id": "A11",
@@ -430,7 +440,8 @@
       "file": "bgm_geo.mp3",
       "title": "Sand Hill (Sonic Adventure)"
     },
-    "heightScale": 1.043
+    "heightScale": 1.043,
+    "feetLine": 0.984
   },
   {
     "id": "A12",
@@ -468,7 +479,8 @@
       "file": "bgm_mak.mp3",
       "title": "Metallic Madness Act 2 (Sonic Mania)"
     },
-    "heightScale": 1.028
+    "heightScale": 1.028,
+    "feetLine": 0.966
   },
   {
     "id": "A13",
@@ -505,7 +517,8 @@
       "file": "bgm_meg.mp3",
       "title": "Rina's theme (LL! SIFAS)"
     },
-    "heightScale": 0.989
+    "heightScale": 0.989,
+    "feetLine": 0.965
   },
   {
     "id": "B1",
@@ -544,7 +557,8 @@
       "file": "bgm_mea.mp3",
       "title": "Maki's theme (LL! SIFAS)"
     },
-    "heightScale": 1.036
+    "heightScale": 1.036,
+    "feetLine": 0.99
   },
   {
     "id": "B2",
@@ -581,7 +595,8 @@
       "file": "bgm_han.mp3",
       "title": "Starship Mario 2 (Super Mario Galaxy 2)"
     },
-    "heightScale": 1.092
+    "heightScale": 1.092,
+    "feetLine": 0.994
   },
   {
     "id": "B3",
@@ -619,7 +634,8 @@
       "file": "bgm_sat.mp3",
       "title": "SA2 in the groove (Sonic Adventure 2)"
     },
-    "heightScale": 1.132
+    "heightScale": 1.132,
+    "feetLine": 0.984
   },
   {
     "id": "B4",
@@ -658,7 +674,8 @@
       "file": "bgm_mic.mp3",
       "title": "Ruby's theme (LL! SIFAS)"
     },
-    "heightScale": 1.021
+    "heightScale": 1.021,
+    "feetLine": 0.993
   },
   {
     "id": "B5",
@@ -697,7 +714,8 @@
       "file": "bgm_mat.mp3",
       "title": "The Doom (Shadow The Hedgehog)"
     },
-    "heightScale": 1.167
+    "heightScale": 1.167,
+    "feetLine": 0.979
   },
   {
     "id": "B6",
@@ -736,7 +754,8 @@
       "file": "bgm_kai.mp3",
       "title": "Sweet Sweet Canyon (Mario Kart 8)"
     },
-    "heightScale": 1.092
+    "heightScale": 1.092,
+    "feetLine": 0.989
   },
   {
     "id": "B7",
@@ -775,7 +794,8 @@
       "file": "bgm_min.mp3",
       "title": "Hanamaru's theme (LL! SIFAS)"
     },
-    "heightScale": 1.054
+    "heightScale": 1.054,
+    "feetLine": 0.975
   },
   {
     "id": "B8",
@@ -821,7 +841,8 @@
       "file": "bgm_rka.mp3",
       "title": "Tabloid Jargon (Sonic Mania)"
     },
-    "heightScale": 1.071
+    "heightScale": 1.071,
+    "feetLine": 0.989
   },
   {
     "id": "B10",
@@ -867,7 +888,8 @@
       "file": "bgm_mei.mp3",
       "title": "Toad Harbor (Mario Kart 8)"
     },
-    "heightScale": 1.04
+    "heightScale": 1.04,
+    "feetLine": 0.969
   },
   {
     "id": "B13",
@@ -903,7 +925,8 @@
       "file": "bgm_aik.mp3",
       "title": "Sunshine Airport (Mario Kart 8)"
     },
-    "heightScale": 1.036
+    "heightScale": 1.036,
+    "feetLine": 0.983
   },
   {
     "id": "B12",
@@ -941,7 +964,8 @@
       "file": "bgm_aki.mp3",
       "title": "Storm Fukuroul (Rockman X4)"
     },
-    "heightScale": 1.12
+    "heightScale": 1.12,
+    "feetLine": 0.999
   },
   {
     "id": "B14",
@@ -979,7 +1003,8 @@
       "file": "bgm_mir.mp3",
       "title": "Aquarium Park Act 2 (Sonic Colors)"
     },
-    "heightScale": 1.021
+    "heightScale": 1.021,
+    "feetLine": 0.981
   },
   {
     "id": "B15",
@@ -1017,7 +1042,8 @@
       "file": "bgm_len.mp3",
       "title": "Cool Edge - Night (Sonic Unleashed)"
     },
-    "heightScale": 1.128
+    "heightScale": 1.128,
+    "feetLine": 0.992
   },
   {
     "id": "C1",
