@@ -38,7 +38,20 @@
     },
     "isDefault": true,
     "heightScale": 1.0,
-    "feetLine": 0.982
+    "feetLine": 0.982,
+    "nameGradient": [
+      "#ff6b63",
+      "#ff9a8f",
+      "#58d6d0"
+    ],
+    "nameAliases": [
+      "Fumio",
+      "Fumio Hasashi",
+      "Hasashi",
+      "Fum-Fum",
+      "Mio"
+    ],
+    "pronoun": "he"
   },
   {
     "id": "A2",
@@ -79,7 +92,18 @@
       "title": "Tropical Resort Act 2 (Sonic Colors)"
     },
     "heightScale": 1.0,
-    "feetLine": 0.967
+    "feetLine": 0.967,
+    "nameGradient": [
+      "#d76568",
+      "#de7367",
+      "#f4a575"
+    ],
+    "nameAliases": [
+      "Alicia",
+      "Alicia Hasashi",
+      "Ali"
+    ],
+    "pronoun": "she"
   },
   {
     "id": "A3",
@@ -119,7 +143,19 @@
       "title": "Blizzard Valley (Sonic Racing Crossworlds)"
     },
     "heightScale": 1.047,
-    "feetLine": 0.981
+    "feetLine": 0.981,
+    "nameGradient": [
+      "#9a7be8",
+      "#8fd8f2",
+      "#e655d9"
+    ],
+    "nameAliases": [
+      "Vyse",
+      "Vyse Liang",
+      "Liang",
+      "Vu~ise"
+    ],
+    "pronoun": "he"
   },
   {
     "id": "A4",
@@ -157,7 +193,16 @@
       "title": "Cyber Kujacker (Rockman X4)"
     },
     "heightScale": 1.004,
-    "feetLine": 0.987
+    "feetLine": 0.987,
+    "nameGradient": [
+      "#f4f0e0",
+      "#f2dc4b"
+    ],
+    "nameAliases": [
+      "Riku.EXE",
+      "Riku.EXE Shindou",
+      "Riku"
+    ]
   },
   {
     "id": "A5",
@@ -198,7 +243,18 @@
     },
     "franchiseLogo": "nijigasaki_logo.svg",
     "heightScale": 0.975,
-    "feetLine": 0.989
+    "feetLine": 0.989,
+    "nameGradient": [
+      "#b9f59a",
+      "#6ee04a",
+      "#7fe0d4"
+    ],
+    "nameAliases": [
+      "Emma",
+      "Emma Verde",
+      "Verde"
+    ],
+    "pronoun": "she"
   },
   {
     "id": "A6",
@@ -238,7 +294,15 @@
     },
     "franchiseLogo": "nijigasaki_logo.svg",
     "heightScale": 1.004,
-    "feetLine": 0.99
+    "feetLine": 0.99,
+    "nameGradient": [
+      "#9b7cf0",
+      "#58b4f2"
+    ],
+    "nameAliases": [
+      "Karin",
+      "Karin Asaka"
+    ]
   },
   {
     "id": "A7",
@@ -278,7 +342,18 @@
       "title": "Sakura's theme (SF Alpha 2)"
     },
     "heightScale": 1.0,
-    "feetLine": 0.98
+    "feetLine": 0.98,
+    "nameGradient": [
+      "#ff6fe0",
+      "#ffc0f2",
+      "#ff4fd0"
+    ],
+    "nameAliases": [
+      "Fumiko",
+      "Fumiko Sakura",
+      "Sakura"
+    ],
+    "pronoun": "she"
   },
   {
     "id": "A8",
@@ -320,7 +395,20 @@
     },
     "franchiseLogo": "nijigasaki_logo.svg",
     "heightScale": 0.958,
-    "feetLine": 0.992
+    "feetLine": 0.992,
+    "nameGradient": [
+      "#ff4a4a",
+      "#ff7a70",
+      "#4da3ff"
+    ],
+    "nameAliases": [
+      "Setsuna",
+      "Setsuna Yuki",
+      "Nana",
+      "Nana Nakagawa",
+      "Nakagawa"
+    ],
+    "pronoun": "she"
   },
   {
     "id": "A9",
@@ -361,7 +449,20 @@
     },
     "franchiseLogo": "nijigasaki_logo.svg",
     "heightScale": 1.011,
-    "feetLine": 0.985
+    "feetLine": 0.985,
+    "nameGradient": [
+      "#4fc4a0",
+      "#7fdcc0",
+      "#dfe9e7"
+    ],
+    "nameAliases": [
+      "Shioriko",
+      "Shioriko Mifune",
+      "Mifune",
+      "Shio",
+      "Miko"
+    ],
+    "pronoun": "she"
   },
   {
     "id": "A10",
@@ -401,7 +502,16 @@
     },
     "birthdateLabel": "Fostered Date",
     "heightScale": 1.028,
-    "feetLine": 0.977
+    "feetLine": 0.977,
+    "nameGradient": [
+      "#d67065",
+      "#d46b68",
+      "#fd3ea1"
+    ],
+    "nameAliases": [
+      "Rikki",
+      "Rikki Yinqi"
+    ]
   },
   {
     "id": "A11",
@@ -441,7 +551,15 @@
       "title": "Sand Hill (Sonic Adventure)"
     },
     "heightScale": 1.043,
-    "feetLine": 0.984
+    "feetLine": 0.984,
+    "nameGradient": [
+      "#d39b68",
+      "#ebab50"
+    ],
+    "nameAliases": [
+      "George",
+      "George Fujima"
+    ]
   },
   {
     "id": "A12",
@@ -480,7 +598,18 @@
       "title": "Metallic Madness Act 2 (Sonic Mania)"
     },
     "heightScale": 1.028,
-    "feetLine": 0.966
+    "feetLine": 0.966,
+    "nameGradient": [
+      "#e5707c",
+      "#e7d2ae",
+      "#c94c93"
+    ],
+    "nameAliases": [
+      "Makoto",
+      "Makoto Williams",
+      "Williams"
+    ],
+    "pronoun": "he"
   },
   {
     "id": "A13",
@@ -518,7 +647,15 @@
       "title": "Rina's theme (LL! SIFAS)"
     },
     "heightScale": 0.989,
-    "feetLine": 0.965
+    "feetLine": 0.965,
+    "nameGradient": [
+      "#f7c086",
+      "#efa24c"
+    ],
+    "nameAliases": [
+      "Megumi",
+      "Megumi Williams"
+    ]
   },
   {
     "id": "B1",
@@ -558,7 +695,16 @@
       "title": "Maki's theme (LL! SIFAS)"
     },
     "heightScale": 1.036,
-    "feetLine": 0.99
+    "feetLine": 0.99,
+    "nameGradient": [
+      "#4af1cc",
+      "#4eede0",
+      "#5cdfa5"
+    ],
+    "nameAliases": [
+      "Meari",
+      "Meari Watanabe"
+    ]
   },
   {
     "id": "B2",
@@ -596,7 +742,15 @@
       "title": "Starship Mario 2 (Super Mario Galaxy 2)"
     },
     "heightScale": 1.092,
-    "feetLine": 0.994
+    "feetLine": 0.994,
+    "nameGradient": [
+      "#fa6441",
+      "#e7547f",
+      "#f44768"
+    ],
+    "nameAliases": [
+      "Hanzo"
+    ]
   },
   {
     "id": "B3",
@@ -635,7 +789,16 @@
       "title": "SA2 in the groove (Sonic Adventure 2)"
     },
     "heightScale": 1.132,
-    "feetLine": 0.984
+    "feetLine": 0.984,
+    "nameGradient": [
+      "#df6d5c",
+      "#efad4d",
+      "#e15b5e"
+    ],
+    "nameAliases": [
+      "Satoshi",
+      "Satoshi Hasashi"
+    ]
   },
   {
     "id": "B4",
@@ -675,7 +838,15 @@
       "title": "Ruby's theme (LL! SIFAS)"
     },
     "heightScale": 1.021,
-    "feetLine": 0.993
+    "feetLine": 0.993,
+    "nameGradient": [
+      "#ef80a1",
+      "#eea9a1"
+    ],
+    "nameAliases": [
+      "Michan",
+      "Michan Yuukashi"
+    ]
   },
   {
     "id": "B5",
@@ -715,7 +886,18 @@
       "title": "The Doom (Shadow The Hedgehog)"
     },
     "heightScale": 1.167,
-    "feetLine": 0.979
+    "feetLine": 0.979,
+    "nameGradient": [
+      "#f0525f",
+      "#c85a7a",
+      "#7fa8c8"
+    ],
+    "nameAliases": [
+      "Matsuda",
+      "Matsuda Yuukashi",
+      "Mats"
+    ],
+    "pronoun": "he"
   },
   {
     "id": "B6",
@@ -755,7 +937,16 @@
       "title": "Sweet Sweet Canyon (Mario Kart 8)"
     },
     "heightScale": 1.092,
-    "feetLine": 0.989
+    "feetLine": 0.989,
+    "nameGradient": [
+      "#8de8fe",
+      "#43d3f8",
+      "#3fd6fc"
+    ],
+    "nameAliases": [
+      "Kaito",
+      "Kaito Haruto"
+    ]
   },
   {
     "id": "B7",
@@ -795,7 +986,16 @@
       "title": "Hanamaru's theme (LL! SIFAS)"
     },
     "heightScale": 1.054,
-    "feetLine": 0.975
+    "feetLine": 0.975,
+    "nameGradient": [
+      "#f8d77b",
+      "#f7c745",
+      "#d37d68"
+    ],
+    "nameAliases": [
+      "Minna",
+      "Minna Shindou"
+    ]
   },
   {
     "id": "B8",
@@ -842,7 +1042,16 @@
       "title": "Tabloid Jargon (Sonic Mania)"
     },
     "heightScale": 1.071,
-    "feetLine": 0.989
+    "feetLine": 0.989,
+    "nameGradient": [
+      "#c3a3e7",
+      "#e853c6",
+      "#b352e9"
+    ],
+    "nameAliases": [
+      "Rikka",
+      "Rikka Asaka"
+    ]
   },
   {
     "id": "B10",
@@ -889,7 +1098,15 @@
       "title": "Toad Harbor (Mario Kart 8)"
     },
     "heightScale": 1.04,
-    "feetLine": 0.969
+    "feetLine": 0.969,
+    "nameGradient": [
+      "#539be8",
+      "#638ed9"
+    ],
+    "nameAliases": [
+      "Meili",
+      "Meili Yinqi"
+    ]
   },
   {
     "id": "B13",
@@ -926,7 +1143,16 @@
       "title": "Sunshine Airport (Mario Kart 8)"
     },
     "heightScale": 1.036,
-    "feetLine": 0.983
+    "feetLine": 0.983,
+    "nameGradient": [
+      "#f2c049",
+      "#edd95b",
+      "#f4a347"
+    ],
+    "nameAliases": [
+      "Aika",
+      "Aika Yuukashi"
+    ]
   },
   {
     "id": "B12",
@@ -965,7 +1191,15 @@
       "title": "Storm Fukuroul (Rockman X4)"
     },
     "heightScale": 1.12,
-    "feetLine": 0.999
+    "feetLine": 0.999,
+    "nameGradient": [
+      "#d39d68",
+      "#d39d68",
+      "#d89d64"
+    ],
+    "nameAliases": [
+      "Akira"
+    ]
   },
   {
     "id": "B14",
@@ -1004,7 +1238,16 @@
       "title": "Aquarium Park Act 2 (Sonic Colors)"
     },
     "heightScale": 1.021,
-    "feetLine": 0.981
+    "feetLine": 0.981,
+    "nameGradient": [
+      "#d368bc",
+      "#be5cdf",
+      "#d368cb"
+    ],
+    "nameAliases": [
+      "Mira",
+      "Mira Liang"
+    ]
   },
   {
     "id": "B15",
@@ -1043,7 +1286,15 @@
       "title": "Cool Edge - Night (Sonic Unleashed)"
     },
     "heightScale": 1.128,
-    "feetLine": 0.992
+    "feetLine": 0.992,
+    "nameGradient": [
+      "#559de6",
+      "#4c8bef"
+    ],
+    "nameAliases": [
+      "Leng",
+      "Leng Tian"
+    ]
   },
   {
     "id": "C1",
