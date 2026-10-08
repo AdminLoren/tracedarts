@@ -20,8 +20,10 @@
 
       <nav id="tab-nav">
         <button class="tab-btn active" data-tab="home">Home</button>
-        <button class="tab-btn" data-tab="lore">Lore</button>
+        <!-- Note: data-tab="lore" is the CHARACTERS tab (lore.js). data-tab="stories" is the new LORE tab (stories.js). -->
+        <button class="tab-btn" data-tab="lore">Characters</button>
         <button class="tab-btn" data-tab="relationship">Relationship Chart</button>
+        <button class="tab-btn" data-tab="stories">Lore</button>
       </nav>
 
       <div class="sound-controls">
@@ -102,10 +104,13 @@
 
       <div class="home-section home-cta-section">
         <button class="home-cta-btn" data-goto-tab="lore">
-          Want to know the characters? Check out the Lore tab!
+          Want to know the characters? Check out the Characters tab!
         </button>
         <button class="home-cta-btn" data-goto-tab="relationship">
           Curious how everyone connects? See the Relationship Charts!
+        </button>
+        <button class="home-cta-btn" data-goto-tab="stories">
+          Want to read the stories? Open the Lore tab!
         </button>
       </div>
     </section>
@@ -266,6 +271,55 @@
 
     </section>
 
+    <!-- ===================== LORE TAB (stories / novels) ===================== -->
+    <section id="tab-stories" class="tab-panel">
+
+      <!-- Background video: replace assets/video/lore_bg.mp4 with your own stock video -->
+      <video class="stories-bg" autoplay loop muted playsinline aria-hidden="true">
+        <source src="assets/video/lore_bg.mp4" type="video/mp4" />
+      </video>
+      <div class="stories-bg-overlay"></div>
+
+      <!-- Screen 1: the library (all stories) -->
+      <div id="stories-library" class="stories-screen">
+        <header class="stories-hero">
+          <h1 class="stories-hero-title">Lore</h1>
+          <p class="stories-hero-sub">Short stories and novels set in the world of C.O.T.A.</p>
+        </header>
+        <div id="stories-grid" class="stories-grid"></div>
+      </div>
+
+      <!-- Screen 2: the reader -->
+      <div id="stories-reader" class="stories-screen" hidden>
+        <div class="stories-toolbar">
+          <div class="stories-toolbar-inner">
+            <button id="stories-back-btn" class="stories-btn" type="button">&larr; Library</button>
+            <span id="stories-reader-title" class="stories-reader-title"></span>
+            <select id="stories-chapter-select" class="stories-select" aria-label="Choose a chapter"></select>
+            <div class="stories-size-btns" aria-label="Text size">
+              <button id="stories-smaller" class="stories-btn" type="button" aria-label="Smaller text">A&minus;</button>
+              <button id="stories-bigger" class="stories-btn" type="button" aria-label="Bigger text">A+</button>
+            </div>
+          </div>
+          <div class="stories-progress"><span id="stories-progress-fill"></span></div>
+        </div>
+
+        <article id="stories-page" class="stories-page">
+          <p id="stories-chapter-kicker" class="stories-chapter-kicker"></p>
+          <h2 id="stories-chapter-title" class="stories-chapter-title"></h2>
+          <div id="stories-text" class="stories-text"></div>
+
+          <p id="stories-end-note" class="stories-end-note" hidden>&mdash; End of the available chapters &mdash;</p>
+
+          <div class="stories-bottom-nav">
+            <button class="stories-btn stories-prev" type="button">&larr; Previous chapter</button>
+            <button class="stories-btn stories-next" type="button">Next chapter &rarr;</button>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
   </main>
 
   <!-- Footer: shows at the bottom of every tab -->
@@ -293,6 +347,7 @@
   <script src="js/home.js"></script>
   <script src="js/lore.js"></script>
   <script src="js/relationship.js"></script>
+  <script src="js/stories.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
