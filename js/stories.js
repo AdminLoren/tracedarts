@@ -1,12 +1,17 @@
 // =====================================================================
 //  LORE TAB (the stories / novels)
 //  Note: the tab you see as "Characters" is lore.js. This file is the
-//  new "Lore" tab, so its internal name is "stories".
+//  "Lore" tab, so its internal name is "stories".
 //
-//  How it works:
-//   1. data/stories.json lists the stories and their chapters.
-//   2. Each chapter is a plain .txt file (see data/stories/README.txt).
-//   3. The tab has two screens: the LIBRARY (all stories) and the READER.
+//  The tab has three screens:
+//   1. LIBRARY  - all the stories (video background)
+//   2. BOOK     - one story's front page: introduction, spoiler-free
+//                 synopsis and the "Start Reading" button
+//   3. READER   - the chapters, then the Extras page. Every page has its
+//                 own still background picture (the "scene").
+//
+//  Everything comes from data/stories.json and the chapter .txt files.
+//  See data/stories/README.txt for how to add chapters, stories and art.
 // =====================================================================
 
 window.COTA = window.COTA || {};
@@ -14,12 +19,9 @@ window.COTA = window.COTA || {};
 COTA.stories = (function () {
   let stories = [];            // every story from stories.json
   let currentStory = null;     // the story being read
-  let chapterIndex = 0;        // which chapter is open (0 = first)
+  let pages = [];              // the chapters + the extras page of that story
+  let pageIndex = 0;           // which page is open (0 = chapter 1)
   const chapterCache = {};     // chapter texts we already downloaded
-
-  // Reading text sizes (in pixels). The user picks with the A- / A+ buttons.
-  const TEXT_SIZES = [16, 18, 20, 22, 25];
-  let sizeIndex = 2;           // start at 20px
 
   // ---------- small helpers ----------
 
@@ -30,8 +32,9 @@ COTA.stories = (function () {
     if (text) node.textContent = text;
     return node;
   }
+  function byId(id) { return document.getElementById(id); }
 
-  // The browser can remember things (last chapter read, text size).
+  // The browser can remember where a reader stopped.
   // If it is blocked for some reason, we just ignore the error.
   function remember(key, value) {
     try { localStorage.setItem("cota-" + key, JSON.stringify(value)); } catch (e) {}
@@ -41,6 +44,12 @@ COTA.stories = (function () {
       const saved = localStorage.getItem("cota-" + key);
       return saved === null ? fallback : JSON.parse(saved);
     } catch (e) { return fallback; }
+  }
+
+  // Puts each text in the list into its own paragraph
+  function fillParagraphs(container, list) {
+    container.innerHTML = "";
+    (list || []).forEach((text) => container.appendChild(el("p", "", text)));
   }
 
   // ---------- loading ----------
@@ -69,18 +78,52 @@ COTA.stories = (function () {
     }
   }
 
+  // ---------- backgrounds ----------
+
+  // scene = { image: "path.jpg", colors: ["#111", "#333"] }
+  // If the picture file is missing, the two colors make a gradient instead,
+  // so every page still looks different.
+  function setScene(scene) {
+    const tab = byId("tab-stories");
+    const layer = byId("stories-scene");
+    const video = document.querySelector("#tab-stories .stories-bg");
+
+    // No scene = the library, which uses the video
+    if (!scene) {
+      tab.classList.remove("show-scene");
+      if (video && video.play) video.play().catch(() => {});
+      return;
+    }
+
+    tab.classList.add("show-scene");
+    if (video && video.pause) video.pause(); // save the computer some work
+
+    const colors = scene.colors || ["#0b0b12", "#1d1d2b"];
+    const gradient = `linear-gradient(160deg, ${colors[0]}, ${colors[1]})`;
+    const picture = scene.image ? `url('${scene.image}'), ` : "";
+
+    // Fade out, swap the picture, fade back in
+    layer.classList.add("fading");
+    setTimeout(() => {
+      layer.style.backgroundImage = picture + gradient;
+      layer.classList.remove("fading");
+    }, 200);
+  }
+
   // ---------- screens ----------
 
   function showScreen(name) {
-    document.getElementById("stories-library").hidden = name !== "library";
-    document.getElementById("stories-reader").hidden = name !== "reader";
+    byId("stories-library").hidden = name !== "library";
+    byId("stories-book").hidden = name !== "book";
+    byId("stories-reader").hidden = name !== "reader";
     window.scrollTo(0, 0);
+    if (name === "library") setScene(null);
   }
 
-  // ---------- library (list of stories) ----------
+  // ---------- 1. library ----------
 
   function renderLibrary() {
-    const grid = document.getElementById("stories-grid");
+    const grid = byId("stories-grid");
     grid.innerHTML = "";
 
     stories.forEach((story) => {
@@ -98,7 +141,7 @@ COTA.stories = (function () {
 
       const info = el("div", "story-info");
       info.appendChild(el("h3", "story-title", story.title));
-      if (story.tagline) info.appendChild(el("p", "story-tagline", story.tagline));
+      if (story.series) info.appendChild(el("p", "story-tagline", story.series));
       info.appendChild(el("p", "story-summary", story.summary));
 
       const meta = el("p", "story-meta");
@@ -110,7 +153,7 @@ COTA.stories = (function () {
 
       card.addEventListener("click", () => {
         COTA.audio.playSfx("ui_click.mp3");
-        openStory(story);
+        openBook(story);
       });
       grid.appendChild(card);
     });
@@ -121,54 +164,123 @@ COTA.stories = (function () {
     grid.appendChild(soon);
   }
 
-  // ---------- reader ----------
+  // ---------- 2. book (introduction + synopsis) ----------
 
-  function openStory(story) {
+  function openBook(story) {
     currentStory = story;
+    pages = buildPages(story);
 
-    // Reopen the chapter the reader stopped at last time
-    const saved = recall("story-progress", {});
-    chapterIndex = Math.min(saved[story.id] || 0, story.chapters.length - 1);
+    byId("book-series").textContent = story.series || "";
+    byId("book-title").textContent = story.title;
+    byId("book-tagline").textContent = story.tagline || "";
 
-    document.getElementById("stories-reader-title").textContent = story.title;
+    const count = story.chapters.length;
+    const bits = [count + (count === 1 ? " chapter" : " chapters")];
+    if (story.extras) bits.push("extras page");
+    if (story.readingTime) bits.push(story.readingTime);
+    byId("book-meta").textContent = bits.join("  \u00B7  ");
+
+    fillParagraphs(byId("book-intro"), story.intro);
+    fillParagraphs(byId("book-synopsis"), story.synopsis);
+    byId("book-notes").textContent = story.contentNotes || "";
+    byId("book-notes").hidden = !story.contentNotes;
+
+    // If the reader already started this story, offer a "Continue" button
+    const saved = recall("story-progress", {})[story.id] || 0;
+    const cont = byId("stories-continue-btn");
+    cont.hidden = saved <= 0 || saved >= pages.length;
+    if (!cont.hidden) {
+      cont.textContent = "Continue: " + pageLabel(saved);
+      cont.onclick = () => startReading(saved);
+    }
+
+    showScreen("book");
+    setScene(story.introScene);
+  }
+
+  // ---------- 3. reader ----------
+
+  // The pages of a story = every chapter, then the extras page (if there is one)
+  function buildPages(story) {
+    const list = story.chapters.map((chapter, i) => ({
+      type: "chapter",
+      number: i + 1,
+      title: chapter.title,
+      file: chapter.file,
+      scene: chapter.scene,
+    }));
+    if (story.extras) {
+      list.push({
+        type: "extras",
+        title: story.extras.title || "Extras",
+        scene: story.extras.scene,
+        extras: story.extras,
+      });
+    }
+    return list;
+  }
+
+  function pageLabel(index) {
+    const page = pages[index];
+    return page.type === "chapter" ? "Chapter " + page.number : page.title;
+  }
+
+  function startReading(index) {
+    byId("stories-reader-title").textContent = currentStory.title;
 
     // Fill the chapter dropdown
-    const select = document.getElementById("stories-chapter-select");
+    const select = byId("stories-chapter-select");
     select.innerHTML = "";
-    story.chapters.forEach((chapter, i) => {
+    pages.forEach((page, i) => {
       const option = document.createElement("option");
       option.value = i;
-      option.textContent = (i + 1) + ". " + chapter.title;
+      option.textContent = page.type === "chapter" ? page.number + ". " + page.title : page.title;
       select.appendChild(option);
     });
 
     showScreen("reader");
-    showChapter(chapterIndex);
+    showPage(index);
   }
 
-  async function showChapter(index) {
-    const chapter = currentStory.chapters[index];
-    chapterIndex = index;
+  async function showPage(index) {
+    const page = pages[index];
+    pageIndex = index;
 
     // Remember where the reader is up to
     const saved = recall("story-progress", {});
     saved[currentStory.id] = index;
     remember("story-progress", saved);
 
-    document.getElementById("stories-chapter-select").value = index;
-    document.getElementById("stories-chapter-kicker").textContent =
-      "Chapter " + (index + 1) + " of " + currentStory.chapters.length;
-    document.getElementById("stories-chapter-title").textContent = chapter.title;
+    byId("stories-chapter-select").value = index;
+    setScene(page.scene);
 
-    const text = await loadChapterText(chapter);
-    renderText(document.getElementById("stories-text"), text);
+    const textBox = byId("stories-text");
+    const extrasBox = byId("stories-extras");
+    const isExtras = page.type === "extras";
 
-    // Previous / Next buttons (both at the top bar and at the bottom of the page)
+    byId("stories-chapter-title").textContent = page.title;
+    textBox.hidden = isExtras;
+    extrasBox.hidden = !isExtras;
+
+    if (isExtras) {
+      byId("stories-chapter-kicker").textContent = "Bonus";
+      renderExtras(extrasBox, page.extras);
+    } else {
+      byId("stories-chapter-kicker").textContent = "Chapter " + page.number + " of " + currentStory.chapters.length;
+      const text = await loadChapterText(page);
+      renderText(textBox, text);
+    }
+
+    // Previous / Next buttons (they appear at the bottom of the page)
     const atStart = index === 0;
-    const atEnd = index === currentStory.chapters.length - 1;
+    const atEnd = index === pages.length - 1;
+    const nextIsExtras = !atEnd && pages[index + 1].type === "extras";
     document.querySelectorAll(".stories-prev").forEach((b) => (b.disabled = atStart));
-    document.querySelectorAll(".stories-next").forEach((b) => (b.disabled = atEnd));
-    document.getElementById("stories-end-note").hidden = !atEnd;
+    document.querySelectorAll(".stories-next").forEach((b) => {
+      b.disabled = atEnd;
+      b.textContent = nextIsExtras ? "Extras \u2192" : "Next chapter \u2192";
+    });
+    byId("stories-end-note").hidden = !atEnd;
 
     window.scrollTo(0, 0);
     updateProgress();
@@ -191,31 +303,79 @@ COTA.stories = (function () {
     });
   }
 
-  function changeChapter(step) {
-    const next = chapterIndex + step;
-    if (!currentStory || next < 0 || next >= currentStory.chapters.length) return;
+  function changePage(step) {
+    const next = pageIndex + step;
+    if (!currentStory || next < 0 || next >= pages.length) return;
     COTA.audio.playSfx("ui_click.mp3");
-    showChapter(next);
+    showPage(next);
   }
 
-  // ---------- text size ----------
+  // ---------- the extras page ----------
 
-  function applyTextSize() {
-    document.getElementById("stories-page").style.setProperty("--story-font-size", TEXT_SIZES[sizeIndex] + "px");
-    document.getElementById("stories-smaller").disabled = sizeIndex === 0;
-    document.getElementById("stories-bigger").disabled = sizeIndex === TEXT_SIZES.length - 1;
-  }
+  function renderExtras(container, extras) {
+    container.innerHTML = "";
 
-  function changeTextSize(step) {
-    sizeIndex = Math.max(0, Math.min(TEXT_SIZES.length - 1, sizeIndex + step));
-    remember("story-text-size", sizeIndex);
-    applyTextSize();
+    // --- Cast ---
+    container.appendChild(el("h3", "stories-extras-heading", "Cast"));
+    const castGrid = el("div", "cast-grid");
+    (extras.cast || []).forEach((member) => {
+      const card = el("figure", "cast-card");
+      const art = el("div", "cast-art");
+
+      // "art" can be one picture or a list of pictures (for a pair)
+      const images = Array.isArray(member.art) ? member.art : member.art ? [member.art] : [];
+      if (images.length > 1) card.classList.add("cast-card-pair"); // pairs take two columns
+      if (images.length) {
+        images.forEach((src) => {
+          const img = document.createElement("img");
+          img.src = src;
+          img.alt = member.name;
+          img.loading = "lazy";
+          art.appendChild(img);
+        });
+      } else {
+        art.classList.add("cast-art-empty");
+        art.appendChild(el("span", "", "No art :("));
+      }
+      card.appendChild(art);
+      card.appendChild(el("figcaption", "", member.name));
+      castGrid.appendChild(card);
+    });
+    container.appendChild(castGrid);
+
+    // --- Arts that inspired the novel ---
+    container.appendChild(el("h3", "stories-extras-heading", "Arts that inspired the novel"));
+    const gallery = el("div", "inspire-grid");
+    const arts = extras.arts || [];
+    if (!arts.length) {
+      const empty = el("div", "inspire-empty");
+      empty.appendChild(el("span", "", "No art :("));
+      gallery.appendChild(empty);
+    }
+    arts.forEach((art) => {
+      const figure = el("figure", "inspire-card");
+      const link = document.createElement("a");
+      link.href = art.image;
+      link.target = "_blank";          // click a picture to see it full size
+      link.rel = "noopener";
+      const img = document.createElement("img");
+      img.src = art.image;
+      img.alt = art.caption || "Inspiration art";
+      img.loading = "lazy";
+      link.appendChild(img);
+      figure.appendChild(link);
+      if (art.caption) figure.appendChild(el("figcaption", "", art.caption));
+      gallery.appendChild(figure);
+    });
+    container.appendChild(gallery);
+
+    if (extras.credit) container.appendChild(el("p", "stories-credit", extras.credit));
   }
 
   // ---------- reading progress bar ----------
 
   function updateProgress() {
-    const bar = document.getElementById("stories-progress-fill");
+    const bar = byId("stories-progress-fill");
     if (!bar) return;
     const scrollable = document.documentElement.scrollHeight - window.innerHeight;
     const fraction = scrollable > 0 ? window.scrollY / scrollable : 0;
@@ -229,35 +389,39 @@ COTA.stories = (function () {
     if (wired) return;
     wired = true;
 
-    document.getElementById("stories-back-btn").addEventListener("click", () => {
+    byId("stories-book-back").addEventListener("click", () => {
       COTA.audio.playSfx("ui_click.mp3");
       showScreen("library");
     });
-    document.getElementById("stories-chapter-select").addEventListener("change", (e) => {
-      showChapter(Number(e.target.value));
+    byId("stories-back-btn").addEventListener("click", () => {
+      COTA.audio.playSfx("ui_click.mp3");
+      showScreen("library");
     });
-    document.querySelectorAll(".stories-prev").forEach((b) => b.addEventListener("click", () => changeChapter(-1)));
-    document.querySelectorAll(".stories-next").forEach((b) => b.addEventListener("click", () => changeChapter(1)));
-    document.getElementById("stories-smaller").addEventListener("click", () => changeTextSize(-1));
-    document.getElementById("stories-bigger").addEventListener("click", () => changeTextSize(1));
+    byId("stories-start-btn").addEventListener("click", () => {
+      COTA.audio.playSfx("ui_click.mp3");
+      startReading(0);
+    });
+    byId("stories-chapter-select").addEventListener("change", (e) => {
+      showPage(Number(e.target.value));
+    });
+    document.querySelectorAll(".stories-prev").forEach((b) => b.addEventListener("click", () => changePage(-1)));
+    document.querySelectorAll(".stories-next").forEach((b) => b.addEventListener("click", () => changePage(1)));
 
     window.addEventListener("scroll", updateProgress, { passive: true });
 
-    // Keyboard: left / right arrow keys change chapter while reading
+    // Keyboard: left / right arrow keys change page while reading
     document.addEventListener("keydown", (e) => {
-      const reader = document.getElementById("stories-reader");
-      if (!reader || reader.hidden || !document.getElementById("tab-stories").classList.contains("active")) return;
+      const reader = byId("stories-reader");
+      if (!reader || reader.hidden || !byId("tab-stories").classList.contains("active")) return;
       if (e.target.tagName === "SELECT") return;
-      if (e.key === "ArrowLeft") changeChapter(-1);
-      if (e.key === "ArrowRight") changeChapter(1);
+      if (e.key === "ArrowLeft") changePage(-1);
+      if (e.key === "ArrowRight") changePage(1);
     });
   }
 
   // Called by app.js every time the Lore tab is opened
   async function enter() {
     wireButtons();
-    sizeIndex = recall("story-text-size", 2);
-    applyTextSize();
     await loadStories();
     renderLibrary();
     showScreen("library");
