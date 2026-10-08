@@ -74,7 +74,7 @@ COTA.stories = (function () {
       chapterCache[chapter.file] = text;
       return text;
     } catch (err) {
-      return "This chapter could not be loaded. Check that the file exists:\n\n" + chapter.file;
+      return "This chapter could not be loaded. Make sure this file exists in your project folder:\n\n" + chapter.file;
     }
   }
 
@@ -173,14 +173,17 @@ COTA.stories = (function () {
     byId("book-series").textContent = story.series || "";
     byId("book-title").textContent = story.title;
     byId("book-tagline").textContent = story.tagline || "";
+    // Each name stays in one piece, so a long line breaks between names, not inside one
+    const pairing = byId("book-pairing");
+    pairing.innerHTML = "";
+    (story.pairing || "").split("\u00D7").forEach((name, i) => {
+      if (i > 0) pairing.appendChild(document.createTextNode(" \u00D7 "));
+      pairing.appendChild(el("span", "pairing-name", name.trim()));
+    });
 
     const count = story.chapters.length;
-    const bits = [count + (count === 1 ? " chapter" : " chapters")];
-    if (story.extras) bits.push("extras page");
-    if (story.readingTime) bits.push(story.readingTime);
-    byId("book-meta").textContent = bits.join("  \u00B7  ");
+    byId("book-meta").textContent = count + (count === 1 ? " chapter" : " chapters");
 
-    fillParagraphs(byId("book-intro"), story.intro);
     fillParagraphs(byId("book-synopsis"), story.synopsis);
     byId("book-notes").textContent = story.contentNotes || "";
     byId("book-notes").hidden = !story.contentNotes;
