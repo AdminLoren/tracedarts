@@ -25,6 +25,10 @@ COTA.app = (function () {
       if (tabName === "lore") {
         resetView ? COTA.lore.enter() : COTA.lore.init();
       }
+      if (tabName === "stories") {
+        COTA.audio.stopMusic(); // quiet while reading
+        COTA.stories.enter();
+      }
       if (tabName === "relationship") {
         resetView ? COTA.relationship.enter() : COTA.relationship.init();
         COTA.audio.playMusic("relationship_bgm.mp3", "Menu (Mario Kart: Double Dash!!)");
