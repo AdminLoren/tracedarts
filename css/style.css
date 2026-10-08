@@ -1331,14 +1331,24 @@ img { max-width: 100%; display: block; }
 }
 .stories-book-card { margin-top: 16px; }
 .stories-book-tagline {
-  margin: -20px 0 8px;
+  margin: -22px 0 10px;
   text-align: center;
-  font-size: 15px;
-  line-height: 1.7;
+  font-size: 16px;
+  line-height: 1.6;
   color: var(--text-dim);
 }
+.stories-book-pairing {
+  margin: 0 0 18px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 19px;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: var(--text-main);
+}
+.pairing-name { white-space: nowrap; }
 .stories-book-meta {
-  margin: 0 0 36px;
+  margin: 0 0 8px;
   text-align: center;
   font-size: 13px;
   letter-spacing: 1px;
