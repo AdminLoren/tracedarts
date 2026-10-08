@@ -3,15 +3,137 @@
     {
       "id": "between-two-vows",
       "title": "Between Two Vows",
-      "tagline": "A story from the world of C.O.T.A.",
-      "status": "Placeholder",
-      "summary": "This is a placeholder summary. Replace it with a short description of your story so readers know what to expect before they start reading.",
+      "series": "The Happy Ever Party: Children of the Authors",
+      "tagline": "An origin story of my most popular love triangle: Makoto Williams × Emma Verde × Vyse Liang",
+      "status": "Origin story",
+      "summary": "An origin story of a love triangle at Nijigasaki High School: Makoto Williams × Emma Verde × Vyse Liang.",
       "cover": "",
+      "readingTime": "About 1 hour",
+      "intro": [
+        "Welcome to Between Two Vows, the first story in the Lore tab. It is an origin story set in The Happy Ever Party: Children of the Authors, and it tells the beginning of my most popular love triangle: Makoto Williams × Emma Verde × Vyse Liang.",
+        "The story takes place at Nijigasaki High School over one long day, across five chapters. You will meet a few familiar faces from the Characters tab along the way, but you do not need to know the rest of the universe to follow it."
+      ],
+      "synopsis": [
+        "Emma Verde is the sweetest, most helpful girl at Nijigasaki High School, which is exactly why nobody expects trouble to find her. But behind the closed doors of the Student Union Office, three Council members are holding a secret meeting about a classmate they can neither afford to lose nor afford to ignore, and Emma's childhood friend Vyse Liang is about to stumble into the middle of it.",
+        "Over one long day, secrets are traded, promises are made, and three people are pulled together and pulled apart. Between Two Vows is the origin of a love triangle: a story about loyalty, protection, and the promises we make to the people who matter most."
+      ],
+      "contentNotes": "Content notes: this story deals with bullying and controlling behavior, and it includes some strong language.",
+      "introScene": {
+        "image": "assets/images/stories/between-two-vows/bg_intro.jpg",
+        "colors": [
+          "#1b2140",
+          "#4a2b5e"
+        ],
+        "setting": "Nijigasaki High School, dusk"
+      },
       "chapters": [
-        { "title": "Placeholder Chapter One",   "file": "data/stories/between-two-vows/chapter-1.txt" },
-        { "title": "Placeholder Chapter Two",   "file": "data/stories/between-two-vows/chapter-2.txt" },
-        { "title": "Placeholder Chapter Three", "file": "data/stories/between-two-vows/chapter-3.txt" }
-      ]
+        {
+          "title": "On The Case",
+          "file": "data/stories/between-two-vows/chapter-1.txt",
+          "scene": {
+            "image": "assets/images/stories/between-two-vows/bg_chapter1.jpg",
+            "colors": [
+              "#10141d",
+              "#3b2f22"
+            ],
+            "setting": "The Student Union Office, dimly lit"
+          }
+        },
+        {
+          "title": "Speaking Of the Devil",
+          "file": "data/stories/between-two-vows/chapter-2.txt",
+          "scene": {
+            "image": "assets/images/stories/between-two-vows/bg_chapter2.jpg",
+            "colors": [
+              "#1d2a36",
+              "#566872"
+            ],
+            "setting": "The quiet school corridors"
+          }
+        },
+        {
+          "title": "A Soothing Touch",
+          "file": "data/stories/between-two-vows/chapter-3.txt",
+          "scene": {
+            "image": "assets/images/stories/between-two-vows/bg_chapter3.jpg",
+            "colors": [
+              "#17392b",
+              "#8a7a3a"
+            ],
+            "setting": "The school riverbank slope, afternoon"
+          }
+        },
+        {
+          "title": "Cross-Examination",
+          "file": "data/stories/between-two-vows/chapter-4.txt",
+          "scene": {
+            "image": "assets/images/stories/between-two-vows/bg_chapter4.jpg",
+            "colors": [
+              "#2a2f3c",
+              "#a9895a"
+            ],
+            "setting": "The Student Union Office, properly lit"
+          }
+        },
+        {
+          "title": "Her Hands are Tied",
+          "file": "data/stories/between-two-vows/chapter-5.txt",
+          "scene": {
+            "image": "assets/images/stories/between-two-vows/bg_chapter5.jpg",
+            "colors": [
+              "#5a2236",
+              "#d9772b"
+            ],
+            "setting": "The Nijigasaki exit gate and bridge, sunset"
+          }
+        }
+      ],
+      "extras": {
+        "title": "Extras",
+        "scene": {
+          "image": "assets/images/stories/between-two-vows/bg_extras.jpg",
+          "colors": [
+            "#1b1630",
+            "#3c2a4f"
+          ],
+          "setting": "Art gallery / sketchbook"
+        },
+        "cast": [
+          {
+            "name": "Emma Verde and Vyse Liang",
+            "art": [
+              "assets/images/boxart_emm.png",
+              "assets/images/boxart_vys.png"
+            ]
+          },
+          {
+            "name": "Makoto Williams",
+            "art": "assets/images/boxart_mak.png"
+          },
+          {
+            "name": "Shioriko Mifune",
+            "art": "assets/images/boxart_shi.png"
+          },
+          {
+            "name": "Fumiko Sakura",
+            "art": "assets/images/boxart_fko.png"
+          },
+          {
+            "name": "Nana Nakagawa",
+            "art": ""
+          },
+          {
+            "name": "Fumio Hasashi",
+            "art": "assets/images/boxart_fum.png"
+          },
+          {
+            "name": "Matsuda Yuukashi",
+            "art": "assets/images/boxart_mat.png"
+          }
+        ],
+        "arts": [],
+        "credit": "Emma Verde, Shioriko Mifune, and Nana Nakagawa are owned by Bandai, Love Live!!."
+      }
     }
   ]
 }
