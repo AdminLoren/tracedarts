@@ -94,11 +94,12 @@
         },
         "cast": [
           {
-            "name": "Emma Verde and Vyse Liang",
-            "art": [
-              "assets/images/boxart_emm.png",
-              "assets/images/boxart_vys.png"
-            ]
+            "name": "Emma Verde",
+            "art": "assets/images/boxart_emm.png"
+          },
+          {
+            "name": "Vyse Liang",
+            "art": "assets/images/boxart_vys.png"
           },
           {
             "name": "Makoto Williams",
@@ -113,8 +114,8 @@
             "art": "assets/images/boxart_fko.png"
           },
           {
-            "name": "Nana Nakagawa",
-            "art": ""
+            "name": "Nana Nakagawa (Setsuna Yuki)",
+            "art": "assets/images/boxart_set.png"
           },
           {
             "name": "Fumio Hasashi",
