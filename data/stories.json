@@ -1,0 +1,17 @@
+{
+  "stories": [
+    {
+      "id": "between-two-vows",
+      "title": "Between Two Vows",
+      "tagline": "A story from the world of C.O.T.A.",
+      "status": "Placeholder",
+      "summary": "This is a placeholder summary. Replace it with a short description of your story so readers know what to expect before they start reading.",
+      "cover": "",
+      "chapters": [
+        { "title": "Placeholder Chapter One",   "file": "data/stories/between-two-vows/chapter-1.txt" },
+        { "title": "Placeholder Chapter Two",   "file": "data/stories/between-two-vows/chapter-2.txt" },
+        { "title": "Placeholder Chapter Three", "file": "data/stories/between-two-vows/chapter-3.txt" }
+      ]
+    }
+  ]
+}
