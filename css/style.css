@@ -1003,3 +1003,30 @@ img { max-width: 100%; display: block; }
   display: inline-block;
   line-height: 0;
 }
+
+/* ---------- Footer (bottom of every tab) ---------- */
+#site-footer {
+  background: var(--bg-void);
+  border-top: 1px solid var(--border-soft);
+  padding: 36px 20px 44px;
+  text-align: center;
+}
+.footer-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.footer-inner p {
+  margin: 0 0 12px;
+  line-height: 1.7;
+}
+.footer-line {
+  font-size: 16px;
+  color: var(--text-main);
+}
+.footer-line strong { color: var(--accent-gold); font-weight: 600; }
+.footer-note,
+.footer-credits {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.footer-credits span { color: var(--text-main); }
