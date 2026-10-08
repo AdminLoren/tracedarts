@@ -4,20 +4,14 @@
       "id": "between-two-vows",
       "title": "Between Two Vows",
       "series": "The Happy Ever Party: Children of the Authors",
-      "tagline": "An origin story of my most popular love triangle: Makoto Williams × Emma Verde × Vyse Liang",
+      "tagline": "An origin story of my most popular love triangle",
+      "pairing": "Makoto Williams × Emma Verde × Vyse Liang",
       "status": "Origin story",
       "summary": "An origin story of a love triangle at Nijigasaki High School: Makoto Williams × Emma Verde × Vyse Liang.",
       "cover": "",
-      "readingTime": "About 1 hour",
-      "intro": [
-        "Welcome to Between Two Vows, the first story in the Lore tab. It is an origin story set in The Happy Ever Party: Children of the Authors, and it tells the beginning of my most popular love triangle: Makoto Williams × Emma Verde × Vyse Liang.",
-        "The story takes place at Nijigasaki High School over one long day, across five chapters. You will meet a few familiar faces from the Characters tab along the way, but you do not need to know the rest of the universe to follow it."
-      ],
       "synopsis": [
-        "Emma Verde is the sweetest, most helpful girl at Nijigasaki High School, which is exactly why nobody expects trouble to find her. But behind the closed doors of the Student Union Office, three Council members are holding a secret meeting about a classmate they can neither afford to lose nor afford to ignore, and Emma's childhood friend Vyse Liang is about to stumble into the middle of it.",
-        "Over one long day, secrets are traded, promises are made, and three people are pulled together and pulled apart. Between Two Vows is the origin of a love triangle: a story about loyalty, protection, and the promises we make to the people who matter most."
+        "Emma Verde is the sweetest girl at Nijigasaki High School, which is exactly why nobody expects trouble to find her. Over one long day, secrets are traded, promises are made, and her childhood friend Vyse Liang is pulled into the middle of it."
       ],
-      "contentNotes": "Content notes: this story deals with bullying and controlling behavior, and it includes some strong language.",
       "introScene": {
         "image": "assets/images/stories/between-two-vows/bg_intro.jpg",
         "colors": [
