@@ -274,11 +274,14 @@
     <!-- ===================== LORE TAB (stories / novels) ===================== -->
     <section id="tab-stories" class="tab-panel">
 
-      <!-- Background video: replace assets/video/lore_bg.mp4 with your own stock video -->
+      <!-- Library background video: replace assets/video/lore_bg.mp4 with your own stock video -->
       <video class="stories-bg" autoplay loop muted playsinline aria-hidden="true">
         <source src="assets/video/lore_bg.mp4" type="video/mp4" />
       </video>
       <div class="stories-bg-overlay"></div>
+
+      <!-- Story pages (intro, chapters, extras) use a still picture instead. It changes on every page. -->
+      <div id="stories-scene" class="stories-scene" aria-hidden="true"></div>
 
       <!-- Screen 1: the library (all stories) -->
       <div id="stories-library" class="stories-screen">
@@ -289,17 +292,39 @@
         <div id="stories-grid" class="stories-grid"></div>
       </div>
 
-      <!-- Screen 2: the reader -->
+      <!-- Screen 2: a story's front page (introduction + spoiler-free synopsis + Start Reading) -->
+      <div id="stories-book" class="stories-screen" hidden>
+        <div class="stories-book-wrap">
+          <button id="stories-book-back" class="stories-btn" type="button">&larr; Library</button>
+          <article class="stories-page stories-book-card">
+            <p id="book-series" class="stories-chapter-kicker"></p>
+            <h1 id="book-title" class="stories-chapter-title"></h1>
+            <p id="book-tagline" class="stories-book-tagline"></p>
+            <p id="book-meta" class="stories-book-meta"></p>
+
+            <h2 class="stories-book-heading">Introduction</h2>
+            <div id="book-intro" class="stories-text"></div>
+
+            <h2 class="stories-book-heading">Synopsis <span>(spoiler-free)</span></h2>
+            <div id="book-synopsis" class="stories-text"></div>
+
+            <p id="book-notes" class="stories-notes"></p>
+
+            <div class="stories-book-actions">
+              <button id="stories-start-btn" class="stories-btn stories-btn-primary" type="button">Start Reading</button>
+              <button id="stories-continue-btn" class="stories-btn" type="button" hidden></button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Screen 3: the reader (chapters, then the extras page) -->
       <div id="stories-reader" class="stories-screen" hidden>
         <div class="stories-toolbar">
           <div class="stories-toolbar-inner">
             <button id="stories-back-btn" class="stories-btn" type="button">&larr; Library</button>
             <span id="stories-reader-title" class="stories-reader-title"></span>
             <select id="stories-chapter-select" class="stories-select" aria-label="Choose a chapter"></select>
-            <div class="stories-size-btns" aria-label="Text size">
-              <button id="stories-smaller" class="stories-btn" type="button" aria-label="Smaller text">A&minus;</button>
-              <button id="stories-bigger" class="stories-btn" type="button" aria-label="Bigger text">A+</button>
-            </div>
           </div>
           <div class="stories-progress"><span id="stories-progress-fill"></span></div>
         </div>
@@ -308,8 +333,9 @@
           <p id="stories-chapter-kicker" class="stories-chapter-kicker"></p>
           <h2 id="stories-chapter-title" class="stories-chapter-title"></h2>
           <div id="stories-text" class="stories-text"></div>
+          <div id="stories-extras" class="stories-extras" hidden></div>
 
-          <p id="stories-end-note" class="stories-end-note" hidden>&mdash; End of the available chapters &mdash;</p>
+          <p id="stories-end-note" class="stories-end-note" hidden>&mdash; Thank you for reading &mdash;</p>
 
           <div class="stories-bottom-nav">
             <button class="stories-btn stories-prev" type="button">&larr; Previous chapter</button>
