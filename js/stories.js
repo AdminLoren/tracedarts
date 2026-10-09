@@ -109,16 +109,21 @@ COTA.stories = (function () {
     // Longest names first, so "Emma Verde" is found before "Emma"
     const aliases = Object.keys(nameLookup).sort((a, b) => b.length - a.length);
     if (aliases.length) {
-      nameRegex = new RegExp("(" + aliases.map(escapeRegex).join("|") + ")(?![A-Za-z])", "g");
+      // name + optional ending, so "Fumio-kun" is colored all the way through
+      nameRegex = new RegExp(
+        "(" + aliases.map(escapeRegex).join("|") + ")((?:-(?:kun|chan|san|sama|sensei|senpai|dono|tan))?)(?![A-Za-z])",
+        "g"
+      );
     }
     namesReady = true;
   }
 
   function gradientOf(character) {
-    return "linear-gradient(90deg, " + character.nameGradient.join(", ") + ")";
+    return "linear-gradient(180deg, " + character.nameGradient.join(", ") + ")";   // top to bottom
   }
 
   // Finds the names in a piece of text. Returns [{ start, end, character }]
+  // The colored part also includes a leading ' (as in 'Mio-kun) and "Uncle" / "Auntie".
   function findNames(text) {
     const found = [];
     if (!nameRegex) return found;
@@ -127,7 +132,15 @@ COTA.stories = (function () {
     while ((match = nameRegex.exec(text)) !== null) {
       const before = match.index > 0 ? text[match.index - 1] : "";
       if (/[A-Za-z~]/.test(before)) continue;        // the middle of another word
-      found.push({ start: match.index, end: match.index + match[0].length, character: nameLookup[match[1]] });
+
+      let start = match.index;
+      const lead = text.slice(Math.max(0, start - 6), start);
+      if (/(Uncle|Auntie) $/.test(lead)) {
+        start -= /Uncle $/.test(lead) ? 6 : 7;
+      } else if (/['\u2019]$/.test(lead) && !/[A-Za-z0-9]['\u2019]$/.test(lead)) {
+        start -= 1;                                   // 'Mio  ->  the ' is part of the nickname
+      }
+      found.push({ start: start, end: match.index + match[0].length, character: nameLookup[match[1]] });
     }
     return found;
   }
