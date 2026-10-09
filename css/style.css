@@ -1480,3 +1480,16 @@ img { max-width: 100%; display: block; }
   line-height: 1.7;
   color: var(--text-dim);
 }
+
+/* ---------- Colored names and dialogue (graffiti colors from characters.json) ---------- */
+.say,
+.nm {
+  background-image: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone;   /* every wrapped line gets the whole gradient */
+  box-decoration-break: clone;
+}
+.nm { font-weight: 700; }
