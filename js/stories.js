@@ -78,6 +78,208 @@ COTA.stories = (function () {
     }
   }
 
+  // ---------- colored names and dialogue ----------
+  // Every character has a "nameGradient" (their graffiti colors) and "nameAliases"
+  // (the names people call them) in characters.json.
+  //  - Whenever a name is mentioned, it is drawn in that character's gradient.
+  //  - Whenever a character speaks ("like this"), the dialogue gets their gradient.
+  // To force who is speaking, put [Name] right before the quote, for example:
+  //     [Fumio] "Hey, wait for me!"
+  // Use [none] to turn the color off for one quote.
+
+  let nameLookup = {};       // "Fumio" -> that character's data
+  let nameRegex = null;      // finds any character name inside a piece of text
+  let namesReady = false;
+
+  function escapeRegex(text) {
+    return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
+  async function prepareNames() {
+    if (namesReady) return;
+    let characters = [];
+    try { characters = await COTA.data.getCharacters(); } catch (e) {}
+
+    nameLookup = {};
+    characters.forEach((character) => {
+      if (!character.nameGradient || !character.nameAliases) return;
+      character.nameAliases.forEach((alias) => { nameLookup[alias] = character; });
+    });
+
+    // Longest names first, so "Emma Verde" is found before "Emma"
+    const aliases = Object.keys(nameLookup).sort((a, b) => b.length - a.length);
+    if (aliases.length) {
+      nameRegex = new RegExp("(" + aliases.map(escapeRegex).join("|") + ")(?![A-Za-z])", "g");
+    }
+    namesReady = true;
+  }
+
+  function gradientOf(character) {
+    return "linear-gradient(90deg, " + character.nameGradient.join(", ") + ")";
+  }
+
+  // Finds the names in a piece of text. Returns [{ start, end, character }]
+  function findNames(text) {
+    const found = [];
+    if (!nameRegex) return found;
+    nameRegex.lastIndex = 0;
+    let match;
+    while ((match = nameRegex.exec(text)) !== null) {
+      const before = match.index > 0 ? text[match.index - 1] : "";
+      if (/[A-Za-z~]/.test(before)) continue;        // the middle of another word
+      found.push({ start: match.index, end: match.index + match[0].length, character: nameLookup[match[1]] });
+    }
+    return found;
+  }
+
+  // The first character named in a piece of text (or null)
+  function firstName(text) {
+    const found = findNames(text);
+    return found.length ? found[0].character : null;
+  }
+
+  // Who is "doing" the last sentence of a narration paragraph? Usually the first name in it,
+  // but "... as Shioriko went to speak" means Shioriko is the one about to talk.
+  function actorOf(sentence) {
+    const found = findNames(sentence);
+    if (!found.length) return null;
+    for (const name of found) {
+      const lead = sentence.slice(Math.max(0, name.start - 7), name.start);
+      if (/(\bas|\bwhile) $/.test(lead)) return name.character;
+    }
+    return found[0].character;
+  }
+
+  // Splits a paragraph into pieces: narration and "quoted dialogue".
+  // Each quote gets a speaker (a character, or null if nobody is sure).
+  function readParagraph(text, state) {
+    const pieces = [];
+    const parts = text.split('"');          // even positions = narration, odd = inside quotes
+    const hasUnclosedQuote = parts.length % 2 === 0;
+    let narrationBefore = "";
+
+    for (let i = 0; i < parts.length; i++) {
+      const isQuote = i % 2 === 1 && !(hasUnclosedQuote && i === parts.length - 1);
+      if (!isQuote) {
+        // plain narration (put the stray quote mark back if it was never closed)
+        const raw = parts[i] + (hasUnclosedQuote && i === parts.length - 1 && i > 0 ? '"' : "");
+        narrationBefore = raw;
+        pieces.push({ type: "narration", text: raw });
+        continue;
+      }
+      pieces.push({ type: "quote", text: parts[i], before: narrationBefore, after: parts[i + 1] || "" });
+    }
+
+    // A [Name] tag right before a quote decides the speaker
+    pieces.forEach((piece, i) => {
+      if (piece.type !== "quote") return;
+      const prev = pieces[i - 1];
+      const tag = prev && prev.text.match(/\[([^\]]+)\]\s*$/);
+      if (tag) {
+        prev.text = prev.text.replace(/\[([^\]]+)\]\s*$/, "");
+        piece.forced = tag[1].trim();
+      }
+    });
+
+    // Work out who is speaking each quote
+    let lastInParagraph = null;
+    pieces.forEach((piece, i) => {
+      if (piece.type !== "quote") return;
+      const before = (pieces[i - 1] ? pieces[i - 1].text : "").trim();
+      const after = (pieces[i + 1] ? pieces[i + 1].text : "").trim();
+      let speaker = null;
+
+      if (piece.forced) {
+        speaker = piece.forced.toLowerCase() === "none" ? null : nameLookup[piece.forced] || null;
+        piece.speaker = speaker;
+      } else {
+        // 1. A name right after the quote:  "..." Fumiko said
+        const afterNames = findNames(after);
+        if (afterNames.length && afterNames[0].start === 0) speaker = afterNames[0].character;
+
+        // 1b. "he said" / "she said" right after the quote: pick the recent person who is a he / she
+        if (!speaker) {
+          const pronounMatch = after.match(/^(he|she)\b/i);
+          if (pronounMatch) {
+            const wanted = pronounMatch[1].toLowerCase();
+            const beforeNames = findNames(before);
+            const candidates = [
+              beforeNames.length ? beforeNames[beforeNames.length - 1].character : null,
+              lastInParagraph, state.pendingActor, state.last, state.prev,
+            ];
+            speaker = candidates.find((c) => c && c.pronoun === wanted) || null;
+          }
+        }
+
+        // 2. A name in the sentence just before the quote:  Fumiko smiled. "..."
+        if (!speaker && before) {
+          const sentences = before.split(/(?<=[.!?\u2026])\s+/);
+          speaker = firstName(sentences[sentences.length - 1]);
+        }
+
+        // 3. Same speaker continuing in the same paragraph:  "..." he said, "..."
+        if (!speaker && lastInParagraph && before) speaker = lastInParagraph;
+
+        // 4. Someone was just described in the paragraph before this one
+        if (!speaker && !before && state.pendingActor) speaker = state.pendingActor;
+
+        // 5. Otherwise it is probably the other person in the conversation
+        if (!speaker && state.prev) speaker = state.prev;
+        piece.speaker = speaker;
+      }
+
+      if (piece.speaker) {
+        if (piece.speaker !== state.last) { state.prev = state.last; state.last = piece.speaker; }
+        lastInParagraph = piece.speaker;
+      }
+    });
+
+    // Remember who was described if this paragraph has no dialogue
+    const hasQuote = pieces.some((p) => p.type === "quote");
+    if (hasQuote) {
+      state.pendingActor = null;
+    } else {
+      const sentences = text.trim().split(/(?<=[.!?\u2026])\s+/);
+      state.pendingActor = actorOf(sentences[sentences.length - 1]);
+    }
+    return pieces;
+  }
+
+  // Builds the paragraph on the page, with colored names and dialogue
+  function buildParagraph(pieces) {
+    const p = document.createElement("p");
+    pieces.forEach((piece) => {
+      if (piece.type === "narration") {
+        addTextWithNames(p, piece.text);
+      } else {
+        const holder = el("span", piece.speaker ? "say" : "");
+        if (piece.speaker) {
+          holder.style.setProperty("--grad", gradientOf(piece.speaker));
+          holder.dataset.speaker = piece.speaker.name;   // handy for checking who is speaking
+        }
+        holder.appendChild(document.createTextNode('"'));
+        addTextWithNames(holder, piece.text);
+        holder.appendChild(document.createTextNode('"'));
+        p.appendChild(holder);
+      }
+    });
+    return p;
+  }
+
+  // Adds text to an element, wrapping each character name in a colored <span>
+  function addTextWithNames(parent, text) {
+    let position = 0;
+    findNames(text).forEach((name) => {
+      if (name.start < position) return;
+      if (name.start > position) parent.appendChild(document.createTextNode(text.slice(position, name.start)));
+      const span = el("span", "nm", text.slice(name.start, name.end));
+      span.style.setProperty("--grad", gradientOf(name.character));
+      parent.appendChild(span);
+      position = name.end;
+    });
+    if (position < text.length) parent.appendChild(document.createTextNode(text.slice(position)));
+  }
+
   // ---------- backgrounds ----------
 
   // scene = { image: "path.jpg", colors: ["#111", "#333"] }
@@ -270,6 +472,7 @@ COTA.stories = (function () {
       renderExtras(extrasBox, page.extras);
     } else {
       byId("stories-chapter-kicker").textContent = "Chapter " + page.number + " of " + currentStory.chapters.length;
+      await prepareNames();
       const text = await loadChapterText(page);
       renderText(textBox, text);
     }
@@ -294,14 +497,16 @@ COTA.stories = (function () {
   //   ***         = scene break
   function renderText(container, text) {
     container.innerHTML = "";
+    const state = { last: null, prev: null, pendingActor: null }; // who spoke recently
     const paragraphs = text.replace(/\r/g, "").trim().split(/\n\s*\n/);
     paragraphs.forEach((block) => {
       const clean = block.trim();
       if (!clean) return;
       if (/^(\*\s*){3,}$/.test(clean)) {
         container.appendChild(el("hr", "scene-break"));
+        state.last = state.prev = state.pendingActor = null;  // a new scene starts fresh
       } else {
-        container.appendChild(el("p", "", clean));
+        container.appendChild(buildParagraph(readParagraph(clean, state)));
       }
     });
   }
