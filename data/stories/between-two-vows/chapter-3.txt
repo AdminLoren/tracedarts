@@ -2,7 +2,7 @@ The fair-weather breeze blew the grass of the slope near the school's riverbank.
 
 "A-Aah..!" Emma squeaked, her reflexes making her shoulder touch her earlobe. "V-Vu~ise-kun—I'm ticklish there..!"
 
-"..?! You just told me I can apply the gel myself!"
+[Vyse] "..?! You just told me I can apply the gel myself!"
 
 Vyse lowered his hand, dabbed in petroleum jelly, halting the treatment on Emma's neck.
 
@@ -44,7 +44,7 @@ The gel spread into Emma's reddened neck, but all she could feel was the warmth 
 
 She let out a relaxed sigh, inhaling and exhaling after every stroke. The healing energy Vyse gave off was enough to make her sleep. She'd doze off if she wanted to.
 
-"...How's that?" The deep tone in Vyse's voice made Emma tingle. "Does that feel any better?"
+[Vyse] "...How's that?" The deep tone in Vyse's voice made Emma tingle. "Does that feel any better?"
 
 "...Hmm..~" The smile on the Swiss girl's face said it all. "..Hold it just for a few more minutes..~"
 
@@ -56,7 +56,7 @@ Emma's eyes shot open with her pupils shrinking. "B-Bread crusts?!"
 
 He reached into his bag and pulled out a freshly bought pack of bread crusts that filled and rested on his lap. His thumbs dug into the soft loaf of bread, peeling a little while showing the yummy cream under the package.
 
-"I am so lucky to have bought this... This was the last batch of bread crusts in the cafeteria, and it's good for two."
+[Vyse] "I am so lucky to have bought this... This was the last batch of bread crusts in the cafeteria, and it's good for two."
 
 "Honto?!~" Emma clapped her hands together and gleamed in delight. "Thank you so much, Vu~ise-kun! I love to eat pastries!"
 
@@ -84,7 +84,7 @@ Vyse watched her, mesmerized. To him, she looked like a little lamb lazing in th
 
 Vyse shifted, propping himself up on his hip beside her. He kept his head elevated, looking down at her softly.
 
-"You looked... awfully tired a while ago."
+[Vyse] "You looked... awfully tired a while ago."
 
 "Hm? I did?" Emma opened her eyes, her brow furrowing in thought. "Ah... I-I might have overworked myself a bit. I was just helping the Student Council with some paperwork!"
 
@@ -100,7 +100,7 @@ Vyse shifted, propping himself up on his hip beside her. He kept his head elevat
 
 Vyse could hear the tremor of doubt in her voice. He lowered himself fully onto the grass, bringing his face level with hers. Now, they were eye-to-eye, the scent of crushed clover between them.
 
-"Are we really going to ignore the fact that you were wearing a dog collar?"
+[Vyse] "Are we really going to ignore the fact that you were wearing a dog collar?"
 
 The words hung in the air. Emma went rigid, the color draining from her face as guilt surged through her.
 
@@ -114,13 +114,13 @@ Vyse reached out, his fingers lightly tapping the back of her hand to draw her f
 
 He moved his hand to his chest, resting it over his heart.
 
-"...let it be me."
+[Vyse] "...let it be me."
 
 Emma's heart skipped a beat. The way he said it—so steady, so tender—felt as if he had reached directly into her soul and pulled her into an embrace. She couldn't imagine anyone else in the world saying those words to her.
 
 Slowly, she mirrored his position, turning onto her side to face him fully. Her eyes were wide and shimmering as she spoke in a small, fragile whimper.
 
-"...P...Please... promise me you'll keep this a secret?"
+[Emma] "...P...Please... promise me you'll keep this a secret?"
 
 She reached out, clutching his hand with both of hers as if it were a lifeline. Her pleading gaze was enough to make Vyse's chest ache.
 
@@ -132,7 +132,7 @@ Vyse's gaze deepened, his fingers instinctively intertwining with hers, locking 
 
 "U-Um... you see..." Emma swallowed hard, her eyes dropping to their joined hands. "I-I've been—"
 
-"Steal all the fun for yourselves, why don't ya—"
+[Fumio] "Steal all the fun for yourselves, why don't ya—"
 
 The pair jolted. Emma let out a sharp cry while Vyse's pupils shrunk in shock. They scrambled into a sitting position, spinning around to find the source of the intrusion.
 
@@ -146,15 +146,15 @@ Standing there with his hands on his hips and his cheeks puffed out in a mock po
 
 "A-Ah—right. Class..." Vyse's gaze darted toward the river, a nervous laugh bubbling up as he tried to avoid Fumio's piercing stare.
 
-"Wait, what?!" Emma's embarrassment shifted into a frantic scolding. She planted her hands on her waist before reaching out to bonk Vyse on the head. "You ditched your own presentation?! You're going to be in so much trouble!"
+"Wait, what?!" Emma's embarrassment shifted into a frantic scolding. She planted her hands on her waist before reaching out to bonk Vyse on the head. [Emma] "You ditched your own presentation?! You're going to be in so much trouble!"
 
-"Agh—hey! I-I lost track of time! I didn't mean to!"
+[Vyse] "Agh—hey! I-I lost track of time! I didn't mean to!"
 
 "Wait, hold on—" Emma held up her palms, turning back to Fumio with a puzzled look. "How did you even find us here, Fum-Fum?"
 
 Fumio tilted his chin up, looking unimpressed. "It was easy. 'Miko-chan came by asking about Vyse. Apparently, the Student Council is looking for him."
 
-He jerked his thumb over his shoulder toward the school building. "Since he never returned from the stalls, I figured I'd check here once class let out." He gestured toward the secluded, shaded slope where they were tucked away under the trees. "This is Vyse's 'secret' spot whenever he wants to disappear from the world."
+He jerked his thumb over his shoulder toward the school building. [Fumio] "Since he never returned from the stalls, I figured I'd check here once class let out." He gestured toward the secluded, shaded slope where they were tucked away under the trees. "This is Vyse's 'secret' spot whenever he wants to disappear from the world."
 
 "Woah..." Emma turned to Vyse, her eyes wide with curiosity. "Is that so...?"
 
@@ -164,7 +164,7 @@ He jerked his thumb over his shoulder toward the school building. "Since he neve
 
 "...Me?" Emma pointed to herself, her heart sinking. A heavy silence fell between her and Vyse as worry began to cloud the afternoon sun.
 
-"Oh no... we're going to get reprimanded, aren't we?" she whispered.
+[Emma] "Oh no... we're going to get reprimanded, aren't we?" she whispered.
 
 "Maybe it's just because we missed the period," Vyse suggested, a bead of sweat rolling down his temple.
 

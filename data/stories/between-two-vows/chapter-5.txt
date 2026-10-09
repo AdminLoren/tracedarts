@@ -1,6 +1,6 @@
 Outside of the Union Office, both Fumio and Vyse stood patiently, waiting for Emma to be released from the meeting.
 
-"Wow, that was a quick interrogation..." Fumio had his fist on his hip. He turned his head to Vyse, who was inches taller than him. "Criminals would dream of interrogations that fast, innit?"
+"Wow, that was a quick interrogation..." Fumio had his fist on his hip. He turned his head to Vyse, who was inches taller than him. [Fumio] "Criminals would dream of interrogations that fast, innit?"
 
 "It's weird enough that the situation is similar to that..." Vyse was thinking hard, his fingers on his chin. "Someone's been picking on Emma..."
 
@@ -20,13 +20,13 @@ Vyse growled as both he and Fumio clenched their fists, with snowflakes and dark
 
 Just as the two boys started gritting their teeth, the Union Office's door opened.
 
-"...A-Aré? Vu~ise-kun..? Fum-Fum?"
+[Emma] "...A-Aré? Vu~ise-kun..? Fum-Fum?"
 
 Emma stared at the dark aura the boys had, but her sweet voice was enough for them to turn around and greet her like nothing had happened.
 
 "H-Hey, Emma!" Fumio happily waved his hand. "Didya have a lovely time being punished?"
 
-"...A-Are you two alright—"
+[Emma] "...A-Are you two alright—"
 
 "We're perfectly fine, Emma..." Vyse doubled down on the switch. "How did it go? Are you off the hook?"
 
@@ -50,7 +50,7 @@ Vyse's eyes lit up. "From the stand outside the school?"
 
 "Actually—" Fumio interrupted Emma. "I just remembered, I need to go and do uh—thing."
 
-He smugly pointed his finger to the hallways. "School t'ings, you know?"
+He smugly pointed his finger to the hallways. [Fumio] "School t'ings, you know?"
 
 "O-Oh, really..? That's a shame..." Emma's eyebrows saddened. "You would never miss out on getting treats..."
 
@@ -74,11 +74,11 @@ An uneasy silence stretched between them. Emma remained lost in the sudden shift
 
 Vyse turned up. "Is something up, or are you just having an autistic moment?"
 
-"...Both? Maybe?"
+[Fumio] "...Both? Maybe?"
 
 Fumio's gaze didn't immediately soften, lingering on the shadows for a second longer before he blinked back to reality. The tension in his shoulders refusing to fully dissipate.
 
-"Sorry, you two. You guys best be moving, I have an appointment with a raccoon-girl who wants to sell me weird potions that makes me want to drink all of the coffee shop's menu."
+[Fumio] "Sorry, you two. You guys best be moving, I have an appointment with a raccoon-girl who wants to sell me weird potions that makes me want to drink all of the coffee shop's menu."
 
 "...A-Are you making things up now—"
 
@@ -103,7 +103,7 @@ He lingered for a second longer, the hair on the back of his neck standing up, b
 ***
 The Nijigasaki exit gate was bathed in the warm, honeyed glow of the setting sun. The usual bustle of students had faded, leaving the campus eerily beautiful; those remaining were either buried in club activities or long gone. Emma skipped across the bridge, her silhouette dancing against the orange sky, while Vyse followed a few paces behind, his quiet gaze fixed on her every movement.
 
-"Wow, that was such a long day... wasn't it, Vyse-kun?"
+[Emma] "Wow, that was such a long day... wasn't it, Vyse-kun?"
 
 Vyse snapped out of his trance, blinking rapidly. "Y-Yeah. It felt... different. Not like our usual routine at all. Almost like an adventure, don't you think?"
 
@@ -159,11 +159,11 @@ But... Vyse is different, she thought to herself. He's a saint. He would never b
 
 Her thoughts came to a screeching halt. Her face ignited in a brilliant shade of crimson, the heat radiating all the way to the tips of her ears. The realization of her own thought—that Vyse would never lie to her specifically—hit her like a physical blow of embarrassment.
 
-"U-Uwah-! I-I mean—!" she stammered, covering her face with her hands.
+[Emma] "U-Uwah-! I-I mean—!" she stammered, covering her face with her hands.
 
 Vyse stood there, completely bewildered. He tilted his head, watching her sudden meltdown with a mixture of concern and genuine confusion.
 
-"Emma? You're... really red. Are you okay? Is it the secret, or...?"
+[Vyse] "Emma? You're... really red. Are you okay? Is it the secret, or...?"
 
 Suddenly, the moment was shattered by the sharp buzz of Emma's phone. She fumbled with her pocket, pulling it out to reveal a message glowing on the screen:
 
@@ -172,23 +172,23 @@ I'm right around the corner. Wait outside the gate.
 
 Emma's heart sank. It was her father.
 
-"..A-Ah..! Papa's almost here!"
+[Emma] "..A-Ah..! Papa's almost here!"
 
 The panic and guilt from earlier were instantly replaced by a frantic, apologetic energy. She looked up at Vyse, her lips curving into a crestfallen pout, her eyes shimmering with genuine regret.
 
-"I-I'm so sorry! Is it okay if we... if we move this to another time? I-I'm really, really sorry..."
+[Emma] "I-I'm so sorry! Is it okay if we... if we move this to another time? I-I'm really, really sorry..."
 
 "Oh, that's fine!" Vyse said quickly, waving his hands dismissively to ease her worry. He offered her a reassuring smile. "If it's bothering you that much, I won't force you to tell me. Don't worry about it."
 
 Emma's face lit up at his respect for her boundaries, but the weight of the secret still lingered. She bowed her head deeply, her voice small.
 
-"I-I'm so sorry again... I promise I'll tell you one day! Maybe when the two of us finally get that ice cream we were supposed to have?"
+[Emma] "I-I'm so sorry again... I promise I'll tell you one day! Maybe when the two of us finally get that ice cream we were supposed to have?"
 
 Vyse paused, the suggestion hanging in the twilight air. A flush crept up his neck as he rubbed the back of his head. "...Y-You mean... like a date?"
 
 The word hit Emma like a bolt of lightning. Her face turned a shade of red that rivaled the deepest hues of the sunset.
 
-"A-AAH! N-No, no! L-Like—!"
+[Emma] "A-AAH! N-No, no! L-Like—!"
 
 She was a total disaster, her words tripping over each other as she tried to find a way to explain herself without sounding too eager. She buried her face in her hands again, her mind a chaotic whirl of embarrassment—until a single, quiet thought managed to surface.
 
@@ -196,13 +196,13 @@ Maybe... just once... alone time with Vyse-kun would be nice...
 
 Slowly, tentatively, she lowered her hands just enough to peek out at him. Her eyes were wide, soft, and still shimmering with a bashful heat. She gave a microscopic nod, her voice barely a squeak.
 
-"...M-Maybe... like a... d-d-d-d... date—"
+[Emma] "...M-Maybe... like a... d-d-d-d... date—"
 
 Hearing her response, a surge of adrenaline shot through Vyse. He was internally reeling with hype—he had actually scored a date with Emma. In his head, he was celebrating the fact that his slip of the tongue had turned into the best mistake of his life.
 
 "N-Nice! E-Er—I mean, great..." Vyse nervously clapped his hands together, the sound echoing slightly in the quiet evening air as the two of them shared an intensely awkward, yet sweet, silence. He let out a long, shaky exhale to steady his racing heart.
 
-"...I-I've actually never been on a date with anyone before."
+[Vyse] "...I-I've actually never been on a date with anyone before."
 
 "M-Me neither..." Emma confessed, her voice barely audible, her eyes focused on the tips of her shoes.
 
@@ -256,17 +256,17 @@ Clap... clap... clap.
 
 The sound of slow, sarcastic applause echoed from the shadows behind her. Emma's confusion lasted only a heartbeat before a familiar voice cut through the air like a blade.
 
-"Well, well... well. I told you to stay put, didn't I?"
+[Makoto] "Well, well... well. I told you to stay put, didn't I?"
 
 Emma froze. The warmth of the afternoon vanished instantly, replaced by a cold, paralyzing dread. Her breath hitched and her pupils shrunk to pinpricks as the voice of the devil incarnate washed over her.
 
-Believing that Emma had tried to slither away from his grasp, Makoto's voice dropped to a low, dangerous silkiness. "I never thought I'd actually have to discipline my puppy."
+Believing that Emma had tried to slither away from his grasp, Makoto's voice dropped to a low, dangerous silkiness. [Makoto] "I never thought I'd actually have to discipline my puppy."
 
 Emma was paralyzed, her body shivering with a primal sense of dread that pinned her to the spot. She couldn't bring herself to move, let alone turn to face him.
 
 She could only track him by the sound of his footsteps as they grew louder, moving closer until he was right beside her, his presence looming like a shadow.
 
-He leaned in, his voice passing over her shoulder. "Tell me... was that the guy who sliced off that collar I specifically bought for you?"
+He leaned in, his voice passing over her shoulder. [Makoto] "Tell me... was that the guy who sliced off that collar I specifically bought for you?"
 
 Emma kept her gaze anchored to the ground, her lips pressed so tightly together they turned white as she struggled to contain the paralyzing fear.
 
@@ -318,9 +318,9 @@ Emma's stern expression began to falter, her brow twitching with a growing sense
 
 He stepped back into her personal space, his eyes locking onto hers with a terrifying clarity.
 
-"You can never fathom the reality of justice, Verde-chan. Not compared to what I had to go through. You still have a debt to pay me, puppy. And I always collect."
+[Makoto] "You can never fathom the reality of justice, Verde-chan. Not compared to what I had to go through. You still have a debt to pay me, puppy. And I always collect."
 
-A flicker of pity stirred in Emma's chest when Makoto spoke of what he had "witnessed." For a fleeting second, she wondered what kind of shadows lived in his past to make him so cold.
+A flicker of pity stirred in Emma's chest when Makoto spoke of what he had [none] "witnessed." For a fleeting second, she wondered what kind of shadows lived in his past to make him so cold.
 
 But as he continued to loom over her, a real shadow—massive and suffocating—began to stretch across the pavement, swallowing Makoto's own. A figure had materialized behind him, so tall and imposing that Makoto's brand of intimidation suddenly seemed like child's play. Makoto, caught in his own sense of triumph, didn't even notice the temperature in the air drop.
 
@@ -330,13 +330,13 @@ Emma's stern defiance vanished instantly. Her expression shifted—not back to f
 
 But she wasn't worried about herself anymore. She was looking past Makoto, her eyes wide as she watched the predator behind him lean in.
 
-"...P...Papa...?"
+[Emma] "...P...Papa...?"
 
 "...Hah?" Makoto started, a look of smug satisfaction crossing his features. He let out a short, triumphant breath, mistaking Emma's plea for a surrender.
 
 "You're finally coming to your senses," he said, his voice regaining its oily confidence. "That's good to hear, especially after the inconvenience you put me throug—"
 
-"I think she meant me."
+[Matsuda] "I think she meant me."
 
 The words were low, resonant, and carried a weight that seemed to vibrate through the very air. Makoto's voice died in his throat. A primal, icy instinct flared in his chest, screaming at him to move.
 
@@ -348,7 +348,7 @@ It was the gaze of a man who had seen everything and feared nothing, currently s
 
 It was Emma's adoptive father, Matsuda Yuukashi.
 
-The legendary figure loomed over Makoto, his presence so overwhelming that the "puppy" metaphors Makoto had been using suddenly felt pathetically small. The air between them turned heavy, the silence now belonging entirely to the man standing in front of Makoto.
+The legendary figure loomed over Makoto, his presence so overwhelming that the [none] "puppy" metaphors Makoto had been using suddenly felt pathetically small. The air between them turned heavy, the silence now belonging entirely to the man standing in front of Makoto.
 
 Makoto felt a cold sweat prickle his skin. He was rattled—a sensation completely foreign to him. He was the one who lurked in the corners, the one who moved through the shadows of the school halls unseen. Yet this man had bypassed every one of his instincts, appearing behind him like a ghost.
 
@@ -374,17 +374,17 @@ The air around Matsuda didn't just feel heavy anymore; it felt sharp.
 
 Makoto's smile remained fixed, though the strain was beginning to show in the tightening of his jaw. "I would never harm a fine lady, let alone Verde-chan," he insisted, his voice smooth as silk even as he felt Matsuda's gaze boring into his soul. "She is too... precious... to harm."
 
-The way he spat the word "precious" through gritted teeth didn't escape Matsuda's notice.
+The way he spat the word [none] "precious" through gritted teeth didn't escape Matsuda's notice.
 
 "Cut the shit, kid. You're not fooling me," Matsuda growled. The setting sun cast long, jagged shadows across his face, leaving only those piercing gold eyes visible. The sheer killing intent radiating from him was enough to make the air feel thin. "You don't go another inch near my daughter. Ever."
 
-Makoto, fueled by a mixture of arrogance and the refusal to lose face, didn't back down. He straightened his posture, trying to reclaim some shred of his usual dominance. "What's the issue, sir Verde?"
+Makoto, fueled by a mixture of arrogance and the refusal to lose face, didn't back down. He straightened his posture, trying to reclaim some shred of his usual dominance. [Makoto] "What's the issue, sir Verde?"
 
 Matsuda scoffed at the failed surname-call.
 
-"I've been a good friend to Verde-chan, and I refuse to let a little barrier come between our relationship. We have... history, you see."
+[Makoto] "I've been a good friend to Verde-chan, and I refuse to let a little barrier come between our relationship. We have... history, you see."
 
-Emma shivered at the mention of their "history," her hands clutching her skirt tightly. Matsuda stepped forward, his boots heavy against the pavement. He didn't just move; he occupied the space, forcing Makoto to either retreat or be crushed.
+Emma shivered at the mention of their [none] "history," her hands clutching her skirt tightly. Matsuda stepped forward, his boots heavy against the pavement. He didn't just move; he occupied the space, forcing Makoto to either retreat or be crushed.
 
 The air felt electric, the space between the two men becoming a vacuum of pure hostility. Matsuda's demand was like the low rumble of a landslide, but Makoto's refusal to budge revealed a jagged, dark stubbornness. His charming mask didn't just slip; it dissolved, replaced by an eerie, wide-eyed glare of pure, concentrated hatred. He wasn't just being a pushover anymore; he was challenging a force he didn't fully understand.
 
@@ -394,7 +394,7 @@ Matsuda leaned in, his face inches from Makoto's. The shadows cast by the street
 
 The pressure was suffocating. Emma felt it in her lungs—the raw, lethal aura of her father clashing with Makoto's toxic impulsiveness. She knew how Matsuda operated, and she knew Makoto was seconds away from making a mistake he wouldn't walk away from.
 
-"Ch-Chotto—A-Ano..!"
+[Emma] "Ch-Chotto—A-Ano..!"
 
 Emma threw herself into the fray, her small hands pressing against the solid, immovable wall of her father's chest. She pushed with all the strength she had, her voice desperate to shatter the killing intent.
 
@@ -424,20 +424,20 @@ The silence on the bridge was deafening as Makoto stood motionless, the golden g
 
 His fist clenched so tightly that his knuckles turned a ghostly white, his nails digging into his palms.
 
-"How dare he..."
+[Makoto] "How dare he..."
 
 The memory of freezing under Matsuda's gaze—of his heart skipping a beat not out of romance, but out of a primal, pathetic fear—was a stain on his pride he couldn't scrub away. He hated that old man, but more than that, he hated the way he had been made to feel small. Like an insect.
 
 He looked out at the empty road where the car had disappeared, his chest heaving as he released a sharp, jagged breath. The vulnerability was gone, replaced by a cold, sharpened resolve.
 
-"The next time I see Verde... nothing will get between me and her. Ever again," he hissed into the wind, his voice trembling with a dangerous intensity.
+[Makoto] "The next time I see Verde... nothing will get between me and her. Ever again," he hissed into the wind, his voice trembling with a dangerous intensity.
 
 He began to pace, the shadows of the trees stretching like claws across the pavement. His mind raced through a list of everyone who had stood in his way today, his eyes darkening with every name.
 
-"Not that old man," he muttered, his voice dropping to a low growl. "Not the Student Council... not any of those pathetic friends of hers... and especially..."
+[Makoto] "Not that old man," he muttered, his voice dropping to a low growl. "Not the Student Council... not any of those pathetic friends of hers... and especially..."
 
 The image of Vyse flashed in his mind—the way Emma had smiled at him, the way he had looked so comfortable holding her hands.
 
-"Not that purple guy. I will wipe that smile off of his face once and for all."
+[Makoto] "Not that purple guy. I will wipe that smile off of his face once and for all."
 
 Makoto stood tall once more, adjusting his blazer with a sharp, violent tug. The hunt wasn't over; it had simply become a war. And in Makoto's mind, he was the only one allowed to win.
