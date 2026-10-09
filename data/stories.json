@@ -20,6 +20,10 @@
         ],
         "setting": "Nijigasaki High School, dusk"
       },
+      "introMusic": {
+        "file": "lore/lore_intro.mp3",
+        "title": "Between Two Vows: Front page"
+      },
       "chapters": [
         {
           "title": "On The Case",
@@ -31,6 +35,10 @@
               "#3b2f22"
             ],
             "setting": "The Student Union Office, dimly lit"
+          },
+          "music": {
+            "file": "lore/lore_chapter1.mp3",
+            "title": "Between Two Vows: Chapter 1"
           }
         },
         {
@@ -43,6 +51,10 @@
               "#566872"
             ],
             "setting": "The quiet school corridors"
+          },
+          "music": {
+            "file": "lore/lore_chapter2.mp3",
+            "title": "Between Two Vows: Chapter 2"
           }
         },
         {
@@ -55,6 +67,10 @@
               "#8a7a3a"
             ],
             "setting": "The school riverbank slope, afternoon"
+          },
+          "music": {
+            "file": "lore/lore_chapter3.mp3",
+            "title": "Between Two Vows: Chapter 3"
           }
         },
         {
@@ -67,6 +83,10 @@
               "#a9895a"
             ],
             "setting": "The Student Union Office, properly lit"
+          },
+          "music": {
+            "file": "lore/lore_chapter4.mp3",
+            "title": "Between Two Vows: Chapter 4"
           }
         },
         {
@@ -79,6 +99,10 @@
               "#d9772b"
             ],
             "setting": "The Nijigasaki exit gate and bridge, sunset"
+          },
+          "music": {
+            "file": "lore/lore_chapter5.mp3",
+            "title": "Between Two Vows: Chapter 5"
           }
         }
       ],
@@ -127,7 +151,11 @@
           }
         ],
         "arts": [],
-        "credit": "Emma Verde, Shioriko Mifune, and Nana Nakagawa are owned by Bandai, Love Live!!."
+        "credit": "Emma Verde, Shioriko Mifune, and Nana Nakagawa are owned by Bandai, Love Live!!.",
+        "music": {
+          "file": "lore/lore_extras.mp3",
+          "title": "Between Two Vows: Extras"
+        }
       }
     }
   ]
