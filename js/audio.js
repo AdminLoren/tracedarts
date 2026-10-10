@@ -8,6 +8,9 @@ COTA.audio = (function () {
   let currentMusicTitle = "";
   let muted = false;
   let volume = DEFAULT_VOLUME;
+  let musicGain = 1;
+  let fadeTimer = null;
+  let dipTimer = null;
 
   const nowPlayingText = () => document.getElementById("now-playing-text");
   const soundToggleBtn = () => document.getElementById("sound-toggle");
@@ -44,6 +47,42 @@ COTA.audio = (function () {
     return muted ? 0 : volume;
   }
 
+  function applyMusicVolume() {
+    if (currentMusic) currentMusic.volume = Math.min(1, Math.max(0, musicLevel() * musicGain));
+  }
+
+  function clearFades() {
+    if (fadeTimer) clearInterval(fadeTimer);
+    if (dipTimer) clearTimeout(dipTimer);
+    fadeTimer = null;
+    dipTimer = null;
+  }
+
+  function rampGain(target, seconds, done) {
+    if (fadeTimer) {
+      clearInterval(fadeTimer);
+      fadeTimer = null;
+    }
+    if (!currentMusic || seconds <= 0) {
+      musicGain = target;
+      applyMusicVolume();
+      if (done) done();
+      return;
+    }
+    const startGain = musicGain;
+    const startTime = performance.now();
+    fadeTimer = setInterval(() => {
+      const progress = Math.min(1, (performance.now() - startTime) / (seconds * 1000));
+      musicGain = startGain + (target - startGain) * progress;
+      applyMusicVolume();
+      if (progress >= 1) {
+        clearInterval(fadeTimer);
+        fadeTimer = null;
+        if (done) done();
+      }
+    }, 40);
+  }
+
   function setVolume(value, opts = {}) {
     volume = Math.min(1, Math.max(0, value));
 
@@ -55,7 +94,7 @@ COTA.audio = (function () {
       if (currentMusic) currentMusic.play().catch(() => {});
     }
 
-    if (currentMusic) currentMusic.volume = musicLevel();
+    applyMusicVolume();
     updateVolumeUI();
     updateHeaderText();
   }
@@ -64,8 +103,10 @@ COTA.audio = (function () {
     return volume;
   }
 
-  function playMusic(fileName, title) {
+  function playMusic(fileName, title, opts = {}) {
     currentMusicTitle = title || fileName;
+    clearFades();
+    musicGain = 1;
     if (currentMusic) {
       currentMusic.pause();
       currentMusic = null;
@@ -77,9 +118,12 @@ COTA.audio = (function () {
     try {
       const audio = new Audio(`assets/audio/${fileName}`);
       audio.loop = true;
-      audio.volume = musicLevel();
-      audio.play().catch(() => {});
       currentMusic = audio;
+      const fadeIn = opts.fadeIn || 0;
+      if (fadeIn > 0) musicGain = 0;
+      applyMusicVolume();
+      audio.play().catch(() => {});
+      if (fadeIn > 0) rampGain(1, fadeIn);
     } catch (err) {
       currentMusic = null;
     }
@@ -87,12 +131,31 @@ COTA.audio = (function () {
   }
 
   function stopMusic() {
+    clearFades();
     if (currentMusic) {
       currentMusic.pause();
       currentMusic = null;
     }
+    musicGain = 1;
     currentMusicTitle = "";
     updateHeaderText();
+  }
+
+  function dipMusic(silenceSeconds, fadeInSeconds) {
+    if (!currentMusic) return;
+    clearFades();
+    musicGain = 0;
+    applyMusicVolume();
+    dipTimer = setTimeout(() => {
+      dipTimer = null;
+      rampGain(1, fadeInSeconds);
+    }, silenceSeconds * 1000);
+  }
+
+  function fadeOutMusic(seconds) {
+    if (!currentMusic) return;
+    clearFades();
+    rampGain(0, seconds, stopMusic);
   }
 
   function playSfx(fileName) {
@@ -111,7 +174,7 @@ COTA.audio = (function () {
     if (muted && currentMusic) {
       currentMusic.pause();
     } else if (!muted && currentMusic) {
-      currentMusic.volume = musicLevel();
+      applyMusicVolume();
       currentMusic.play().catch(() => {});
     }
     updateHeaderText();
@@ -147,5 +210,5 @@ COTA.audio = (function () {
     document.addEventListener("touchstart", resumeOnFirstInteraction);
   }
 
-  return { init, playMusic, stopMusic, playSfx, toggleMute, setVolume, getVolume };
+  return { init, playMusic, stopMusic, dipMusic, fadeOutMusic, playSfx, toggleMute, setVolume, getVolume };
 })();
