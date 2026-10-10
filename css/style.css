@@ -1202,8 +1202,8 @@ img { max-width: 100%; display: block; }
   position: sticky;
   top: 64px;                   /* sits right under the main header */
   z-index: 5;
-  background: rgba(11, 11, 18, 0.92);
-  backdrop-filter: blur(8px);
+  background: rgba(11, 11, 18, 0.82);
+  backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--border-soft);
 }
 .stories-toolbar-inner {
@@ -1258,10 +1258,12 @@ img { max-width: 100%; display: block; }
   max-width: 780px;
   margin: 36px auto 90px;
   padding: 56px 64px 48px;
-  background: rgba(15, 15, 24, 0.88);
+  /* How see-through the reading panel is: 1 = solid, 0 = invisible. Lower it to see more of the background picture. */
+  --panel-alpha: 0.62;
+  background: rgba(15, 15, 24, var(--panel-alpha));
   border: 1px solid var(--border-soft);
   border-radius: 16px;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(2px);
 }
 .stories-chapter-kicker {
   margin: 0 0 10px;
@@ -1493,3 +1495,9 @@ img { max-width: 100%; display: block; }
   box-decoration-break: clone;
 }
 .nm { font-weight: 700; }
+
+/* ---------- Fading between Lore pages (like the other tabs) ---------- */
+.stories-screen.fade-in,
+.stories-page.fade-in { animation: fadeIn 0.4s ease; }
+.stories-screen.fading-out,
+.stories-page.fading-out { opacity: 0; transition: opacity 0.22s ease; }
