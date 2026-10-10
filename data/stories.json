@@ -37,7 +37,7 @@
             "setting": "The Student Union Office, dimly lit"
           },
           "music": {
-            "file": "lore/lore_chapter1.mp3",
+            "file": "lore/lore_chapter1A.mp3",
             "title": "Between Two Vows: Chapter 1"
           }
         },
@@ -53,8 +53,28 @@
             "setting": "The quiet school corridors"
           },
           "music": {
-            "file": "lore/lore_chapter2.mp3",
-            "title": "Between Two Vows: Chapter 2"
+            "file": "lore/lore_chapter2A.mp3",
+            "title": "Between Two Vows: Chapter 2 (Part A)",
+            "cues": [
+              {
+                "text": "Did you just turn me down?",
+                "action": "dip",
+                "silence": 3,
+                "fadeIn": 3
+              },
+              {
+                "text": "Maybe being too lax and carefree",
+                "action": "fadeOut",
+                "seconds": 6
+              },
+              {
+                "text": "It was Vyse Liang",
+                "action": "play",
+                "file": "lore/lore_chapter2B.mp3",
+                "title": "Between Two Vows: Chapter 2 (Part B)",
+                "fadeIn": 3
+              }
+            ]
           }
         },
         {
@@ -69,7 +89,7 @@
             "setting": "The school riverbank slope, afternoon"
           },
           "music": {
-            "file": "lore/lore_chapter3.mp3",
+            "file": "lore/lore_chapter3A.mp3",
             "title": "Between Two Vows: Chapter 3"
           }
         },
@@ -85,7 +105,7 @@
             "setting": "The Student Union Office, properly lit"
           },
           "music": {
-            "file": "lore/lore_chapter4.mp3",
+            "file": "lore/lore_chapter4A.mp3",
             "title": "Between Two Vows: Chapter 4"
           }
         },
@@ -101,7 +121,7 @@
             "setting": "The Nijigasaki exit gate and bridge, sunset"
           },
           "music": {
-            "file": "lore/lore_chapter5.mp3",
+            "file": "lore/lore_chapter5A.mp3",
             "title": "Between Two Vows: Chapter 5"
           }
         }
