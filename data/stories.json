@@ -119,7 +119,31 @@
           },
           "music": {
             "file": "lore/lore_chapter4A.mp3",
-            "title": "Between Two Vows: Chapter 4"
+            "title": "Between Two Vows: Chapter 4 (Part A)",
+            "cues": [
+              {
+                "text": "What the hell? Emma-chan in a collar",
+                "action": "stop"
+              },
+              {
+                "text": "scrambled, almost dropping the clipboard",
+                "action": "play",
+                "file": "lore/lore_chapter4B.mp3",
+                "title": "Between Two Vows: Chapter 4 (Part B)",
+                "fadeIn": 2
+              },
+              {
+                "text": "We really need you to keep this confidential",
+                "action": "play",
+                "file": "lore/lore_chapter4C.mp3",
+                "title": "Between Two Vows: Chapter 4 (Part C)",
+                "fadeIn": 2
+              },
+              {
+                "text": "SH-SHIO",
+                "action": "stop"
+              }
+            ]
           }
         },
         {
