@@ -362,6 +362,8 @@ COTA.stories = (function () {
   function runCue(cue) {
     if (cue.action === "dip") {
       COTA.audio.dipMusic(cue.silence || 3, cue.fadeIn || 3);
+    } else if (cue.action === "stop") {
+      COTA.audio.stopMusic();
     } else if (cue.action === "fadeOut") {
       COTA.audio.fadeOutMusic(cue.seconds || 6);
     } else if (cue.action === "play") {
