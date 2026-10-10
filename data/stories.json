@@ -71,8 +71,7 @@
                 "text": "It was Vyse Liang",
                 "action": "play",
                 "file": "lore/lore_chapter2B.mp3",
-                "title": "Between Two Vows: Chapter 2 (Part B)",
-                "fadeIn": 3
+                "title": "Between Two Vows: Chapter 2 (Part B)"
               }
             ]
           }
