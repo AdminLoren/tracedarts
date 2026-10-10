@@ -80,7 +80,7 @@ Fumio's gaze didn't immediately soften, lingering on the shadows for a second lo
 
 [Fumio] "Sorry, you two. You guys best be moving, I have an appointment with a raccoon-girl who wants to sell me weird potions that makes me want to drink all of the coffee shop's menu."
 
-"...A-Are you making things up now—"
+[Emma] "...A-Are you making things up now—"
 
 "YOU HEARD ME—" Fumio swooshed his hands away to prompt the couple. "Move already!"
 
@@ -222,7 +222,7 @@ Vyse nodded, a small smile playing on his lips. "It's settled then... I'd best b
 
 "Euh?! Of course not!" Emma stammered, her mind racing for a way to convince Vyse that he wasn't currently on her adoptive father's—the legendary assassin's—mental hit list.
 
-"U-Um... I'll talk to him about it! I'll ask him what he thinks of you, and maybe I'll get a real answer. Does that sound good?"
+[Emma] "U-Um... I'll talk to him about it! I'll ask him what he thinks of you, and maybe I'll get a real answer. Does that sound good?"
 
 Vyse's gaze softened, though the lingering tension in his shoulders betrayed his nerves. "..Th-That would be nice... Th-Thank you..."
 
@@ -230,7 +230,7 @@ Seeing the shadow of doubt still clouding his face, Emma didn't hesitate. She st
 
 "Don't feel down, okay?" she insisted, her voice ringing with a sudden, fierce determination. She looked directly into his eyes, her expression so earnest and protective that Vyse felt the frantic beating of his heart begin to steady.
 
-"I promise, I'll defend you from any ill will my father might have! I won't let him be mean to you!"
+[Emma] "I promise, I'll defend you from any ill will my father might have! I won't let him be mean to you!"
 
 Vyse's eyes widened, his breath catching as he became lost in her gaze. The sheer weight of her conviction seemed to wash over him, grounding him and filling the hollow pit of his anxiety with a strange, new courage.
 
@@ -286,19 +286,19 @@ As the fear threatened to swallow her, another memory flickered to life—the st
 
 The reminder of that support acted like a spark in the dark. Emma's trembling hands slowly balled into fists at her sides. She was still terrified, but for the first time, a small, defiant flame began to flicker beneath the dread.
 
-"...N...No..."
+[Emma] "...N...No..."
 
 The word was barely a whisper, but it hung in the air with a sudden, jarring weight.
 
-"...What was that, little pu—"
+[Makoto] "...What was that, little pu—"
 
-"N-No!"
+[Emma] "N-No!"
 
 For the first time in what felt like an eternity, Emma looked up. She wasn't just looking; she was glaring. Her eyes, usually so soft and inviting, were hardened with the flickering sparks of a quiet rage. It wasn't an expression that would intimidate someone like Makoto, but it was enough to make the air turn cold. It was a look he had never seen on her—a sign that the leash had finally snapped.
 
 "W-Williams-san..." Emma's hand moved instinctively to her neck. She felt the skin where Vyse had carefully applied the lotion earlier; the inflammation had faded under his touch, leaving her skin cool and healed, back to its original pearly beauty.
 
-"I don't deserve this type of treatment from you."
+[Emma] "I don't deserve this type of treatment from you."
 
 She stood taller, her spine straightening as she drew strength from the memories of the afternoon. The influence of the Student Council's resolve began to anchor her, and when she spoke again, she forced the trembling out of her tone. Gone was the high, angelic sweetness of her usual voice, replaced by a grounded, steady conviction.
 
@@ -362,7 +362,7 @@ Makoto forced his muscles to relax, shaking off the paralysis. He straightened h
 
 "...My, my. You must be daddy dearest," Makoto said, offering a shallow, theatrical bow. It wasn't an act of submission, but a calculated move to disarm.
 
-"Apologies~. We were simply rehearsing for a one-act play. Verde-chan and I happen to be the two main characters. I'm afraid I got a bit too into the role."
+[Makoto] "Apologies~. We were simply rehearsing for a one-act play. Verde-chan and I happen to be the two main characters. I'm afraid I got a bit too into the role."
 
 He flashed a smile that had fooled countless teachers and students alike—bright, innocent, and perfectly polished. But Matsuda didn't look at Makoto's smile. He looked at Emma.
 
@@ -372,7 +372,7 @@ The air around Matsuda didn't just feel heavy anymore; it felt sharp.
 
 "A play," Matsuda repeated, the words dripping with a skepticism that made Makoto's charm feel like cheap tinsel. "Tell me, boy... does this play usually involve you threatening my daughter in the dark?"
 
-Makoto's smile remained fixed, though the strain was beginning to show in the tightening of his jaw. "I would never harm a fine lady, let alone Verde-chan," he insisted, his voice smooth as silk even as he felt Matsuda's gaze boring into his soul. "She is too... precious... to harm."
+Makoto's smile remained fixed, though the strain was beginning to show in the tightening of his jaw. "I would never harm a fine lady, let alone Verde-chan," he insisted, his voice smooth as silk even as he felt Matsuda's gaze boring into his soul. [Makoto] "She is too... precious... to harm."
 
 The way he spat the word [none] "precious" through gritted teeth didn't escape Matsuda's notice.
 
@@ -398,7 +398,7 @@ The pressure was suffocating. Emma felt it in her lungs—the raw, lethal aura o
 
 Emma threw herself into the fray, her small hands pressing against the solid, immovable wall of her father's chest. She pushed with all the strength she had, her voice desperate to shatter the killing intent.
 
-"It's time we come home, papa! Mama is waiting for us! You know how she gets when the food starts to get cold!"
+[Emma] "It's time we come home, papa! Mama is waiting for us! You know how she gets when the food starts to get cold!"
 
 The sudden intervention forced a shift. Makoto, caught off guard by Emma's proximity and the physical barrier she'd placed between them, took a reflexive step back. The immediate tension snapped like a taut wire, though the air remained heavy with unspoken threats.
 
