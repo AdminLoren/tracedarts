@@ -21,6 +21,7 @@ COTA.stories = (function () {
   let currentStory = null;     // the story being read
   let pages = [];              // the chapters + the extras page of that story
   let pageIndex = 0;           // which page is open (0 = chapter 1)
+  let activeCues = [];
   const chapterCache = {};     // chapter texts we already downloaded
 
   // ---------- small helpers ----------
@@ -332,7 +333,52 @@ COTA.stories = (function () {
     byId("stories-book").hidden = name !== "book";
     byId("stories-reader").hidden = name !== "reader";
     window.scrollTo(0, 0);
-    if (name === "library") setScene(null);
+    if (name !== "reader") activeCues = [];
+    if (name === "library") {
+      setScene(null);
+      COTA.audio.stopMusic();
+    }
+  }
+
+  function playStoryMusic(music, fadeIn) {
+    if (!music || !music.file) {
+      COTA.audio.stopMusic();
+      return;
+    }
+    COTA.audio.playMusic(music.file, music.title, { fadeIn: fadeIn });
+  }
+
+  function setupCues(page, container) {
+    activeCues = [];
+    const cues = page.music && page.music.cues;
+    if (!cues) return;
+    const paragraphs = Array.from(container.querySelectorAll("p"));
+    cues.forEach((cue) => {
+      const paragraph = paragraphs.find((p) => p.textContent.includes(cue.text));
+      if (paragraph) activeCues.push({ paragraph: paragraph, cue: cue, done: false });
+    });
+  }
+
+  function runCue(cue) {
+    if (cue.action === "dip") {
+      COTA.audio.dipMusic(cue.silence || 3, cue.fadeIn || 3);
+    } else if (cue.action === "fadeOut") {
+      COTA.audio.fadeOutMusic(cue.seconds || 6);
+    } else if (cue.action === "play") {
+      COTA.audio.playMusic(cue.file, cue.title, { fadeIn: cue.fadeIn || 3 });
+    }
+  }
+
+  function checkCues() {
+    if (!activeCues.length) return;
+    if (!byId("tab-stories").classList.contains("active") || byId("stories-reader").hidden) return;
+    const line = window.innerHeight * 0.55;
+    for (const item of activeCues) {
+      if (item.done) continue;
+      if (item.paragraph.getBoundingClientRect().top > line) break;
+      item.done = true;
+      runCue(item.cue);
+    }
   }
 
   // ---------- 1. library ----------
@@ -414,6 +460,7 @@ COTA.stories = (function () {
 
     showScreen("book");
     setScene(story.introScene);
+    playStoryMusic(story.introMusic, 2);
   }
 
   // ---------- 3. reader ----------
@@ -426,12 +473,14 @@ COTA.stories = (function () {
       title: chapter.title,
       file: chapter.file,
       scene: chapter.scene,
+      music: chapter.music,
     }));
     if (story.extras) {
       list.push({
         type: "extras",
         title: story.extras.title || "Extras",
         scene: story.extras.scene,
+        music: story.extras.music,
         extras: story.extras,
       });
     }
@@ -471,6 +520,8 @@ COTA.stories = (function () {
 
     byId("stories-chapter-select").value = index;
     setScene(page.scene);
+    activeCues = [];
+    playStoryMusic(page.music, 2);
 
     const textBox = byId("stories-text");
     const extrasBox = byId("stories-extras");
@@ -488,6 +539,7 @@ COTA.stories = (function () {
       await prepareNames();
       const text = await loadChapterText(page);
       renderText(textBox, text);
+      if (pageIndex === index) setupCues(page, textBox);
     }
 
     // Previous / Next buttons (they appear at the bottom of the page)
@@ -503,6 +555,7 @@ COTA.stories = (function () {
 
     window.scrollTo(0, 0);
     updateProgress();
+    checkCues();
   }
 
   // Turns the plain text into paragraphs.
@@ -629,6 +682,7 @@ COTA.stories = (function () {
     document.querySelectorAll(".stories-next").forEach((b) => b.addEventListener("click", () => changePage(1)));
 
     window.addEventListener("scroll", updateProgress, { passive: true });
+    window.addEventListener("scroll", checkCues, { passive: true });
 
     // Keyboard: left / right arrow keys change page while reading
     document.addEventListener("keydown", (e) => {
