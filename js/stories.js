@@ -22,6 +22,7 @@ COTA.stories = (function () {
   let pages = [];              // the chapters + the extras page of that story
   let pageIndex = 0;           // which page is open (0 = chapter 1)
   let activeCues = [];
+  const CUE_LINE = 0.55;
   const chapterCache = {};     // chapter texts we already downloaded
 
   // ---------- small helpers ----------
@@ -333,7 +334,10 @@ COTA.stories = (function () {
     byId("stories-book").hidden = name !== "book";
     byId("stories-reader").hidden = name !== "reader";
     window.scrollTo(0, 0);
-    if (name !== "reader") activeCues = [];
+    if (name !== "reader") {
+      activeCues = [];
+      showCueMarker(false);
+    }
     if (name === "library") {
       setScene(null);
       COTA.audio.stopMusic();
@@ -346,6 +350,22 @@ COTA.stories = (function () {
       return;
     }
     COTA.audio.playMusic(music.file, music.title, { fadeIn: fadeIn });
+  }
+
+  function placeCueMarker() {
+    const marker = byId("stories-cue-marker");
+    const page = byId("stories-page");
+    if (!marker || !page || marker.hidden) return;
+    const left = page.getBoundingClientRect().left;
+    marker.style.top = window.innerHeight * CUE_LINE + "px";
+    marker.style.left = (left < 30 ? left + 2 : left - 26) + "px";
+  }
+
+  function showCueMarker(visible) {
+    const marker = byId("stories-cue-marker");
+    if (!marker) return;
+    marker.hidden = !visible;
+    placeCueMarker();
   }
 
   function setupCues(page, container) {
@@ -374,7 +394,7 @@ COTA.stories = (function () {
   function checkCues() {
     if (!activeCues.length) return;
     if (!byId("tab-stories").classList.contains("active") || byId("stories-reader").hidden) return;
-    const line = window.innerHeight * 0.55;
+    const line = window.innerHeight * CUE_LINE;
     for (const item of activeCues) {
       if (item.done) continue;
       if (item.paragraph.getBoundingClientRect().top > line) break;
@@ -523,6 +543,7 @@ COTA.stories = (function () {
     byId("stories-chapter-select").value = index;
     setScene(page.scene);
     activeCues = [];
+    showCueMarker(false);
     playStoryMusic(page.music, 2);
 
     const textBox = byId("stories-text");
@@ -541,7 +562,10 @@ COTA.stories = (function () {
       await prepareNames();
       const text = await loadChapterText(page);
       renderText(textBox, text);
-      if (pageIndex === index) setupCues(page, textBox);
+      if (pageIndex === index) {
+        setupCues(page, textBox);
+        showCueMarker(activeCues.length > 0);
+      }
     }
 
     // Previous / Next buttons (they appear at the bottom of the page)
@@ -685,6 +709,7 @@ COTA.stories = (function () {
 
     window.addEventListener("scroll", updateProgress, { passive: true });
     window.addEventListener("scroll", checkCues, { passive: true });
+    window.addEventListener("resize", placeCueMarker);
 
     // Keyboard: left / right arrow keys change page while reading
     document.addEventListener("keydown", (e) => {
