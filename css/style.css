@@ -1382,6 +1382,23 @@ img { max-width: 100%; display: block; }
   font-size: 14px;
   color: var(--text-dim);
 }
+.stories-cue-sample {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin: 0 6px;
+  vertical-align: middle;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 13px solid var(--accent-magenta);
+  filter: drop-shadow(0 0 5px rgba(255, 64, 129, 0.7));
+}
+.stories-before p { margin: 0 0 0.9em; }
+.stories-before .stories-before-tip {
+  margin: 0;
+  font-weight: 700;
+  color: var(--accent-gold);
+}
 .stories-notes {
   margin: 28px 0 0;
   padding: 14px 18px;
