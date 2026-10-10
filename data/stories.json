@@ -71,7 +71,8 @@
                 "text": "It was Vyse Liang",
                 "action": "play",
                 "file": "lore/lore_chapter2B.mp3",
-                "title": "Between Two Vows: Chapter 2 (Part B)"
+                "title": "Between Two Vows: Chapter 2 (Part B)",
+                "fadeIn": 3
               }
             ]
           }
@@ -89,7 +90,20 @@
           },
           "music": {
             "file": "lore/lore_chapter3A.mp3",
-            "title": "Between Two Vows: Chapter 3"
+            "title": "Between Two Vows: Chapter 3 (Part A)",
+            "cues": [
+              {
+                "text": "Steal all the fun for yourselves",
+                "action": "stop"
+              },
+              {
+                "text": "Standing there with his hands on his hips",
+                "action": "play",
+                "file": "lore/lore_chapter3B.mp3",
+                "title": "Between Two Vows: Chapter 3 (Part B)",
+                "fadeIn": 2
+              }
+            ]
           }
         },
         {
