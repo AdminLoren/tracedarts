@@ -1253,6 +1253,19 @@ img { max-width: 100%; display: block; }
   background: var(--accent-magenta);
 }
 
+.stories-cue-marker {
+  position: fixed;
+  z-index: 4;
+  width: 0;
+  height: 0;
+  border-top: 11px solid transparent;
+  border-bottom: 11px solid transparent;
+  border-left: 18px solid var(--accent-magenta);
+  transform: translateY(-50%);
+  filter: drop-shadow(0 0 6px rgba(255, 64, 129, 0.7));
+  pointer-events: none;
+}
+
 /* The page you read on */
 .stories-page {
   max-width: 780px;
