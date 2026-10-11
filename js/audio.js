@@ -6,6 +6,7 @@ COTA.audio = (function () {
 
   let currentMusic = null;
   let currentMusicTitle = "";
+  let currentMusicFile = "";
   let muted = false;
   let volume = DEFAULT_VOLUME;
   let musicGain = 1;
@@ -107,6 +108,7 @@ COTA.audio = (function () {
     currentMusicTitle = title || fileName;
     clearFades();
     musicGain = 1;
+    currentMusicFile = "";
     if (currentMusic) {
       currentMusic.pause();
       currentMusic = null;
@@ -119,6 +121,7 @@ COTA.audio = (function () {
       const audio = new Audio(`assets/audio/${fileName}`);
       audio.loop = true;
       currentMusic = audio;
+      currentMusicFile = fileName;
       const fadeIn = opts.fadeIn || 0;
       if (fadeIn > 0) musicGain = 0;
       applyMusicVolume();
@@ -137,8 +140,13 @@ COTA.audio = (function () {
       currentMusic = null;
     }
     musicGain = 1;
+    currentMusicFile = "";
     currentMusicTitle = "";
     updateHeaderText();
+  }
+
+  function isPlaying(fileName) {
+    return !!currentMusic && currentMusicFile === fileName;
   }
 
   function dipMusic(silenceSeconds, fadeInSeconds) {
@@ -210,5 +218,5 @@ COTA.audio = (function () {
     document.addEventListener("touchstart", resumeOnFirstInteraction);
   }
 
-  return { init, playMusic, stopMusic, dipMusic, fadeOutMusic, playSfx, toggleMute, setVolume, getVolume };
+  return { init, playMusic, stopMusic, isPlaying, dipMusic, fadeOutMusic, playSfx, toggleMute, setVolume, getVolume };
 })();
