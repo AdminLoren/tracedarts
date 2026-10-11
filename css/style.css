@@ -99,8 +99,30 @@ img { max-width: 100%; display: block; }
 #sound-icon { font-size: 16px; color: var(--accent-gold); }
 #now-playing-text {
   overflow: hidden;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  min-width: 0;
+}
+#now-playing-text.np-overflow {
+  -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 16px), transparent);
+  mask-image: linear-gradient(to right, #000 calc(100% - 16px), transparent);
+}
+#now-playing-text.np-scrolling {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 12px, #000 calc(100% - 16px), transparent);
+  mask-image: linear-gradient(to right, transparent, #000 12px, #000 calc(100% - 16px), transparent);
+}
+.np-track {
+  display: inline-block;
+  white-space: nowrap;
+}
+#now-playing-text.np-scrolling .np-track {
+  animation: np-scroll var(--np-duration, 10s) linear infinite;
+}
+@keyframes np-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(var(--np-shift)); }
+}
+@media (prefers-reduced-motion: reduce) {
+  #now-playing-text.np-scrolling .np-track { animation: none; }
 }
 
 .sound-controls {
