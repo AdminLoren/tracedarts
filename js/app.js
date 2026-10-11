@@ -26,7 +26,6 @@ COTA.app = (function () {
         resetView ? COTA.lore.enter() : COTA.lore.init();
       }
       if (tabName === "stories") {
-        COTA.audio.stopMusic(); // quiet while reading
         COTA.stories.enter();
       }
       if (tabName === "relationship") {
