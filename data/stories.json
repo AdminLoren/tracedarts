@@ -266,22 +266,18 @@
         "arts": [
           {
             "image": "assets/images/stories/between-two-vows/inspiration1.jpg",
-            "caption": "Art by \"Miss Riverwoods\""
+            "caption": "Makoto and Emma, art by \"Miss Riverwoods\""
           },
           {
             "image": "assets/images/stories/between-two-vows/inspiration2.jpg",
-            "caption": "Art by \"Miss Riverwoods\""
+            "caption": "Fumiko and Makoto, art by \"Miss Riverwoods\""
           },
           {
             "image": "assets/images/stories/between-two-vows/inspiration3.jpg",
-            "caption": "Art by \"Miss Riverwoods\""
+            "caption": "Shioriko and Makoto, art by \"Miss Riverwoods\""
           }
         ],
-        "credit": "Emma Verde, Shioriko Mifune, and Nana Nakagawa are owned by Bandai, Love Live!!.",
-        "music": {
-          "file": "lore/lore_extras.mp3",
-          "title": "Between Two Vows: Extras"
-        }
+        "credit": "Emma Verde, Shioriko Mifune, and Nana Nakagawa are owned by Bandai, Love Live!!."
       }
     }
   ]
