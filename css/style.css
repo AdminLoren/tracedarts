@@ -1137,7 +1137,7 @@ img { max-width: 100%; display: block; }
 .story-cover {
   height: 190px;
   background-size: cover;
-  background-position: center;
+  background-position: center 10%;
   background-image: linear-gradient(135deg, #3b1d57, #8c1f4f 55%, #1d4d57);
   display: flex;
   align-items: center;
