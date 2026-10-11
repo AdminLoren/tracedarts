@@ -545,7 +545,7 @@ COTA.stories = (function () {
     setScene(page.scene);
     activeCues = [];
     showCueMarker(false);
-    playStoryMusic(page.music, 2);
+    if (!page.extras || page.music) playStoryMusic(page.music, 2);
 
     const textBox = byId("stories-text");
     const extrasBox = byId("stories-extras");
