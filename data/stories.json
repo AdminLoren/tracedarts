@@ -1,4 +1,8 @@
 {
+  "libraryMusic": {
+    "file": "lore/lore_library.mp3",
+    "title": "Lore: Library"
+  },
   "stories": [
     {
       "id": "between-two-vows",
@@ -19,10 +23,6 @@
           "#4a2b5e"
         ],
         "setting": "Nijigasaki High School, dusk"
-      },
-      "introMusic": {
-        "file": "lore/lore_intro.mp3",
-        "title": "Between Two Vows: Front page"
       },
       "chapters": [
         {
