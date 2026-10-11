@@ -8,7 +8,7 @@
       "pairing": "Makoto Williams × Emma Verde × Vyse Liang",
       "status": "Origin story",
       "summary": "An origin story of a love triangle at Nijigasaki High School: Makoto Williams × Emma Verde × Vyse Liang.",
-      "cover": "",
+      "cover": "assets/images/stories/between-two-vows/cover.png",
       "synopsis": [
         "Emma Verde is the sweetest girl at Nijigasaki High School, which is exactly why nobody expects trouble to find her. Over one long day, secrets are traded, promises are made, and her childhood friend Vyse Liang is pulled into the middle of it."
       ],
@@ -207,7 +207,20 @@
             "art": "assets/images/boxart_mat.png"
           }
         ],
-        "arts": [],
+        "arts": [
+          {
+            "image": "assets/images/stories/between-two-vows/inspiration1.jpg",
+            "caption": "Art by \"Miss Riverwoods\""
+          },
+          {
+            "image": "assets/images/stories/between-two-vows/inspiration2.jpg",
+            "caption": "Art by \"Miss Riverwoods\""
+          },
+          {
+            "image": "assets/images/stories/between-two-vows/inspiration3.jpg",
+            "caption": "Art by \"Miss Riverwoods\""
+          }
+        ],
         "credit": "Emma Verde, Shioriko Mifune, and Nana Nakagawa are owned by Bandai, Love Live!!.",
         "music": {
           "file": "lore/lore_extras.mp3",
