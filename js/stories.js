@@ -357,8 +357,9 @@ COTA.stories = (function () {
     const page = byId("stories-page");
     if (!marker || !page || marker.hidden) return;
     const left = page.getBoundingClientRect().left;
+    const padding = parseFloat(getComputedStyle(page).paddingLeft) || 0;
     marker.style.top = window.innerHeight * CUE_LINE + "px";
-    marker.style.left = (left < 30 ? left + 2 : left - 26) + "px";
+    marker.style.left = (left + Math.max(2, padding - 26)) + "px";
   }
 
   function showCueMarker(visible) {
