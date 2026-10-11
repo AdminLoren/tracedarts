@@ -192,6 +192,28 @@
                 "file": "lore/lore_chapter5E.mp3",
                 "title": "Between Two Vows: Chapter 5 (Part E)",
                 "fadeIn": 2
+              },
+              {
+                "text": "Emma's stern defiance vanished instantly",
+                "action": "stop"
+              },
+              {
+                "text": "P...Papa",
+                "action": "play",
+                "file": "lore/lore_chapter5F.mp3",
+                "title": "Between Two Vows: Chapter 5 (Part F)",
+                "fadeIn": 2
+              },
+              {
+                "text": "He reached out, placing a firm, grounding hand",
+                "action": "stop"
+              },
+              {
+                "text": "The scene that met Makoto",
+                "action": "play",
+                "file": "lore/lore_chapter5G.mp3",
+                "title": "Between Two Vows: Chapter 5 (Part G)",
+                "fadeIn": 2
               }
             ]
           }
