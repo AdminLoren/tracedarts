@@ -159,7 +159,41 @@
           },
           "music": {
             "file": "lore/lore_chapter5A.mp3",
-            "title": "Between Two Vows: Chapter 5"
+            "title": "Between Two Vows: Chapter 5 (Part A)",
+            "cues": [
+              {
+                "text": "A-Aré? Vu~ise-kun..? Fum-Fum?",
+                "action": "stop"
+              },
+              {
+                "text": "H-Hey, Emma!",
+                "action": "play",
+                "file": "lore/lore_chapter5B.mp3",
+                "title": "Between Two Vows: Chapter 5 (Part B)",
+                "fadeIn": 2
+              },
+              {
+                "text": "The sentence died in his throat",
+                "action": "play",
+                "file": "lore/lore_chapter5C.mp3",
+                "title": "Between Two Vows: Chapter 5 (Part C)",
+                "fadeIn": 2
+              },
+              {
+                "text": "The Nijigasaki exit gate was bathed",
+                "action": "play",
+                "file": "lore/lore_chapter5D.mp3",
+                "title": "Between Two Vows: Chapter 5 (Part D)",
+                "fadeIn": 2
+              },
+              {
+                "text": "I told you to stay put",
+                "action": "play",
+                "file": "lore/lore_chapter5E.mp3",
+                "title": "Between Two Vows: Chapter 5 (Part E)",
+                "fadeIn": 2
+              }
+            ]
           }
         }
       ],
