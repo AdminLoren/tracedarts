@@ -1,7 +1,7 @@
 {
   "libraryMusic": {
     "file": "lore/lore_library.mp3",
-    "title": "Lore: Library"
+    "title": "History (Sonic Mega Collection)"
   },
   "stories": [
     {
@@ -38,7 +38,7 @@
           },
           "music": {
             "file": "lore/lore_chapter1A.mp3",
-            "title": "Between Two Vows: Chapter 1"
+            "title": "Uptown Springdale (Yo-kai Watch)"
           }
         },
         {
@@ -54,7 +54,7 @@
           },
           "music": {
             "file": "lore/lore_chapter2A.mp3",
-            "title": "Between Two Vows: Chapter 2 (Part A)",
+            "title": "Cutscene 3 (Sonic Generations)",
             "cues": [
               {
                 "text": "Did you just turn me down?",
@@ -71,7 +71,7 @@
                 "text": "It was Vyse Liang",
                 "action": "play",
                 "file": "lore/lore_chapter2B.mp3",
-                "title": "Between Two Vows: Chapter 2 (Part B)",
+                "title": "Deep Dive (Fishdom H2O)",
                 "fadeIn": 3
               }
             ]
@@ -90,7 +90,7 @@
           },
           "music": {
             "file": "lore/lore_chapter3A.mp3",
-            "title": "Between Two Vows: Chapter 3 (Part A)",
+            "title": "Emma's Bond Theme (LL!! SIFAS)",
             "cues": [
               {
                 "text": "Steal all the fun for yourselves",
@@ -100,7 +100,7 @@
                 "text": "Standing there with his hands on his hips",
                 "action": "play",
                 "file": "lore/lore_chapter3B.mp3",
-                "title": "Between Two Vows: Chapter 3 (Part B)",
+                "title": "Shopper's Row (Yo-kai Watch)",
                 "fadeIn": 2
               }
             ]
@@ -119,7 +119,7 @@
           },
           "music": {
             "file": "lore/lore_chapter4A.mp3",
-            "title": "Between Two Vows: Chapter 4 (Part A)",
+            "title": "Collector (Fishdom H2O)",
             "cues": [
               {
                 "text": "What the hell? Emma-chan in a collar",
@@ -129,14 +129,14 @@
                 "text": "scrambled, almost dropping the clipboard",
                 "action": "play",
                 "file": "lore/lore_chapter4B.mp3",
-                "title": "Between Two Vows: Chapter 4 (Part B)",
+                "title": "Tranquil Afternoon (Rockman.EXE Anime)",
                 "fadeIn": 2
               },
               {
                 "text": "We really need you to keep this confidential",
                 "action": "play",
                 "file": "lore/lore_chapter4C.mp3",
-                "title": "Between Two Vows: Chapter 4 (Part C)",
+                "title": "Library (Super Mario Galaxy)",
                 "fadeIn": 2
               },
               {
@@ -159,7 +159,7 @@
           },
           "music": {
             "file": "lore/lore_chapter5A.mp3",
-            "title": "Between Two Vows: Chapter 5 (Part A)",
+            "title": "Mystery (Rockman.EXE Anime)",
             "cues": [
               {
                 "text": "A-Aré? Vu~ise-kun..? Fum-Fum?",
@@ -169,28 +169,28 @@
                 "text": "H-Hey, Emma!",
                 "action": "play",
                 "file": "lore/lore_chapter5B.mp3",
-                "title": "Between Two Vows: Chapter 5 (Part B)",
+                "title": "Honeyhive Galaxy (Super Mario Galaxy)",
                 "fadeIn": 2
               },
               {
                 "text": "The sentence died in his throat",
                 "action": "play",
                 "file": "lore/lore_chapter5C.mp3",
-                "title": "Between Two Vows: Chapter 5 (Part C)",
+                "title": "Woods of Poison (Paper Mario Sticker Star)",
                 "fadeIn": 2
               },
               {
                 "text": "The Nijigasaki exit gate was bathed",
                 "action": "play",
                 "file": "lore/lore_chapter5D.mp3",
-                "title": "Between Two Vows: Chapter 5 (Part D)",
+                "title": "Into the Gateway (Super Mario Galaxy)",
                 "fadeIn": 2
               },
               {
                 "text": "Clap... clap... clap.",
                 "action": "play",
                 "file": "lore/lore_chapter5E.mp3",
-                "title": "Between Two Vows: Chapter 5 (Part E)",
+                "title": "Deep Dark Galaxy (Super Mario Galaxy)",
                 "fadeIn": 2
               },
               {
@@ -201,7 +201,7 @@
                 "text": "P...Papa",
                 "action": "play",
                 "file": "lore/lore_chapter5F.mp3",
-                "title": "Between Two Vows: Chapter 5 (Part F)",
+                "title": "A Sign of Disaster (Bowser's Fury)",
                 "fadeIn": 2
               },
               {
@@ -212,7 +212,7 @@
                 "text": "The scene that met Makoto",
                 "action": "play",
                 "file": "lore/lore_chapter5G.mp3",
-                "title": "Between Two Vows: Chapter 5 (Part G)",
+                "title": "Pierce Through The Wind -Ballad- (Rockman.EXE)",
                 "fadeIn": 2
               }
             ]
