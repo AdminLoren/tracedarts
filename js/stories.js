@@ -22,6 +22,7 @@ COTA.stories = (function () {
   let pages = [];              // the chapters + the extras page of that story
   let pageIndex = 0;           // which page is open (0 = chapter 1)
   let activeCues = [];
+  let libraryMusic = null;
   const CUE_LINE = 0.55;
   const chapterCache = {};     // chapter texts we already downloaded
 
@@ -62,6 +63,7 @@ COTA.stories = (function () {
       const res = await fetch("data/stories.json");
       const data = await res.json();
       stories = data.stories || [];
+      libraryMusic = data.libraryMusic || null;
     } catch (err) {
       stories = [];
     }
@@ -340,7 +342,13 @@ COTA.stories = (function () {
     }
     if (name === "library") {
       setScene(null);
-      COTA.audio.stopMusic();
+      if (libraryMusic && libraryMusic.file) {
+        if (!COTA.audio.isPlaying(libraryMusic.file)) {
+          COTA.audio.playMusic(libraryMusic.file, libraryMusic.title, { fadeIn: 2 });
+        }
+      } else {
+        COTA.audio.stopMusic();
+      }
     }
   }
 
@@ -483,7 +491,7 @@ COTA.stories = (function () {
 
     showScreen("book");
     setScene(story.introScene);
-    playStoryMusic(story.introMusic, 2);
+    if (story.introMusic) playStoryMusic(story.introMusic, 2);
   }
 
   // ---------- 3. reader ----------
