@@ -18,15 +18,53 @@ COTA.audio = (function () {
   const volumeSlider = () => document.getElementById("volume-slider");
   const volumeValue = () => document.getElementById("volume-value");
 
+  let marqueeTimer = null;
+
+  function startMarquee(label) {
+    const track = label.firstChild;
+    if (!track || label.scrollWidth <= label.clientWidth + 1) return;
+    const gap = 48;
+    const shift = track.offsetWidth + gap;
+    const clone = document.createElement("span");
+    clone.textContent = label.dataset.text;
+    clone.style.paddingLeft = gap + "px";
+    clone.setAttribute("aria-hidden", "true");
+    track.appendChild(clone);
+    label.style.setProperty("--np-shift", -shift + "px");
+    label.style.setProperty("--np-duration", shift / 35 + "s");
+    label.classList.add("np-scrolling");
+  }
+
+  function setLabelText(label, text) {
+    if (label.dataset.text === text) return;
+    clearTimeout(marqueeTimer);
+    label.dataset.text = text;
+    label.title = text;
+    label.classList.remove("np-overflow", "np-scrolling");
+    label.textContent = "";
+    const track = document.createElement("span");
+    track.className = "np-track";
+    track.textContent = text;
+    label.appendChild(track);
+    requestAnimationFrame(() => {
+      if (label.dataset.text === text && label.scrollWidth > label.clientWidth + 1) {
+        label.classList.add("np-overflow");
+      }
+    });
+    marqueeTimer = setTimeout(() => {
+      if (label.dataset.text === text) startMarquee(label);
+    }, 4000);
+  }
+
   function updateHeaderText() {
     const label = nowPlayingText();
     if (!label) return;
     if (muted || volume === 0) {
-      label.textContent = "Sound Off";
+      setLabelText(label, "Sound Off");
     } else if (currentMusic && currentMusicTitle) {
-      label.textContent = currentMusicTitle;
+      setLabelText(label, currentMusicTitle);
     } else {
-      label.textContent = "Sound On";
+      setLabelText(label, "Sound On");
     }
   }
 
