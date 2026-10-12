@@ -660,6 +660,48 @@
     ]
   },
   {
+    "id": "A14",
+    "code": "mrl",
+    "gen": 2,
+    "name": "Marilu",
+    "nickname": "NOT REGISTERED YET",
+    "bio": "NOT REGISTERED YET",
+    "birthdate": "NOT REGISTERED YET",
+    "occupation": "NOT REGISTERED YET",
+    "cherishes": [
+      "NOT REGISTERED YET"
+    ],
+    "dislikes": [
+      "NOT REGISTERED YET"
+    ],
+    "abilities": [
+      {
+        "name": "NOT REGISTERED YET",
+        "desc": "NOT REGISTERED YET"
+      },
+      {
+        "name": "NOT REGISTERED YET",
+        "desc": "NOT REGISTERED YET"
+      },
+      {
+        "name": "NOT REGISTERED YET",
+        "desc": "NOT REGISTERED YET"
+      }
+    ],
+    "color": "#FFFFFF",
+    "bgm": {
+      "file": "bgm_mrl.mp3",
+      "title": "NOT REGISTERED YET"
+    },
+    "nameGradient": [
+      "#ffffff",
+      "#cfcfcf"
+    ],
+    "nameAliases": [
+      "Marilu"
+    ]
+  },
+  {
     "id": "B1",
     "code": "mea",
     "gen": 1,
@@ -1321,14 +1363,6 @@
     "id": "C3",
     "code": "aix",
     "name": "Ai.EXE",
-    "comingSoon": true,
-    "comingSoonGroup": "2nd Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "C4",
-    "code": "mrl",
-    "name": "Marilu",
     "comingSoon": true,
     "comingSoonGroup": "2nd Gen",
     "color": "#FFFFFF"
