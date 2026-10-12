@@ -31,11 +31,12 @@
             "Kyofu"
           ],
           "nameGradient": [
-            "#ff6a4d",
-            "#d6244f",
-            "#9b30c9"
+            "#ff2b36",
+            "#8f0f1a",
+            "#1c1c22"
           ],
-          "pronoun": "he"
+          "pronoun": "he",
+          "glow": "rgba(255, 60, 60, 0.6)"
         },
         "Mystery": {
           "name": "???",
