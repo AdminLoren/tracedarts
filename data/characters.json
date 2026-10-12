@@ -1,1616 +1,425 @@
-[
-  {
-    "id": "A1",
-    "code": "fum",
-    "gen": 2,
-    "name": "Fumio",
-    "nickname": "Fumio Hasashi",
-    "bio": "A mischievous boy who thrives on his over-the-top confidence, optimism and unhinged humor.\n\nUpon receiving the news that the Author Gods requested structured training for him and his friends following a devastating loss, Fumio fully grasped the gravity of the stakes, and yet never hesitated to step forward. Driven by a desire to forge his own distinct identity rather than remaining an ordinary kid, he approached his mother with absolute resolve, convincing her to train him in her former craft and pass down the grueling path of the Spirit World Warrior. As a kid influenced by his treasured memories and passions, Fum-Fum faces the new abnormal world he lives in with a smile that, in his own words, could probably last him a decade or two.",
-    "birthdate": "September 16",
-    "occupation": "Student / Spirit World Warrior in Training",
-    "cherishes": [
-      "Fried Food",
-      "Sentai Figures",
-      "Platformer Games"
-    ],
-    "dislikes": [
-      "Mainstream Media",
-      "Keeping a low-profile"
-    ],
-    "abilities": [
-      {
-        "name": "Glaciate Barrier",
-        "desc": "His bloodline allows him to create barriers at will"
+{
+  "libraryMusic": {
+    "file": "lore/lore_library.mp3",
+    "title": "History (Sonic Mega Collection)"
+  },
+  "stories": [
+    {
+      "id": "melody-meant-for-another",
+      "title": "Melody Meant for Another",
+      "series": "The Happy Ever Party: Children of the Authors",
+      "tagline": "A song meant for someone else",
+      "pairing": "Fumio × Fumiko",
+      "status": "Ongoing",
+      "summary": "Fumio Hasashi has admired Fumiko Sakura from afar for years. One afternoon by the river, he finally gets to talk to her.",
+      "synopsis": [
+        "Fumio Hasashi has admired Nijigasaki's Fumiko Sakura from a distance for years. One quiet afternoon by the river, he finally gets his chance to talk to her, though not in the way he ever imagined."
+      ],
+      "introScene": {
+        "image": "assets/images/stories/melody-meant-for-another/bg_intro.jpg",
+        "colors": [
+          "#2a1d3d",
+          "#6b3a5c"
+        ],
+        "setting": "Nijigasaki High School, afternoon"
       },
-      {
-        "name": "Naginatajutsu",
-        "desc": "Trained to wield his signature naginata like a butter knife"
+      "speakers": {
+        "Kyofú": {
+          "name": "Kyofú",
+          "nameAliases": [
+            "Kyofú",
+            "Kyofu"
+          ],
+          "nameGradient": [
+            "#ff2b36",
+            "#8f0f1a",
+            "#1c1c22"
+          ],
+          "pronoun": "he",
+          "glow": "rgba(255, 60, 60, 0.6)"
+        },
+        "Mystery": {
+          "name": "???",
+          "nameGradient": [
+            "#eceef3",
+            "#a3a8b5",
+            "#d3d6de"
+          ],
+          "pronoun": "he"
+        }
       },
-      {
-        "name": "Acrobatics",
-        "desc": "Posseses extraordinary agility and body coordination for parkour and tricky maneuvers"
+      "chapters": [
+        {
+          "title": "A Familiar Face in the Crowd",
+          "file": "data/stories/melody-meant-for-another/chapter-1.txt",
+          "scene": {
+            "image": "assets/images/stories/melody-meant-for-another/bg_chapter1.jpg",
+            "colors": [
+              "#1d3a4a",
+              "#3d5f4b"
+            ],
+            "setting": "The riverbank near Nijigasaki, afternoon"
+          }
+        },
+        {
+          "title": "A Song Left Unanswered",
+          "file": "data/stories/melody-meant-for-another/chapter-2.txt",
+          "scene": {
+            "image": "assets/images/stories/melody-meant-for-another/bg_chapter2.jpg",
+            "colors": [
+              "#2b1d3a",
+              "#5a3a52"
+            ],
+            "setting": "The music room"
+          }
+        },
+        {
+          "title": "A Case of the Heart",
+          "file": "data/stories/melody-meant-for-another/chapter-3.txt",
+          "scene": {
+            "image": "assets/images/stories/melody-meant-for-another/bg_chapter3.jpg",
+            "colors": [
+              "#241a30",
+              "#4a3a5a"
+            ],
+            "setting": "The Student Council office"
+          }
+        }
+      ],
+      "extras": {
+        "title": "Extras",
+        "scene": {
+          "image": "assets/images/stories/melody-meant-for-another/bg_extras.jpg",
+          "colors": [
+            "#1b1630",
+            "#3c2a4f"
+          ],
+          "setting": "Cast"
+        },
+        "castRows": [
+          [
+            {
+              "name": "Fumio Hasashi",
+              "art": "assets/images/boxart_fum.png"
+            },
+            {
+              "name": "Fumiko Sakura",
+              "art": "assets/images/boxart_fko.png"
+            }
+          ],
+          [
+            {
+              "name": "Nana Nakagawa (Setsuna Yuki)",
+              "art": "assets/images/boxart_set.png"
+            },
+            {
+              "name": "Shioriko Mifune",
+              "art": "assets/images/boxart_shi.png"
+            }
+          ],
+          [
+            {
+              "name": "Vyse Liang",
+              "art": "assets/images/boxart_vys.png"
+            },
+            {
+              "name": "Karin Asaka",
+              "art": "assets/images/boxart_kar.png"
+            },
+            {
+              "name": "Alicia Hasashi",
+              "art": "assets/images/boxart_ali.png"
+            }
+          ],
+          [
+            {
+              "name": "Meari Watanabe",
+              "art": "assets/images/boxart_mea.png"
+            },
+            {
+              "name": "Hanzo Hasashi",
+              "art": "assets/images/boxart_han.png"
+            }
+          ]
+        ],
+        "credit": "Shioriko Mifune, Nana Nakagawa, and Karin Asaka are owned by Bandai, Love Live!!."
       }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_fum.mp3",
-      "title": "Casino Park (Sonic Heroes)"
     },
-    "isDefault": true,
-    "heightScale": 1.0,
-    "feetLine": 0.982,
-    "nameGradient": [
-      "#ff6b63",
-      "#ff9a8f",
-      "#58d6d0"
-    ],
-    "nameAliases": [
-      "Fumio",
-      "Fumio Hasashi",
-      "Hasashi",
-      "Fum-Fum",
-      "Mio"
-    ],
-    "pronoun": "he"
-  },
-  {
-    "id": "A2",
-    "code": "ali",
-    "gen": 2,
-    "name": "Alicia",
-    "nickname": "Alicia Hasashi",
-    "bio": "A hyperactive girl who rivals the sun itself in radiance. To the public, she can be seen as the little sister of the group. But in reality, she's more akin to a golden retriever. She cuddles her friends to death, is obnoxiously loud, and is hard to control.\n\nAlicia’s natural talent is matched only by her boundless confidence, a trait that occasionally lands her directly in trouble. Rather than letting setbacks crush her spirit, she views every single mistake as a vital learning curve, burning every misstep vividly into her memory to ensure she never repeats it. While her peers and mentors frequently sigh and plead, \"Please don't make a habit of that\".",
-    "birthdate": "October 11",
-    "occupation": "Student Athlete",
-    "cherishes": [
-      "Gyaru Fashion",
-      "Ball Sports",
-      "Money"
-    ],
-    "dislikes": [
-      "Killjoys",
-      "Losing to Fumio",
-      "Watching her parents' PDA"
-    ],
-    "abilities": [
-      {
-        "name": "Hyper-Metabolic Acceleration",
-        "desc": "Her body burns energy at extreme rates, letting her move, react, and process information at lightning speeds."
+    {
+      "id": "between-two-vows",
+      "title": "Between Two Vows",
+      "series": "The Happy Ever Party: Children of the Authors",
+      "tagline": "An origin story of my most popular love triangle",
+      "pairing": "Makoto Williams × Emma Verde × Vyse Liang",
+      "status": "Origin story",
+      "summary": "An origin story of a love triangle at Nijigasaki High School: Makoto Williams × Emma Verde × Vyse Liang.",
+      "cover": "assets/images/stories/between-two-vows/cover.png",
+      "synopsis": [
+        "Emma Verde is the sweetest girl at Nijigasaki High School, which is exactly why nobody expects trouble to find her. Over one long day, secrets are traded, promises are made, and her childhood friend Vyse Liang is pulled into the middle of it."
+      ],
+      "introScene": {
+        "image": "assets/images/stories/between-two-vows/bg_intro.jpg",
+        "colors": [
+          "#1b2140",
+          "#4a2b5e"
+        ],
+        "setting": "Nijigasaki High School, dusk"
       },
-      {
-        "name": "Marksmanship",
-        "desc": "Her honed skills in Archery refined her precision to hit targets and weak spots."
-      },
-      {
-        "name": "Natural Prodigy",
-        "desc": "An innate ability to pick up virtually any skill almost instantly and excel at it with little to no effort."
+      "chapters": [
+        {
+          "title": "On The Case",
+          "file": "data/stories/between-two-vows/chapter-1.txt",
+          "scene": {
+            "image": "assets/images/stories/between-two-vows/bg_chapter1.jpg",
+            "colors": [
+              "#10141d",
+              "#3b2f22"
+            ],
+            "setting": "The Student Union Office, dimly lit"
+          },
+          "music": {
+            "file": "lore/lore_chapter1A.mp3",
+            "title": "Uptown Springdale (Yo-kai Watch)"
+          }
+        },
+        {
+          "title": "Speaking Of the Devil",
+          "file": "data/stories/between-two-vows/chapter-2.txt",
+          "scene": {
+            "image": "assets/images/stories/between-two-vows/bg_chapter2.jpg",
+            "colors": [
+              "#1d2a36",
+              "#566872"
+            ],
+            "setting": "The quiet school corridors"
+          },
+          "music": {
+            "file": "lore/lore_chapter2A.mp3",
+            "title": "Cutscene 3 (Sonic Generations)",
+            "cues": [
+              {
+                "text": "Did you just turn me down?",
+                "action": "dip",
+                "silence": 3,
+                "fadeIn": 3
+              },
+              {
+                "text": "Maybe being too lax and carefree",
+                "action": "fadeOut",
+                "seconds": 6
+              },
+              {
+                "text": "It was Vyse Liang",
+                "action": "play",
+                "file": "lore/lore_chapter2B.mp3",
+                "title": "Deep Dive (Fishdom H2O)",
+                "fadeIn": 3
+              }
+            ]
+          }
+        },
+        {
+          "title": "A Soothing Touch",
+          "file": "data/stories/between-two-vows/chapter-3.txt",
+          "scene": {
+            "image": "assets/images/stories/between-two-vows/bg_chapter3.jpg",
+            "colors": [
+              "#17392b",
+              "#8a7a3a"
+            ],
+            "setting": "The school riverbank slope, afternoon"
+          },
+          "music": {
+            "file": "lore/lore_chapter3A.mp3",
+            "title": "Emma's Bond Theme (LL!! SIFAS)",
+            "cues": [
+              {
+                "text": "Steal all the fun for yourselves",
+                "action": "stop"
+              },
+              {
+                "text": "Standing there with his hands on his hips",
+                "action": "play",
+                "file": "lore/lore_chapter3B.mp3",
+                "title": "Shopper's Row (Yo-kai Watch)",
+                "fadeIn": 2
+              }
+            ]
+          }
+        },
+        {
+          "title": "Cross-Examination",
+          "file": "data/stories/between-two-vows/chapter-4.txt",
+          "scene": {
+            "image": "assets/images/stories/between-two-vows/bg_chapter4.jpg",
+            "colors": [
+              "#2a2f3c",
+              "#a9895a"
+            ],
+            "setting": "The Student Union Office, properly lit"
+          },
+          "music": {
+            "file": "lore/lore_chapter4A.mp3",
+            "title": "Collector (Fishdom H2O)",
+            "cues": [
+              {
+                "text": "What the hell? Emma-chan in a collar",
+                "action": "stop"
+              },
+              {
+                "text": "scrambled, almost dropping the clipboard",
+                "action": "play",
+                "file": "lore/lore_chapter4B.mp3",
+                "title": "Tranquil Afternoon (Rockman.EXE Anime)",
+                "fadeIn": 2
+              },
+              {
+                "text": "We really need you to keep this confidential",
+                "action": "play",
+                "file": "lore/lore_chapter4C.mp3",
+                "title": "Library (Super Mario Galaxy)",
+                "fadeIn": 2
+              },
+              {
+                "text": "SH-SHIO",
+                "action": "stop"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Her Hands are Tied",
+          "file": "data/stories/between-two-vows/chapter-5.txt",
+          "scene": {
+            "image": "assets/images/stories/between-two-vows/bg_chapter5.jpg",
+            "colors": [
+              "#5a2236",
+              "#d9772b"
+            ],
+            "setting": "The Nijigasaki exit gate and bridge, sunset"
+          },
+          "music": {
+            "file": "lore/lore_chapter5A.mp3",
+            "title": "Mystery (Rockman.EXE Anime)",
+            "cues": [
+              {
+                "text": "A-Aré? Vu~ise-kun..? Fum-Fum?",
+                "action": "stop"
+              },
+              {
+                "text": "H-Hey, Emma!",
+                "action": "play",
+                "file": "lore/lore_chapter5B.mp3",
+                "title": "Honeyhive Galaxy (Super Mario Galaxy)",
+                "fadeIn": 2
+              },
+              {
+                "text": "The sentence died in his throat",
+                "action": "play",
+                "file": "lore/lore_chapter5C.mp3",
+                "title": "Woods of Poison (Paper Mario Sticker Star)",
+                "fadeIn": 2
+              },
+              {
+                "text": "The Nijigasaki exit gate was bathed",
+                "action": "play",
+                "file": "lore/lore_chapter5D.mp3",
+                "title": "Into the Gateway (Super Mario Galaxy)",
+                "fadeIn": 2
+              },
+              {
+                "text": "Clap... clap... clap.",
+                "action": "play",
+                "file": "lore/lore_chapter5E.mp3",
+                "title": "Deep Dark Galaxy (Super Mario Galaxy)",
+                "fadeIn": 2
+              },
+              {
+                "text": "Emma's stern defiance vanished instantly",
+                "action": "stop"
+              },
+              {
+                "text": "P...Papa",
+                "action": "play",
+                "file": "lore/lore_chapter5F.mp3",
+                "title": "A Sign of Disaster (Bowser's Fury)",
+                "fadeIn": 2
+              },
+              {
+                "text": "He reached out, placing a firm, grounding hand",
+                "action": "stop"
+              },
+              {
+                "text": "The scene that met Makoto",
+                "action": "play",
+                "file": "lore/lore_chapter5G.mp3",
+                "title": "Pierce Through The Wind -Ballad- (Rockman.EXE)",
+                "fadeIn": 2
+              }
+            ]
+          }
+        }
+      ],
+      "extras": {
+        "title": "Extras",
+        "scene": {
+          "image": "assets/images/stories/between-two-vows/bg_extras.jpg",
+          "colors": [
+            "#1b1630",
+            "#3c2a4f"
+          ],
+          "setting": "Art gallery / sketchbook"
+        },
+        "cast": [
+          {
+            "name": "Emma Verde",
+            "art": "assets/images/boxart_emm.png"
+          },
+          {
+            "name": "Vyse Liang",
+            "art": "assets/images/boxart_vys.png"
+          },
+          {
+            "name": "Makoto Williams",
+            "art": "assets/images/boxart_mak.png"
+          },
+          {
+            "name": "Shioriko Mifune",
+            "art": "assets/images/boxart_shi.png"
+          },
+          {
+            "name": "Fumiko Sakura",
+            "art": "assets/images/boxart_fko.png"
+          },
+          {
+            "name": "Nana Nakagawa (Setsuna Yuki)",
+            "art": "assets/images/boxart_set.png"
+          },
+          {
+            "name": "Fumio Hasashi",
+            "art": "assets/images/boxart_fum.png"
+          },
+          {
+            "name": "Matsuda Yuukashi",
+            "art": "assets/images/boxart_mat.png"
+          }
+        ],
+        "arts": [
+          {
+            "image": "assets/images/stories/between-two-vows/inspiration1.jpg",
+            "caption": "Makoto and Emma, art by \"Miss Riverwoods\""
+          },
+          {
+            "image": "assets/images/stories/between-two-vows/inspiration2.jpg",
+            "caption": "Fumiko and Makoto, art by \"Miss Riverwoods\""
+          },
+          {
+            "image": "assets/images/stories/between-two-vows/inspiration3.jpg",
+            "caption": "Shioriko and Makoto, art by \"Miss Riverwoods\""
+          }
+        ],
+        "credit": "Emma Verde, Shioriko Mifune, and Nana Nakagawa are owned by Bandai, Love Live!!."
       }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_ali.mp3",
-      "title": "Tropical Resort Act 2 (Sonic Colors)"
-    },
-    "heightScale": 1.0,
-    "feetLine": 0.967,
-    "nameGradient": [
-      "#ff7b80",
-      "#ff8c78",
-      "#ffbe85"
-    ],
-    "nameAliases": [
-      "Alicia",
-      "Alicia Hasashi",
-      "Ali"
-    ],
-    "pronoun": "she"
-  },
-  {
-    "id": "A3",
-    "code": "vys",
-    "gen": 2,
-    "name": "Vyse",
-    "nickname": "Vyse Liang",
-    "bio": "An aesthetically gifted boy who takes the breath out of everyone in the room just by breathing the same air as them. Secretly, his introverted self hates the attention, leading him to cling to his friends. To him, they make him feel normal and less of someone who is famous for being... famous.\n\nFor the greater part of his childhood, Vyse was an emotional blank slate, displaying a near-total lack of personality that left his parents struggling just to elicit a genuine feeling from him. His world shifted dramatically once he forged bonds with his friends. Surrounded by their influence, the walls broke down, allowing him to finally experience genuine emotion, act like a normal kid, and discover the simple joy of having fun.",
-    "birthdate": "November 5",
-    "occupation": "Student",
-    "cherishes": [
-      "Playing the Guitar",
-      "The art of Sculpture"
-    ],
-    "dislikes": [
-      "Overestimation",
-      "Conflict",
-      "Dishonoring his parents"
-    ],
-    "abilities": [
-      {
-        "name": "Cryomancy",
-        "desc": "Can drastically drop ambient temperatures, rapidly flash-freezing surroundings and manipulating dense ice structures or weapons."
-      },
-      {
-        "name": "Figure Skater",
-        "desc": "Zero-friction across any terrain at will, allows him to skate effortlessly (and gracefully) at high speeds."
-      },
-      {
-        "name": "Phase Submersion",
-        "desc": "Can temporarily phase through solid structures like walls or ground by holding his breath, treating solid matter like a liquid medium."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_vys.mp3",
-      "title": "Blizzard Valley (Sonic Racing Crossworlds)"
-    },
-    "heightScale": 1.047,
-    "feetLine": 0.981,
-    "nameGradient": [
-      "#9a7be8",
-      "#8fd8f2",
-      "#e655d9"
-    ],
-    "nameAliases": [
-      "Vyse",
-      "Vyse Liang",
-      "Liang",
-      "Vu~ise",
-      "Vaisu"
-    ],
-    "pronoun": "he"
-  },
-  {
-    "id": "A4",
-    "code": "riku",
-    "gen": 2,
-    "name": "Riku.EXE",
-    "nickname": "Riku.EXE Shindou",
-    "bio": "The only son of the Shindou Family, a true boy genius.\n\nHe tries everything he can to be more of his father, masking his shortcomings behind a cold and abrasive exterior. But deep inside resides his mother's heart that treats every living thing with respect.\n\nArmed with a newly upgraded artificial body, Riku shares his sisters' ambition to follow in their father's footsteps and enlist in the military, confident that his advanced specs and unique capabilities would be an absolute asset to the force. Much to his annoyance, however, there are no shortcuts to rank—he is still bound to the traditional path of enlistment. To prove his qualifications, Riku has to jump through the standard bureaucratic hoops, starting with enduring the tedious reality of school just to secure a piece of paper.",
-    "birthdate": "August 29",
-    "occupation": "Student / Tech Specialist",
-    "cherishes": [
-      "Innovation",
-      "Fighting Games"
-    ],
-    "dislikes": [
-      "Process of getting a Degree"
-    ],
-    "abilities": [
-      {
-        "name": "Cyber-Engineering",
-        "desc": "Genius-level intellect for designing and crafting advanced gear like his custom aeroboard, heavy combat hammer, and signature green visualizers."
-      },
-      {
-        "name": "Spirit-Bound Card Manipulation",
-        "desc": "Allows him to channel, throw, and manipulate spectral cards infused with spirit energy"
-      },
-      {
-        "name": "Military Tactical Intellect",
-        "desc": "possesses deep, insider knowledge of high-level military protocol and lingo"
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_riku.mp3",
-      "title": "Cyber Kujacker (Rockman X4)"
-    },
-    "heightScale": 1.004,
-    "feetLine": 0.987,
-    "nameGradient": [
-      "#f4f0e0",
-      "#f2dc4b"
-    ],
-    "nameAliases": [
-      "Riku.EXE",
-      "Riku.EXE Shindou",
-      "Riku"
-    ]
-  },
-  {
-    "id": "A5",
-    "code": "emm",
-    "gen": 2,
-    "name": "Emma",
-    "nickname": "Emma Verde",
-    "bio": "The adopted swiss girl whose one goal is to spread happiness and spoil the ones she loves with her generosity. Once you're caught under her spell, you can never break out, and she'll give you two big reasons why.\n\nEmma stands as the undisputed heart and most hardworking member of her group. No matter how demanding her own life becomes, she continuously finds the time and energy to care for every single one of her friends. Uninterested in grand recognition or material reward, the only payment Emma ever desires for her dedication is seeing the genuine, happy smiles of friends and family.",
-    "birthdate": "February 5",
-    "occupation": "Student",
-    "cherishes": [
-      "Bread Crusts",
-      "Nature Walks",
-      "Singing"
-    ],
-    "dislikes": [
-      "Unhappy Loved Ones",
-      "Conflict"
-    ],
-    "abilities": [
-      {
-        "name": "Comforting Presence",
-        "desc": "Posseses a calming, therapeutic nature designed to make people smile."
-      },
-      {
-        "name": "Angelic Vocals",
-        "desc": "Sweet, calm, and nurturing voice, often bringing a comforting or \"healing\" tone to her songs and dialogue"
-      },
-      {
-        "name": "Maid Persona",
-        "desc": "\"Big sister\" personality lets her help people regardless of intense tasks."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_emm.mp3",
-      "title": "Emma's theme (LL! SIFAS)"
-    },
-    "franchiseLogo": "nijigasaki_logo.svg",
-    "heightScale": 0.975,
-    "feetLine": 0.989,
-    "nameGradient": [
-      "#b9f59a",
-      "#6ee04a",
-      "#7fe0d4"
-    ],
-    "nameAliases": [
-      "Emma",
-      "Emma Verde",
-      "Verde"
-    ],
-    "pronoun": "she"
-  },
-  {
-    "id": "A6",
-    "code": "kar",
-    "gen": 2,
-    "name": "Karin",
-    "nickname": "Karin Asaka",
-    "bio": "The sophisticated beauty hailing from the countryside, Karin is the absolute manifestation of the word \"alluring.\" On the surface, her cool, seductive composure makes her appear completely unshakeable—though those who manage to get closer quickly realize her demeanor is far more akin to being hilariously \"aloof.\" Whether that contrast is a turn-off or the complete opposite is entirely up to the observer, but Karin guards that clumsy side fiercely, determined not to let just anyone see past her polished exterior.\n\nBehind closed doors, Karin keeps her private life strictly under wraps, with only a select, trusted handful within her circle aware of the unexpectedly grounding lifestyle she actually lives. Yet despite her guarded nature and preference for privacy, she treasures her bonds deeply; when it comes to hanging out and socializing, she wouldn't trade her chaotic group of friends for anything in the world.",
-    "birthdate": "June 29",
-    "occupation": "Student / Amateur Model",
-    "cherishes": [
-      "Her performance identity",
-      "Pandas"
-    ],
-    "dislikes": [
-      "Navigating",
-      "being looked down upon"
-    ],
-    "abilities": [
-      {
-        "name": "Umbral Construct Manipulation",
-        "desc": "Manipulates shadows into floor-anchored strands to trap targets or shape into whip-like weapons for combat."
-      },
-      {
-        "name": "Shadow-Tether Tracking",
-        "desc": "Latches shadow strands onto targets to track their locations, eavesdrop from a distance, or pull herself toward them."
-      },
-      {
-        "name": "Psychological Subterfuge",
-        "desc": "Master of social deception, seamlessly extracting high-value intelligence from targets for her and her team's benefit."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_kar.mp3",
-      "title": "Karin's theme (LL! SIFAS)"
-    },
-    "franchiseLogo": "nijigasaki_logo.svg",
-    "heightScale": 1.004,
-    "feetLine": 0.99,
-    "nameGradient": [
-      "#9b7cf0",
-      "#58b4f2"
-    ],
-    "nameAliases": [
-      "Karin",
-      "Karin Asaka"
-    ],
-    "pronoun": "she"
-  },
-  {
-    "id": "A7",
-    "code": "fko",
-    "gen": 2,
-    "name": "Fumiko",
-    "nickname": "Fumiko Sakura",
-    "bio": "As the hardworking and undeniably trusty Secretary of the Nijigasaki Student Council, Fumiko is the definition of operational perfection—there is virtually nothing she cannot handle or resolve to get the job done. Yet beneath her immaculate professional record lies a deep-seated craving for excitement.\n\nWhen this seemingly ordinary girl somehow got roped into a circle full of supernatural outliers living in a world brimming with gods and magic, Fumiko embraced the chaos with open arms, viewing the extraordinary world of her peers as the ultimate escape from her usual, boring everyday life.",
-    "birthdate": "October 16",
-    "occupation": "Student Council Secretary",
-    "cherishes": [
-      "Honey",
-      "freetime with friends",
-      "collecting shoes"
-    ],
-    "dislikes": [
-      "Paperwork",
-      "societal norms"
-    ],
-    "abilities": [
-      {
-        "name": "Perfunctory",
-        "desc": "Does her duties routinely without any care, deep interest, or enthusiasm"
-      },
-      {
-        "name": "Jack-of-all-trades",
-        "desc": "can do many different practical tasks regardless of expertise"
-      },
-      {
-        "name": "Crisis Responder",
-        "desc": "Resists high stress, leaving only the main task to solve."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_fko.mp3",
-      "title": "Sakura's theme (SF Alpha 2)"
-    },
-    "heightScale": 1.0,
-    "feetLine": 0.98,
-    "nameGradient": [
-      "#ff6fe0",
-      "#ffc0f2",
-      "#ff4fd0"
-    ],
-    "nameAliases": [
-      "Fumiko",
-      "Fumiko Sakura",
-      "Sakura",
-      "Miko"
-    ],
-    "pronoun": "she"
-  },
-  {
-    "id": "A8",
-    "code": "set",
-    "gen": 2,
-    "name": "Setsuna",
-    "nickname": "Setsuna Yuki / Nana Nakagawa",
-    "bio": "The Student Council President's alter ego who became an urban legend in Nijigasaki High. An endless source of passion, energy and charisma.\n\nShe's not afraid to show enthusiasm for her obsessions, sometimes she just can't help it. If the stars align, we might see her favorite light novel referenced in her next live performance.",
-    "birthdate": "August 8",
-    "occupation": "School Idol / Student Council President",
-    "cherishes": [
-      "Anime",
-      "manga",
-      "school idols",
-      "c̶̨̎o̴̦̽͌o̷̼̮̓k̶̤̲̀i̴̢͑̍n̷̖̼̏g̴͂ͅ"
-    ],
-    "dislikes": [
-      "Strict Restrictions",
-      "Health Class"
-    ],
-    "abilities": [
-      {
-        "name": "Vocal Powerhouse",
-        "desc": "possesses a powerful, high-energy singing voice and impressive range"
-      },
-      {
-        "name": "Stage Presence",
-        "desc": "She is known for her fiery passion, charismatic delivery, and bright scarlet-themed performances"
-      },
-      {
-        "name": "Double Life",
-        "desc": "Acts as the strict, proper, and orderly student council president who maintains high academic standards"
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_set.mp3",
-      "title": "Setsuna's theme (LL! SIFAS)"
-    },
-    "franchiseLogo": "nijigasaki_logo.svg",
-    "heightScale": 0.958,
-    "feetLine": 0.992,
-    "nameGradient": [
-      "#ff5468",
-      "#ec3249",
-      "#d81c2f"
-    ],
-    "nameAliases": [
-      "Setsuna",
-      "Setsuna Yuki",
-      "Nana",
-      "Nana Nakagawa",
-      "Nakagawa"
-    ],
-    "pronoun": "she"
-  },
-  {
-    "id": "A9",
-    "code": "shi",
-    "gen": 2,
-    "name": "Shioriko",
-    "nickname": "Shioriko Mifune",
-    "bio": "A serious and meticulous girl, Shioriko operates under the firm belief that every action must serve a clear, defined purpose. She habitually observes those around her from a distance, analyzing their habits and strengths to help them reach their true potential—even if her sharp, blunt honesty causes her to come across as cold and unfeeling at first glance.\n\nBeneath her rigid exterior lies a fundamentally good person who genuinely wants to see others succeed. Though her intense pragmatism often creates a barrier between her and her peers, Shioriko harbors a deep, quiet yearning to connect with others on a personal level, constantly balancing her strategic nature with her unspoken desire for meaningful companionship.",
-    "birthdate": "October 5",
-    "occupation": "Student Council Member",
-    "cherishes": [
-      "Nihon Buyō (Dance)",
-      "Ikebana (Flower Arranging)",
-      "Sadō (Tea Ceremonies)"
-    ],
-    "dislikes": [
-      "Aimless Passions",
-      "Inefficiency"
-    ],
-    "abilities": [
-      {
-        "name": "Analytical Observation",
-        "desc": "Reads body language and behavior to identify a person's hidden strengths, emotional vulnerabilities, and personal limits."
-      },
-      {
-        "name": "Vulnerability Mapping",
-        "desc": "Spotlights flaws in plans, organizational systems, or personal dynamics simply by watching from the sidelines, finding exactly where things need improvement."
-      },
-      {
-        "name": "Strategic Profiling",
-        "desc": "Evaluates a person's core potential at a glance, guiding others toward their ideal path without ever putting herself in the center of attention."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_shi.mp3",
-      "title": "Shioriko's theme (LL! SIFAS)"
-    },
-    "franchiseLogo": "nijigasaki_logo.svg",
-    "heightScale": 1.011,
-    "feetLine": 0.985,
-    "nameGradient": [
-      "#4fc4a0",
-      "#7fdcc0",
-      "#dfe9e7"
-    ],
-    "nameAliases": [
-      "Shioriko",
-      "Shioriko Mifune",
-      "Mifune",
-      "Shio"
-    ],
-    "pronoun": "she"
-  },
-  {
-    "id": "A10",
-    "code": "rik",
-    "gen": 2,
-    "name": "Rikki",
-    "nickname": "Rikki Yinqi",
-    "bio": "An unstable, nameless artificial human created by the Nefarious Satsujin Clan through the combined blood of two Authors.\n\nGiven the name \"Rikki\" by Fumio, his artificial anatomy leaves him with an unstable physical structure—causing him to shiver uncontrollably and act noticeably strange. Despite his bizarre bodily quirks, he is completely healthy and unbothered by them. Having escaped his chaotic creation, he asks for nothing more than an ordinary life free from trauma and conflict.",
-    "birthdate": "May 12",
-    "occupation": "Student",
-    "cherishes": [
-      "Warm Meals",
-      "Photography"
-    ],
-    "dislikes": [
-      "Talking",
-      "Arrogance"
-    ],
-    "abilities": [
-      {
-        "name": "Construct Appendages",
-        "desc": "Releases three biological tentacles from his back. Each tentacle is permanently fused with a massive spectral weapon construct: an axe, a halberd, and a greatsword."
-      },
-      {
-        "name": "Coywolf Instincts",
-        "desc": "Inherits the razor-sharp survival senses of an apex predator, designed to kill. Grants him hyper-aware environmental tracking, pack-oriented awareness, and an uncanny knack for detecting danger before it strikes."
-      },
-      {
-        "name": "Autonomous Muscle Memory",
-        "desc": "Bypasses his erratic mental reflexes entirely by allowing his body to act on raw physical instinct in response to threats before his mind even processes the action."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_rik.mp3",
-      "title": "Acid Man (Rockman 11)"
-    },
-    "birthdateLabel": "Fostered Date",
-    "heightScale": 1.028,
-    "feetLine": 0.977,
-    "nameGradient": [
-      "#d67065",
-      "#d46b68",
-      "#fd3ea1"
-    ],
-    "nameAliases": [
-      "Rikki",
-      "Rikki Yinqi"
-    ]
-  },
-  {
-    "id": "A11",
-    "code": "geo",
-    "gen": 2,
-    "name": "George",
-    "nickname": "George Fujima",
-    "bio": "Ask him where he’s from, what's his story, or why he is what he is, and George will either change the subject or give you the cold shoulder.\n\nWhat could the answer be to his reasons of being such an enigma? It's either he's hiding from something... or just really dramatic.",
-    "birthdate": "Unknown, Refuses to state",
-    "occupation": "Student / Delivery Driver",
-    "cherishes": [
-      "Ideal Daily Routine",
-      "Setsuna's music"
-    ],
-    "dislikes": [
-      "Fumio's Tomfoolery",
-      "Intrusive Questions",
-      "Banana Juice"
-    ],
-    "abilities": [
-      {
-        "name": "Telepathic Cognition",
-        "desc": "Possesses the capacity for direct cognitive interception, allowing to access and interpret a person's unspoken thoughts"
-      },
-      {
-        "name": "Retrocognitive Scry",
-        "desc": "Projects their conciousness backwards to an individual's timeline to observe their past memories"
-      },
-      {
-        "name": "Drawback: Neural Strain",
-        "desc": "Using abilities triggers migraines and neorological burnouts from the unfiltered noise."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_geo.mp3",
-      "title": "Sand Hill (Sonic Adventure)"
-    },
-    "heightScale": 1.043,
-    "feetLine": 0.984,
-    "nameGradient": [
-      "#d39b68",
-      "#ebab50"
-    ],
-    "nameAliases": [
-      "George",
-      "George Fujima"
-    ]
-  },
-  {
-    "id": "A12",
-    "code": "mak",
-    "gen": 2,
-    "name": "Makoto",
-    "nickname": "Makoto Williams",
-    "bio": "Arrogant, calculating, and dangerously intelligent, Makoto operates on the single belief that the world is a stage meant for him to rule. He directs that intellect entirely toward personal dominance.\n\nA master of subtle manipulation, gaslighting, and truth-bending, He smoothly rewrites narratives to turn allies against each other and position himself as indispensable. He treats every interaction as a transaction and every person as a piece on a board, stopping at absolute nothing to seize total authority.",
-    "birthdate": "May 2",
-    "occupation": "Student Council Member",
-    "cherishes": [
-      "Intellectual Superiority",
-      "Jewelry"
-    ],
-    "dislikes": [
-      "Being outsmarted",
-      "denying his desires"
-    ],
-    "abilities": [
-      {
-        "name": "Psychological Warfare",
-        "desc": "Master-level grasp of human behavior, gaslighting, and cold reading. He can isolate individuals, create false narratives, and break someone's confidence or alliances purely through conversation."
-      },
-      {
-        "name": "Cold-Calculated Strategy",
-        "desc": "Exceptional analytical intellect capable of mapping out complex, multi-step contingency plans, anticipating responses, and leveraging environmental or political situations to his absolute advantage."
-      },
-      {
-        "name": "Charismatic Authority",
-        "desc": "Possesses an imposing, persuasive presence that naturally coerces peers, superiors, and authority figures into following his lead or granting him influence."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_mak.mp3",
-      "title": "Metallic Madness Act 2 (Sonic Mania)"
-    },
-    "heightScale": 1.028,
-    "feetLine": 0.966,
-    "nameGradient": [
-      "#e5707c",
-      "#e7d2ae",
-      "#c94c93"
-    ],
-    "nameAliases": [
-      "Makoto",
-      "Makoto Williams",
-      "Williams"
-    ],
-    "pronoun": "he"
-  },
-  {
-    "id": "A13",
-    "code": "meg",
-    "gen": 2,
-    "name": "Megumi",
-    "nickname": "Megumi Williams",
-    "bio": "Raised in a strictly controlled environment, Megumi grew up isolated from standard childhood experiences, leaving her quiet, guarded, and unsure of how to express her feelings. The only constant presence she found comfort in was her protective, highly restrictive older twin-brother.\n\nHer worldview shifted permanently after crossing paths with the 2nd Generation crew, whose chaotic warmth exposed her to everything she missed, forcing her out of her shell to experience the real world for the first time.",
-    "birthdate": "May 2",
-    "occupation": "Student",
-    "cherishes": [
-      "Connecting w/ friends",
-      "technology"
-    ],
-    "dislikes": [
-      "Social Isolation Aversion"
-    ],
-    "abilities": [
-      {
-        "name": "Cognitive Aptitude",
-        "desc": "Has an advanced technical proficiency in digital infrastructure"
-      },
-      {
-        "name": "Insightful Empathy",
-        "desc": "an innate ability to see right through people when they are hiding their true feelings, intentions, or struggles."
-      },
-      {
-        "name": "Reserved Endurance",
-        "desc": "Possesses exceptional patience and mental focus under pressure, allowing her to stay calm and rational when chaos breaks out around her. [ 1st Generation ]"
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_meg.mp3",
-      "title": "Rina's theme (LL! SIFAS)"
-    },
-    "heightScale": 0.989,
-    "feetLine": 0.965,
-    "nameGradient": [
-      "#f7c086",
-      "#efa24c"
-    ],
-    "nameAliases": [
-      "Megumi",
-      "Megumi Williams"
-    ]
-  },
-  {
-    "id": "B1",
-    "code": "mea",
-    "gen": 1,
-    "name": "Meari",
-    "nickname": "Meari Watanabe",
-    "bio": "Abducted at a young age, Meari was forced into the brutal training of a Spirit World Warrior, molded specifically as an instrument for world destruction. The immense trauma fractured her psyche, splitting her original whimsical, lighthearted spirit off into a distinct alternate personality while her primary persona turned cold, distant, and survival-driven.\n\nAfter escaping the exploiter's grasp, she found a warm, nurturing environment during her teenage years that allowed her past wounds to heal, eventually enabling both fractured sides of her identity to reconcile and merge into a single, complete self. Today, she has buried her dark past to fulfill her true dream as a well-renowned chef.",
-    "birthdate": "September 8",
-    "occupation": "Restaurateur / Spirit World Warrior",
-    "cherishes": [
-      "Matcha",
-      "Culinary Arts"
-    ],
-    "dislikes": [
-      "Tangerines",
-      "Scum Paparazzi",
-      "Wasted Food"
-    ],
-    "abilities": [
-      {
-        "name": "Glaciate Barriers",
-        "desc": "Can instantly manifest dense, semi-transparent frozen spatial walls with her hands"
-      },
-      {
-        "name": "Naginata Mastery",
-        "desc": "Masterful proficiency in a fluid, spear-and-blade combat."
-      },
-      {
-        "name": "Culinary Expertise",
-        "desc": "World-class skill in flavor profiling, preparation, and kitchen leadership, turning cooking into a genuine medium for connection and healing."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_mea.mp3",
-      "title": "Maki's theme (LL! SIFAS)"
-    },
-    "heightScale": 1.036,
-    "feetLine": 0.99,
-    "nameGradient": [
-      "#4af1cc",
-      "#4eede0",
-      "#5cdfa5"
-    ],
-    "nameAliases": [
-      "Meari",
-      "Meari Watanabe"
-    ],
-    "pronoun": "she"
-  },
-  {
-    "id": "B2",
-    "code": "han",
-    "gen": 1,
-    "name": "Hanzo",
-    "nickname": "Jubei \"Hanzo\" Hasashi",
-    "bio": "Born into a wealthy and influential lineage, Jubei was labeled from birth as the harbinger of a ruinous prophecy, stranding him with an unnerving streak of perpetual bad luck. Shunned by his family and subjected to harsh labor while his siblings thrived, his ordeal culminated in a death sentence by drowning.\n\nSurrounding circumstances allowed him to survive the execution, escape his family's shadow, and forged a new path. Though his early life was defined by cruelty, he eventually found the genuine warmth and affection he was denied as a child, now standing as the proud co-owner of the renowned restaurant brand Parhelion.",
-    "birthdate": "August 8",
-    "occupation": "Restaurateur / Active Reservist",
-    "cherishes": [
-      "Physical Affection"
-    ],
-    "dislikes": [
-      "Deep bodies of Water",
-      "Presumptious People"
-    ],
-    "abilities": [
-      {
-        "name": "Dual-Era Combat Arts",
-        "desc": "Mastered lethal Kenjutsu and Katana techniques throughout his youth from the Author Gods themselves, seamlessly transitioning in adulthood into high-level hand-to-hand martial arts to adapt to any range or scenario."
-      },
-      {
-        "name": "Conditioned Tolerance",
-        "desc": "A harrowing byproduct of lifelong mistreatment, his body possesses an unnaturally high pain threshold and durability, allowing him to push through severe physical trauma that would instantly incapacitate others."
-      },
-      {
-        "name": "Latent Spiritual Aura",
-        "desc": "gained the ability to harness inner spirit energy. He can channel this latent energy to drastically amplify his physical strikes, project concentrated force, and heighten his combat reflexes beyond normal human limits."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_han.mp3",
-      "title": "Starship Mario 2 (Super Mario Galaxy 2)"
-    },
-    "heightScale": 1.092,
-    "feetLine": 0.994,
-    "nameGradient": [
-      "#ff5042",
-      "#f43f55",
-      "#ff4d5f"
-    ],
-    "nameAliases": [
-      "Hanzo",
-      "Hanzo Hasashi"
-    ],
-    "pronoun": "he"
-  },
-  {
-    "id": "B3",
-    "code": "sat",
-    "gen": 1,
-    "name": "Satoshi",
-    "nickname": "Satoshi Hasashi",
-    "bio": "Blessed with exceptional talent and physical prowess from a young age, Satoshi was widely expected to achieve greatness. Despite the constant praise, encounters with people in poverty during his childhood taught him to remain grounded, humble, and deeply appreciative of his gifts. His life took a drastic turn when he uncovered a long-kept family secret: the existence of a twin brother hidden from both him and his younger sister.\n\nAbandoning his comfortable life, he embarked on a lengthy search that eventually led him to Uranoshiya High School. He now works as the school’s gym teacher and varsity basketball coach, determined to instill the discipline and mentality needed to bring the institution its very first championship.",
-    "birthdate": "August 8",
-    "occupation": "PhysEd Teacher / Active Reservist",
-    "cherishes": [
-      "Worthy Opponents",
-      "Harmless Banter"
-    ],
-    "dislikes": [
-      "Pessimism",
-      "Referees"
-    ],
-    "abilities": [
-      {
-        "name": "Ignited Speed",
-        "desc": "Blends explosive, high-speed movement with pyrokinesis, blitzing the battlefield in brief bursts of speed while coating his strikes, footsteps, or weapons in intense, controllable fire."
-      },
-      {
-        "name": "Dual Blade Fluidity",
-        "desc": "Exceptional mastery over traditional swordsmanship and Katana techniques to expose enemy defense"
-      },
-      {
-        "name": "Adaptive Prodigy",
-        "desc": "A rare physical genius that allows him to pick up any sport or athletic discipline almost instantly, achieving a high level of proficiency and strategic understanding after only a few attempts."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_sat.mp3",
-      "title": "SA2 in the groove (Sonic Adventure 2)"
-    },
-    "heightScale": 1.132,
-    "feetLine": 0.984,
-    "nameGradient": [
-      "#df6d5c",
-      "#efad4d",
-      "#e15b5e"
-    ],
-    "nameAliases": [
-      "Satoshi",
-      "Satoshi Hasashi"
-    ]
-  },
-  {
-    "id": "B4",
-    "code": "mic",
-    "gen": 1,
-    "name": "Michan",
-    "nickname": "Michan Yuukashi",
-    "bio": "The gentle and sweet-natured daughter of an Author God, Michan’s early years were overshadowed by deceptive and malicious individuals who took advantage of her innocence, tricking her into believing their mistreatment was normal. The resulting trauma left her with a deep-seated fear of men and severe personal insecurities.\n\nHowever, through the unwavering support of genuine connections and a safe environment, she slowly unlearned her trauma, reclaimed her autonomy, and grew past her fears. Today, she lives a peaceful, fulfilling life, content and satisfied with the quiet happiness she earned for herself.",
-    "birthdate": "Feb 14",
-    "occupation": "Housewife / Professional Model",
-    "cherishes": [
-      "Sweets",
-      "Gardening",
-      "Crepes"
-    ],
-    "dislikes": [
-      "Military Operations",
-      "Deceit"
-    ],
-    "abilities": [
-      {
-        "name": "Alchemical Concoctions",
-        "desc": "Brews potions to heal, harm, or manipulate target behavior and status."
-      },
-      {
-        "name": "Scythe Mastery",
-        "desc": "Wields a scythe for wide-reach, high-lethality melee combat."
-      },
-      {
-        "name": "Unqualified Triage",
-        "desc": "Performs fast, effective emergency first aid using raw instinct and improvised materials."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_mic.mp3",
-      "title": "Ruby's theme (LL! SIFAS)"
-    },
-    "heightScale": 1.021,
-    "feetLine": 0.993,
-    "nameGradient": [
-      "#ef80a1",
-      "#eea9a1"
-    ],
-    "nameAliases": [
-      "Michan",
-      "Michan Yuukashi"
-    ]
-  },
-  {
-    "id": "B5",
-    "code": "mat",
-    "gen": 1,
-    "name": "Matsuda",
-    "nickname": "Matsuda Yuukashi",
-    "bio": "The son of an Author God, Matsuda was subjected to ruthless, military-grade firearms training from a young age to forge him into an elite S-Class Soldier. His life became entirely defined by a single-minded vow: to protect his sister from any further pain, regardless of the toll it took on his own safety.\n\nAfter integrating into Michan’s circle, he slowly unlearned his hyper-vigilance, let down his guard, and built genuine trust with others. Today, he lives as a calm, settled family man, resting easy with the peace he fought so hard to secure and the knowledge that his sister is is in the hands of a good, semi-tolerable man",
-    "birthdate": "November 7",
-    "occupation": "Senior Operations Agent",
-    "cherishes": [
-      "Firearms Collection",
-      "reading"
-    ],
-    "dislikes": [
-      "Strangers",
-      "Germs",
-      "Satoshi"
-    ],
-    "abilities": [
-      {
-        "name": "Eagle Precision",
-        "desc": "Hits virtually any target with near-perfect accuracy using ranged firearms."
-      },
-      {
-        "name": "Counter Mastery",
-        "desc": "Executes high-level hand-to-hand combat maneuvers designed to parry and counter incoming strikes."
-      },
-      {
-        "name": "Akuma's Heritage",
-        "desc": "Taps into his divine bloodline to temporarily augment all physical traits and combat abilities."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_mat.mp3",
-      "title": "The Doom (Shadow The Hedgehog)"
-    },
-    "heightScale": 1.167,
-    "feetLine": 0.979,
-    "nameGradient": [
-      "#f0525f",
-      "#c85a7a",
-      "#7fa8c8"
-    ],
-    "nameAliases": [
-      "Matsuda",
-      "Matsuda Yuukashi",
-      "Mats"
-    ],
-    "pronoun": "he"
-  },
-  {
-    "id": "B6",
-    "code": "kai",
-    "gen": 1,
-    "name": "Kaito",
-    "nickname": "Kaito Haruto",
-    "bio": "Gentle and submissive by nature, Kaito stands out as the calm, rational center of the Author group. Beneath his mild demeanor lies a master strategist with exceptional mastery across a broad arsenal of weapons. Even after suffering the tragic loss of his love interest at a young age, he maintains strict emotional control, earning a reputation among his peers as the most sane and grounded member of the team.\n\nBecause he lacks the intimidating presence and overt toughness of his comrades, younger recruits often underestimate and pick on him. However, those doubts vanish the moment he steps into battle, demonstrating precisely why his tactical genius and combat skills make him an irreplaceable asset. When he isn't executing high-stakes operations, he simply wishes the Author God he serves would grant him an occasional break.",
-    "birthdate": "May 4",
-    "occupation": "Author Strategist",
-    "cherishes": [
-      "French Toast",
-      "Pay Day",
-      "Memories"
-    ],
-    "dislikes": [
-      "Last-Minute Work",
-      "Driving"
-    ],
-    "abilities": [
-      {
-        "name": "Arsenal Mastery",
-        "desc": "Adapts instantly to virtually any weapon, switching fluidly between firearms, melee, and specialized gear mid-combat."
-      },
-      {
-        "name": "Grand Strategist",
-        "desc": "Calculates high-level tactics on the fly, predicting enemy movements and devising flawless battlefield plans."
-      },
-      {
-        "name": "Endless Endurance",
-        "desc": "Operates with near-limitless stamina, sustaining focus and effort far longer than even the most extreme night owls."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_kai.mp3",
-      "title": "Sweet Sweet Canyon (Mario Kart 8)"
-    },
-    "heightScale": 1.092,
-    "feetLine": 0.989,
-    "nameGradient": [
-      "#8de8fe",
-      "#43d3f8",
-      "#3fd6fc"
-    ],
-    "nameAliases": [
-      "Kaito",
-      "Kaito Haruto"
-    ]
-  },
-  {
-    "id": "B7",
-    "code": "min",
-    "gen": 1,
-    "name": "Minna",
-    "nickname": "Minna Shindou (née Takashima)",
-    "bio": "Born into the Takashima family, Minna was disowned early in life and sought refuge in literature, using books to cope with isolation while developing an exceptionally high IQ. Despite being shy and plagued by self-doubt, her warmth naturally draws people to her, making her surprisingly adept at forging deep connections. In her adulthood, she believed she was living her absolute dream beside her childhood crush, only to suffer a devastating betrayal when she was abandoned and replaced once he grew bored of her. Devastated by the heartbreak, Minna now lives in complete isolation, cutting off all contact from both her friends and family.",
-    "birthdate": "March 25",
-    "occupation": "Unknown",
-    "cherishes": [
-      "Pastries",
-      "Reading",
-      "Baking"
-    ],
-    "dislikes": [
-      "Abandonment",
-      "Excercise"
-    ],
-    "abilities": [
-      {
-        "name": "Genius Intellect",
-        "desc": "Uses her high IQ and extensive literary knowledge to analyze situations, spot patterns, and solve complex problems rapidly."
-      },
-      {
-        "name": "Magnetic Presence",
-        "desc": "Unconsciously projects a gentle, relatable aura that lowers the guards of those around her and earns their trust."
-      },
-      {
-        "name": "Absolute Reclusion",
-        "desc": "Enters a state of complete emotional and sensory detachment, making her untraceable and difficult to reach or influence."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_min.mp3",
-      "title": "Hanamaru's theme (LL! SIFAS)"
-    },
-    "heightScale": 1.054,
-    "feetLine": 0.975,
-    "nameGradient": [
-      "#f8d77b",
-      "#f7c745",
-      "#d37d68"
-    ],
-    "nameAliases": [
-      "Minna",
-      "Minna Shindou"
-    ]
-  },
-  {
-    "id": "B8",
-    "code": "leo",
-    "name": "Leonardo",
-    "comingSoon": true,
-    "comingSoonGroup": "1st Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "B9",
-    "code": "rka",
-    "gen": 1,
-    "name": "Rikka",
-    "nickname": "Rikka Asaka (née Takahashi)",
-    "bio": "Grounded, razor-sharp, and perpetually five steps ahead of everyone else, Rikka is the undisputed bedrock of her group. Having carried her unmatched organizational talents from her days as a legendary Student Council President into adulthood, she balances her terrifying foresight with a warm, dry-witted humor that keeps her peers grounded. Rather than ruling with an iron fist, she guides others through deadpan wisdom, casual teasing, and an innate ability to read people instantly.\n\nBehind her cool demeanor and relentless work ethic lies a woman who simply wants her team to survive their own chaos—mostly so she can actually finish her paperwork and enjoy a quiet moment. Whenever someone in her circle loses their way or faces a complete catastrophe, Rikka is the very first person they call to fix it.",
-    "birthdate": "December 24",
-    "occupation": "Chief of Staff / Strategic Operations Manager",
-    "cherishes": [
-      "Ambitious Dreams",
-      "Quiet Evenings"
-    ],
-    "dislikes": [
-      "Short-Sightedness",
-      "Wasted Potential"
-    ],
-    "abilities": [
-      {
-        "name": "Umbral Echolocation",
-        "desc": "Emits silent acoustic pulses through shadows and air, mapping out entire structures, tracking heartbeats, and detecting enemy movements through solid barriers."
-      },
-      {
-        "name": "Shadow-Acoustic Intercept",
-        "desc": "Pinpoints sound signatures with absolute accuracy, allowing her to move instantaneously through dark spaces and intercept hostiles before they can harm her allies."
-      },
-      {
-        "name": "Sonic Umbra",
-        "desc": "Manipulates shadow-bound soundwaves to mute surrounding noise for stealth extractions or release localized sonic bursts that disorient and neutralize attackers in close quarters."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_rka.mp3",
-      "title": "Tabloid Jargon (Sonic Mania)"
-    },
-    "heightScale": 1.071,
-    "feetLine": 0.989,
-    "nameGradient": [
-      "#c3a3e7",
-      "#e853c6",
-      "#b352e9"
-    ],
-    "nameAliases": [
-      "Rikka",
-      "Rikka Asaka"
-    ]
-  },
-  {
-    "id": "B10",
-    "code": "hir",
-    "name": "Hirotaka",
-    "comingSoon": true,
-    "comingSoonGroup": "1st Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "B11",
-    "code": "mei",
-    "gen": 1,
-    "name": "Meili",
-    "nickname": "Meili Yinqi",
-    "bio": "As the Princess of the Grand Kingdom of Rulnei, Meili grew tired of passively waiting for a proper suitor to claim her hand in marriage. Seeking purpose, she mistakenly aligned herself with the Satsujin Clan, only to be manipulated into helping conquer civilizations before being callously discarded once her usefulness ran out.\n\nHer awakening as an Author offered her a second chance at life, allowing her to claim true independence, earn the honor of her royal title on her own terms, and accept that her homeland no longer required her as a princess. Though saddened in adulthood as her original companion group drifted apart onto separate paths, she eventually found renewed purpose and a vibrant new circle while working alongside the Irregular Hunters.",
-    "birthdate": "April 12",
-    "occupation": "Military Secretary",
-    "cherishes": [
-      "Meat",
-      "Strong Women"
-    ],
-    "dislikes": [
-      "Being Restrained",
-      "Vegetables"
-    ],
-    "abilities": [
-      {
-        "name": "Gale Force",
-        "desc": "Controls and manipulates sharp, high-velocity wind currents granted by her Author status."
-      },
-      {
-        "name": "Hidden Brawn",
-        "desc": "Leverages her sleeper build to hide her immense physical strength that rivals the brawn of seasoned male fighters."
-      },
-      {
-        "name": "Combat Sambo",
-        "desc": "Utilizes specialized military grappling, throws, and striking techniques to neutralize opponents in close quarters."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_mei.mp3",
-      "title": "Toad Harbor (Mario Kart 8)"
-    },
-    "heightScale": 1.04,
-    "feetLine": 0.969,
-    "nameGradient": [
-      "#539be8",
-      "#638ed9"
-    ],
-    "nameAliases": [
-      "Meili",
-      "Meili Yinqi"
-    ]
-  },
-  {
-    "id": "B13",
-    "code": "aik",
-    "gen": 1,
-    "name": "Aika",
-    "nickname": "Aika Yuukashi (née Kobayashi)",
-    "bio": "Bright, jovial, and resilient, Aika carries a warm energy that belies a heavy past. Having spent almost her entire life operating within military ranks, she spent years being treated as a trophy and an object to be possessed—a reality that constantly threatened the safety of those she cared about most. To break the cycle and safeguard her loved ones, she stepped away from her past to rebuild her life from the ground up. She found a fresh start at the Irregular Hunter base, discovering a familiar operational environment that finally offered her a healthy, safe, and supportive community.",
-    "birthdate": "April 11",
-    "occupation": "Military Liaison / Irregular Hunter Navigator",
-    "cherishes": [
-      "Shopping with Emma"
-    ],
-    "dislikes": [
-      "Objectification"
-    ],
-    "abilities": [
-      {
-        "name": "Master Comms Relay",
-        "desc": "Coordinates team communications flawlessly under extreme battlefield conditions, maintaining secure, real-time command loops across complex operational zones."
-      },
-      {
-        "name": "Close-Quarters Specialist",
-        "desc": "Highly proficient in personal hand-to-hand combat and defensive tactics, allowing her to rapidly neutralize threats and hold her ground in tight spaces."
-      },
-      {
-        "name": "Disarming Charm",
-        "desc": "Uses her striking appearance and charismatic presence to manipulate, distract, or deceive targets into revealing crucial intelligence and granting access."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_aik.mp3",
-      "title": "Sunshine Airport (Mario Kart 8)"
-    },
-    "heightScale": 1.036,
-    "feetLine": 0.983,
-    "nameGradient": [
-      "#f2c049",
-      "#edd95b",
-      "#f4a347"
-    ],
-    "nameAliases": [
-      "Aika",
-      "Aika Yuukashi"
-    ]
-  },
-  {
-    "id": "B12",
-    "code": "aki",
-    "gen": 1,
-    "name": "Akira",
-    "nickname": "Code Name: \"Nighthawk\"",
-    "bio": "Shrouded in mystery to most who meet him, Akira is at core an exceptionally disciplined soldier who simply executes every mission with absolute perfection. Frequently deployed on high-stakes military operations, he serves directly under an Author God—whose relentless demands leave him quietly wishing for a break from time to time.\n\nRelentlessly methodical, Akira refuses to rely on luck or bravado. He adheres strictly to the safest, most consistent tactical strategies, shutting down any plan that carries even the smallest percentage of uncalculated risk. For him, mission success and total risk mitigation are non-negotiable.",
-    "birthdate": "Unknown",
-    "occupation": "Special Operations Field Agent",
-    "cherishes": [
-      "Quiet Downtime",
-      "Guaranteed Outcomes"
-    ],
-    "dislikes": [
-      "Oppressiveness",
-      "Low Percentage Numbers"
-    ],
-    "abilities": [
-      {
-        "name": "Anatomic Neutralization",
-        "desc": "Leverages exact physical mechanics and minimal force to instantaneously disarm, incapacitate, or kill a target with micro-adjustments and joint manipulation."
-      },
-      {
-        "name": "Demolitions Expert",
-        "desc": "Demonstrates complete mastery over high-grade explosives, enabling precise breach-and-clear maneuvers, rapid terrain destruction, and ordnance disposal."
-      },
-      {
-        "name": "Ultimatum Resolution",
-        "desc": "Evaluates extreme binary choices and forced trade-offs under high pressure, instantly identifying and selecting the mathematically optimal outcome every single time."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_aki.mp3",
-      "title": "Storm Fukuroul (Rockman X4)"
-    },
-    "heightScale": 1.12,
-    "feetLine": 0.999,
-    "nameGradient": [
-      "#d39d68",
-      "#d39d68",
-      "#d89d64"
-    ],
-    "nameAliases": [
-      "Akira"
-    ]
-  },
-  {
-    "id": "B14",
-    "code": "mir",
-    "gen": 1,
-    "name": "Mira",
-    "nickname": "Mira Liang",
-    "bio": "Raised in a family-owned fish business, Mira started out as a sweet, timid student helper whose clumsiness and anxiety constantly got the better of her. Her quiet life took an unexpected turn when Leng stopped to help her pick up dropped papers, instantly awakening her hidden affinity for brooding, goth aesthetics. Driven by this new fascination, she pushed past her nervous nature to reach out and forge a bond with him, ultimately getting pulled into the wild dynamics of his circle.\n\nIn adulthood, Mira embraced her roots while growing into her own confidence, transforming into an extraordinarily skilled fisherman and master fish butcherer. Fulfilling her lifelong heart’s desire, she balances her craft with being a devoted, deeply loving mother.",
-    "birthdate": "June 11",
-    "occupation": "Master Fisher / Angler / Butcherer",
-    "cherishes": [
-      "Marine Life",
-      "Seafood"
-    ],
-    "dislikes": [
-      "Thunderstorms",
-      "Man-o'-Wars"
-    ],
-    "abilities": [
-      {
-        "name": "Master Angler",
-        "desc": "Possesses absolute mastery over fishing techniques, water navigation, and marine life behavior across all aquatic environments."
-      },
-      {
-        "name": "Precision Processing",
-        "desc": "Executes flawless, highly efficient butchering on any sea creature, instantly identifying vital weak spots and maximizing high-yield harvesting."
-      },
-      {
-        "name": "Ocean Intuition",
-        "desc": "Reads subtle atmospheric and oceanic shifts to predict storms, heavy waves, and sudden environmental hazards long before they arrive."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_mir.mp3",
-      "title": "Aquarium Park Act 2 (Sonic Colors)"
-    },
-    "heightScale": 1.021,
-    "feetLine": 0.981,
-    "nameGradient": [
-      "#d368bc",
-      "#be5cdf",
-      "#d368cb"
-    ],
-    "nameAliases": [
-      "Mira",
-      "Mira Liang"
-    ]
-  },
-  {
-    "id": "B15",
-    "code": "len",
-    "gen": 1,
-    "name": "Leng",
-    "nickname": "Leng Tian",
-    "bio": "Raised within a clan that takes fierce pride in forging cold, lethal assassins, Leng was conditioned from birth to execute every contract without failure. That streak ended when a target protected by the Author Gods foiled his assignment. Anticipating ruthless punishment from his own family for his failure, Leng was instead offered a path of mercy by the Author Gods: serve them in exchange for his life. Recognizing the far healthier, more humane environment they offered, he accepted and quietly severed all ties with his clan.\n\nAs an adult, Leng operates as a versatile and tireless provider. To support his family, he balances his duties as a direct servant to the Author Gods alongside selective freelance assassination contracts and various side jobs.",
-    "birthdate": "December 1",
-    "occupation": "Author Gods' Servitor / Freelance Assassin / Multi-Job Contractor",
-    "cherishes": [
-      "Artifact Collecting",
-      "\"Pimp\" Fashion"
-    ],
-    "dislikes": [
-      "Delayed Salary",
-      "Spicy Meals"
-    ],
-    "abilities": [
-      {
-        "name": "Dollar-Store Staff",
-        "desc": "Channels frost energy through his staff to manipulate ice effortlessly, generating freezing fields and constructs without draining his stamina."
-      },
-      {
-        "name": "Glacial Glide",
-        "desc": "Lays down smooth paths of ice to speed-skate across terrain, achieving high-velocity mobility without needing to sprint or run."
-      },
-      {
-        "name": "Absolute Presence Erasure",
-        "desc": "Suppresses all auditory and physical presence at will, allowing him to move in total, dead silence during infiltrations and executions."
-      }
-    ],
-    "color": "#FFFFFF",
-    "bgm": {
-      "file": "bgm_len.mp3",
-      "title": "Cool Edge - Night (Sonic Unleashed)"
-    },
-    "heightScale": 1.128,
-    "feetLine": 0.992,
-    "nameGradient": [
-      "#559de6",
-      "#4c8bef"
-    ],
-    "nameAliases": [
-      "Leng",
-      "Leng Tian"
-    ]
-  },
-  {
-    "id": "C1",
-    "code": "akx",
-    "name": "Aki.EXE",
-    "comingSoon": true,
-    "comingSoonGroup": "2nd Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "C2",
-    "code": "rko",
-    "name": "Riko.EXE",
-    "comingSoon": true,
-    "comingSoonGroup": "2nd Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "C3",
-    "code": "aix",
-    "name": "Ai.EXE",
-    "comingSoon": true,
-    "comingSoonGroup": "2nd Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "C4",
-    "code": "mrl",
-    "name": "Marilu",
-    "comingSoon": true,
-    "comingSoonGroup": "2nd Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "C8",
-    "code": "zya",
-    "name": "Zyane",
-    "comingSoon": true,
-    "comingSoonGroup": "2nd Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "C5",
-    "code": "ama",
-    "name": "Amane",
-    "comingSoon": true,
-    "comingSoonGroup": "2nd Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "C6",
-    "code": "tak",
-    "name": "Taki",
-    "comingSoon": true,
-    "comingSoonGroup": "2nd Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "C7",
-    "code": "hnx",
-    "name": "Hanayo.EXE",
-    "comingSoon": true,
-    "comingSoonGroup": "2nd Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S1",
-    "code": "sor",
-    "name": "Sora",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S2",
-    "code": "aya",
-    "name": "Ayaka",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S3",
-    "code": "col",
-    "name": "Colonel.EXE",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S4",
-    "code": "irx",
-    "name": "Iris.EXE",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S5",
-    "code": "dac",
-    "name": "Dachino",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S6",
-    "code": "mri",
-    "name": "Mari",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S7",
-    "code": "dia",
-    "name": "Dia",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S8",
-    "code": "kei",
-    "name": "Keiko",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S9",
-    "code": "xch",
-    "name": "X",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S10",
-    "code": "zer",
-    "name": "Zero",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S11",
-    "code": "axl",
-    "name": "Axl",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S12",
-    "code": "aly",
-    "name": "Alia",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S13",
-    "code": "iri",
-    "name": "Iris",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S14",
-    "code": "har",
-    "name": "Harumi",
-    "comingSoon": true,
-    "comingSoonGroup": "1st Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S15",
-    "code": "sut",
-    "name": "Suteru",
-    "comingSoon": true,
-    "comingSoonGroup": "1st Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S16",
-    "code": "mia",
-    "name": "Mirai",
-    "comingSoon": true,
-    "comingSoonGroup": "1st Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S17",
-    "code": "akh",
-    "name": "Akihito",
-    "comingSoon": true,
-    "comingSoonGroup": "1st Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S18",
-    "code": "mit",
-    "name": "Mitsuki",
-    "comingSoon": true,
-    "comingSoonGroup": "1st Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S19",
-    "code": "hro",
-    "name": "Hiroomi",
-    "comingSoon": true,
-    "comingSoonGroup": "1st Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S20",
-    "code": "may",
-    "name": "Maya",
-    "comingSoon": true,
-    "comingSoonGroup": "1st Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S21",
-    "code": "ata",
-    "name": "Atashi",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "S22",
-    "code": "ara",
-    "name": "Arashi",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "G1",
-    "code": "yuk",
-    "name": "Yuka",
-    "comingSoon": true,
-    "comingSoonGroup": "Author Gods",
-    "color": "#FFC93C"
-  },
-  {
-    "id": "G2",
-    "code": "bar",
-    "name": "Barron",
-    "comingSoon": true,
-    "comingSoonGroup": "Author Gods",
-    "color": "#FFC93C"
-  },
-  {
-    "id": "G3",
-    "code": "eri",
-    "name": "Erina",
-    "comingSoon": true,
-    "comingSoonGroup": "Author Gods",
-    "color": "#FFC93C"
-  },
-  {
-    "id": "G4",
-    "code": "shj",
-    "name": "Shinjiro",
-    "comingSoon": true,
-    "comingSoonGroup": "Author Gods",
-    "color": "#FFC93C"
-  },
-  {
-    "id": "G5",
-    "code": "hid",
-    "name": "Hideyuki",
-    "comingSoon": true,
-    "comingSoonGroup": "Author Gods",
-    "color": "#FFC93C"
-  },
-  {
-    "id": "G6",
-    "code": "ain",
-    "name": "Aina",
-    "comingSoon": true,
-    "comingSoonGroup": "Author Gods",
-    "color": "#FFC93C"
-  },
-  {
-    "id": "G7",
-    "code": "akm",
-    "name": "Akuma",
-    "comingSoon": true,
-    "comingSoonGroup": "Author Gods",
-    "color": "#FFC93C"
-  },
-  {
-    "id": "G8",
-    "code": "hyu",
-    "name": "Hyung",
-    "comingSoon": true,
-    "comingSoonGroup": "Author Gods",
-    "color": "#FFC93C"
-  },
-  {
-    "id": "G9",
-    "code": "yam",
-    "name": "Yamato",
-    "comingSoon": true,
-    "comingSoonGroup": "Author Gods",
-    "color": "#FFC93C"
-  }
-]
+    }
+  ]
+}
