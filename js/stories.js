@@ -297,6 +297,7 @@ COTA.stories = (function () {
         if (piece.speaker) {
           holder.style.setProperty("--grad", gradientOf(piece.speaker));
           holder.dataset.speaker = piece.speaker.name;
+          if (piece.speaker.glow) holder.style.filter = "drop-shadow(0 0 2px " + piece.speaker.glow + ")";
         }
         addTextWithNames(holder, piece.text);
         p.appendChild(holder);
@@ -305,6 +306,7 @@ COTA.stories = (function () {
         if (piece.speaker) {
           holder.style.setProperty("--grad", gradientOf(piece.speaker));
           holder.dataset.speaker = piece.speaker.name;   // handy for checking who is speaking
+          if (piece.speaker.glow) holder.style.filter = "drop-shadow(0 0 2px " + piece.speaker.glow + ")";
         }
         holder.appendChild(document.createTextNode('"'));
         addTextWithNames(holder, piece.text);
@@ -323,6 +325,7 @@ COTA.stories = (function () {
       if (name.start > position) parent.appendChild(document.createTextNode(text.slice(position, name.start)));
       const span = el("span", "nm", text.slice(name.start, name.end));
       span.style.setProperty("--grad", gradientOf(name.character));
+      if (name.character.glow) span.style.filter = "drop-shadow(0 0 2px " + name.character.glow + ")";
       parent.appendChild(span);
       position = name.end;
     });
