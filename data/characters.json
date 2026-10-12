@@ -94,9 +94,9 @@
     "heightScale": 1.0,
     "feetLine": 0.967,
     "nameGradient": [
-      "#d76568",
-      "#de7367",
-      "#f4a575"
+      "#ff7b80",
+      "#ff8c78",
+      "#ffbe85"
     ],
     "nameAliases": [
       "Alicia",
@@ -747,9 +747,9 @@
     "heightScale": 1.092,
     "feetLine": 0.994,
     "nameGradient": [
-      "#fa6441",
-      "#e7547f",
-      "#f44768"
+      "#ff5042",
+      "#f43f55",
+      "#ff4d5f"
     ],
     "nameAliases": [
       "Hanzo",
