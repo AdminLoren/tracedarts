@@ -23,6 +23,8 @@ COTA.stories = (function () {
   let pageIndex = 0;           // which page is open (0 = chapter 1)
   let activeCues = [];
   let libraryMusic = null;
+  let spoilerMode = false;
+  let veilAllowed = false;
   const CUE_LINE = 0.55;
   const chapterCache = {};     // chapter texts we already downloaded
 
@@ -94,13 +96,16 @@ COTA.stories = (function () {
   let nameLookup = {};       // "Fumio" -> that character's data
   let nameRegex = null;      // finds any character name inside a piece of text
   let namesReady = false;
+  let namesStory = "";
+  let storySpeakers = {};
 
   function escapeRegex(text) {
     return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   }
 
   async function prepareNames() {
-    if (namesReady) return;
+    const storyKey = currentStory ? currentStory.id : "";
+    if (namesReady && namesStory === storyKey) return;
     let characters = [];
     try { characters = await COTA.data.getCharacters(); } catch (e) {}
 
@@ -108,6 +113,11 @@ COTA.stories = (function () {
     characters.forEach((character) => {
       if (!character.nameGradient || !character.nameAliases) return;
       character.nameAliases.forEach((alias) => { nameLookup[alias] = character; });
+    });
+
+    storySpeakers = (currentStory && currentStory.speakers) || {};
+    Object.keys(storySpeakers).forEach((key) => {
+      (storySpeakers[key].nameAliases || []).forEach((alias) => { nameLookup[alias] = storySpeakers[key]; });
     });
 
     // Longest names first, so "Emma Verde" is found before "Emma"
@@ -120,6 +130,11 @@ COTA.stories = (function () {
       );
     }
     namesReady = true;
+    namesStory = storyKey;
+  }
+
+  function speakerByTag(tag) {
+    return nameLookup[tag] || storySpeakers[tag] || null;
   }
 
   function gradientOf(character) {
@@ -170,6 +185,15 @@ COTA.stories = (function () {
   // Splits a paragraph into pieces: narration and "quoted dialogue".
   // Each quote gets a speaker (a character, or null if nobody is sure).
   function readParagraph(text, state) {
+    const thought = text.match(/^\[([^\]]+)\]\s*([^"]+)$/);
+    if (thought && thought[1].trim().toLowerCase() !== "none") {
+      const thinker = speakerByTag(thought[1].trim());
+      state.pendingActor = null;
+      if (thinker) {
+        if (thinker !== state.last) { state.prev = state.last; state.last = thinker; }
+      }
+      return [{ type: "thought", text: thought[2], speaker: thinker }];
+    }
     const pieces = [];
     const parts = text.split('"');          // even positions = narration, odd = inside quotes
     const hasUnclosedQuote = parts.length % 2 === 0;
@@ -207,7 +231,7 @@ COTA.stories = (function () {
       let speaker = null;
 
       if (piece.forced) {
-        speaker = piece.forced.toLowerCase() === "none" ? null : nameLookup[piece.forced] || null;
+        speaker = piece.forced.toLowerCase() === "none" ? null : speakerByTag(piece.forced);
         piece.speaker = speaker;
       } else {
         // 1. A name right after the quote:  "..." Fumiko said
@@ -268,6 +292,14 @@ COTA.stories = (function () {
     pieces.forEach((piece) => {
       if (piece.type === "narration") {
         addTextWithNames(p, piece.text);
+      } else if (piece.type === "thought") {
+        const holder = el("span", piece.speaker ? "say" : "");
+        if (piece.speaker) {
+          holder.style.setProperty("--grad", gradientOf(piece.speaker));
+          holder.dataset.speaker = piece.speaker.name;
+        }
+        addTextWithNames(holder, piece.text);
+        p.appendChild(holder);
       } else {
         const holder = el("span", piece.speaker ? "say" : "");
         if (piece.speaker) {
@@ -339,6 +371,8 @@ COTA.stories = (function () {
     if (name !== "reader") {
       activeCues = [];
       showCueMarker(false);
+      veilAllowed = false;
+      updateSpoilerVeil();
     }
     if (name === "library") {
       setScene(null);
@@ -358,6 +392,39 @@ COTA.stories = (function () {
       return;
     }
     COTA.audio.playMusic(music.file, music.title, { fadeIn: fadeIn });
+  }
+
+  function loadSpoilerMode() {
+    try {
+      spoilerMode = localStorage.getItem("cota_no_spoiler") === "1";
+    } catch (err) {
+      spoilerMode = false;
+    }
+  }
+
+  function saveSpoilerMode() {
+    try {
+      localStorage.setItem("cota_no_spoiler", spoilerMode ? "1" : "0");
+    } catch (err) {}
+  }
+
+  function placeSpoilerVeil() {
+    const veil = byId("stories-spoiler-veil");
+    if (!veil) return;
+    const clearSpace = window.innerWidth < 700 ? 70 : 100;
+    veil.style.top = window.innerHeight * CUE_LINE + clearSpace + "px";
+  }
+
+  function updateSpoilerVeil() {
+    const veil = byId("stories-spoiler-veil");
+    const button = byId("stories-shield-btn");
+    if (button) {
+      button.textContent = "No-Spoiler: " + (spoilerMode ? "On" : "Off");
+      button.setAttribute("aria-pressed", spoilerMode ? "true" : "false");
+    }
+    if (!veil) return;
+    placeSpoilerVeil();
+    veil.classList.toggle("on", spoilerMode && veilAllowed);
   }
 
   function placeCueMarker() {
@@ -560,11 +627,14 @@ COTA.stories = (function () {
     const isExtras = page.type === "extras";
 
     byId("stories-chapter-title").textContent = page.title;
+    veilAllowed = !isExtras;
+    updateSpoilerVeil();
     textBox.hidden = isExtras;
     extrasBox.hidden = !isExtras;
 
     if (isExtras) {
       byId("stories-chapter-kicker").textContent = "Bonus";
+      await prepareNames();
       renderExtras(extrasBox, page.extras);
     } else {
       byId("stories-chapter-kicker").textContent = "Chapter " + page.number + " of " + currentStory.chapters.length;
@@ -626,57 +696,64 @@ COTA.stories = (function () {
 
     // --- Cast ---
     container.appendChild(el("h3", "stories-extras-heading", "Cast"));
-    const castGrid = el("div", "cast-grid");
-    (extras.cast || []).forEach((member) => {
-      const card = el("figure", "cast-card");
-      const art = el("div", "cast-art");
+    const castRows = extras.castRows && extras.castRows.length ? extras.castRows : [extras.cast || []];
+    castRows.forEach((row) => {
+      const castGrid = el("div", extras.castRows ? "cast-row" : "cast-grid");
+      row.forEach((member) => {
+        const card = el("figure", "cast-card");
+        const art = el("div", "cast-art");
 
-      // "art" can be one picture or a list of pictures (for a pair)
-      const images = Array.isArray(member.art) ? member.art : member.art ? [member.art] : [];
-      if (images.length > 1) card.classList.add("cast-card-pair"); // pairs take two columns
-      if (images.length) {
-        images.forEach((src) => {
-          const img = document.createElement("img");
-          img.src = src;
-          img.alt = member.name;
-          img.loading = "lazy";
-          art.appendChild(img);
-        });
-      } else {
-        art.classList.add("cast-art-empty");
-        art.appendChild(el("span", "", "No art :("));
+        // "art" can be one picture or a list of pictures (for a pair)
+        const images = Array.isArray(member.art) ? member.art : member.art ? [member.art] : [];
+        if (images.length > 1) card.classList.add("cast-card-pair"); // pairs take two columns
+        if (images.length) {
+          images.forEach((src) => {
+            const img = document.createElement("img");
+            img.src = src;
+            img.alt = member.name;
+            img.loading = "lazy";
+            art.appendChild(img);
+          });
+        } else {
+          art.classList.add("cast-art-empty");
+          art.appendChild(el("span", "", "No art :("));
+        }
+        card.appendChild(art);
+        const caption = el("figcaption", "");
+        addTextWithNames(caption, member.name);
+        card.appendChild(caption);
+        castGrid.appendChild(card);
+      });
+      container.appendChild(castGrid);
+    });
+
+    if (extras.arts) {
+      // --- Arts that inspired the novel ---
+      container.appendChild(el("h3", "stories-extras-heading", "Arts that inspired the novel"));
+      const gallery = el("div", "inspire-grid");
+      const arts = extras.arts || [];
+      if (!arts.length) {
+        const empty = el("div", "inspire-empty");
+        empty.appendChild(el("span", "", "No art :("));
+        gallery.appendChild(empty);
       }
-      card.appendChild(art);
-      card.appendChild(el("figcaption", "", member.name));
-      castGrid.appendChild(card);
-    });
-    container.appendChild(castGrid);
-
-    // --- Arts that inspired the novel ---
-    container.appendChild(el("h3", "stories-extras-heading", "Arts that inspired the novel"));
-    const gallery = el("div", "inspire-grid");
-    const arts = extras.arts || [];
-    if (!arts.length) {
-      const empty = el("div", "inspire-empty");
-      empty.appendChild(el("span", "", "No art :("));
-      gallery.appendChild(empty);
+      arts.forEach((art) => {
+        const figure = el("figure", "inspire-card");
+        const link = document.createElement("a");
+        link.href = art.image;
+        link.target = "_blank";          // click a picture to see it full size
+        link.rel = "noopener";
+        const img = document.createElement("img");
+        img.src = art.image;
+        img.alt = art.caption || "Inspiration art";
+        img.loading = "lazy";
+        link.appendChild(img);
+        figure.appendChild(link);
+        if (art.caption) figure.appendChild(el("figcaption", "", art.caption));
+        gallery.appendChild(figure);
+      });
+      container.appendChild(gallery);
     }
-    arts.forEach((art) => {
-      const figure = el("figure", "inspire-card");
-      const link = document.createElement("a");
-      link.href = art.image;
-      link.target = "_blank";          // click a picture to see it full size
-      link.rel = "noopener";
-      const img = document.createElement("img");
-      img.src = art.image;
-      img.alt = art.caption || "Inspiration art";
-      img.loading = "lazy";
-      link.appendChild(img);
-      figure.appendChild(link);
-      if (art.caption) figure.appendChild(el("figcaption", "", art.caption));
-      gallery.appendChild(figure);
-    });
-    container.appendChild(gallery);
 
     if (extras.credit) container.appendChild(el("p", "stories-credit", extras.credit));
   }
@@ -719,6 +796,15 @@ COTA.stories = (function () {
     window.addEventListener("scroll", updateProgress, { passive: true });
     window.addEventListener("scroll", checkCues, { passive: true });
     window.addEventListener("resize", placeCueMarker);
+    window.addEventListener("resize", placeSpoilerVeil);
+    loadSpoilerMode();
+    updateSpoilerVeil();
+    byId("stories-shield-btn").addEventListener("click", () => {
+      COTA.audio.playSfx("ui_click.mp3");
+      spoilerMode = !spoilerMode;
+      saveSpoilerMode();
+      updateSpoilerVeil();
+    });
 
     // Keyboard: left / right arrow keys change page while reading
     document.addEventListener("keydown", (e) => {
