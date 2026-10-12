@@ -5,6 +5,146 @@
   },
   "stories": [
     {
+      "id": "melody-meant-for-another",
+      "title": "Melody Meant for Another",
+      "series": "The Happy Ever Party: Children of the Authors",
+      "tagline": "A song meant for someone else",
+      "pairing": "Fumio × Fumiko",
+      "status": "Ongoing",
+      "summary": "Fumio Hasashi has admired Fumiko Sakura from afar for years. One afternoon by the river, he finally gets to talk to her.",
+      "synopsis": [
+        "Fumio Hasashi has admired Nijigasaki's Fumiko Sakura from a distance for years. One quiet afternoon by the river, he finally gets his chance to talk to her, though not in the way he ever imagined."
+      ],
+      "introScene": {
+        "image": "assets/images/stories/melody-meant-for-another/bg_intro.jpg",
+        "colors": [
+          "#2a1d3d",
+          "#6b3a5c"
+        ],
+        "setting": "Nijigasaki High School, afternoon"
+      },
+      "speakers": {
+        "Kyofú": {
+          "name": "Kyofú",
+          "nameAliases": [
+            "Kyofú",
+            "Kyofu"
+          ],
+          "nameGradient": [
+            "#ff6a4d",
+            "#d6244f",
+            "#9b30c9"
+          ],
+          "pronoun": "he"
+        },
+        "Mystery": {
+          "name": "???",
+          "nameGradient": [
+            "#eceef3",
+            "#a3a8b5",
+            "#d3d6de"
+          ],
+          "pronoun": "he"
+        }
+      },
+      "chapters": [
+        {
+          "title": "A Familiar Face in the Crowd",
+          "file": "data/stories/melody-meant-for-another/chapter-1.txt",
+          "scene": {
+            "image": "assets/images/stories/melody-meant-for-another/bg_chapter1.jpg",
+            "colors": [
+              "#1d3a4a",
+              "#3d5f4b"
+            ],
+            "setting": "The riverbank near Nijigasaki, afternoon"
+          }
+        },
+        {
+          "title": "A Song Left Unanswered",
+          "file": "data/stories/melody-meant-for-another/chapter-2.txt",
+          "scene": {
+            "image": "assets/images/stories/melody-meant-for-another/bg_chapter2.jpg",
+            "colors": [
+              "#2b1d3a",
+              "#5a3a52"
+            ],
+            "setting": "The music room"
+          }
+        },
+        {
+          "title": "A Case of the Heart",
+          "file": "data/stories/melody-meant-for-another/chapter-3.txt",
+          "scene": {
+            "image": "assets/images/stories/melody-meant-for-another/bg_chapter3.jpg",
+            "colors": [
+              "#241a30",
+              "#4a3a5a"
+            ],
+            "setting": "The Student Council office"
+          }
+        }
+      ],
+      "extras": {
+        "title": "Extras",
+        "scene": {
+          "image": "assets/images/stories/melody-meant-for-another/bg_extras.jpg",
+          "colors": [
+            "#1b1630",
+            "#3c2a4f"
+          ],
+          "setting": "Cast"
+        },
+        "castRows": [
+          [
+            {
+              "name": "Fumio Hasashi",
+              "art": "assets/images/boxart_fum.png"
+            },
+            {
+              "name": "Fumiko Sakura",
+              "art": "assets/images/boxart_fko.png"
+            }
+          ],
+          [
+            {
+              "name": "Nana Nakagawa (Setsuna Yuki)",
+              "art": "assets/images/boxart_set.png"
+            },
+            {
+              "name": "Shioriko Mifune",
+              "art": "assets/images/boxart_shi.png"
+            }
+          ],
+          [
+            {
+              "name": "Vyse Liang",
+              "art": "assets/images/boxart_vys.png"
+            },
+            {
+              "name": "Karin Asaka",
+              "art": "assets/images/boxart_kar.png"
+            },
+            {
+              "name": "Alicia Hasashi",
+              "art": "assets/images/boxart_ali.png"
+            }
+          ],
+          [
+            {
+              "name": "Meari Watanabe",
+              "art": "assets/images/boxart_mea.png"
+            },
+            {
+              "name": "Hanzo Hasashi",
+              "art": "assets/images/boxart_han.png"
+            }
+          ]
+        ],
+        "credit": "Shioriko Mifune, Nana Nakagawa, and Karin Asaka are owned by Bandai, Love Live!!."
+      }
+    },
+    {
       "id": "between-two-vows",
       "title": "Between Two Vows",
       "series": "The Happy Ever Party: Children of the Authors",
