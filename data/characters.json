@@ -153,7 +153,8 @@
       "Vyse",
       "Vyse Liang",
       "Liang",
-      "Vu~ise"
+      "Vu~ise",
+      "Vaisu"
     ],
     "pronoun": "he"
   },
@@ -302,7 +303,8 @@
     "nameAliases": [
       "Karin",
       "Karin Asaka"
-    ]
+    ],
+    "pronoun": "she"
   },
   {
     "id": "A7",
@@ -704,7 +706,8 @@
     "nameAliases": [
       "Meari",
       "Meari Watanabe"
-    ]
+    ],
+    "pronoun": "she"
   },
   {
     "id": "B2",
@@ -749,8 +752,10 @@
       "#f44768"
     ],
     "nameAliases": [
-      "Hanzo"
-    ]
+      "Hanzo",
+      "Hanzo Hasashi"
+    ],
+    "pronoun": "he"
   },
   {
     "id": "B3",
