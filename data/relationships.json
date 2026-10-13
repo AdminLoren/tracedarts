@@ -2044,5 +2044,60 @@
     "title": "Last Minute Elopement",
     "specificTitle": "NOT REGISTERED YET",
     "bio": "Mira harbored genuine feelings for Leng throughout their teenage years, though she never found the right moment to confess. \n\nDecades later, watching everyone in his circle settle down, Leng decided it was time to get married himself, and seeing Mira still single, he settled with her."
+  },
+  {
+    "id": "fum-mrl",
+    "pair": [
+      "A1",
+      "A14"
+    ],
+    "type": "Siblings",
+    "title": "My Loveable Idiot-Brother",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Even though Marilu frequently regards her older brother as quite dim-witted, she considers it her absolute duty to keep him grounded and fiercely loved. Because Fumio has spent her entire four years of life showering her with unconditional care, protection, and teaching her how to actually have fun, she more than happily returns the favor with her own unique, protective brand of devotion."
+  },
+  {
+    "id": "ali-mrl",
+    "pair": [
+      "A2",
+      "A14"
+    ],
+    "type": "Cousins",
+    "title": "Lowest IQ",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Just like with Fumio, Marilu genuinely views Alicia as a big sister, admiring her vibrant energy and raw capabilities. She holds deep affection for her, even if she constantly catches herself wishing big sister Alicia would actually put her brain to use every once in a while."
+  },
+  {
+    "id": "vys-mrl",
+    "pair": [
+      "A3",
+      "A14"
+    ],
+    "type": "Friends",
+    "title": "Unmoved by Charm",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Marilu has always held a quiet admiration for Vyse's soft, warm, and inviting aura, finding comfort in his gentle presence. However, her stubborn pride and sharp tongue mean she can never just compliment him outright—she always makes sure to remind him that his good looks will never fool her into thinking he's any different from the rest of the group."
+  },
+  {
+    "id": "riku-mrl",
+    "pair": [
+      "A4",
+      "A14"
+    ],
+    "type": "Friends",
+    "title": "A New Standard",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Despite boasting a brilliant mind of his own, Riku was genuinely flabbergasted the first time he witnessed Marilu's intellect firsthand. Having her nearly wipe the floor with him in a match of Street Fighter 6 was humbling enough, but realizing she is operating a hundred times better than he ever was at her age left him with one definitive, deeply unnerving conclusion: it's downright creepy."
+  },
+  {
+    "id": "emm-mrl",
+    "pair": [
+      "A5",
+      "A14"
+    ],
+    "type": "Friends",
+    "title": "Cradled by an Angel",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Marilu deeply adores Emma’s nurturing maternal care, occasionally preferring it over her own mother's attention. Given that Emma practically feels engineered to spoil those around her, Marilu takes full advantage of her soft voice as a lullaby, her comforting skin to rest against, and the built-in luxury of two very convenient large pillows to support her head while she naps."
   }
 ]
