@@ -403,7 +403,7 @@ COTA.stories = (function () {
     } else if (cue.action === "fadeOut") {
       COTA.audio.fadeOutMusic(cue.seconds || 6);
     } else if (cue.action === "play") {
-      COTA.audio.playMusic(cue.file, cue.title, { fadeIn: cue.fadeIn || 3 });
+      COTA.audio.playMusic(cue.file, cue.title, { fadeIn: cue.fadeIn || 3, crossfade: cue.crossfade, loop: cue.loop });
     }
     if (cue.scene) setScene(cue.scene);
   }
