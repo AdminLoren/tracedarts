@@ -31,9 +31,9 @@
             "Kyofu"
           ],
           "nameGradient": [
-            "#ff2b36",
-            "#8f0f1a",
-            "#1c1c22"
+            "#ff4d58",
+            "#ee3d4d",
+            "#dc3a4e"
           ],
           "pronoun": "he",
           "glow": "rgba(255, 60, 60, 0.6)"
@@ -84,7 +84,7 @@
                 "action": "play",
                 "file": "lore/melody_chapter1C.mp3",
                 "title": "Opening Walk (Super Mario Bros. Wonder)",
-                "fadeIn": 2,
+                "fadeIn": 4,
                 "scene": {
                   "image": "assets/images/stories/melody-meant-for-another/bg_chapter1C.jpg",
                   "colors": [
@@ -92,7 +92,9 @@
                     "#3d5f4b"
                   ],
                   "setting": "The riverbank near Nijigasaki, afternoon"
-                }
+                },
+                "crossfade": 4,
+                "loop": false
               },
               {
                 "text": "The atmosphere was comfortable, the surroundings peaceful",
