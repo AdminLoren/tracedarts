@@ -31,9 +31,9 @@
             "Kyofu"
           ],
           "nameGradient": [
-            "#ff4d58",
-            "#ee3d4d",
-            "#dc3a4e"
+            "#f0283a",
+            "#c4243e",
+            "#a8466a"
           ],
           "pronoun": "he",
           "glow": "rgba(255, 60, 60, 0.6)"
@@ -195,6 +195,17 @@
             "file": "lore/melody_chapter3A.mp3",
             "title": "Collector (Fishdom H2O)",
             "cues": [
+              {
+                "text": "...Euh?",
+                "action": "stop"
+              },
+              {
+                "text": "approach the door past her",
+                "action": "play",
+                "file": "lore/melody_chapter3AB.mp3",
+                "title": "TO BE ASSIGNED",
+                "fadeIn": 2
+              },
               {
                 "text": "dance studio...",
                 "action": "play",
