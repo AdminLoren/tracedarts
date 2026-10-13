@@ -664,35 +664,39 @@
     "code": "mrl",
     "gen": 2,
     "name": "Marilu",
-    "nickname": "NOT REGISTERED YET",
-    "bio": "NOT REGISTERED YET",
-    "birthdate": "NOT REGISTERED YET",
+    "nickname": "Meari Lou \"Marilu\" Hasashi",
+    "bio": "Gifted with sky-high intelligence practically from birth, Marilu navigates life with the unsettling mental maturity of someone decades older.\n\nFinding the typical antics of her actual four-year-old peers overwhelmingly dull and unappealing, she naturally gravitates toward the older friend group of her older brother instead. Armed with superior critical thinking skills and a sharp, passive-aggressive streak, she manages to be simultaneously biting and utterly adored—sharing a genuine, deep-seated affection with the group who happily keeps her around.",
+    "birthdate": "January 11",
     "occupation": "NOT REGISTERED YET",
     "cherishes": [
-      "NOT REGISTERED YET"
+      "Detective Fiction",
+      "Magazines",
+      "Fried Food"
     ],
     "dislikes": [
-      "NOT REGISTERED YET"
+      "Dumb People",
+      "Gloomy Elders"
     ],
     "abilities": [
       {
-        "name": "NOT REGISTERED YET",
-        "desc": "NOT REGISTERED YET"
+        "name": "Premature Enlightenment",
+        "desc": "Possesses an extraordinary, preternatural intellect that allows her to fully comprehend the complexities of the real world and human nature at an exceptionally young age."
       },
       {
-        "name": "NOT REGISTERED YET",
-        "desc": "NOT REGISTERED YET"
+        "name": "Deductive Acumen",
+        "desc": "Has razor-sharp critical thinking and analytical prowess on par with a seasoned detective, effortlessly reading situations, motives, and hidden details."
       },
       {
-        "name": "NOT REGISTERED YET",
-        "desc": "NOT REGISTERED YET"
+        "name": "Driven Ambition",
+        "desc": "Harnesses her inner drive to showcase her superior capabilities as an unstoppable motivational force, fueling her relentless pursuit and achievement of any goal she sets."
       }
     ],
     "color": "#FFFFFF",
     "bgm": {
       "file": "bgm_mrl.mp3",
-      "title": "NOT REGISTERED YET"
+      "title": "Jumping Finn Turbo Theme"
     },
+    "pronoun": "she",
     "nameGradient": [
       "#ffffff",
       "#cfcfcf"
