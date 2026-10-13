@@ -1,8 +1,8 @@
 window.COTA = window.COTA || {};
 
 COTA.audio = (function () {
-  const DEFAULT_VOLUME = 0.5; 
-  const SFX_RATIO = 1 / 3;    
+  const DEFAULT_VOLUME = 0.5;
+  const SFX_RATIO = 1 / 3;
 
   let currentMusic = null;
   let currentMusicTitle = "";
@@ -12,6 +12,8 @@ COTA.audio = (function () {
   let musicGain = 1;
   let fadeTimer = null;
   let dipTimer = null;
+  let outgoingAudio = null;
+  let outgoingTimer = null;
 
   const nowPlayingText = () => document.getElementById("now-playing-text");
   const soundToggleBtn = () => document.getElementById("sound-toggle");
@@ -74,14 +76,13 @@ COTA.audio = (function () {
     const percent = Math.round(volume * 100);
     if (slider) {
       slider.value = String(percent);
-      
+
       slider.style.setProperty("--volume-fill", `${percent}%`);
       slider.setAttribute("aria-valuetext", `${percent}%`);
     }
     if (readout) readout.textContent = `${percent}%`;
   }
 
-  
   function musicLevel() {
     return muted ? 0 : volume;
   }
@@ -125,7 +126,6 @@ COTA.audio = (function () {
   function setVolume(value, opts = {}) {
     volume = Math.min(1, Math.max(0, value));
 
-    
     if (muted && volume > 0 && opts.fromUser) {
       muted = false;
       const btn = soundToggleBtn();
@@ -142,13 +142,37 @@ COTA.audio = (function () {
     return volume;
   }
 
+  function killOutgoing() {
+    if (outgoingTimer) clearInterval(outgoingTimer);
+    outgoingTimer = null;
+    if (outgoingAudio) outgoingAudio.pause();
+    outgoingAudio = null;
+  }
+
+  function fadeOutgoing(audio, startGain, seconds) {
+    outgoingAudio = audio;
+    const startTime = performance.now();
+    outgoingTimer = setInterval(() => {
+      const progress = Math.min(1, (performance.now() - startTime) / (seconds * 1000));
+      audio.volume = Math.min(1, Math.max(0, musicLevel() * startGain * (1 - progress)));
+      if (progress >= 1) killOutgoing();
+    }, 40);
+  }
+
   function playMusic(fileName, title, opts = {}) {
     currentMusicTitle = title || fileName;
+    const previousGain = musicGain;
     clearFades();
+    killOutgoing();
     musicGain = 1;
     currentMusicFile = "";
+    const crossfade = opts.crossfade || 0;
     if (currentMusic) {
-      currentMusic.pause();
+      if (crossfade > 0 && !muted) {
+        fadeOutgoing(currentMusic, previousGain, crossfade);
+      } else {
+        currentMusic.pause();
+      }
       currentMusic = null;
     }
     if (muted) {
@@ -157,7 +181,13 @@ COTA.audio = (function () {
     }
     try {
       const audio = new Audio(`assets/audio/${fileName}`);
-      audio.loop = true;
+      const loops = opts.loop !== false;
+      audio.loop = loops;
+      if (!loops) {
+        audio.addEventListener("ended", () => {
+          if (currentMusic === audio) stopMusic();
+        });
+      }
       currentMusic = audio;
       currentMusicFile = fileName;
       const fadeIn = opts.fadeIn || 0;
@@ -173,6 +203,7 @@ COTA.audio = (function () {
 
   function stopMusic() {
     clearFades();
+    killOutgoing();
     if (currentMusic) {
       currentMusic.pause();
       currentMusic = null;
@@ -236,7 +267,7 @@ COTA.audio = (function () {
       slider.addEventListener("input", () => {
         setVolume(Number(slider.value) / 100, { fromUser: true });
       });
-      
+
       slider.addEventListener("click", (e) => e.stopPropagation());
     }
 
