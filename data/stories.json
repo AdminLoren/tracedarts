@@ -53,36 +53,204 @@
           "title": "A Familiar Face in the Crowd",
           "file": "data/stories/melody-meant-for-another/chapter-1.txt",
           "scene": {
-            "image": "assets/images/stories/melody-meant-for-another/bg_chapter1.jpg",
+            "image": "assets/images/stories/melody-meant-for-another/bg_chapter1A.jpg",
             "colors": [
-              "#1d3a4a",
-              "#3d5f4b"
+              "#3a5f2b",
+              "#9ab85a"
             ],
-            "setting": "The riverbank near Nijigasaki, afternoon"
+            "setting": "Family Day, the school grounds (10 years ago)"
+          },
+          "music": {
+            "file": "lore/melody_chapter1A.mp3",
+            "title": "Comet Observatory 1 (Super Mario Galaxy)",
+            "cues": [
+              {
+                "text": "PRESENT DAY",
+                "action": "play",
+                "file": "lore/melody_chapter1B.mp3",
+                "title": "Opening Walk (Super Mario Bros. Wonder)",
+                "fadeIn": 2,
+                "scene": {
+                  "image": "assets/images/stories/melody-meant-for-another/bg_chapter1B.jpg",
+                  "colors": [
+                    "#2a3f5e",
+                    "#d98a4a"
+                  ],
+                  "setting": "Nijigasaki High School gates, afternoon"
+                }
+              },
+              {
+                "text": "The water reflected the afternoon sunlight",
+                "action": "play",
+                "file": "lore/melody_chapter1C.mp3",
+                "title": "Opening Walk (Super Mario Bros. Wonder)",
+                "fadeIn": 2,
+                "scene": {
+                  "image": "assets/images/stories/melody-meant-for-another/bg_chapter1C.jpg",
+                  "colors": [
+                    "#1d3a4a",
+                    "#3d5f4b"
+                  ],
+                  "setting": "The riverbank near Nijigasaki, afternoon"
+                }
+              },
+              {
+                "text": "The atmosphere was comfortable, the surroundings peaceful",
+                "action": "play",
+                "file": "lore/melody_chapter1D.mp3",
+                "title": "Space Junk Galaxy (Super Mario Galaxy)",
+                "fadeIn": 2
+              },
+              {
+                "text": "Before he could dwell on the thought any further",
+                "action": "fadeOut",
+                "seconds": 4
+              },
+              {
+                "text": "His body reacted before his brain could catch up",
+                "action": "play",
+                "file": "lore/melody_chapter1E.mp3",
+                "title": "Major Burrows (Super Mario Galaxy)",
+                "fadeIn": 2
+              },
+              {
+                "text": "Meanwhile, the distressed girl stared blankly",
+                "action": "play",
+                "file": "lore/melody_chapter1F.mp3",
+                "title": "Sad Story (Super Mario Galaxy)",
+                "fadeIn": 2
+              },
+              {
+                "text": "remained lost in thought, trying to gather her feelings",
+                "action": "play",
+                "file": "lore/melody_chapter1G.mp3",
+                "title": "Luma (Super Mario Galaxy)",
+                "fadeIn": 2
+              }
+            ]
           }
         },
         {
           "title": "A Song Left Unanswered",
           "file": "data/stories/melody-meant-for-another/chapter-2.txt",
           "scene": {
-            "image": "assets/images/stories/melody-meant-for-another/bg_chapter2.jpg",
+            "image": "assets/images/stories/melody-meant-for-another/bg_chapter2A.jpg",
             "colors": [
               "#2b1d3a",
               "#5a3a52"
             ],
             "setting": "The music room"
+          },
+          "music": {
+            "file": "lore/melody_chapter2A.mp3",
+            "title": "TO BE ASSIGNED",
+            "cues": [
+              {
+                "text": "At last, the final notes faded away",
+                "action": "fadeOut",
+                "seconds": 2
+              },
+              {
+                "text": "listening to the story on the riverbank, was shocked",
+                "scene": {
+                  "image": "assets/images/stories/melody-meant-for-another/bg_chapter2B.jpg",
+                  "colors": [
+                    "#1d3a4a",
+                    "#3d5f4b"
+                  ],
+                  "setting": "The riverbank near Nijigasaki, afternoon"
+                }
+              },
+              {
+                "text": "He could only imagine how much effort Fumiko had put",
+                "action": "play",
+                "file": "lore/melody_chapter2B.mp3",
+                "title": "TO BE ASSIGNED",
+                "fadeIn": 2
+              },
+              {
+                "text": "Fumiko gently swept her bangs to the side",
+                "action": "fadeOut",
+                "seconds": 4
+              },
+              {
+                "text": "Fumio practically screamed, his shock giving way",
+                "action": "play",
+                "file": "lore/melody_chapter2C.mp3",
+                "title": "TO BE ASSIGNED",
+                "fadeIn": 2
+              }
+            ]
           }
         },
         {
           "title": "A Case of the Heart",
           "file": "data/stories/melody-meant-for-another/chapter-3.txt",
           "scene": {
-            "image": "assets/images/stories/melody-meant-for-another/bg_chapter3.jpg",
+            "image": "assets/images/stories/melody-meant-for-another/bg_chapter3A.jpg",
             "colors": [
               "#241a30",
               "#4a3a5a"
             ],
             "setting": "The Student Council office"
+          },
+          "music": {
+            "file": "lore/melody_chapter3A.mp3",
+            "title": "TO BE ASSIGNED",
+            "cues": [
+              {
+                "text": "dance studio...",
+                "action": "play",
+                "file": "lore/melody_chapter3B.mp3",
+                "title": "TO BE ASSIGNED",
+                "fadeIn": 2,
+                "scene": {
+                  "image": "assets/images/stories/melody-meant-for-another/bg_chapter3B.jpg",
+                  "colors": [
+                    "#1a2438",
+                    "#4a5a7a"
+                  ],
+                  "setting": "Nijigasaki's dance studio"
+                }
+              },
+              {
+                "text": "Standing on the other side was a stern-looking Shioriko",
+                "action": "stop"
+              },
+              {
+                "text": "Karin moved aside, utterly confused",
+                "action": "play",
+                "file": "lore/melody_chapter3C.mp3",
+                "title": "TO BE ASSIGNED",
+                "fadeIn": 2
+              },
+              {
+                "text": "confessed her love, Mifune-san",
+                "action": "stop"
+              },
+              {
+                "text": "sure everyone understands, right",
+                "action": "play",
+                "file": "lore/melody_chapter3D.mp3",
+                "title": "TO BE ASSIGNED",
+                "fadeIn": 2
+              },
+              {
+                "text": "The trio of friends walked along",
+                "action": "play",
+                "file": "lore/melody_chapter3C.mp3",
+                "title": "TO BE ASSIGNED",
+                "fadeIn": 2,
+                "scene": {
+                  "image": "assets/images/stories/melody-meant-for-another/bg_chapter3C.jpg",
+                  "colors": [
+                    "#2a2f4a",
+                    "#c9805a"
+                  ],
+                  "setting": "Nijigasaki's bridge, late afternoon"
+                }
+              }
+            ]
           }
         }
       ],
