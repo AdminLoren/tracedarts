@@ -1,36 +1,17 @@
-// =====================================================================
-//  LORE TAB (the stories / novels)
-//  Note: the tab you see as "Characters" is lore.js. This file is the
-//  "Lore" tab, so its internal name is "stories".
-//
-//  The tab has three screens:
-//   1. LIBRARY  - all the stories (video background)
-//   2. BOOK     - one story's front page: introduction, spoiler-free
-//                 synopsis and the "Start Reading" button
-//   3. READER   - the chapters, then the Extras page. Every page has its
-//                 own still background picture (the "scene").
-//
-//  Everything comes from data/stories.json and the chapter .txt files.
-//  See data/stories/README.txt for how to add chapters, stories and art.
-// =====================================================================
-
 window.COTA = window.COTA || {};
 
 COTA.stories = (function () {
-  let stories = [];            // every story from stories.json
-  let currentStory = null;     // the story being read
-  let pages = [];              // the chapters + the extras page of that story
-  let pageIndex = 0;           // which page is open (0 = chapter 1)
+  let stories = [];
+  let currentStory = null;
+  let pages = [];
+  let pageIndex = 0;
   let activeCues = [];
   let libraryMusic = null;
   let spoilerMode = false;
   let veilAllowed = false;
   const CUE_LINE = 0.55;
-  const chapterCache = {};     // chapter texts we already downloaded
+  const chapterCache = {};
 
-  // ---------- small helpers ----------
-
-  // Quick way to build an element: el("p", "my-class", "Hello")
   function el(tag, className, text) {
     const node = document.createElement(tag);
     if (className) node.className = className;
@@ -39,8 +20,6 @@ COTA.stories = (function () {
   }
   function byId(id) { return document.getElementById(id); }
 
-  // The browser can remember where a reader stopped.
-  // If it is blocked for some reason, we just ignore the error.
   function remember(key, value) {
     try { localStorage.setItem("cota-" + key, JSON.stringify(value)); } catch (e) {}
   }
@@ -51,13 +30,10 @@ COTA.stories = (function () {
     } catch (e) { return fallback; }
   }
 
-  // Puts each text in the list into its own paragraph
   function fillParagraphs(container, list) {
     container.innerHTML = "";
     (list || []).forEach((text) => container.appendChild(el("p", "", text)));
   }
-
-  // ---------- loading ----------
 
   async function loadStories() {
     if (stories.length) return;
@@ -84,17 +60,8 @@ COTA.stories = (function () {
     }
   }
 
-  // ---------- colored names and dialogue ----------
-  // Every character has a "nameGradient" (their graffiti colors) and "nameAliases"
-  // (the names people call them) in characters.json.
-  //  - Whenever a name is mentioned, it is drawn in that character's gradient.
-  //  - Whenever a character speaks ("like this"), the dialogue gets their gradient.
-  // To force who is speaking, put [Name] right before the quote, for example:
-  //     [Fumio] "Hey, wait for me!"
-  // Use [none] to turn the color off for one quote.
-
-  let nameLookup = {};       // "Fumio" -> that character's data
-  let nameRegex = null;      // finds any character name inside a piece of text
+  let nameLookup = {};
+  let nameRegex = null;
   let namesReady = false;
   let namesStory = "";
   let storySpeakers = {};
@@ -120,10 +87,8 @@ COTA.stories = (function () {
       (storySpeakers[key].nameAliases || []).forEach((alias) => { nameLookup[alias] = storySpeakers[key]; });
     });
 
-    // Longest names first, so "Emma Verde" is found before "Emma"
     const aliases = Object.keys(nameLookup).sort((a, b) => b.length - a.length);
     if (aliases.length) {
-      // name + optional ending, so "Fumio-kun" is colored all the way through
       nameRegex = new RegExp(
         "(" + aliases.map(escapeRegex).join("|") + ")((?:-(?:kun|chan|san|sama|sensei|senpai|dono|tan))?)(?![A-Za-z])",
         "g"
@@ -138,11 +103,9 @@ COTA.stories = (function () {
   }
 
   function gradientOf(character) {
-    return "linear-gradient(180deg, " + character.nameGradient.join(", ") + ")";   // top to bottom
+    return "linear-gradient(180deg, " + character.nameGradient.join(", ") + ")";
   }
 
-  // Finds the names in a piece of text. Returns [{ start, end, character }]
-  // The colored part also includes a leading ' (as in 'Mio-kun) and "Uncle" / "Auntie".
   function findNames(text) {
     const found = [];
     if (!nameRegex) return found;
@@ -150,28 +113,25 @@ COTA.stories = (function () {
     let match;
     while ((match = nameRegex.exec(text)) !== null) {
       const before = match.index > 0 ? text[match.index - 1] : "";
-      if (/[A-Za-z~]/.test(before)) continue;        // the middle of another word
+      if (/[A-Za-z~]/.test(before)) continue;
 
       let start = match.index;
       const lead = text.slice(Math.max(0, start - 6), start);
       if (/(Uncle|Auntie) $/.test(lead)) {
         start -= /Uncle $/.test(lead) ? 6 : 7;
       } else if (/['\u2019]$/.test(lead) && !/[A-Za-z0-9]['\u2019]$/.test(lead)) {
-        start -= 1;                                   // 'Mio  ->  the ' is part of the nickname
+        start -= 1;
       }
       found.push({ start: start, end: match.index + match[0].length, character: nameLookup[match[1]] });
     }
     return found;
   }
 
-  // The first character named in a piece of text (or null)
   function firstName(text) {
     const found = findNames(text);
     return found.length ? found[0].character : null;
   }
 
-  // Who is "doing" the last sentence of a narration paragraph? Usually the first name in it,
-  // but "... as Shioriko went to speak" means Shioriko is the one about to talk.
   function actorOf(sentence) {
     const found = findNames(sentence);
     if (!found.length) return null;
@@ -182,8 +142,6 @@ COTA.stories = (function () {
     return found[0].character;
   }
 
-  // Splits a paragraph into pieces: narration and "quoted dialogue".
-  // Each quote gets a speaker (a character, or null if nobody is sure).
   function readParagraph(text, state) {
     const thought = text.match(/^\[([^\]]+)\]\s*([^"]+)$/);
     if (thought && thought[1].trim().toLowerCase() !== "none") {
@@ -195,14 +153,13 @@ COTA.stories = (function () {
       return [{ type: "thought", text: thought[2], speaker: thinker }];
     }
     const pieces = [];
-    const parts = text.split('"');          // even positions = narration, odd = inside quotes
+    const parts = text.split('"');
     const hasUnclosedQuote = parts.length % 2 === 0;
     let narrationBefore = "";
 
     for (let i = 0; i < parts.length; i++) {
       const isQuote = i % 2 === 1 && !(hasUnclosedQuote && i === parts.length - 1);
       if (!isQuote) {
-        // plain narration (put the stray quote mark back if it was never closed)
         const raw = parts[i] + (hasUnclosedQuote && i === parts.length - 1 && i > 0 ? '"' : "");
         narrationBefore = raw;
         pieces.push({ type: "narration", text: raw });
@@ -211,7 +168,6 @@ COTA.stories = (function () {
       pieces.push({ type: "quote", text: parts[i], before: narrationBefore, after: parts[i + 1] || "" });
     }
 
-    // A [Name] tag right before a quote decides the speaker
     pieces.forEach((piece, i) => {
       if (piece.type !== "quote") return;
       const prev = pieces[i - 1];
@@ -222,7 +178,6 @@ COTA.stories = (function () {
       }
     });
 
-    // Work out who is speaking each quote
     let lastInParagraph = null;
     pieces.forEach((piece, i) => {
       if (piece.type !== "quote") return;
@@ -234,11 +189,9 @@ COTA.stories = (function () {
         speaker = piece.forced.toLowerCase() === "none" ? null : speakerByTag(piece.forced);
         piece.speaker = speaker;
       } else {
-        // 1. A name right after the quote:  "..." Fumiko said
         const afterNames = findNames(after);
         if (afterNames.length && afterNames[0].start === 0) speaker = afterNames[0].character;
 
-        // 1b. "he said" / "she said" right after the quote: pick the recent person who is a he / she
         if (!speaker) {
           const pronounMatch = after.match(/^(he|she)\b/i);
           if (pronounMatch) {
@@ -252,19 +205,15 @@ COTA.stories = (function () {
           }
         }
 
-        // 2. A name in the sentence just before the quote:  Fumiko smiled. "..."
         if (!speaker && before) {
           const sentences = before.split(/(?<=[.!?\u2026])\s+/);
           speaker = firstName(sentences[sentences.length - 1]);
         }
 
-        // 3. Same speaker continuing in the same paragraph:  "..." he said, "..."
         if (!speaker && lastInParagraph && before) speaker = lastInParagraph;
 
-        // 4. Someone was just described in the paragraph before this one
         if (!speaker && !before && state.pendingActor) speaker = state.pendingActor;
 
-        // 5. Otherwise it is probably the other person in the conversation
         if (!speaker && state.prev) speaker = state.prev;
         piece.speaker = speaker;
       }
@@ -275,7 +224,6 @@ COTA.stories = (function () {
       }
     });
 
-    // Remember who was described if this paragraph has no dialogue
     const hasQuote = pieces.some((p) => p.type === "quote");
     if (hasQuote) {
       state.pendingActor = null;
@@ -286,7 +234,6 @@ COTA.stories = (function () {
     return pieces;
   }
 
-  // Builds the paragraph on the page, with colored names and dialogue
   function buildParagraph(pieces) {
     const p = document.createElement("p");
     pieces.forEach((piece) => {
@@ -305,7 +252,7 @@ COTA.stories = (function () {
         const holder = el("span", piece.speaker ? "say" : "");
         if (piece.speaker) {
           holder.style.setProperty("--grad", gradientOf(piece.speaker));
-          holder.dataset.speaker = piece.speaker.name;   // handy for checking who is speaking
+          holder.dataset.speaker = piece.speaker.name;
           if (piece.speaker.glow) holder.style.filter = "drop-shadow(0 0 2px " + piece.speaker.glow + ")";
         }
         holder.appendChild(document.createTextNode('"'));
@@ -317,7 +264,6 @@ COTA.stories = (function () {
     return p;
   }
 
-  // Adds text to an element, wrapping each character name in a colored <span>
   function addTextWithNames(parent, text) {
     let position = 0;
     findNames(text).forEach((name) => {
@@ -332,17 +278,11 @@ COTA.stories = (function () {
     if (position < text.length) parent.appendChild(document.createTextNode(text.slice(position)));
   }
 
-  // ---------- backgrounds ----------
-
-  // scene = { image: "path.jpg", colors: ["#111", "#333"] }
-  // If the picture file is missing, the two colors make a gradient instead,
-  // so every page still looks different.
   function setScene(scene) {
     const tab = byId("tab-stories");
     const layer = byId("stories-scene");
     const video = document.querySelector("#tab-stories .stories-bg");
 
-    // No scene = the library, which uses the video
     if (!scene) {
       tab.classList.remove("show-scene");
       if (video && video.play) video.play().catch(() => {});
@@ -350,21 +290,18 @@ COTA.stories = (function () {
     }
 
     tab.classList.add("show-scene");
-    if (video && video.pause) video.pause(); // save the computer some work
+    if (video && video.pause) video.pause();
 
     const colors = scene.colors || ["#0b0b12", "#1d1d2b"];
     const gradient = `linear-gradient(160deg, ${colors[0]}, ${colors[1]})`;
     const picture = scene.image ? `url('${scene.image}'), ` : "";
 
-    // Fade out, swap the picture, fade back in
     layer.classList.add("fading");
     setTimeout(() => {
       layer.style.backgroundImage = picture + gradient;
       layer.classList.remove("fading");
     }, 200);
   }
-
-  // ---------- screens ----------
 
   function showScreen(name) {
     byId("stories-library").hidden = name !== "library";
@@ -468,6 +405,7 @@ COTA.stories = (function () {
     } else if (cue.action === "play") {
       COTA.audio.playMusic(cue.file, cue.title, { fadeIn: cue.fadeIn || 3 });
     }
+    if (cue.scene) setScene(cue.scene);
   }
 
   function checkCues() {
@@ -482,8 +420,6 @@ COTA.stories = (function () {
     }
   }
 
-  // ---------- 1. library ----------
-
   function renderLibrary() {
     const grid = byId("stories-grid");
     grid.innerHTML = "";
@@ -492,7 +428,6 @@ COTA.stories = (function () {
       const card = el("button", "story-card");
       card.type = "button";
 
-      // Cover: a picture if you gave one, otherwise the title on a colored cover
       const cover = el("div", "story-cover");
       if (story.cover) {
         cover.style.backgroundImage = `url('${story.cover}')`;
@@ -520,13 +455,10 @@ COTA.stories = (function () {
       grid.appendChild(card);
     });
 
-    // A dashed card so readers know more is on the way
     const soon = el("div", "story-card story-card-soon");
     soon.appendChild(el("span", "", "More stories coming soon"));
     grid.appendChild(soon);
   }
-
-  // ---------- 2. book (introduction + synopsis) ----------
 
   function openBook(story) {
     currentStory = story;
@@ -535,7 +467,6 @@ COTA.stories = (function () {
     byId("book-series").textContent = story.series || "";
     byId("book-title").textContent = story.title;
     byId("book-tagline").textContent = story.tagline || "";
-    // Each name stays in one piece, so a long line breaks between names, not inside one
     const pairing = byId("book-pairing");
     pairing.innerHTML = "";
     (story.pairing || "").split("\u00D7").forEach((name, i) => {
@@ -550,7 +481,6 @@ COTA.stories = (function () {
     byId("book-notes").textContent = story.contentNotes || "";
     byId("book-notes").hidden = !story.contentNotes;
 
-    // If the reader already started this story, offer a "Continue" button
     const saved = recall("story-progress", {})[story.id] || 0;
     const cont = byId("stories-continue-btn");
     cont.hidden = saved <= 0 || saved >= pages.length;
@@ -564,9 +494,6 @@ COTA.stories = (function () {
     if (story.introMusic) playStoryMusic(story.introMusic, 2);
   }
 
-  // ---------- 3. reader ----------
-
-  // The pages of a story = every chapter, then the extras page (if there is one)
   function buildPages(story) {
     const list = story.chapters.map((chapter, i) => ({
       type: "chapter",
@@ -596,7 +523,6 @@ COTA.stories = (function () {
   function startReading(index) {
     byId("stories-reader-title").textContent = currentStory.title;
 
-    // Fill the chapter dropdown
     const select = byId("stories-chapter-select");
     select.innerHTML = "";
     pages.forEach((page, i) => {
@@ -614,7 +540,6 @@ COTA.stories = (function () {
     const page = pages[index];
     pageIndex = index;
 
-    // Remember where the reader is up to
     const saved = recall("story-progress", {});
     saved[currentStory.id] = index;
     remember("story-progress", saved);
@@ -650,7 +575,6 @@ COTA.stories = (function () {
       }
     }
 
-    // Previous / Next buttons (they appear at the bottom of the page)
     const atStart = index === 0;
     const atEnd = index === pages.length - 1;
     const nextIsExtras = !atEnd && pages[index + 1].type === "extras";
@@ -666,19 +590,16 @@ COTA.stories = (function () {
     checkCues();
   }
 
-  // Turns the plain text into paragraphs.
-  //   empty line  = new paragraph
-  //   ***         = scene break
   function renderText(container, text) {
     container.innerHTML = "";
-    const state = { last: null, prev: null, pendingActor: null }; // who spoke recently
+    const state = { last: null, prev: null, pendingActor: null };
     const paragraphs = text.replace(/\r/g, "").trim().split(/\n\s*\n/);
     paragraphs.forEach((block) => {
       const clean = block.trim();
       if (!clean) return;
       if (/^(\*\s*){3,}$/.test(clean)) {
         container.appendChild(el("hr", "scene-break"));
-        state.last = state.prev = state.pendingActor = null;  // a new scene starts fresh
+        state.last = state.prev = state.pendingActor = null;
       } else {
         container.appendChild(buildParagraph(readParagraph(clean, state)));
       }
@@ -692,12 +613,9 @@ COTA.stories = (function () {
     showPage(next);
   }
 
-  // ---------- the extras page ----------
-
   function renderExtras(container, extras) {
     container.innerHTML = "";
 
-    // --- Cast ---
     container.appendChild(el("h3", "stories-extras-heading", "Cast"));
     const castRows = extras.castRows && extras.castRows.length ? extras.castRows : [extras.cast || []];
     castRows.forEach((row) => {
@@ -706,9 +624,8 @@ COTA.stories = (function () {
         const card = el("figure", "cast-card");
         const art = el("div", "cast-art");
 
-        // "art" can be one picture or a list of pictures (for a pair)
         const images = Array.isArray(member.art) ? member.art : member.art ? [member.art] : [];
-        if (images.length > 1) card.classList.add("cast-card-pair"); // pairs take two columns
+        if (images.length > 1) card.classList.add("cast-card-pair");
         if (images.length) {
           images.forEach((src) => {
             const img = document.createElement("img");
@@ -731,7 +648,6 @@ COTA.stories = (function () {
     });
 
     if (extras.arts) {
-      // --- Arts that inspired the novel ---
       container.appendChild(el("h3", "stories-extras-heading", "Arts that inspired the novel"));
       const gallery = el("div", "inspire-grid");
       const arts = extras.arts || [];
@@ -744,7 +660,7 @@ COTA.stories = (function () {
         const figure = el("figure", "inspire-card");
         const link = document.createElement("a");
         link.href = art.image;
-        link.target = "_blank";          // click a picture to see it full size
+        link.target = "_blank";
         link.rel = "noopener";
         const img = document.createElement("img");
         img.src = art.image;
@@ -761,8 +677,6 @@ COTA.stories = (function () {
     if (extras.credit) container.appendChild(el("p", "stories-credit", extras.credit));
   }
 
-  // ---------- reading progress bar ----------
-
   function updateProgress() {
     const bar = byId("stories-progress-fill");
     if (!bar) return;
@@ -770,8 +684,6 @@ COTA.stories = (function () {
     const fraction = scrollable > 0 ? window.scrollY / scrollable : 0;
     bar.style.width = Math.max(0, Math.min(1, fraction)) * 100 + "%";
   }
-
-  // ---------- start up ----------
 
   let wired = false;
   function wireButtons() {
@@ -809,7 +721,6 @@ COTA.stories = (function () {
       updateSpoilerVeil();
     });
 
-    // Keyboard: left / right arrow keys change page while reading
     document.addEventListener("keydown", (e) => {
       const reader = byId("stories-reader");
       if (!reader || reader.hidden || !byId("tab-stories").classList.contains("active")) return;
@@ -819,7 +730,6 @@ COTA.stories = (function () {
     });
   }
 
-  // Called by app.js every time the Lore tab is opened
   async function enter() {
     wireButtons();
     await loadStories();
