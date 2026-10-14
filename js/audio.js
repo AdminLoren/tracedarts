@@ -14,6 +14,8 @@ COTA.audio = (function () {
   let dipTimer = null;
   let outgoingAudio = null;
   let outgoingTimer = null;
+  let voiceAudio = null;
+  let voiceDone = null;
 
   const nowPlayingText = () => document.getElementById("now-playing-text");
   const soundToggleBtn = () => document.getElementById("sound-toggle");
@@ -244,10 +246,54 @@ COTA.audio = (function () {
     } catch (err) {}
   }
 
+  function stopVoice() {
+    if (!voiceAudio) return;
+    const audio = voiceAudio;
+    const done = voiceDone;
+    voiceAudio = null;
+    voiceDone = null;
+    audio.pause();
+    rampGain(1, 0.4);
+    if (done) done();
+  }
+
+  function playVoice(fileName, onDone) {
+    stopVoice();
+    if (muted || volume === 0) {
+      if (onDone) onDone();
+      return false;
+    }
+    try {
+      const audio = new Audio(`assets/audio/${fileName}`);
+      audio.volume = Math.min(1, volume);
+      voiceAudio = audio;
+      voiceDone = onDone || null;
+      const finish = () => {
+        if (voiceAudio !== audio) return;
+        const done = voiceDone;
+        voiceAudio = null;
+        voiceDone = null;
+        rampGain(1, 0.4);
+        if (done) done();
+      };
+      audio.addEventListener("ended", finish);
+      audio.addEventListener("error", finish);
+      rampGain(0.25, 0.2);
+      audio.play().catch(finish);
+      return true;
+    } catch (err) {
+      voiceAudio = null;
+      voiceDone = null;
+      if (onDone) onDone();
+      return false;
+    }
+  }
+
   function toggleMute() {
     muted = !muted;
     const btn = soundToggleBtn();
     if (btn) btn.setAttribute("aria-pressed", String(muted));
+    if (muted) stopVoice();
     if (muted && currentMusic) {
       currentMusic.pause();
     } else if (!muted && currentMusic) {
@@ -287,5 +333,5 @@ COTA.audio = (function () {
     document.addEventListener("touchstart", resumeOnFirstInteraction);
   }
 
-  return { init, playMusic, stopMusic, isPlaying, dipMusic, fadeOutMusic, playSfx, toggleMute, setVolume, getVolume };
+  return { init, playMusic, stopMusic, isPlaying, dipMusic, fadeOutMusic, playSfx, playVoice, stopVoice, toggleMute, setVolume, getVolume };
 })();
