@@ -137,11 +137,18 @@ COTA.lore = (function () {
     const graffitiImg = document.getElementById("lore-index-graffiti-name");
     graffitiImg.src = `assets/images/graffiti_${character.code}.png`;
     graffitiImg.alt = character.name;
-    graffitiImg.dataset.code = character.code; // lets the CSS resize one character's name art
+    graffitiImg.dataset.code = character.code;
     document.getElementById("lore-index-fullname").textContent =
       character.nickname && character.nickname !== "NOT REGISTERED YET"
         ? character.nickname
         : character.name;
+    const voiceRow = document.getElementById("lore-index-voice");
+    const quoteEl = document.getElementById("lore-index-quote");
+    COTA.audio.stopVoice();
+    document.getElementById("lore-index-mic-btn").classList.remove("is-playing");
+    quoteEl.hidden = true;
+    quoteEl.textContent = "";
+    voiceRow.hidden = !character.quote;
     document.getElementById("lore-index-bio").textContent = character.bio;
     document.getElementById("lore-index-birthdate-label").textContent = character.birthdateLabel || "Birthdate";
     document.getElementById("lore-index-birthdate").textContent = character.birthdate;
@@ -189,10 +196,24 @@ COTA.lore = (function () {
     renderGrids();
     renderComingSoonGrids();
 
+    document.getElementById("lore-index-mic-btn").addEventListener("click", () => {
+      const character = allCharacters.find((c) => c.id === openCharacterId);
+      if (!character || !character.quote) return;
+      const quoteEl = document.getElementById("lore-index-quote");
+      const micBtn = document.getElementById("lore-index-mic-btn");
+      quoteEl.textContent = `\u201C${character.quote}\u201D`;
+      quoteEl.hidden = false;
+      quoteEl.classList.remove("quote-in");
+      void quoteEl.offsetWidth;
+      quoteEl.classList.add("quote-in");
+      micBtn.classList.add("is-playing");
+      COTA.audio.playVoice(`voice_${character.code}.mp3`, () => micBtn.classList.remove("is-playing"));
+    });
     document.getElementById("lore-prev-btn").addEventListener("click", () => step(-1));
     document.getElementById("lore-next-btn").addEventListener("click", () => step(1));
     document.getElementById("lore-back-to-select-btn").addEventListener("click", () => {
       COTA.audio.playSfx("ui_click.mp3");
+      COTA.audio.stopVoice();
       showSelectScreen();
     });
   }
