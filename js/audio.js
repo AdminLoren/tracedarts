@@ -3,6 +3,9 @@ window.COTA = window.COTA || {};
 COTA.audio = (function () {
   const DEFAULT_VOLUME = 0.5;
   const SFX_RATIO = 1 / 3;
+  const VOICE_TARGET_RMS = 0.2;
+  const VOICE_MAX_BOOST = 10;
+  const VOICE_ACTIVE_FLOOR = 0.02;
 
   let currentMusic = null;
   let currentMusicTitle = "";
@@ -16,6 +19,11 @@ COTA.audio = (function () {
   let outgoingTimer = null;
   let voiceAudio = null;
   let voiceDone = null;
+  let voiceActive = false;
+  let voiceToken = 0;
+  let voiceSource = null;
+  let voiceCtx = null;
+  const voiceBuffers = new Map();
 
   const nowPlayingText = () => document.getElementById("now-playing-text");
   const soundToggleBtn = () => document.getElementById("sound-toggle");
@@ -246,15 +254,113 @@ COTA.audio = (function () {
     } catch (err) {}
   }
 
-  function stopVoice() {
-    if (!voiceAudio) return;
-    const audio = voiceAudio;
-    const done = voiceDone;
-    voiceAudio = null;
-    voiceDone = null;
-    audio.pause();
+  function getVoiceCtx() {
+    if (!voiceCtx) {
+      const Ctor = window.AudioContext || window.webkitAudioContext;
+      if (Ctor) voiceCtx = new Ctor();
+    }
+    return voiceCtx;
+  }
+
+  function voiceGainFor(buffer) {
+    let sum = 0;
+    let count = 0;
+    for (let c = 0; c < buffer.numberOfChannels; c++) {
+      const data = buffer.getChannelData(c);
+      for (let i = 0; i < data.length; i++) {
+        const v = data[i];
+        if (v > VOICE_ACTIVE_FLOOR || v < -VOICE_ACTIVE_FLOOR) {
+          sum += v * v;
+          count++;
+        }
+      }
+    }
+    if (!count) return 1;
+    const rms = Math.sqrt(sum / count);
+    return Math.min(VOICE_MAX_BOOST, Math.max(0.5, VOICE_TARGET_RMS / rms));
+  }
+
+  function loadVoiceBuffer(ctx, url) {
+    if (voiceBuffers.has(url)) return Promise.resolve(voiceBuffers.get(url));
+    return fetch(url)
+      .then((response) => {
+        if (!response.ok) throw new Error("voice file missing");
+        return response.arrayBuffer();
+      })
+      .then((data) => ctx.decodeAudioData(data))
+      .then((buffer) => {
+        const entry = { buffer, gain: voiceGainFor(buffer) };
+        voiceBuffers.set(url, entry);
+        return entry;
+      });
+  }
+
+  function endVoice() {
+    if (!voiceActive) return;
+    voiceActive = false;
+    voiceToken++;
+    if (voiceSource) {
+      const source = voiceSource;
+      voiceSource = null;
+      source.onended = null;
+      try {
+        source.stop();
+      } catch (err) {
+        voiceSource = null;
+      }
+    }
+    if (voiceAudio) {
+      voiceAudio.pause();
+      voiceAudio = null;
+    }
     rampGain(1, 0.4);
+    const done = voiceDone;
+    voiceDone = null;
     if (done) done();
+  }
+
+  function startVoiceBuffer(ctx, entry, token) {
+    const source = ctx.createBufferSource();
+    source.buffer = entry.buffer;
+    const gain = ctx.createGain();
+    gain.gain.value = entry.gain * volume;
+    const limiter = ctx.createDynamicsCompressor();
+    limiter.threshold.value = -3;
+    limiter.knee.value = 0;
+    limiter.ratio.value = 20;
+    limiter.attack.value = 0.003;
+    limiter.release.value = 0.12;
+    source.connect(gain);
+    gain.connect(limiter);
+    limiter.connect(ctx.destination);
+    voiceSource = source;
+    source.onended = () => {
+      if (token === voiceToken) endVoice();
+    };
+    source.start();
+  }
+
+  function playVoiceElement(url, token) {
+    try {
+      const audio = new Audio(url);
+      audio.volume = Math.min(1, volume);
+      voiceAudio = audio;
+      audio.addEventListener("ended", () => {
+        if (token === voiceToken) endVoice();
+      });
+      audio.addEventListener("error", () => {
+        if (token === voiceToken) endVoice();
+      });
+      audio.play().catch(() => {
+        if (token === voiceToken) endVoice();
+      });
+    } catch (err) {
+      if (token === voiceToken) endVoice();
+    }
+  }
+
+  function stopVoice() {
+    endVoice();
   }
 
   function playVoice(fileName, onDone) {
@@ -263,30 +369,25 @@ COTA.audio = (function () {
       if (onDone) onDone();
       return false;
     }
-    try {
-      const audio = new Audio(`assets/audio/${fileName}`);
-      audio.volume = Math.min(1, volume);
-      voiceAudio = audio;
-      voiceDone = onDone || null;
-      const finish = () => {
-        if (voiceAudio !== audio) return;
-        const done = voiceDone;
-        voiceAudio = null;
-        voiceDone = null;
-        rampGain(1, 0.4);
-        if (done) done();
-      };
-      audio.addEventListener("ended", finish);
-      audio.addEventListener("error", finish);
-      rampGain(0.25, 0.2);
-      audio.play().catch(finish);
+    voiceActive = true;
+    voiceDone = onDone || null;
+    const token = ++voiceToken;
+    const url = `assets/audio/${fileName}`;
+    rampGain(0.25, 0.2);
+    const ctx = getVoiceCtx();
+    if (!ctx) {
+      playVoiceElement(url, token);
       return true;
-    } catch (err) {
-      voiceAudio = null;
-      voiceDone = null;
-      if (onDone) onDone();
-      return false;
     }
+    if (ctx.state === "suspended") ctx.resume().catch(() => {});
+    loadVoiceBuffer(ctx, url)
+      .then((entry) => {
+        if (token === voiceToken) startVoiceBuffer(ctx, entry, token);
+      })
+      .catch(() => {
+        if (token === voiceToken) playVoiceElement(url, token);
+      });
+    return true;
   }
 
   function toggleMute() {
