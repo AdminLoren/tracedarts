@@ -36,6 +36,7 @@
       "file": "bgm_fum.mp3",
       "title": "Casino Park (Sonic Heroes)"
     },
+    "quote": "So you want me to do another front flip? I guess it can't be helped, leave it to me!",
     "isDefault": true,
     "heightScale": 1.0,
     "feetLine": 0.982,
@@ -91,6 +92,7 @@
       "file": "bgm_ali.mp3",
       "title": "Tropical Resort Act 2 (Sonic Colors)"
     },
+    "quote": "Wow! you're really something aren't you? He he he I myself am a sight to be seen! A genius if you will, call me that from now on okay?",
     "heightScale": 1.0,
     "feetLine": 0.967,
     "nameGradient": [
@@ -142,6 +144,7 @@
       "file": "bgm_vys.mp3",
       "title": "Blizzard Valley (Sonic Racing Crossworlds)"
     },
+    "quote": "You're staring too much don't you think? Hehehe~ Your hearts in a daze~.",
     "heightScale": 1.047,
     "feetLine": 0.981,
     "nameGradient": [
@@ -193,6 +196,7 @@
       "file": "bgm_riku.mp3",
       "title": "Cyber Kujacker (Rockman X4)"
     },
+    "quote": "You're all as reckless as ever I see. I'll handle it myself.",
     "heightScale": 1.004,
     "feetLine": 0.987,
     "nameGradient": [
@@ -242,6 +246,7 @@
       "file": "bgm_emm.mp3",
       "title": "Emma's theme (LL! SIFAS)"
     },
+    "quote": "Bread crusts? That sounds delicious, I wanna get some! Come on let's go!",
     "franchiseLogo": "nijigasaki_logo.svg",
     "heightScale": 0.975,
     "feetLine": 0.989,
@@ -293,6 +298,7 @@
       "file": "bgm_kar.mp3",
       "title": "Karin's theme (LL! SIFAS)"
     },
+    "quote": "Oh? And where do you think you're looking? Fufufu~ Hey.. Maybe I don't mind one bit..",
     "franchiseLogo": "nijigasaki_logo.svg",
     "heightScale": 1.004,
     "feetLine": 0.99,
@@ -343,6 +349,7 @@
       "file": "bgm_fko.mp3",
       "title": "Sakura's theme (SF Alpha 2)"
     },
+    "quote": "You're flat out wrong. Of course I'm into watching anime as well. Why would you think otherwise?",
     "heightScale": 1.0,
     "feetLine": 0.98,
     "nameGradient": [
@@ -396,6 +403,7 @@
       "file": "bgm_set.mp3",
       "title": "Setsuna's theme (LL! SIFAS)"
     },
+    "quote": "You don't need to worry about me! I'm too excited to back down now!",
     "franchiseLogo": "nijigasaki_logo.svg",
     "heightScale": 0.958,
     "feetLine": 0.992,
@@ -450,6 +458,7 @@
       "file": "bgm_shi.mp3",
       "title": "Shioriko's theme (LL! SIFAS)"
     },
+    "quote": "Please remember I'm part of the student council. If you need someone to talk to, I'll always be here.",
     "franchiseLogo": "nijigasaki_logo.svg",
     "heightScale": 1.011,
     "feetLine": 0.985,
@@ -502,6 +511,7 @@
       "file": "bgm_rik.mp3",
       "title": "Acid Man (Rockman 11)"
     },
+    "quote": "What..? The shaking..? Does it scare you..? Don't mind it... Don't worry, it doesn't bother me at all...",
     "birthdateLabel": "Fostered Date",
     "heightScale": 1.028,
     "feetLine": 0.977,
@@ -552,6 +562,7 @@
       "file": "bgm_geo.mp3",
       "title": "Sand Hill (Sonic Adventure)"
     },
+    "quote": "What is it? Huh? You wanna know more about me? I'm not telling. I ain't giving you jack. Forget about it.",
     "heightScale": 1.043,
     "feetLine": 0.984,
     "nameGradient": [
@@ -599,6 +610,7 @@
       "file": "bgm_mak.mp3",
       "title": "Metallic Madness Act 2 (Sonic Mania)"
     },
+    "quote": "If I may, I want to ask you a question: You think you know justice? Here's the answer: No, you don't, you fool. Only my version of justice... is real justice.",
     "heightScale": 1.028,
     "feetLine": 0.966,
     "nameGradient": [
@@ -648,6 +660,7 @@
       "file": "bgm_meg.mp3",
       "title": "Rina's theme (LL! SIFAS)"
     },
+    "quote": "This is my contact card, if you need my help go ahead and give me a call.",
     "heightScale": 0.989,
     "feetLine": 0.965,
     "nameGradient": [
@@ -696,6 +709,7 @@
       "file": "bgm_mrl.mp3",
       "title": "Jumping Finn Turbo Theme"
     },
+    "quote": "Onii-chan's friends are all good people! But I wouldn't say they're the sharpest tools in the shed, I use my brain more than all of them combined!",
     "pronoun": "she",
     "nameGradient": [
       "#ffffff",
@@ -742,6 +756,7 @@
       "file": "bgm_mea.mp3",
       "title": "Maki's theme (LL! SIFAS)"
     },
+    "quote": "You think I've gotten weaker after enjoying the married life? I see, I think this is one of the first times I end up agreeing with you.",
     "heightScale": 1.036,
     "feetLine": 0.99,
     "nameGradient": [
