@@ -10,6 +10,7 @@ COTA.app = (function () {
     overlay.classList.add("active");
 
     window.setTimeout(() => {
+      COTA.audio.stopVoice();
       document.querySelectorAll(".tab-panel").forEach((panel) => {
         panel.classList.toggle("active", panel.id === `tab-${tabName}`);
       });
