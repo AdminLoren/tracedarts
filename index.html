@@ -20,7 +20,6 @@
 
       <nav id="tab-nav">
         <button class="tab-btn active" data-tab="home">Home</button>
-        <!-- Note: data-tab="lore" is the CHARACTERS tab (lore.js). data-tab="stories" is the new LORE tab (stories.js). -->
         <button class="tab-btn" data-tab="lore">Characters</button>
         <button class="tab-btn" data-tab="relationship">Relationship Chart</button>
         <button class="tab-btn" data-tab="stories">Lore</button>
@@ -247,9 +246,7 @@
             </span>
           </div>
 
-          <!-- Middle column: the two graffiti names sit ABOVE the description card -->
           <div class="rel-center-col">
-            <!-- Both graffiti names, side by side: graffiti art 1 & graffiti art 2 -->
             <div class="rel-names">
               <img id="rel-char-a-name" class="rel-char-name" src="" alt="" />
               <span class="rel-names-amp">&amp;</span>
@@ -277,19 +274,15 @@
 
     </section>
 
-    <!-- ===================== LORE TAB (stories / novels) ===================== -->
     <section id="tab-stories" class="tab-panel">
 
-      <!-- Library background video: replace assets/video/lore_bg.mp4 with your own stock video -->
       <video class="stories-bg" autoplay loop muted playsinline aria-hidden="true">
         <source src="assets/video/lore_bg.mp4" type="video/mp4" />
       </video>
       <div class="stories-bg-overlay"></div>
 
-      <!-- Story pages (intro, chapters, extras) use a still picture instead. It changes on every page. -->
       <div id="stories-scene" class="stories-scene" aria-hidden="true"></div>
 
-      <!-- Screen 1: the library (all stories) -->
       <div id="stories-library" class="stories-screen">
         <header class="stories-hero">
           <h1 class="stories-hero-title">Lore</h1>
@@ -298,7 +291,6 @@
         <div id="stories-grid" class="stories-grid"></div>
       </div>
 
-      <!-- Screen 2: a story's front page (introduction + spoiler-free synopsis + Start Reading) -->
       <div id="stories-book" class="stories-screen" hidden>
         <div class="stories-book-wrap">
           <button id="stories-book-back" class="stories-btn" type="button">&larr; Library</button>
@@ -328,7 +320,6 @@
         </div>
       </div>
 
-      <!-- Screen 3: the reader (chapters, then the extras page) -->
       <div id="stories-reader" class="stories-screen" hidden>
         <div class="stories-toolbar">
           <div class="stories-toolbar-inner">
@@ -362,7 +353,6 @@
 
   </main>
 
-  <!-- Footer: shows at the bottom of every tab -->
   <footer id="site-footer">
     <div class="footer-inner">
       <p class="footer-line">&copy; 2026 <strong>Admin Loren</strong>. Original characters, story and artwork.</p>
