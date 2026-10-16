@@ -570,7 +570,7 @@ img { max-width: 100%; display: block; }
   filter: drop-shadow(3px 3px 0 rgba(0,0,0,0.5));
 }
 
-/* Mira's name art has no empty border, so it looks bigger than the others. Shrink it. */
+
 .index-graffiti-name[data-code="mir"] {
   width: 85%;
   object-fit: contain;
@@ -790,7 +790,7 @@ img { max-width: 100%; display: block; }
   text-align: center;
 }
 .rel-roster-card.is-picked { opacity: 0.35; filter: grayscale(1); pointer-events: none; }
-/* Characters with no pairing with the first pick: greyed out and locked */
+
 .rel-roster-card.is-unavailable { opacity: 0.25; filter: grayscale(1); cursor: not-allowed; }
 .rel-roster-card.is-unavailable:hover { transform: none; }
 
@@ -805,12 +805,10 @@ img { max-width: 100%; display: block; }
 }
 .rel-display-screen.fade-in { animation: fadeIn 0.4s ease; }
 
-/* Fumio's picture height. Everyone else is sized from this (see heightScale in characters.json).
-   Make this bigger or smaller to resize ALL characters on the pairing page together. */
+
 .rel-display-screen { --rel-char-height: min(78vh, 760px, 44vw); }
 
-/* Characters taller than Fumio grow upward, so leave room at the top (computers only)
-   so their heads don't get cut off. */
+
 @media (min-width: 801px) {
   .rel-display-screen.active { padding-top: calc(var(--rel-char-height) * 0.15); }
 }
@@ -855,7 +853,7 @@ img { max-width: 100%; display: block; }
   .rel-pair-visual > .rel-center-col { grid-area: info; }
   .rel-pair-visual > .rel-char-card:nth-child(3) { grid-area: charB; }
 
-  /* phones: the names go back into the normal flow, on top of the card */
+
   .rel-names {
     position: static;
     transform: none;
@@ -865,7 +863,7 @@ img { max-width: 100%; display: block; }
   .rel-char-name { max-height: 70px; }
   .rel-char-name[data-code="mir"] { max-height: 58px; }
 
-  /* phones: the picture is as wide as its column */
+
   .rel-char-render { width: 100%; height: auto; }
 }
 
@@ -880,7 +878,7 @@ img { max-width: 100%; display: block; }
   .rel-pair-visual > .rel-char-card:nth-of-type(3) { margin-left: -60px; }
 }
 
-/* keeps the picture centered even if it is wider than its column */
+
 .rel-char-card .rel-char-render-wrap {
   display: flex;
   justify-content: center;
@@ -888,29 +886,27 @@ img { max-width: 100%; display: block; }
 .rel-char-render {
   height: var(--rel-char-height);
   width: auto;
-  max-width: none;      /* IMPORTANT: stops the picture from being squeezed (stretched) */
+  max-width: none;      
   flex-shrink: 0;
   filter: drop-shadow(0 16px 30px rgba(0,0,0,0.6));
-  /* relationship.js sets transform + transform-origin so each character has their real height
-     and everyone's feet stand on the same ground line */
+
 }
 
-/* Middle column = just the description card, which stays in the exact center.
-   The graffiti names float ABOVE it, so they never push the card (or anything else) around. */
+
 .rel-center-col {
   position: relative;
   z-index: 10;
 }
 .rel-center-col .rel-center-text { width: 100%; }
 
-/* The two graffiti names above the description card: graffiti 1 & graffiti 2 */
+
 .rel-names {
   position: absolute;
-  bottom: 100%;                 /* sits right on top of the card */
+  bottom: 100%;                 
   left: 50%;
   transform: translateX(-50%);
-  width: 125%;                  /* a bit wider than the card, so the names can be bigger */
-  margin-bottom: 18px;          /* gap between the names and the card */
+  width: 125%;                  
+  margin-bottom: 18px;          
   display: flex;
   align-items: center;
   justify-content: center;
@@ -930,7 +926,7 @@ img { max-width: 100%; display: block; }
   height: auto;
   filter: drop-shadow(3px 3px 0 rgba(0,0,0,0.5));
 }
-/* Mira's name art has no empty border, so it looks bigger than the others. Shrink it. */
+
 .rel-char-name[data-code="mir"] {
   max-width: 37%;
   max-height: 92px;
@@ -1055,7 +1051,7 @@ img { max-width: 100%; display: block; }
   line-height: 0;
 }
 
-/* ---------- Footer (bottom of every tab) ---------- */
+
 #site-footer {
   background: var(--bg-void);
   border-top: 1px solid var(--border-soft);
@@ -1083,11 +1079,7 @@ img { max-width: 100%; display: block; }
 .footer-credits span { color: var(--text-main); }
 
 
-/* =====================================================================
-   LORE TAB (stories / novels)
-   ===================================================================== */
 
-/* Footer must sit above the fixed background video of the Lore tab */
 #site-footer { position: relative; z-index: 3; }
 
 #tab-stories {
@@ -1098,7 +1090,7 @@ img { max-width: 100%; display: block; }
     var(--bg-void);
 }
 
-/* The video stays in place while the reader scrolls */
+
 .stories-bg {
   position: fixed;
   inset: 0;
@@ -1111,14 +1103,14 @@ img { max-width: 100%; display: block; }
   position: fixed;
   inset: 0;
   z-index: 1;
-  /* Darkens the video so the text is easy to read. Lower the 0.62 / 0.55 numbers to show more video. */
+
   background: linear-gradient(to bottom, rgba(11, 11, 18, 0.62), rgba(11, 11, 18, 0.55));
 }
 
 .stories-screen { position: relative; z-index: 2; }
 .stories-screen[hidden] { display: none; }
 
-/* Story pages use a still picture (the "scene") instead of the video */
+
 .stories-scene {
   display: none;
   position: fixed;
@@ -1128,7 +1120,7 @@ img { max-width: 100%; display: block; }
   background-position: center;
   transition: opacity 0.35s ease;
 }
-.stories-scene::after {          /* soft dark layer so the page stays easy to read */
+.stories-scene::after {          
   content: "";
   position: absolute;
   inset: 0;
@@ -1139,7 +1131,7 @@ img { max-width: 100%; display: block; }
 #tab-stories.show-scene .stories-bg,
 #tab-stories.show-scene .stories-bg-overlay { display: none; }
 
-/* ---------- Library ---------- */
+
 .stories-hero {
   text-align: center;
   padding: 72px 20px 36px;
@@ -1248,10 +1240,10 @@ img { max-width: 100%; display: block; }
 }
 .story-card-soon:hover { transform: none; border-color: var(--border-soft); box-shadow: none; }
 
-/* ---------- Reader ---------- */
+
 .stories-toolbar {
   position: sticky;
-  top: 64px;                   /* sits right under the main header */
+  top: 64px;                   
   z-index: 5;
   background: rgba(11, 11, 18, 0.82);
   backdrop-filter: blur(6px);
@@ -1343,12 +1335,12 @@ img { max-width: 100%; display: block; }
   background: rgba(40, 230, 220, 0.12);
 }
 
-/* The page you read on */
+
 .stories-page {
   max-width: 780px;
   margin: 36px auto 90px;
   padding: 56px 64px 48px;
-  /* How see-through the reading panel is: 1 = solid, 0 = invisible. Lower it to see more of the background picture. */
+
   --panel-alpha: 0.62;
   background: rgba(15, 15, 24, var(--panel-alpha));
   border: 1px solid var(--border-soft);
@@ -1372,7 +1364,7 @@ img { max-width: 100%; display: block; }
   color: var(--text-main);
 }
 .stories-text {
-  /* A serif font is easier on the eyes for long reading */
+
   font-family: Georgia, "Times New Roman", serif;
   font-size: 20px;
   line-height: 1.9;
@@ -1380,7 +1372,7 @@ img { max-width: 100%; display: block; }
 }
 .stories-text p {
   margin: 0 0 1.3em;
-  white-space: pre-line;       /* keeps single line breaks you type inside a paragraph */
+  white-space: pre-line;       
 }
 .scene-break {
   width: 120px;
@@ -1404,7 +1396,7 @@ img { max-width: 100%; display: block; }
   gap: 12px;
 }
 
-/* Phones */
+
 @media (max-width: 800px) {
   .stories-hero { padding: 48px 16px 24px; }
   .stories-toolbar { top: 0; position: static; }
@@ -1415,7 +1407,7 @@ img { max-width: 100%; display: block; }
   .stories-bottom-nav { flex-direction: column; }
 }
 
-/* ---------- Story front page (introduction + synopsis) ---------- */
+
 .stories-book-wrap {
   max-width: 780px;
   margin: 0 auto;
@@ -1505,7 +1497,7 @@ img { max-width: 100%; display: block; }
 .stories-btn-primary:hover:not(:disabled) { filter: brightness(1.12); }
 #stories-continue-btn { padding: 14px 28px; border-radius: 999px; font-size: 15px; }
 
-/* ---------- Extras page ---------- */
+
 .stories-extras-heading {
   margin: 8px 0 18px;
   padding-bottom: 8px;
@@ -1544,7 +1536,7 @@ img { max-width: 100%; display: block; }
   border-radius: 10px;
   background: var(--bg-panel-raised);
 }
-.cast-art img {                 /* cropped to fit, never stretched */
+.cast-art img {                 
   flex: 1;
   min-width: 0;
   width: 100%;
@@ -1572,7 +1564,7 @@ img { max-width: 100%; display: block; }
   gap: 18px;
 }
 .inspire-card { margin: 0; }
-.inspire-card img {             /* keeps its own proportions, never stretched */
+.inspire-card img {             
   width: 100%;
   height: auto;
   border: 1px solid var(--border-soft);
@@ -1601,7 +1593,7 @@ img { max-width: 100%; display: block; }
   color: var(--text-dim);
 }
 
-/* ---------- Colored names and dialogue (graffiti colors from characters.json) ---------- */
+
 .say,
 .nm {
   background-image: var(--grad);
@@ -1609,12 +1601,12 @@ img { max-width: 100%; display: block; }
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  -webkit-box-decoration-break: clone;   /* every wrapped line gets the whole gradient */
+  -webkit-box-decoration-break: clone;   
   box-decoration-break: clone;
 }
 .nm { font-weight: 700; }
 
-/* ---------- Fading between Lore pages (like the other tabs) ---------- */
+
 .stories-screen.fade-in,
 .stories-page.fade-in { animation: fadeIn 0.4s ease; }
 .stories-screen.fading-out,
