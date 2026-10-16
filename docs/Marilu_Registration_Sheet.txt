@@ -1,0 +1,168 @@
+MARILU REGISTRATION SHEET - C.O.T.A. Encyclopedia
+============================================================
+(code: mrl), 
+
+
+
+PART 1 - CHARACTER PROFILE (Characters tab)
+------------------------------------------------------------
+Nickname      :   Meari Lou "Marilu" Hasashi
+Bio           :   Gifted with sky-high intelligence practically from birth, Marilu navigates life with the unsettling mental maturity of someone decades older. 
+
+Finding the typical antics of her actual four-year-old peers overwhelmingly dull and unappealing, she naturally gravitates toward the older friend group of her older brother instead. Armed with superior critical thinking skills and a sharp, passive-aggressive streak, she manages to be simultaneously biting and utterly adored—sharing a genuine, deep-seated affection with the group who happily keeps her around.
+
+Birthdate     :   January 11
+Birthdate label (optional) :   (only if not 'Birthdate', e.g. 'Fostered Date')
+Occupation    :   (example: Student)
+Cherishes     :   Detective Fiction, Magazines, Fried Food
+Dislikes      :   Dumb People, Gloomy Elders
+Ability 1     :   Premature Enlightenment - Possesses an extraordinary, preternatural intellect that allows her to fully comprehend the complexities of the real world and human nature at an exceptionally young age.
+Ability 2     :   Deductive Acumen - Has razor-sharp critical thinking and analytical prowess on par with a seasoned detective, effortlessly reading situations, motives, and hidden details.
+Ability 3     :   Driven Ambition - Harnesses her inner drive to showcase her superior capabilities as an unstoppable motivational force, fueling her relentless pursuit and achievement of any goal she sets.
+
+
+
+
+MUSIC
+------------------------------------------------------------
+File  : bgm_mrl.mp3   (goes in assets/audio/)
+Title : Jumping Finn Turbo Theme
+
+
+
+RELATIONSHIP CHART
+------------------------------------------------------------
+
+
+
+
+Marilu X Fumio
+Relationship Type : Siblings
+Title : My Loveable Idiot-Brother
+Commentary : Even though Marilu frequently regards her older brother as quite dim-witted, she considers it her absolute duty to keep him grounded and fiercely loved. Because Fumio has spent her entire four years of life showering her with unconditional care, protection, and teaching her how to actually have fun, she more than happily returns the favor with her own unique, protective brand of devotion.
+
+Marilu X Alicia
+Relationship Type : Cousins
+Title : Lowest IQ
+Commentary : Just like with Fumio, Marilu genuinely views Alicia as a big sister, admiring her vibrant energy and raw capabilities. She holds deep affection for her, even if she constantly catches herself wishing big sister Alicia would actually put her brain to use every once in a while.
+
+Marilu X Vyse
+Relationship Type : Friends
+Title : Unmoved by Charm
+Commentary : Marilu has always held a quiet admiration for Vyse's soft, warm, and inviting aura, finding comfort in his gentle presence. However, her stubborn pride and sharp tongue mean she can never just compliment him outright—she always makes sure to remind him that his good looks will never fool her into thinking he's any different from the rest of the group.
+
+Marilu X Riku.EXE
+Relationship Type : Friends
+Title : A New Standard
+Commentary : Despite boasting a brilliant mind of his own, Riku was genuinely flabbergasted the first time he witnessed Marilu's intellect firsthand. Having her nearly wipe the floor with him in a match of Street Fighter 6 was humbling enough, but realizing she is operating a hundred times better than he ever was at her age left him with one definitive, deeply unnerving conclusion: it's downright creepy.
+
+Marilu X Emma
+Relationship Type : Friends
+Title : Cradled by an Angel
+Commentary : Marilu deeply adores Emma’s nurturing maternal care, occasionally preferring it over her own mother's attention. Given that Emma practically feels engineered to spoil those around her, Marilu takes full advantage of her soft voice as a lullaby, her comforting skin to rest against, and the built-in luxury of two very convenient large pillows to support her head while she naps.
+
+Marilu X Karin
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Fumiko
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Setsuna
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Shioriko
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Rikki
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X George
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Makoto
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Megumi
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Meari
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Hanzo
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Satoshi
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Michan
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Matsuda
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Kaito
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Minna
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Rikka
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Meili
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Aika
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Akira
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Mira
+Relationship Type :
+Title :
+Commentary :
+
+Marilu X Leng
+Relationship Type :
+Title :
+Commentary :
+
