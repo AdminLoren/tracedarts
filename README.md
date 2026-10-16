@@ -14,11 +14,11 @@ The site collects the project's character profiles, relationship mappings and wr
 
 ## Main Features
 
-- **Home page** – Synopsis and origins of the universe, with an animated video background and shortcuts to the other sections.
-- **Characters tab** – A character-select screen with 67 profiles across multiple generations. Each profile has a graffiti-style name logo, full bio, birthdate, occupation, likes and dislikes, abilities and a full-body render. Previous/next arrows let you browse the cast, and bios sit in a translucent reading panel so text stays legible over the background.
-- **Voice lines** – A microphone button on each profile plays the character's voice line and shows their quote.
-- **Per-character theme music** – Each character has their own background track, with a music-title display and fade transitions between characters.
-- **Relationship Chart** – Pick any two characters to see how they connect, drawn from a dataset of 190+ relationship entries.
+- **Home page** – Synopsis and origins of the universe, with shortcuts to the other sections.
+- **Characters tab** – A character-select screen currently with 27 profiles across multiple generations. Each profile has a graffiti-style name logo, full bio, birthdate, occupation, likes and dislikes, abilities and a full-body render. Previous/next arrows let you browse the cast, and bios sit in a translucent reading panel so text stays legible over the background.
+- **Voice lines** – A microphone button on each profile plays a voice line and shows their quote to give a feel on how these characters sound like.
+- **Per-character theme music** – Each character has their own background track, with a music-title display.
+- **Relationship Chart** – Pick any two characters to see how they connect, drawn from a dataset of 190+ registered relationship entries.
 - **Lore / Stories tab** – A chapter-based story reader with a chapter selector, progress bar, music cues, spoiler shield and previous/next chapter navigation.
 - **Audio controls** – Global mute toggle and volume slider (defaults to 20%), with sound effects on interactions.
 - **Responsive design** – The layout adapts to smaller screens.
@@ -26,8 +26,8 @@ The site collects the project's character profiles, relationship mappings and wr
 ## Technologies Used
 
 - **HTML5** – Single-page structure with tabbed sections
-- **CSS3** – Custom styling, grid/flexbox layouts, translucent panels with `backdrop-filter`, animations
 - **JavaScript (vanilla, ES6)** – Tab navigation, character browser, relationship chart, story reader and audio engine (Web Audio / HTML5 Audio)
+- **CSS3** – Custom styling, grid/flexbox layouts, translucent panels with `backdrop-filter`, animations
 - **JSON** – Data files for characters, relationships and stories (`data/`)
 - **Google Fonts** – Chakra Petch and Share Tech Mono
 - **Node.js + Express** *(optional)* – Small server that serves the site and exposes `/api/characters` and `/api/relationships`
