@@ -29,27 +29,22 @@ COTA.relationship = (function () {
     refreshRosterHighlight();
   }
 
-  // Returns true if these two characters have a pairing in relationships.json
   function hasPairing(idA, idB) {
     return COTA.data.findRelationship(allRelationships, idA, idB) !== undefined;
   }
 
   function refreshRosterHighlight() {
-    // Is exactly one character picked so far? If yes, remember who.
     const filled = slots.filter(Boolean);
     const firstPick = filled.length === 1 ? filled[0] : null;
 
     document.querySelectorAll(".rel-roster-card").forEach((el) => {
       const id = el.dataset.id;
 
-      // Grey out the cards that are already picked (same as before)
       el.classList.toggle("is-picked", slots.includes(id));
 
-      // Grey out and lock the cards that have NO pairing with the first pick.
-      // (If nobody is picked yet, firstPick is null, so nothing is locked.)
       const noPairing = firstPick !== null && id !== firstPick && !hasPairing(firstPick, id);
       el.classList.toggle("is-unavailable", noPairing);
-      el.disabled = noPairing; // a disabled button cannot be clicked
+      el.disabled = noPairing;
     });
   }
 
@@ -97,7 +92,7 @@ COTA.relationship = (function () {
 
   function onRosterPick(id) {
     if (slots.includes(id)) return;
-    if (document.querySelector(`.rel-roster-card[data-id="${id}"]`).disabled) return; // locked card
+    if (document.querySelector(`.rel-roster-card[data-id="${id}"]`).disabled) return;
     const emptyIndex = slots.findIndex((s) => s === null);
     if (emptyIndex === -1) return;
     slots[emptyIndex] = id;
@@ -113,18 +108,13 @@ COTA.relationship = (function () {
     }
   }
 
-  // Fumio's feet line (how far down his picture his feet are, 0 = top, 1 = bottom).
-  // Everyone's feet are moved to this same line so nobody looks lifted off the ground.
   const GROUND_LINE = 0.982;
 
-  // Gives a character picture their real height and puts their feet on the ground line.
-  // heightScale (characters.json): 1 = Fumio's size, bigger = taller, smaller = shorter.
-  // feetLine (characters.json): where this character's feet are inside their picture.
   function setHeight(imgId, character) {
-    const scale = character.heightScale || 1;       // no heightScale = Fumio's size
-    const feet = character.feetLine || GROUND_LINE;  // no feetLine = same as Fumio
+    const scale = character.heightScale || 1;
+    const feet = character.feetLine || GROUND_LINE;
     const img = document.getElementById(imgId);
-    img.style.transformOrigin = `50% ${feet * 100}%`; // resize around the feet
+    img.style.transformOrigin = `50% ${feet * 100}%`;
     img.style.transform = `translateY(${(GROUND_LINE - feet) * 100}%) scale(${scale})`;
   }
 
@@ -135,17 +125,17 @@ COTA.relationship = (function () {
 
     document.getElementById("rel-char-a-render").src = `assets/images/render_${charA.code}.png`;
     document.getElementById("rel-char-a-render").alt = charA.name;
-    setHeight("rel-char-a-render", charA); // real height, relative to the others
+    setHeight("rel-char-a-render", charA);
     document.getElementById("rel-char-a-name").src = `assets/images/graffiti_${charA.code}.png`;
     document.getElementById("rel-char-a-name").alt = charA.name;
-    document.getElementById("rel-char-a-name").dataset.code = charA.code; // lets the CSS resize one character's name art
+    document.getElementById("rel-char-a-name").dataset.code = charA.code;
 
     document.getElementById("rel-char-b-render").src = `assets/images/render_${charB.code}.png`;
     document.getElementById("rel-char-b-render").alt = charB.name;
-    setHeight("rel-char-b-render", charB); // real height, relative to the others
+    setHeight("rel-char-b-render", charB);
     document.getElementById("rel-char-b-name").src = `assets/images/graffiti_${charB.code}.png`;
     document.getElementById("rel-char-b-name").alt = charB.name;
-    document.getElementById("rel-char-b-name").dataset.code = charB.code; // lets the CSS resize one character's name art
+    document.getElementById("rel-char-b-name").dataset.code = charB.code;
 
     const type = rel ? rel.type : "N/A";
     const title = rel ? rel.title : "NOT REGISTERED YET";
