@@ -1,6 +1,7 @@
 # The Happy Ever Party: Children of the Authors — C.O.T.A. Encyclopedia
 
 **Student Name:** [CARLOS, Lorenzo Miguel U.]
+
 **Website Category:** Entertainment / Fan Encyclopedia & Interactive character & lore database
 
 ---
