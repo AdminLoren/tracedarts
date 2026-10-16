@@ -21,7 +21,7 @@ The site collects the project's character profiles, relationship mappings and wr
 - **Relationship Chart** – Pick any two characters to see how they connect, drawn from a dataset of 190+ registered relationship entries.
 - **Lore / Stories tab** – A chapter-based story reader with a chapter selector, progress bar, music cues, spoiler shield and previous/next chapter navigation.
 - **Audio controls** – Global mute toggle and volume slider (defaults to 20%), with sound effects on interactions.
-- **Responsive design** – The layout adapts to smaller screens.
+- **Mobile View** – The layout adapts to mobile screens like phones and tablets.
 
 ## Technologies Used
 
