@@ -1,9 +1,4 @@
-"""
-Generates placeholder PNG assets so the site has something to display
-in every image slot until real art/renders are dropped in.
-Every placeholder is clearly labeled PLACEHOLDER so it's obvious
-which files still need real assets.
-"""
+
 from PIL import Image, ImageDraw, ImageFont
 import os
 
@@ -52,22 +47,22 @@ characters = [
     ("mic","Michan"),
 ]
 
-# Renders (portrait, transparent-ish stand-in) — full body cutout stand-in
+
 for code, name in characters:
     render_placeholder(f"{OUT}/render_{code}.png", 600, 900, (35,35,45),
                         name.upper(), "FULL BODY RENDER")
 
-# Splash art (portrait, hi-res)
+
 for code, name in characters:
     render_placeholder(f"{OUT}/splash_{code}.png", 900, 1200, (20,20,28),
                         name.upper(), "SPLASH ART")
 
-# Graffiti name art (wide/landscape)
+
 for code, name in characters:
     render_placeholder(f"{OUT}/graffiti_{code}.png", 1000, 360, (24,18,32),
                         name.upper(), "GRAFFITI NAME ART")
 
-# Backgrounds
+
 render_placeholder(f"{OUT}/relationship_bg.jpg".replace('.jpg','.png'), 1920, 1080, (18,22,30),
                     "NIJIGASAKI", "RELATIONSHIP TAB BACKGROUND")
 render_placeholder(f"{OUT}/lore_bg.png", 1920, 1080, (14,14,20),
