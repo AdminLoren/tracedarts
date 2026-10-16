@@ -543,6 +543,21 @@ img { max-width: 100%; display: block; }
   transition: opacity 0.18s ease;
 }
 .index-content.index-swap-out { opacity: 0; }
+
+/* Translucent reading panel (matches the Stories page box) */
+.index-text {
+  padding: 32px 36px 30px;
+  background: linear-gradient(155deg, rgba(20, 20, 32, 0.66), rgba(12, 12, 20, 0.58));
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  box-shadow: 0 10px 36px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+.index-text .index-bio { max-width: none; }
+@media (max-width: 850px) {
+  .index-text { padding: 22px 20px 22px; }
+}
 @media (max-width: 850px) {
   .index-content { grid-template-columns: 1fr; padding-top: 40px; }
 }
