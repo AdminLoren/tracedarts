@@ -153,7 +153,7 @@ img { max-width: 100%; display: block; }
 .volume-control:hover .volume-value { color: var(--text-main); }
 
 .volume-slider {
-  --volume-fill: 60%;
+  --volume-fill: 20%;
   -webkit-appearance: none;
   appearance: none;
   width: 92px;
