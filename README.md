@@ -46,4 +46,5 @@ Music used is owned by Nintendo, SEGA, Capcom, Love Live!!, LEVEL-5.
 ## A Message to Sir Diony
 
 You've made my dream come true. Couldn't have doen this without you assigning this as our finals project. Thank you for giving me the creative freedom, I'll make sure to keep updating this website in honor of you.
+
 -Admin Loren
