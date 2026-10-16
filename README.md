@@ -33,36 +33,17 @@ The site collects the project's character profiles, relationship mappings and wr
 - **Node.js + Express** *(optional)* – Small server that serves the site and exposes `/api/characters` and `/api/relationships`
 - **Python** *(helper script)* – `scripts/gen_placeholders.py` for generating placeholder assets
 
-## Project Structure
-
-```
-├── index.html          # Main page and tab markup
-├── css/style.css       # All site styling
-├── js/                 # app, home, lore (characters), relationship, stories, audio, data
-├── data/               # characters.json, relationships.json, stories.json
-├── assets/             # images, audio, video
-├── docs/               # asset notes and graffiti name logos
-├── scripts/            # helper scripts
-├── server.js           # Optional Express server
-└── package.json
-```
-
-## How to Run
-
-The site is fully static, so any local web server works (opening `index.html` directly may block the JSON data from loading in some browsers).
-
-```bash
-# Option 1: Python
-python3 -m http.server 8000
-# then visit http://localhost:8000
-
-# Option 2: Node
-npm install
-npm start
-```
-
-> Note: `server.js` serves files from a `public/` folder. If your files live in the repository root, either move them into `public/` or change the paths in `server.js` before using `npm start`.
 
 ## Credits
 
-All characters, story, artwork and site design are original work by the student, built as a learning and passion project.
+All characters, story, artwork and site design are original work by me, built as a learning and passion project.
+
+Emma Verde, Karin Asaka, Setsuna Yuki and Shioriko Mifune are owned by the Love Live!! franchise.
+
+Music used is owned by Nintendo, SEGA, Capcom, Love Live!!, LEVEL-5.
+
+
+## A Message to Sir Diony
+
+You've made my dream come true. Couldn't have doen this without you assigning this as our finals project. Thank you for giving me the creative freedom, I'll make sure to keep updating this website in honor of you.
+-Admin Loren
