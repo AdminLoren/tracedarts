@@ -27,11 +27,11 @@ The site collects the project's character profiles, relationship mappings and wr
 
 - **HTML5** – Single-page structure with tabbed sections
 - **JavaScript (vanilla, ES6)** – Tab navigation, character browser, relationship chart, story reader and audio engine (Web Audio / HTML5 Audio)
-- **CSS3** – Custom styling, grid/flexbox layouts, translucent panels with `backdrop-filter`, animations
-- **JSON** – Data files for characters, relationships and stories (`data/`)
+- **CSS3** – Custom styling, grid/flexbox layouts, translucent panels with backdrop-filter, animations
+- **JSON** – Data files for characters, relationships and stories data
 - **Google Fonts** – Chakra Petch and Share Tech Mono
-- **Node.js + Express** *(optional)* – Small server that serves the site and exposes `/api/characters` and `/api/relationships`
-- **Python** *(helper script)* – `scripts/gen_placeholders.py` for generating placeholder assets
+- **Node.js + Express**  – Small server that serves the site and exposes /api/characters and /api/relationships
+- **Python** – scripts/gen_placeholders.py for generating placeholder assets for upcoming, unregistered characters
 
 
 ## Credits
