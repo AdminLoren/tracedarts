@@ -1,0 +1,67 @@
+# The Happy Ever Party: Children of the Authors — C.O.T.A. Encyclopedia
+
+**Student Name:** [Your Name Here]
+**Website Category:** Entertainment / Fan Encyclopedia (interactive character & lore database)
+
+---
+
+## Project Description
+
+C.O.T.A. Encyclopedia is an interactive web encyclopedia for *The Happy Ever Party: Children of the Authors*, an original story universe that began nearly eight years ago as a collaborative storytelling and scriptwriting project. In the setting, the Author Gods pass their gifts down to the children of the original Authors, who must grow into the role to protect the realms and their own existence.
+
+The site collects the project's character profiles, relationship mappings and written lore in one place, with custom character renders, per-character music and a game-style interface. It was built as a passion project to give a long-running universe its first complete visual home.
+
+## Main Features
+
+- **Home page** – Synopsis and origins of the universe, with an animated video background and shortcuts to the other sections.
+- **Characters tab** – A character-select screen with 67 profiles across multiple generations. Each profile has a graffiti-style name logo, full bio, birthdate, occupation, likes and dislikes, abilities and a full-body render. Previous/next arrows let you browse the cast, and bios sit in a translucent reading panel so text stays legible over the background.
+- **Voice lines** – A microphone button on each profile plays the character's voice line and shows their quote.
+- **Per-character theme music** – Each character has their own background track, with a music-title display and fade transitions between characters.
+- **Relationship Chart** – Pick any two characters to see how they connect, drawn from a dataset of 190+ relationship entries.
+- **Lore / Stories tab** – A chapter-based story reader with a chapter selector, progress bar, music cues, spoiler shield and previous/next chapter navigation.
+- **Audio controls** – Global mute toggle and volume slider (defaults to 20%), with sound effects on interactions.
+- **Responsive design** – The layout adapts to smaller screens.
+
+## Technologies Used
+
+- **HTML5** – Single-page structure with tabbed sections
+- **CSS3** – Custom styling, grid/flexbox layouts, translucent panels with `backdrop-filter`, animations
+- **JavaScript (vanilla, ES6)** – Tab navigation, character browser, relationship chart, story reader and audio engine (Web Audio / HTML5 Audio)
+- **JSON** – Data files for characters, relationships and stories (`data/`)
+- **Google Fonts** – Chakra Petch and Share Tech Mono
+- **Node.js + Express** *(optional)* – Small server that serves the site and exposes `/api/characters` and `/api/relationships`
+- **Python** *(helper script)* – `scripts/gen_placeholders.py` for generating placeholder assets
+
+## Project Structure
+
+```
+├── index.html          # Main page and tab markup
+├── css/style.css       # All site styling
+├── js/                 # app, home, lore (characters), relationship, stories, audio, data
+├── data/               # characters.json, relationships.json, stories.json
+├── assets/             # images, audio, video
+├── docs/               # asset notes and graffiti name logos
+├── scripts/            # helper scripts
+├── server.js           # Optional Express server
+└── package.json
+```
+
+## How to Run
+
+The site is fully static, so any local web server works (opening `index.html` directly may block the JSON data from loading in some browsers).
+
+```bash
+# Option 1: Python
+python3 -m http.server 8000
+# then visit http://localhost:8000
+
+# Option 2: Node
+npm install
+npm start
+```
+
+> Note: `server.js` serves files from a `public/` folder. If your files live in the repository root, either move them into `public/` or change the paths in `server.js` before using `npm start`.
+
+## Credits
+
+All characters, story, artwork and site design are original work by the student, built as a learning and passion project.
