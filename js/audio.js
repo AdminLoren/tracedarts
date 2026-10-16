@@ -1,7 +1,7 @@
 window.COTA = window.COTA || {};
 
 COTA.audio = (function () {
-  const DEFAULT_VOLUME = 0.5;
+  const DEFAULT_VOLUME = 0.2;
   const SFX_RATIO = 1 / 3;
   const VOICE_TARGET_RMS = 0.2;
   const VOICE_MAX_BOOST = 10;
