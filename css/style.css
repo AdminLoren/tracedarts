@@ -1626,3 +1626,159 @@ img { max-width: 100%; display: block; }
 .stories-page.fade-in { animation: fadeIn 0.4s ease; }
 .stories-screen.fading-out,
 .stories-page.fading-out { opacity: 0; transition: opacity 0.22s ease; }
+
+
+.index-outfit-btn {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  z-index: 6;
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--accent-cyan);
+  background: rgba(0, 0, 0, 0.45);
+  color: var(--accent-cyan);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+.index-outfit-btn[hidden] { display: none; }
+.index-outfit-btn:hover, .index-outfit-btn:focus-visible { background: var(--accent-cyan); color: #0b0f14; outline: none; }
+.index-outfit-btn.is-open { background: var(--accent-cyan); color: #0b0f14; animation: micPulse 1s ease-in-out infinite; }
+
+.outfit-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 24px 16px;
+  background: rgba(8, 8, 14, 0.86);
+  backdrop-filter: blur(6px);
+  animation: fadeIn 0.25s ease;
+}
+.outfit-modal[hidden] { display: none; }
+
+.outfit-tag {
+  position: relative;
+  min-width: 190px;
+  padding: 12px 26px 22px;
+  text-align: center;
+  background: var(--accent-cyan);
+  color: #0b0f14;
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 50% 100%, 0 78%);
+}
+.outfit-tag-small { display: block; font-size: 10px; letter-spacing: 2px; opacity: 0.8; }
+.outfit-tag-name { display: block; font-size: 24px; font-weight: 700; line-height: 1.2; }
+
+.outfit-stage {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 100%;
+}
+.outfit-arrow {
+  flex: 0 0 auto;
+  background: none;
+  border: none;
+  color: var(--text-main);
+  font-size: 34px;
+  cursor: pointer;
+  padding: 8px;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+.outfit-arrow:hover { color: var(--accent-cyan); transform: scale(1.15); }
+
+.outfit-strip {
+  display: flex;
+  align-items: stretch;
+  height: min(52vh, 420px);
+  overflow: hidden;
+  background: #000;
+}
+.outfit-panel {
+  position: relative;
+  flex: 0 0 64px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #111;
+  border: none;
+  padding: 0;
+  transition: flex-basis 0.3s ease, filter 0.3s ease;
+  filter: brightness(0.4);
+}
+.outfit-panel.is-active {
+  flex: 0 0 min(64vw, 300px);
+  filter: none;
+  cursor: default;
+}
+.outfit-panel img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+.outfit-panel-name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 18px 8px 10px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--text-main);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.outfit-panel.is-active .outfit-panel-name { opacity: 1; }
+
+.outfit-owner { margin: 0; font-size: 20px; color: var(--text-main); }
+.outfit-owner strong { color: var(--accent-cyan); }
+
+.outfit-equip-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 28px;
+  min-width: 280px;
+  padding: 10px 34px;
+  background: #2a2a2d;
+  color: var(--text-main);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.6);
+  font-size: 22px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.outfit-equip-btn:hover, .outfit-equip-btn:focus-visible { background: var(--accent-cyan); color: #0b0f14; outline: none; }
+.outfit-equip-btn:disabled { opacity: 0.55; cursor: default; background: #2a2a2d; color: var(--text-main); }
+.outfit-note { margin: 0; font-size: 14px; color: rgba(245, 243, 240, 0.8); text-align: center; }
+.outfit-close-btn {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border-soft);
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--text-main);
+  font-size: 16px;
+  cursor: pointer;
+}
+.outfit-close-btn:hover { border-color: var(--accent-cyan); color: var(--accent-cyan); }
+
+@media (max-width: 850px) {
+  .index-outfit-btn { top: 12px; right: 14px; }
+  .outfit-panel { flex-basis: 40px; }
+  .outfit-arrow { font-size: 26px; padding: 4px; }
+  .outfit-equip-btn { min-width: 220px; font-size: 18px; gap: 18px; }
+}
