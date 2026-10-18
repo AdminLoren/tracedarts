@@ -6,6 +6,8 @@ COTA.lore = (function () {
   let selectedCode = null;
   let openCharacterId = null;
   let initialized = false;
+  let equippedAlt = {};
+  let outfitIndex = 0;
 
   const BG_BY_GEN = {
     2: "assets/images/nijigasaki_bg.png",
@@ -124,9 +126,112 @@ COTA.lore = (function () {
     renderIndexContent(character);
   }
 
+  function setImageWithFallback(img, src, fallback) {
+    img.onerror = () => {
+      img.onerror = null;
+      img.src = fallback;
+    };
+    img.src = src;
+  }
+
+  function getOutfits(character) {
+    const list = [
+      {
+        name: character.name,
+        boxart: `boxart_${character.code}.png`,
+        render: `render_${character.code}.png`,
+      },
+    ];
+    if (character.altArt) {
+      list.push({
+        name: character.altArt.name,
+        boxart: character.altArt.boxart,
+        render: character.altArt.render,
+      });
+    }
+    return list;
+  }
+
+  function currentCharacter() {
+    return allCharacters.find((c) => c.id === openCharacterId);
+  }
+
+  function closeOutfitModal() {
+    document.getElementById("outfit-modal").hidden = true;
+    document.getElementById("lore-index-outfit-btn").classList.remove("is-open");
+  }
+
+  function renderOutfitModal() {
+    const character = currentCharacter();
+    if (!character) return;
+    const outfits = getOutfits(character);
+    const defaults = outfits[0];
+    const strip = document.getElementById("outfit-strip");
+    strip.innerHTML = "";
+    outfits.forEach((outfit, i) => {
+      const panel = document.createElement("button");
+      panel.type = "button";
+      panel.className = "outfit-panel" + (i === outfitIndex ? " is-active" : "");
+      const img = document.createElement("img");
+      img.alt = outfit.name;
+      setImageWithFallback(img, `assets/images/${outfit.boxart}`, `assets/images/${defaults.boxart}`);
+      const label = document.createElement("span");
+      label.className = "outfit-panel-name";
+      label.textContent = outfit.name;
+      panel.appendChild(img);
+      panel.appendChild(label);
+      panel.addEventListener("click", () => {
+        if (i === outfitIndex) return;
+        outfitIndex = i;
+        COTA.audio.playSfx("char_switch.mp3");
+        renderOutfitModal();
+      });
+      strip.appendChild(panel);
+    });
+    document.getElementById("outfit-tag-name").textContent = outfits[outfitIndex].name;
+    document.getElementById("outfit-owner-name").textContent = character.name;
+    const equippedIndex = equippedAlt[character.id] ? 1 : 0;
+    const equipBtn = document.getElementById("outfit-equip-btn");
+    equipBtn.disabled = outfitIndex === equippedIndex;
+    document.getElementById("outfit-equip-label").textContent =
+      outfitIndex === equippedIndex ? "Equipped" : "Equip";
+  }
+
+  function openOutfitModal() {
+    const character = currentCharacter();
+    if (!character || !character.altArt) return;
+    outfitIndex = equippedAlt[character.id] ? 1 : 0;
+    document.getElementById("lore-index-outfit-btn").classList.add("is-open");
+    document.getElementById("outfit-modal").hidden = false;
+    renderOutfitModal();
+  }
+
+  function stepOutfit(delta) {
+    const character = currentCharacter();
+    if (!character) return;
+    const total = getOutfits(character).length;
+    outfitIndex = (outfitIndex + delta + total) % total;
+    COTA.audio.playSfx("char_switch.mp3");
+    renderOutfitModal();
+  }
+
+  function equipOutfit() {
+    const character = currentCharacter();
+    if (!character) return;
+    equippedAlt[character.id] = outfitIndex === 1;
+    COTA.audio.playSfx("char_confirm.mp3");
+    closeOutfitModal();
+    renderIndexContent(character);
+  }
+
   function renderIndexContent(character) {
-    document.getElementById("lore-index-render").src = `assets/images/render_${character.code}.png`;
-    document.getElementById("lore-index-render").alt = character.name;
+    closeOutfitModal();
+    const outfits = getOutfits(character);
+    const activeOutfit = equippedAlt[character.id] ? outfits[1] : outfits[0];
+    const renderImg = document.getElementById("lore-index-render");
+    setImageWithFallback(renderImg, `assets/images/${activeOutfit.render}`, `assets/images/${outfits[0].render}`);
+    renderImg.alt = activeOutfit.name;
+    document.getElementById("lore-index-outfit-btn").hidden = !character.altArt;
     const indexBadge = document.getElementById("lore-index-franchise-badge");
     if (character.franchiseLogo) {
       indexBadge.src = `assets/images/${character.franchiseLogo}`;
@@ -209,11 +314,26 @@ COTA.lore = (function () {
       micBtn.classList.add("is-playing");
       COTA.audio.playVoice(`voice_${character.code}.mp3`, () => micBtn.classList.remove("is-playing"));
     });
+    document.getElementById("lore-index-outfit-btn").addEventListener("click", () => {
+      COTA.audio.playSfx("ui_click.mp3");
+      openOutfitModal();
+    });
+    document.getElementById("outfit-prev-btn").addEventListener("click", () => stepOutfit(-1));
+    document.getElementById("outfit-next-btn").addEventListener("click", () => stepOutfit(1));
+    document.getElementById("outfit-equip-btn").addEventListener("click", equipOutfit);
+    document.getElementById("outfit-close-btn").addEventListener("click", () => {
+      COTA.audio.playSfx("ui_click.mp3");
+      closeOutfitModal();
+    });
+    document.getElementById("outfit-modal").addEventListener("click", (e) => {
+      if (e.target.id === "outfit-modal") closeOutfitModal();
+    });
     document.getElementById("lore-prev-btn").addEventListener("click", () => step(-1));
     document.getElementById("lore-next-btn").addEventListener("click", () => step(1));
     document.getElementById("lore-back-to-select-btn").addEventListener("click", () => {
       COTA.audio.playSfx("ui_click.mp3");
       COTA.audio.stopVoice();
+      closeOutfitModal();
       showSelectScreen();
     });
   }
