@@ -405,6 +405,11 @@
     },
     "quote": "You don't need to worry about me! I'm too excited to back down now!",
     "franchiseLogo": "nijigasaki_logo.svg",
+    "altArt": {
+      "name": "Nana Nakagawa",
+      "boxart": "boxart_set_alt.png",
+      "render": "render_set_alt.png"
+    },
     "heightScale": 0.958,
     "feetLine": 0.992,
     "nameGradient": [
