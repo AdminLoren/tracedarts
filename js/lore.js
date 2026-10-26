@@ -8,6 +8,7 @@ COTA.lore = (function () {
   let initialized = false;
   let equippedAlt = {};
   let outfitIndex = 0;
+  let introTimer = null;
 
   const BG_BY_GEN = {
     2: "assets/images/nijigasaki_bg.png",
@@ -15,10 +16,12 @@ COTA.lore = (function () {
   };
 
   function cardTemplate(c) {
+    const defaultBoxart = `boxart_${c.code}.png`;
+    const boxart = c.altArt && equippedAlt[c.id] ? c.altArt.boxart : defaultBoxart;
     return `
       <button class="select-card" data-id="${c.id}" style="--char-color:${c.color}">
         <span class="select-card-clip">
-          <img src="assets/images/boxart_${c.code}.png" alt="${c.name}" class="select-card-img" />
+          <img src="assets/images/${boxart}" alt="${c.name}" class="select-card-img" onerror="this.onerror=null;this.src='assets/images/${defaultBoxart}'" />
           <span class="select-card-nameplate">${c.name}</span>
         </span>
       </button>
@@ -106,6 +109,20 @@ COTA.lore = (function () {
     showIndexScreen(character);
   }
 
+  function playSelectIntro() {
+    const selectScreen = document.getElementById("lore-select-screen");
+    selectScreen.querySelectorAll(".select-grid").forEach((grid) => {
+      Array.from(grid.children).forEach((card, i) => {
+        card.style.setProperty("--wave", i % 3);
+      });
+    });
+    selectScreen.classList.remove("select-anim");
+    void selectScreen.offsetWidth;
+    selectScreen.classList.add("select-anim");
+    window.clearTimeout(introTimer);
+    introTimer = window.setTimeout(() => selectScreen.classList.remove("select-anim"), 3000);
+  }
+
   function showSelectScreen() {
     window.scrollTo(0, 0);
     document.getElementById("lore-index-screen").classList.remove("active");
@@ -113,6 +130,7 @@ COTA.lore = (function () {
     selectScreen.classList.add("active", "slide-in-bottom");
     selectedCode = openCharacterId || selectedCode;
     renderGrids();
+    playSelectIntro();
     window.setTimeout(() => selectScreen.classList.remove("slide-in-bottom"), 500);
   }
 
