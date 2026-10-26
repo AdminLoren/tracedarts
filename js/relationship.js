@@ -155,6 +155,17 @@ COTA.relationship = (function () {
     window.setTimeout(() => display.classList.remove("fade-in"), 400);
   }
 
+  let introTimer = null;
+
+  function playSelectIntro() {
+    const selectScreen = document.getElementById("relationship-select-screen");
+    selectScreen.classList.remove("rel-anim");
+    void selectScreen.offsetWidth;
+    selectScreen.classList.add("rel-anim");
+    window.clearTimeout(introTimer);
+    introTimer = window.setTimeout(() => selectScreen.classList.remove("rel-anim"), 1700);
+  }
+
   function resetToSelect() {
     slots = [null, null];
     renderSlots();
@@ -163,6 +174,7 @@ COTA.relationship = (function () {
     window.scrollTo(0, 0);
     document.getElementById("relationship-display-screen").classList.remove("active");
     document.getElementById("relationship-select-screen").classList.add("active");
+    playSelectIntro();
   }
 
   async function init() {
