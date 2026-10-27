@@ -598,7 +598,7 @@
       }
     },
     {
-      "id": "untitled-story",
+      "id": "alimeg",
       "title": "Untitled Story",
       "series": "The Happy Ever Party: Children of the Authors",
       "tagline": "A story from the C.O.T.A. universe",
@@ -767,7 +767,7 @@
       "chapters": [
         {
           "title": "The Rising Star",
-          "file": "data/stories/untitled-story/chapter-1.txt",
+          "file": "data/stories/alimeg/chapter-1.txt",
           "scene": {
             "colors": [
               "#26374b",
@@ -778,7 +778,7 @@
         },
         {
           "title": "The Blank-Faced Girl",
-          "file": "data/stories/untitled-story/chapter-2.txt",
+          "file": "data/stories/alimeg/chapter-2.txt",
           "scene": {
             "colors": [
               "#1c2941",
