@@ -9,9 +9,9 @@
       "title": "Melody Meant for Another",
       "series": "The Happy Ever Party: Children of the Authors",
       "tagline": "The origin of how Fumio got the babes",
-      "pairing": "Fumio × Fumiko",
+      "pairing": "Fumio Hasashi × Fumiko Sakura",
       "status": "Ongoing",
-      "summary": "The origin of how Fumio got the babes",
+      "summary": "The origin of how Fumiko entered the Gang",
       "synopsis": [
         "Fumio Hasashi has admired Nijigasaki's Fumiko Sakura from a distance for years. One quiet afternoon by the river, he finally gets his chance to talk to her, though not in the way he ever imagined."
       ],
@@ -908,7 +908,7 @@
           },
           "music": {
             "file": "lore/alimeg_chapter1A.mp3",
-            "title": "alimeg Chapter 1 — Song A",
+            "title": "Sad Story (Super Mario Galaxy)",
             "cues": [
               {
                 "text": "MaHa Residence",
@@ -926,7 +926,7 @@
                 "text": "That's our brave girl",
                 "action": "play",
                 "file": "lore/alimeg_chapter1B.mp3",
-                "title": "alimeg Chapter 1 — Song B",
+                "title": "A Wish (Super Mario Galaxy)",
                 "fadeIn": 2
               },
               {
@@ -944,14 +944,14 @@
                 "text": "Sneakers squeaked against the polished floor",
                 "action": "play",
                 "file": "lore/alimeg_chapter1C.mp3",
-                "title": "alimeg Chapter 1 — Song C",
+                "title": "Mario Stadium (Mario Sports Mix)",
                 "fadeIn": 2
               },
               {
                 "text": "Alicia held up her MVP medal",
                 "action": "play",
                 "file": "lore/alimeg_chapter1D.mp3",
-                "title": "alimeg Chapter 1 — Song D",
+                "title": "A Blasters Victory! (Yo-Kai Watch Blasters)",
                 "fadeIn": 2,
                 "scene": {
                   "image": "assets/images/stories/alimeg/bg_chapter1D.jpg",
@@ -966,7 +966,7 @@
                 "text": "The Next Day...",
                 "action": "play",
                 "file": "lore/alimeg_chapter1E.mp3",
-                "title": "alimeg Chapter 1 — Song E",
+                "title": "Katie (Yo-Kai Watch 4: We're Looking Up in the Same Sky",
                 "fadeIn": 2,
                 "scene": {
                   "image": "assets/images/stories/alimeg/bg_chapter1E.jpg",
