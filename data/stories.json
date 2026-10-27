@@ -968,7 +968,7 @@
                 "title": "alimeg Chapter 1 — Song E",
                 "fadeIn": 2,
                 "scene": {
-                  "image": "assets/images/stories/alimeg/bg_chapter1D.jpg",
+                  "image": "assets/images/stories/alimeg/bg_chapter1E.jpg",
                   "colors": [
                     "#6b3140",
                     "#d49a45"
@@ -979,7 +979,7 @@
               {
                 "text": "Oka-chan, ohayō!! What's for breakfast?!",
                 "scene": {
-                  "image": "assets/images/stories/alimeg/bg_chapter1E.jpg",
+                  "image": "assets/images/stories/alimeg/bg_chapter1F.jpg",
                   "colors": [
                     "#52334b",
                     "#edb876"
