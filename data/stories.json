@@ -899,11 +899,77 @@
           "title": "The Rising Star",
           "file": "data/stories/alimeg/chapter-1.txt",
           "scene": {
+            "image": "assets/images/stories/alimeg/bg_chapter1A.jpg",
             "colors": [
               "#26374b",
               "#806047"
             ],
-            "setting": "The discipline office, the Hasashi home, and the basketball court"
+            "setting": "The discipline office"
+          },
+          "music": {
+            "file": "lore/alimeg_chapter1A.mp3",
+            "title": "alimeg Chapter 1 — Song A",
+            "cues": [
+              {
+                "text": "MaHa Residence",
+                "scene": {
+                  "image": "assets/images/stories/alimeg/bg_chapter1B.jpg",
+                  "colors": [
+                    "#6a584b",
+                    "#c28d68"
+                  ],
+                  "setting": "MaHa Residence"
+                }
+              },
+              {
+                "text": "FUMIOOOOOOO!!!",
+                "scene": {
+                  "image": "assets/images/stories/alimeg/bg_chapter1C.jpg",
+                  "colors": [
+                    "#162a3c",
+                    "#a84932"
+                  ],
+                  "setting": "Nijigasaki basketball court"
+                }
+              },
+              {
+                "text": "Sneakers squeaked against the polished floor",
+                "action": "play",
+                "file": "lore/alimeg_chapter1C.mp3",
+                "title": "alimeg Chapter 1 — Song C",
+                "fadeIn": 2
+              },
+              {
+                "text": "Alicia held up her MVP medal",
+                "action": "play",
+                "file": "lore/alimeg_chapter1D.mp3",
+                "title": "alimeg Chapter 1 — Song D",
+                "fadeIn": 2,
+                "scene": {
+                  "image": "assets/images/stories/alimeg/bg_chapter1D.jpg",
+                  "colors": [
+                    "#6b3140",
+                    "#d49a45"
+                  ],
+                  "setting": "The Hasashi residence, after the championship"
+                }
+              },
+              {
+                "text": "The Next Day...",
+                "action": "play",
+                "file": "lore/alimeg_chapter1E.mp3",
+                "title": "alimeg Chapter 1 — Song E",
+                "fadeIn": 2,
+                "scene": {
+                  "image": "assets/images/stories/alimeg/bg_chapter1D.jpg",
+                  "colors": [
+                    "#6b3140",
+                    "#d49a45"
+                  ],
+                  "setting": "The Hasashi residence, the next morning"
+                }
+              }
+            ]
           },
           "gameDisplay": {
             "duos": [
@@ -1020,11 +1086,176 @@
           "title": "The Blank-Faced Girl",
           "file": "data/stories/alimeg/chapter-2.txt",
           "scene": {
+            "image": "assets/images/stories/alimeg/bg_chapter2A.jpg",
             "colors": [
               "#1c2941",
               "#6c5676"
             ],
-            "setting": "Nijigasaki High School's festival"
+            "setting": "The morning walk to Nijigasaki High School"
+          },
+          "music": {
+            "file": "lore/alimeg_chapter2A.mp3",
+            "title": "alimeg Chapter 2 — Song A",
+            "cues": [
+              {
+                "text": "Inside the Classroom",
+                "scene": {
+                  "image": "assets/images/stories/alimeg/bg_chapter2B.jpg",
+                  "colors": [
+                    "#35495e",
+                    "#8495a6"
+                  ],
+                  "setting": "Inside the classroom"
+                }
+              },
+              {
+                "text": "Just Outside the Classroom",
+                "scene": {
+                  "image": "assets/images/stories/alimeg/bg_chapter2C.jpg",
+                  "colors": [
+                    "#29384b",
+                    "#65738a"
+                  ],
+                  "setting": "Just outside the classroom"
+                }
+              },
+              {
+                "text": "Some Time Later...",
+                "scene": {
+                  "image": "assets/images/stories/alimeg/bg_chapter2B.jpg",
+                  "colors": [
+                    "#35495e",
+                    "#8495a6"
+                  ],
+                  "setting": "Inside the classroom, later"
+                }
+              },
+              {
+                "text": "After Class",
+                "action": "play",
+                "file": "lore/alimeg_chapter2B.mp3",
+                "title": "alimeg Chapter 2 — Song B",
+                "fadeIn": 2,
+                "scene": {
+                  "image": "assets/images/stories/alimeg/bg_chapter2D.jpg",
+                  "colors": [
+                    "#315451",
+                    "#c38c4d"
+                  ],
+                  "setting": "Nijigasaki's school festival"
+                }
+              },
+              {
+                "text": "put those IEMs over there",
+                "scene": {
+                  "image": "assets/images/stories/alimeg/bg_chapter2E.jpg",
+                  "colors": [
+                    "#342b46",
+                    "#bb6b57"
+                  ],
+                  "setting": "Backstage at the school festival"
+                }
+              },
+              {
+                "text": "Still looking at the setup, she wandered around",
+                "action": "fadeOut",
+                "seconds": 4
+              },
+              {
+                "text": "S-S-S-SETSUNA",
+                "action": "play",
+                "file": "lore/alimeg_chapter2C.mp3",
+                "title": "alimeg Chapter 2 — Song C",
+                "fadeIn": 2
+              },
+              {
+                "text": "In the Nijigasaki Halls",
+                "action": "play",
+                "file": "lore/alimeg_chapter2D.mp3",
+                "title": "alimeg Chapter 2 — Song D",
+                "fadeIn": 2,
+                "scene": {
+                  "image": "assets/images/stories/alimeg/bg_chapter2D.jpg",
+                  "colors": [
+                    "#315451",
+                    "#c38c4d"
+                  ],
+                  "setting": "Nijigasaki High School halls"
+                }
+              },
+              {
+                "text": "The girl turned her amber eyes toward the entrance",
+                "action": "stop",
+                "scene": {
+                  "image": "assets/images/stories/alimeg/bg_chapter2F.jpg",
+                  "colors": [
+                    "#171c2d",
+                    "#45435a"
+                  ],
+                  "setting": "The festival editing room"
+                }
+              },
+              {
+                "text": "The girl simply stared at her",
+                "action": "play",
+                "file": "lore/alimeg_chapter2E.mp3",
+                "title": "alimeg Chapter 2 — Song E",
+                "fadeIn": 2
+              },
+              {
+                "text": "...Wait.",
+                "occurrence": 2,
+                "action": "stop"
+              },
+              {
+                "text": "WHAT IF SHE'S A GHOST?!",
+                "action": "play",
+                "file": "lore/alimeg_chapter2F.mp3",
+                "title": "alimeg Chapter 2 — Song F",
+                "fadeIn": 2
+              },
+              {
+                "text": ".................",
+                "action": "stop"
+              },
+              {
+                "text": "pointed at the screen, her fear immediately forgotten",
+                "action": "play",
+                "file": "lore/alimeg_chapter2G.mp3",
+                "title": "alimeg Chapter 2 — Song G",
+                "fadeIn": 2
+              },
+              {
+                "text": "Megumi stared at Alicia's outstretched hand",
+                "action": "fadeOut",
+                "seconds": 4
+              },
+              {
+                "text": "not very good at socializing",
+                "action": "play",
+                "file": "lore/alimeg_chapter2H.mp3",
+                "title": "alimeg Chapter 2 — Song H",
+                "fadeIn": 2
+              },
+              {
+                "text": "Aw, is that so?",
+                "action": "play",
+                "file": "lore/alimeg_chapter2I.mp3",
+                "title": "alimeg Chapter 2 — Song I",
+                "fadeIn": 2
+              },
+              {
+                "text": "Meanwhile, in the Halls",
+                "scene": {
+                  "image": "assets/images/stories/alimeg/bg_chapter2D.jpg",
+                  "colors": [
+                    "#315451",
+                    "#c38c4d"
+                  ],
+                  "setting": "Nijigasaki High School halls"
+                }
+              }
+            ]
           }
         }
       ]
