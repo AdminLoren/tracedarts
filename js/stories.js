@@ -390,7 +390,9 @@ COTA.stories = (function () {
     if (!cues) return;
     const paragraphs = Array.from(container.querySelectorAll("p"));
     cues.forEach((cue) => {
-      const paragraph = paragraphs.find((p) => p.textContent.includes(cue.text));
+      const matches = paragraphs.filter((p) => p.textContent.includes(cue.text));
+      const occurrence = Math.max(1, Number(cue.occurrence) || 1);
+      const paragraph = matches[occurrence - 1];
       if (paragraph) activeCues.push({ paragraph: paragraph, cue: cue, done: false });
     });
   }
