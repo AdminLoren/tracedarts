@@ -918,7 +918,8 @@
                     "#6a584b",
                     "#c28d68"
                   ],
-                  "setting": "MaHa Residence"
+                  "setting": "MaHa Residence",
+                  "loop": false
                 }
               },
               {
