@@ -502,6 +502,7 @@ COTA.stories = (function () {
       file: chapter.file,
       scene: chapter.scene,
       music: chapter.music,
+      displayData: chapter.gameDisplay || null,
     }));
     if (story.extras) {
       list.push({
@@ -568,7 +569,7 @@ COTA.stories = (function () {
       byId("stories-chapter-kicker").textContent = "Chapter " + page.number + " of " + currentStory.chapters.length;
       await prepareNames();
       const text = await loadChapterText(page);
-      renderText(textBox, text);
+      renderText(textBox, text, page.displayData);
       if (pageIndex === index) {
         setupCues(page, textBox);
         showCueMarker(activeCues.length > 0);
@@ -590,7 +591,53 @@ COTA.stories = (function () {
     checkCues();
   }
 
-  function renderText(container, text) {
+  function renderGameDuos(duos) {
+    const group = el("section", "story-game-duos");
+    group.setAttribute("aria-label", "Game duos and player statistics");
+
+    (duos || []).forEach((duo) => {
+      const card = el("article", "story-game-duo");
+      card.style.setProperty("--team-color", duo.color || "#6c7890");
+
+      const header = el("header", "story-game-duo-header");
+      const badge = el("span", "story-game-duo-badge", duo.abbr || "");
+      badge.setAttribute("aria-hidden", "true");
+      const teamInfo = el("div", "story-game-duo-team");
+      teamInfo.appendChild(el("span", "story-game-duo-kicker", "DUO OF THE GAME"));
+      teamInfo.appendChild(el("strong", "story-game-duo-school", duo.school || ""));
+      teamInfo.appendChild(el("span", "story-game-duo-name", duo.team || ""));
+      header.appendChild(badge);
+      header.appendChild(teamInfo);
+      card.appendChild(header);
+
+      const players = el("div", "story-game-players");
+      (duo.players || []).forEach((player) => {
+        const row = el("section", "story-game-player");
+        const playerHeader = el("div", "story-game-player-heading");
+        const playerInfo = el("div", "story-game-player-identity");
+        playerInfo.appendChild(el("strong", "story-game-player-name", player.name || ""));
+        playerInfo.appendChild(el("span", "story-game-player-position", player.position || ""));
+        playerHeader.appendChild(playerInfo);
+        row.appendChild(playerHeader);
+
+        const stats = el("div", "story-game-player-stats");
+        (player.stats || []).forEach((stat) => {
+          const item = el("span", "story-game-stat");
+          item.appendChild(el("strong", "story-game-stat-value", String(stat.value ?? "")));
+          item.appendChild(el("span", "story-game-stat-label", stat.label || ""));
+          stats.appendChild(item);
+        });
+        row.appendChild(stats);
+        players.appendChild(row);
+      });
+      card.appendChild(players);
+      group.appendChild(card);
+    });
+
+    return group;
+  }
+
+  function renderText(container, text, displayData) {
     container.innerHTML = "";
     const state = { last: null, prev: null, pendingActor: null };
     const paragraphs = text.replace(/\r/g, "").trim().split(/\n\s*\n/);
@@ -599,6 +646,9 @@ COTA.stories = (function () {
       if (!clean) return;
       if (/^(\*\s*){3,}$/.test(clean)) {
         container.appendChild(el("hr", "scene-break"));
+        state.last = state.prev = state.pendingActor = null;
+      } else if (clean === "[[GAME_DUOS]]" && displayData && displayData.duos) {
+        container.appendChild(renderGameDuos(displayData.duos));
         state.last = state.prev = state.pendingActor = null;
       } else {
         container.appendChild(buildParagraph(readParagraph(clean, state)));
