@@ -922,6 +922,13 @@
                 }
               },
               {
+                "text": "That's our brave girl",
+                "action": "play",
+                "file": "lore/alimeg_chapter1B.mp3",
+                "title": "alimeg Chapter 1 — Song B",
+                "fadeIn": 2
+              },
+              {
                 "text": "FUMIOOOOOOO!!!",
                 "scene": {
                   "image": "assets/images/stories/alimeg/bg_chapter1C.jpg",
