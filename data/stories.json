@@ -975,6 +975,17 @@
                   ],
                   "setting": "The Hasashi residence, the next morning"
                 }
+              },
+              {
+                "text": "Oka-chan, ohayō!! What's for breakfast?!",
+                "scene": {
+                  "image": "assets/images/stories/alimeg/bg_chapter1E.jpg",
+                  "colors": [
+                    "#52334b",
+                    "#edb876"
+                  ],
+                  "setting": "The MiSa residence kitchen, morning"
+                }
               }
             ]
           },
