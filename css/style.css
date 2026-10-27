@@ -1389,6 +1389,129 @@ img { max-width: 100%; display: block; }
   margin: 0 0 1.3em;
   white-space: pre-line;       
 }
+.story-game-duo-badge {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: var(--team-color, #6c7890);
+  font-family: var(--font-display), sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+.story-game-duos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 2.1em 0;
+  font-family: var(--font-display), sans-serif;
+  line-height: 1.35;
+}
+.story-game-duo {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(200, 215, 231, 0.18);
+  border-top: 3px solid var(--team-color, #6c7890);
+  border-radius: 14px;
+  background:
+    linear-gradient(145deg, color-mix(in srgb, var(--team-color, #6c7890) 11%, rgba(18, 21, 31, 0.96)), rgba(12, 14, 22, 0.98) 70%);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+.story-game-duo-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 16px 13px;
+  border-bottom: 1px solid rgba(200, 215, 231, 0.12);
+}
+.story-game-duo-badge {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  border-radius: 9px;
+  font-size: 13px;
+}
+.story-game-duo-team {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+}
+.story-game-duo-kicker {
+  margin-bottom: 3px;
+  color: #d5bb7b;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+}
+.story-game-duo-school {
+  overflow: hidden;
+  color: #f5f7fb;
+  font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.story-game-duo-name {
+  color: #aebbd0;
+  font-size: 12px;
+}
+.story-game-players { padding: 3px 14px 12px; }
+.story-game-player {
+  padding: 12px 2px 13px;
+}
+.story-game-player + .story-game-player {
+  border-top: 1px solid rgba(200, 215, 231, 0.11);
+}
+.story-game-player-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.story-game-player-identity {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 2px;
+}
+.story-game-player-name {
+  overflow: hidden;
+  color: #f5f7fb;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.story-game-player-position {
+  color: #9faabe;
+  font-size: 11px;
+}
+.story-game-player-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 5px;
+}
+.story-game-stat {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 7px 3px 6px;
+  border: 1px solid rgba(200, 215, 231, 0.09);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.035);
+}
+.story-game-stat-value {
+  color: #fff;
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+}
+.story-game-stat-label {
+  color: #9faabe;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
 .scene-break {
   width: 120px;
   margin: 2.2em auto;
@@ -1420,6 +1543,9 @@ img { max-width: 100%; display: block; }
   .stories-select { flex: 1; max-width: none; }
   .stories-page { margin: 16px 12px 60px; padding: 32px 22px 28px; }
   .stories-bottom-nav { flex-direction: column; }
+}
+@media (max-width: 640px) {
+  .story-game-duos { grid-template-columns: 1fr; gap: 12px; }
 }
 
 
