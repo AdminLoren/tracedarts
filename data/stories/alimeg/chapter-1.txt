@@ -60,13 +60,11 @@ Meari sighed. She understood why Alicia was frightened. Her niece had done somet
 
 Still, hiding inside the cabinets wasn't exactly a sustainable solution.
 
-"Come on, sweetheart. Your lunch is getting cold."
+[mea] "Come on, Ali... Your lunch is getting cold."
 
 Alicia pulled her legs closer.
 
-Meari's shoulders slumped.
-
-"...Right. We're going to need reinforcements."
+Meari's shoulders slumped. "...Clever girl... I can’t reach you from there…"
 
 She turned toward her son.
 
@@ -74,9 +72,9 @@ She turned toward her son.
 
 [fum] "Ooh, okaaaay."
 
-[mea] "And be nice…"
+[mea] "And be nice…" Meari added.
 
-He approached the cabinet, crouched down, and began squeezing himself into the narrow opening. His little hands planted on the cabinet board.
+Fumio approached the cabinet, crouched down, and began squeezing himself into the narrow opening. His little hands planted on the cabinet board.
 
 [fum] "Hey, dumbface—"
 
@@ -90,7 +88,7 @@ Fumio rolled across the floor like an abandoned tumbleweed before finally coming
 
 He stared blankly at the ceiling. Then he turned his head toward his mother.
 
-Meari stared back. She sighed.
+Meari stared back and sighed.
 
 [fum] "Can I have her lunch?"
 
@@ -102,13 +100,13 @@ Just then, the front door opened. Hanzo stepped aside to let Michan and Satoshi 
 
 Satoshi looked around the room, then to his twin brother. "...Where's Alicia?"
 
-Hanzo silently pointed toward the kitchen. There, Meari was still crouching in front of the cabinet, while Fumio lay sprawled on the floor beside her.
+Hanzo silently pointed toward the kitchen. There, Meari was still crouching in front of the cabinet, while Fumio lay sprawled on the floor beside her. Satoshi closed his eyes for a moment.
 
-Satoshi closed his eyes for a moment. "...She's really scared, huh?" Michan's expression softened.
+"...She's really scared, huh?" Michan's expression softened.
 
 Satoshi walked toward the kitchen and crouched beside Meari.
 
-[sat] "Thanks for looking after her, Meari."
+[sat] "Thanks for looking after her, Meari-chan."
 
 [mea] "She's just having a hard time coming out…"
 
@@ -116,7 +114,7 @@ Satoshi walked toward the kitchen and crouched beside Meari.
 
 Meari moved aside. Satoshi lowered himself until he was at eye level with the cabinet opening.
 
-Then, in the gentlest voice he could manage, he called out, "Hey, cheesecake?"
+Then, in the gentlest voice he could manage, he called out, [sat] "Hey, cheesecake?"
 
 Alicia flinched and tucked herself even tighter into her little corner.
 
@@ -128,7 +126,7 @@ Then he heard it. A tiny, trembling sob. His expression immediately softened.
 
 [sat] "Hey, nonono- Don’t be upset! Please don’t be upset..."
 
-Even Michan's heart sank at the sound. Meari pressed her lips together with Hanzo just watching with his fists on his hip.
+Even Michan's heart sank at the sound. Meari pressed her lips together with Hanzo just watching with his fist on his hip.
 
 Fumio, meanwhile, was still staring at the ceiling.
 
@@ -144,17 +142,15 @@ A small sniffle answered him.
 
 [sat] "We just want to understand what happened. And we want you to understand why what you did was wrong. That's all."
 
-It took several minutes. But eventually, Alicia began to uncurl herself, slowly shuffling toward the opening.
+It took a while. But eventually, Alicia began to uncurl herself, slowly shuffling toward the opening, enough for her to be reachable.
 
-Satoshi reached forward and gently lifted her into his arms. "There we go..."
+Satoshi lunged forward and gently lifted her into his arms. "There we go..."
 
 He carried her away from the cabinet, allowing her to settle against his chest.
 
-"You see? Papa's not upset with you, cheesecake." Michan knelt beside them, offering her daughter a small, reassuring smile.
+"You see? Papa's not upset with you, Ali-chan..." Michan knelt beside them, offering her daughter a small, reassuring smile.
 
-"Hey, sweetheart."
-
-Alicia's face was wet with tears. She looked between her parents, her lower lip trembling.
+Alicia's face was wet with tears. She looked between her parents, her lower lip trembling in a pout.
 
 Satoshi gently turned her toward him. "Remember- Uhh… Remember when you play with Fumio, Vyse, and Riku?"
 
@@ -168,11 +164,11 @@ Another tiny nod.
 
 Satoshi paused, choosing his next words carefully.
 
-"But…other people? Other kids? They might not understand things the same way you do. They might not know that you're playing, or they might not like the things you do, or the things you say."
+[sat] "But…other people? Other kids? They might not understand things the same way you do. They might not know that you're playing, or they might not like the things you do, or the things you say."
 
 Michan gently brushed a stray lock of hair away from Alicia's face, still drenched in tears.
 
-"And that doesn't mean there's something wrong with you, sweetheart. Everyone has different feelings, different boundaries, and different ways of understanding things."
+[ali] "And that doesn't mean there's something wrong with you, sweetie. Everyone has different feelings, different boundaries, and different ways of understanding things."
 
 Alicia sniffled, her voice not louder than a whisper. "B-But... but I didn't..."
 
@@ -180,7 +176,7 @@ Alicia sniffled, her voice not louder than a whisper. "B-But... but I didn't..."
 
 Satoshi nodded. "Being angry or frustrated is okay. But hitting someone isn't the way to handle those feelings. You can talk to them, ask for help, or walk away if things get too much."
 
-He gave her a gentle squeeze. "It's something you have to learn, just like everything else. And making a mistake doesn't mean you're a bad person. What matters is what you do afterward."
+He gave her a gentle squeeze. [sat] "It's something you have to learn, just like everything else. And making a mistake doesn't mean you're a bad person. What matters is what you do afterward."
 
 Alicia's face crumpled. "M-Mama... Papa..." Her little hands clutched at their clothes. "I-I'm sorry… I’m sorry…!"
 
@@ -188,13 +184,13 @@ She threw her arms around both of them, burying her face against their chests.
 
 Satoshi rubbed her back while Michan pressed a gentle kiss to her forehead.
 
-"That's our brave girl," Michan whispered, using her voice to soothe her daughter’s nerves. "It's okay to cry, sweetheart. You don't have to be afraid of telling us when something goes wrong."
+"That's our brave girl," Michan whispered, using her voice to soothe her daughter’s nerves. "It's okay to cry, dear... You don't have to be afraid of telling us when something goes wrong."
 
 Alicia continued sniffling against them.
 
-"We might be disappointed when you make a bad choice," Satoshi explained softly, "but you never have to hide from us because you're scared we'll stop loving you." He pulled back just enough to look at her. "Can you remember that for Papa?"
+"We might be disappointed when you make a bad choice," Satoshi explained softly, "but you always need to face the consequences and become a better person." He pulled back just enough to look at her. "Can you remember that for Papa?"
 
-Alicia nodded.
+Alicia nodded, her tears finally subsiding.
 
 [sat] "Good girl..."
 
@@ -202,13 +198,13 @@ Michan wiped away one of her tears. "Now... there's someone else you need to tal
 
 Alicia froze. Slowly, she turned her head toward the boy now standing at the side. Her eyes widened a bit at the sight of her cousin.
 
-"F-Fumio-kun..."
+[ali] "F-Fumio-kun..."
 
 She wriggled out of her parents' embrace and hurried over to him, with her arms in the air "F-Fumio...!"
 
 — Present Day —
 
-"FUMIOOOOOOO!!!"
+[ali] "FUMIOOOOOOO!!!"
 
 The roar of an excited crowd filled the basketball court.
 
@@ -218,7 +214,7 @@ And right in the middle of it all was Alicia.
 
 She sprinted toward an opening in the opposing team's defense, raising one hand.
 
-"GIMME THE BALL, FUMIO! I'M OPEN!"
+[ali] "GIMME THE BALL, FUMIO! I'M OPEN!"
 
 Fumio bumped shoulders with the defender as he dribbled down the court, keeping the ball firmly under control. His eyes flickered toward the opposite side.
 
@@ -270,41 +266,19 @@ The referee's whistle pierced the air. The crowd gasped at the collision.
 
 "Alright, alright—" Fumio interrupted, wrapping his arms around Alicia from behind and covering her mouth like he was restraining an angry teddy bear. "Let's not get ourselves a technical, yeah?"
 
-THE SCOREBOARD
-
-UTX Reigners: 65. Nijigasaki Nijis: 72. Fourth quarter, 2:02 remaining. Nijigasaki leads by 7 points. Timeouts remaining: UTX 1 of 6; Nijigasaki 3 of 6.
-
 "The defending champions, Nijigasaki High School, aren't letting anyone take their title away anytime soon!" Commentator 1 declared.
 
 "Although, after losing to the Reigners' baseball team last week, I suppose the Nijis figured they'd make up for it on the basketball court!" Commentator 2 chuckled. "Touché, Nijis. Touché!"
 
 "Well, if this game is anything to go by, they're certainly making their point!"
 
-DUO OF THE GAME — UTX REIGNERS
-
-Kaito Shimizu — Shooting Guard
-
-28 PTS · 3 AST · 6 REB · 16 MIN
-
-Ren Tachibana — Center
-
-14 PTS · 5 AST · 13 REB · 17 MIN
+[[GAME_DUOS]]
 
 "Let's not count the Reigners out just yet!" Commentator 1 cautioned. "Kaito Shimizu has been an absolute scoring machine tonight, putting up twenty-eight points in just sixteen minutes!"
 
 "And Ren Tachibana has practically built a fortress under that basket!" Commentator 2 added. "Thirteen rebounds! The man has been fighting for every single possession!"
 
 "Exactly! The Reigners' frontcourt has been keeping them alive, and if Kaito catches fire again, that seven-point lead could disappear in a hurry!"
-
-DUO OF THE GAME — NIJIGASAKI NIJIS
-
-Alicia Hasashi — Point Guard
-
-32 PTS · 4 AST · 5 REB · 12 MIN
-
-Fumio Hasashi — Power Forward
-
-7 PTS · 16 AST · 12 REB · 17 MIN
 
 "Now THIS is a sight to behold!" Commentator 1 exclaimed. "Related to Uranoshiya Academy star, Satoshi Hasashi, this pair came into the season seemingly out of nowhere and delivered some of the most ridiculous teamwork I've ever seen in a high school basketball game!"
 
