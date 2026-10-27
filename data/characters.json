@@ -200,8 +200,9 @@
     "heightScale": 1.004,
     "feetLine": 0.987,
     "nameGradient": [
-      "#f4f0e0",
-      "#f2dc4b"
+      "#f6f4ec",
+      "#aeb2b9",
+      "#d6c11c"
     ],
     "nameAliases": [
       "Riku.EXE",
@@ -865,9 +866,9 @@
     "heightScale": 1.132,
     "feetLine": 0.984,
     "nameGradient": [
-      "#df6d5c",
-      "#efad4d",
-      "#e15b5e"
+      "#ec3a2d",
+      "#bd172b",
+      "#ffab18"
     ],
     "nameAliases": [
       "Satoshi",
@@ -915,8 +916,9 @@
     "heightScale": 1.021,
     "feetLine": 0.993,
     "nameGradient": [
-      "#ef80a1",
-      "#eea9a1"
+      "#f6c8b8",
+      "#ef91b7",
+      "#d965a0"
     ],
     "nameAliases": [
       "Michan",
