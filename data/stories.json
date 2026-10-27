@@ -618,24 +618,154 @@
         "woman": {
           "name": "Student's Mother",
           "nameAliases": [
-            "Student's Mother"
+            "Student's Mother",
+            "The girl's mother",
+            "the girl's mother",
+            "the woman"
           ],
           "nameGradient": [
-            "#f0a078",
-            "#c5566b"
+            "#f2c5a1",
+            "#d69677",
+            "#a96f69"
           ],
           "pronoun": "she"
         },
         "teacher": {
           "name": "Teacher",
           "nameAliases": [
-            "Teacher"
+            "Teacher",
+            "Sensei",
+            "the teacher"
           ],
           "nameGradient": [
-            "#91a7c6",
-            "#d2d8e3"
+            "#e1e7ee",
+            "#aab7c8",
+            "#78889e"
           ],
           "pronoun": null
+        },
+        "faculty": {
+          "name": "Discipline Coordinator",
+          "nameAliases": [
+            "Discipline Coordinator",
+            "The Discipline Coordinator",
+            "the Discipline Coordinator",
+            "The coordinator",
+            "the coordinator"
+          ],
+          "nameGradient": [
+            "#c9d8ee",
+            "#8da4c4",
+            "#687c9b"
+          ],
+          "pronoun": null
+        },
+        "parent-man": {
+          "name": "Student's Father",
+          "nameAliases": [
+            "The woman's husband",
+            "the woman's husband",
+            "the husband"
+          ],
+          "nameGradient": [
+            "#d5bc9a",
+            "#b69778",
+            "#83725f"
+          ],
+          "pronoun": "he"
+        },
+        "student": {
+          "name": "Student",
+          "nameAliases": [
+            "A student",
+            "One of the girls",
+            "The other girl",
+            "one of them",
+            "the students"
+          ],
+          "nameGradient": [
+            "#a9dfd8",
+            "#71bdb9",
+            "#d0d48f"
+          ],
+          "pronoun": null
+        },
+        "referee": {
+          "name": "Referee",
+          "nameAliases": [
+            "The referee",
+            "Referee",
+            "the referees"
+          ],
+          "nameGradient": [
+            "#fff5d6",
+            "#d5c58b",
+            "#a69b70"
+          ],
+          "pronoun": null
+        },
+        "commentator1": {
+          "name": "Commentator 1",
+          "nameAliases": [
+            "Commentator 1"
+          ],
+          "nameGradient": [
+            "#ffe184",
+            "#f5ad4e",
+            "#e9794d"
+          ],
+          "pronoun": null
+        },
+        "commentator2": {
+          "name": "Commentator 2",
+          "nameAliases": [
+            "Commentator 2"
+          ],
+          "nameGradient": [
+            "#f3c4e9",
+            "#c996df",
+            "#929de2"
+          ],
+          "pronoun": null
+        },
+        "opponent": {
+          "name": "UTX Player",
+          "nameAliases": [
+            "Number 12",
+            "the power forward"
+          ],
+          "nameGradient": [
+            "#d9a8ad",
+            "#a86f7d",
+            "#795365"
+          ],
+          "pronoun": "he"
+        },
+        "kaito": {
+          "name": "Kaito Shimizu",
+          "nameAliases": [
+            "Kaito Shimizu",
+            "Kaito"
+          ],
+          "nameGradient": [
+            "#e1a184",
+            "#be755f",
+            "#8e5962"
+          ],
+          "pronoun": "he"
+        },
+        "ren": {
+          "name": "Ren Tachibana",
+          "nameAliases": [
+            "Ren Tachibana",
+            "Ren"
+          ],
+          "nameGradient": [
+            "#bdc2d2",
+            "#8793ad",
+            "#66728d"
+          ],
+          "pronoun": "he"
         },
         "mea": {
           "name": "Meari",
@@ -774,6 +904,116 @@
               "#806047"
             ],
             "setting": "The discipline office, the Hasashi home, and the basketball court"
+          },
+          "gameDisplay": {
+            "duos": [
+              {
+                "id": "utx",
+                "school": "UTX Academy",
+                "team": "Reigners",
+                "abbr": "UTX",
+                "color": "#8B2635",
+                "players": [
+                  {
+                    "name": "Kaito Shimizu",
+                    "position": "Shooting Guard",
+                    "stats": [
+                      {
+                        "label": "PTS",
+                        "value": "28"
+                      },
+                      {
+                        "label": "AST",
+                        "value": "3"
+                      },
+                      {
+                        "label": "REB",
+                        "value": "6"
+                      },
+                      {
+                        "label": "MIN",
+                        "value": "16"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Ren Tachibana",
+                    "position": "Center",
+                    "stats": [
+                      {
+                        "label": "PTS",
+                        "value": "14"
+                      },
+                      {
+                        "label": "AST",
+                        "value": "5"
+                      },
+                      {
+                        "label": "REB",
+                        "value": "13"
+                      },
+                      {
+                        "label": "MIN",
+                        "value": "17"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "nhs",
+                "school": "Nijigasaki High School",
+                "team": "Nijis",
+                "abbr": "NHS",
+                "color": "#237A68",
+                "players": [
+                  {
+                    "name": "Alicia Hasashi",
+                    "position": "Point Guard",
+                    "stats": [
+                      {
+                        "label": "PTS",
+                        "value": "32"
+                      },
+                      {
+                        "label": "AST",
+                        "value": "4"
+                      },
+                      {
+                        "label": "REB",
+                        "value": "5"
+                      },
+                      {
+                        "label": "MIN",
+                        "value": "12"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Fumio Hasashi",
+                    "position": "Power Forward",
+                    "stats": [
+                      {
+                        "label": "PTS",
+                        "value": "7"
+                      },
+                      {
+                        "label": "AST",
+                        "value": "16"
+                      },
+                      {
+                        "label": "REB",
+                        "value": "12"
+                      },
+                      {
+                        "label": "MIN",
+                        "value": "17"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         },
         {
