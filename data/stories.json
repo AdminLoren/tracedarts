@@ -596,6 +596,198 @@
         ],
         "credit": "Emma Verde, Shioriko Mifune, and Nana Nakagawa are owned by Bandai, Love Live!!."
       }
+    },
+    {
+      "id": "untitled-story",
+      "title": "Untitled Story",
+      "series": "The Happy Ever Party: Children of the Authors",
+      "tagline": "A story from the C.O.T.A. universe",
+      "status": "Ongoing",
+      "summary": "After a championship game, Alicia meets Megumi, a quiet student helping with the school festival—and decides that a new friend is exactly what they both need.",
+      "synopsis": [
+        "After facing the consequences of a mistake and celebrating a championship, Alicia spends festival day at Nijigasaki. When she meets Megumi, a quiet video editor who struggles to socialize, Alicia's enthusiasm turns an unexpected introduction into the start of a new friendship."
+      ],
+      "introScene": {
+        "colors": [
+          "#162c40",
+          "#744b67"
+        ],
+        "setting": "Nijigasaki High School, festival season"
+      },
+      "speakers": {
+        "woman": {
+          "name": "Student's Mother",
+          "nameAliases": [
+            "Student's Mother"
+          ],
+          "nameGradient": [
+            "#f0a078",
+            "#c5566b"
+          ],
+          "pronoun": "she"
+        },
+        "teacher": {
+          "name": "Teacher",
+          "nameAliases": [
+            "Teacher"
+          ],
+          "nameGradient": [
+            "#91a7c6",
+            "#d2d8e3"
+          ],
+          "pronoun": null
+        },
+        "mea": {
+          "name": "Meari",
+          "nameAliases": [
+            "Meari",
+            "Meari Watanabe"
+          ],
+          "nameGradient": [
+            "#4af1cc",
+            "#4eede0",
+            "#5cdfa5"
+          ],
+          "pronoun": "she"
+        },
+        "fum": {
+          "name": "Fumio",
+          "nameAliases": [
+            "Fumio",
+            "Fumio Hasashi",
+            "Hasashi",
+            "Fum-Fum",
+            "Mio"
+          ],
+          "nameGradient": [
+            "#ff6b63",
+            "#ff9a8f",
+            "#58d6d0"
+          ],
+          "pronoun": "he"
+        },
+        "ali": {
+          "name": "Alicia",
+          "nameAliases": [
+            "Alicia",
+            "Alicia Hasashi",
+            "Ali"
+          ],
+          "nameGradient": [
+            "#ff7b80",
+            "#ff8c78",
+            "#ffbe85"
+          ],
+          "pronoun": "she"
+        },
+        "sat": {
+          "name": "Satoshi",
+          "nameAliases": [
+            "Satoshi",
+            "Satoshi Hasashi"
+          ],
+          "nameGradient": [
+            "#df6d5c",
+            "#efad4d",
+            "#e15b5e"
+          ],
+          "pronoun": null
+        },
+        "emm": {
+          "name": "Emma",
+          "nameAliases": [
+            "Emma",
+            "Emma Verde",
+            "Verde"
+          ],
+          "nameGradient": [
+            "#b9f59a",
+            "#6ee04a",
+            "#7fe0d4"
+          ],
+          "pronoun": "she"
+        },
+        "kar": {
+          "name": "Karin",
+          "nameAliases": [
+            "Karin",
+            "Karin Asaka"
+          ],
+          "nameGradient": [
+            "#9b7cf0",
+            "#58b4f2"
+          ],
+          "pronoun": "she"
+        },
+        "vys": {
+          "name": "Vyse",
+          "nameAliases": [
+            "Vyse",
+            "Vyse Liang",
+            "Liang",
+            "Vu~ise",
+            "Vaisu"
+          ],
+          "nameGradient": [
+            "#9a7be8",
+            "#8fd8f2",
+            "#e655d9"
+          ],
+          "pronoun": "he"
+        },
+        "set": {
+          "name": "Setsuna",
+          "nameAliases": [
+            "Setsuna",
+            "Setsuna Yuki",
+            "Nana",
+            "Nana Nakagawa",
+            "Nakagawa"
+          ],
+          "nameGradient": [
+            "#ff5468",
+            "#ec3249",
+            "#d81c2f"
+          ],
+          "pronoun": "she"
+        },
+        "meg": {
+          "name": "Megumi",
+          "nameAliases": [
+            "Megumi",
+            "Megumi Williams"
+          ],
+          "nameGradient": [
+            "#f7c086",
+            "#efa24c"
+          ],
+          "pronoun": null
+        }
+      },
+      "chapters": [
+        {
+          "title": "The Rising Star",
+          "file": "data/stories/untitled-story/chapter-1.txt",
+          "scene": {
+            "colors": [
+              "#26374b",
+              "#806047"
+            ],
+            "setting": "The discipline office, the Hasashi home, and the basketball court"
+          }
+        },
+        {
+          "title": "The Blank-Faced Girl",
+          "file": "data/stories/untitled-story/chapter-2.txt",
+          "scene": {
+            "colors": [
+              "#1c2941",
+              "#6c5676"
+            ],
+            "setting": "Nijigasaki High School's festival"
+          }
+        }
+      ]
     }
   ]
 }
