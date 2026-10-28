@@ -266,29 +266,36 @@ The referee's whistle pierced the air. The crowd gasped at the collision.
 
 "Alright, alright—" Fumio interrupted, wrapping his arms around Alicia from behind and covering her mouth like he was restraining an angry teddy bear. "Let's not get ourselves a technical, yeah?"
 
-"The defending champions, Nijigasaki High School, aren't letting anyone take their title away anytime soon!" Commentator 1 declared.
+Commentator 1: “The defending champions, Nijigasaki High School, are showing no signs of surrendering their title! The Nijis are determined to stay on top!”
 
-"Although, after losing to the Reigners' baseball team last week, I suppose the Nijis figured they'd make up for it on the basketball court!" Commentator 2 chuckled. "Touché, Nijis. Touché!"
+Commentator 2: “And after taking a loss to the UTX Reigners on the baseball diamond last week, I’d say Nijigasaki is looking to return the favor here on the basketball court!”
 
-"Well, if this game is anything to go by, they're certainly making their point!"
+Commentator 1: “Revenge is certainly on the menu tonight! But don't count the Reigners out just yet. They've got some serious firepower of their own!”
 
-[[GAME_DUOS]]
+Commentator 1: “Let's start with Kaito Shimizu, who's been absolutely lethal tonight! Twenty-eight points in just sixteen minutes! Every time he gets the ball, Nijigasaki has to treat him as a scoring threat!”
 
-"Let's not count the Reigners out just yet!" Commentator 1 cautioned. "Kaito Shimizu has been an absolute scoring machine tonight, putting up twenty-eight points in just sixteen minutes!"
+Commentator 2: “And while Kaito's lighting up the scoreboard, Ren Tachibana has been doing the dirty work inside! Fourteen points, thirteen rebounds, and five assists. He's been a force under the basket, keeping possessions alive and giving his team second chances!”
 
-"And Ren Tachibana has practically built a fortress under that basket!" Commentator 2 added. "Thirteen rebounds! The man has been fighting for every single possession!"
+Commentator 1: “That's what makes this Reigners lineup so dangerous. Kaito can take over offensively, while Ren controls the paint. With the game still within reach, these two could turn things around in a hurry!”
 
-"Exactly! The Reigners' frontcourt has been keeping them alive, and if Kaito catches fire again, that seven-point lead could disappear in a hurry!"
+Commentator 2: “Absolutely! Nijigasaki might have the lead, but if they give either of these guys an inch, the Reigners will make them pay!”
 
-"Now THIS is a sight to behold!" Commentator 1 exclaimed. "Related to Uranoshiya Academy star, Satoshi Hasashi, this pair came into the season seemingly out of nowhere and delivered some of the most ridiculous teamwork I've ever seen in a high school basketball game!"
+Commentator 1: “And now, let's talk about the defending champions' dynamic duo! Related to Uranoshiya Academy star Satoshi Hasashi, Alicia and Fumio Hasashi have quickly made names for themselves this season. Their teamwork has been nothing short of spectacular!”
 
-"Thirty-two points for Alicia with only 12 minutes in the game!" Commentator 2 said. "That little girl’s a prodigy, did you see how fast she was going?!"Commentator 1 "I couldn’t see man, I’m pretty sure she’s clocking in on 18 miles per hour with that set of little legs!"Commentator 2 "As for her cousin, We may have questioned some of Fumio's plays earlier in the game, but apparently, he's the perfect partner for the Speedstar Alicia to go absolutely wild with! Talk about chemistry!"
+Commentator 2: “Thirty-two points in just twelve minutes for Alicia Hasashi! The Speedstar is living up to her name tonight! Did you see how quickly she blew past the defense?!”
 
-"But seriously," Commentator 1 continued, "if I didn't know any better, I'd say Fumio was dragged onto the court just to give Alicia the opportunity to shine!"
+Commentator 1: “I blinked, and she was already at the other end of the court! Seriously, how fast is she?! She must be pushing eighteen miles per hour out there!”
 
-"Seven points, twelve rebounds, sixteen assists," Commentator 2 recited. "I'd say he's doing a little more than standing around!"
+Commentator 2: “And what makes her even more dangerous is who's setting her up! We questioned a few of Fumio's decisions earlier in the game, but sixteen assists later, I think we've got our answer. He's found his rhythm, and Alicia is making the most of every opportunity!”
 
-"Fair enough! Still, seventeen minutes on the court, and he's already turned out to be one of the most unexpected playmakers in this tournament. The boy practically picked up the sport out of nowhere!"
+Commentator 1: “That's the beauty of their chemistry! Fumio doesn't need to lead the scoring when he can create openings for Alicia. He reads the floor, finds the passing lanes, and gets the ball exactly where she needs it!”
+
+Commentator 2: “Seven points, twelve rebounds, and sixteen assists. At this point, calling him a supporting act would be a disservice!”
+
+Commentator 1: “You said it! And remember, Fumio only picked up the sport relatively recently. To go from a newcomer to one of the tournament's most effective playmakers in such a short time? That's remarkable!”
+
+Commentator 2: “And with Alicia tearing through defenses like that, I wouldn't want to be the team that has to figure out how to stop these two!”
+
 
 ***
 
