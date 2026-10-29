@@ -1,6 +1,6 @@
-The Next Day...
+[[SCENE: The Next Day...]]
 
-— On the Way to Nijigasaki High School —
+[[SCENE: On the Way to Nijigasaki High School]]
 
 The morning streets of Odaiba were already beginning to bustle. Pedestrians made their way toward the nearby stations, bicycles rolled past the sidewalks, and the occasional convenience store offered an easy stop for students on their way to school.
 
@@ -48,7 +48,7 @@ Alicia came sprinting toward them at an amazing speed, slipping neatly between t
 
 The three continued down the sidewalk toward school, their conversation blending into the sounds of the waking city.
 
-Inside the Classroom
+[[SCENE: Inside the Classroom]]
 
 "Alright, listen up!" the teacher called, demanding the students' attention. "We'll start the exam in thirty minutes. That should give you ample time to review. After class, you're free to get ready for the festival. Got it?"
 
@@ -78,7 +78,7 @@ She slowly turned to her right. There sat Fumio, fast asleep, snoring away with 
 
 "Yeah, I figured..." Alicia muttered. She raised her hand to get the teacher's attention. [ali] "Sensei, may I go to the washroom?"
 
-Just Outside the Classroom
+[[SCENE: Just Outside the Classroom]]
 
 Vyse stood alone in the hallway, leaning against the wall beside the classroom door.
 
@@ -108,7 +108,7 @@ After a little while, Vyse finally broke the silence.
 
 "I'm working on ittt...~" Vyse sheepishly replied.
 
-Some Time Later...
+[[SCENE: Some Time Later...]]
 
 [teacher] "Haruka..." The teacher called out the surnames in alphabetical order as he returned the students' exam papers. [teacher] "Hasashi, A…"
 
@@ -138,7 +138,7 @@ Slowly, she gritted her teeth and clenched her fists.
 
 "Hey, at least you passed..." Fumio deadpanned beside his furious cousin. "All I could answer was every type of foul in basketball..."
 
-After Class
+[[SCENE: After Class]]
 
 Once the school bell rang, the gang had already gathered at Nijigasaki's quadrangle, ready to take in the sights of the school festival. Stalls lined the grounds, decorations adorned the walkways, and students roamed around, enjoying the festivities.
 
@@ -182,7 +182,7 @@ Emma froze. The words struck a rather sensitive chord, tugging at her heartstrin
 
 He could only hope Emma would stop staring at him.
 
-Backstage
+[[SCENE: Backstage]]
 
 "Hasashi-chan, could you put those IEMs over there, please?" A student pointed toward a desk while sorting through the lighting controls.
 
@@ -284,7 +284,7 @@ She paused. [ali] "Actually, could you tell me what the video looks like? That w
 
 "Of course!" Setsuna nodded enthusiastically, raising her hands to illustrate what the video looked like.
 
-In the Nijigasaki Halls
+[[SCENE: In the Nijigasaki Halls]]
 
 Alicia walked through the school halls, so used to seeing them filled with students that the sight before her felt almost unnatural. Now? They were practically soulless.
 
@@ -580,7 +580,7 @@ A small, almost imperceptible glow appeared on her face.
 
 [meg] "...That felt nice."
 
-Meanwhile, in the Halls
+[[SCENE: Meanwhile, in the Halls]]
 
 Alicia made her way back toward Setsuna's stage, pulling out her phone as she walked.
 
