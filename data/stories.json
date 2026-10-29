@@ -927,10 +927,12 @@
                 "action": "play",
                 "file": "lore/alimeg_chapter1B.mp3",
                 "title": "A Wish (Super Mario Galaxy)",
-                "fadeIn": 2
+                "fadeIn": 2,
+                "loop": false
               },
               {
-                "text": "FUMIOOOOOOO!!!",
+                "text": "Present Day",
+                "action": "stop",
                 "scene": {
                   "image": "assets/images/stories/alimeg/bg_chapter1C.jpg",
                   "colors": [
