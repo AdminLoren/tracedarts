@@ -643,9 +643,21 @@ COTA.stories = (function () {
     container.innerHTML = "";
     const state = { last: null, prev: null, pendingActor: null };
     const paragraphs = text.replace(/\r/g, "").trim().split(/\n\s*\n/);
+    let openHeading = null;
     paragraphs.forEach((block) => {
       const clean = block.trim();
       if (!clean) return;
+      const sceneMatch = clean.match(/^\[\[SCENE:\s*(.+?)\s*\]\]$/);
+      if (sceneMatch) {
+        if (!openHeading) {
+          openHeading = el("div", "scene-heading");
+          container.appendChild(openHeading);
+        }
+        openHeading.appendChild(el("p", "scene-heading-line", sceneMatch[1]));
+        state.last = state.prev = state.pendingActor = null;
+        return;
+      }
+      openHeading = null;
       if (/^(\*\s*){3,}$/.test(clean)) {
         container.appendChild(el("hr", "scene-break"));
         state.last = state.prev = state.pendingActor = null;
