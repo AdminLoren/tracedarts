@@ -76,7 +76,7 @@ Alicia's expression went completely deadpan.
 
 She slowly turned to her right. There sat Fumio, fast asleep, snoring away with a cartoonish bubble inflating from his nose and his mouth hanging wide open.
 
-"Yeah, I figured..." Alicia muttered. She raised her hand to get the teacher's attention. "Sensei, may I go to the washroom?"
+"Yeah, I figured..." Alicia muttered. She raised her hand to get the teacher's attention. [ali] "Sensei, may I go to the washroom?"
 
 Just Outside the Classroom
 
@@ -110,7 +110,7 @@ After a little while, Vyse finally broke the silence.
 
 Some Time Later...
 
-"Haruka..." The teacher called out the surnames in alphabetical order as he returned the students' exam papers. "Hasashi, A…"
+[teacher] "Haruka..." The teacher called out the surnames in alphabetical order as he returned the students' exam papers. [teacher] "Hasashi, A…"
 
 He glanced at Alicia's paper, his eyebrows rising in surprise.
 
@@ -172,7 +172,7 @@ Or perhaps she'd get Fumio to do it for her.
 
 "Ara, then you shouldn't keep them waiting, Miss ‘Sanic Hegehog~’." Karin stuck out her tongue.
 
-"Dead meme, but you're right-" Alicia immediately took off running toward the backstage area. Before disappearing into the crowd, however, she pointed an accusing finger at Vyse. "YOU! Don't start confessing without me there to record it!"
+"Dead meme, but you're right-" Alicia immediately took off running toward the backstage area. Before disappearing into the crowd, however, she pointed an accusing finger at Vyse. [ali] "YOU! Don't start confessing without me there to record it!"
 
 Emma froze. The words struck a rather sensitive chord, tugging at her heartstrings. She couldn't tell whether the feeling came from fear... or hope.
 
@@ -280,7 +280,7 @@ Setsuna's eyes sparkled. "You'd really do that for us...?" Her voice wavered wit
 
 "Aw, you don't have to thank me!" Alicia waved her off before leaning closer. "Just keep dropping those bangers you make!"
 
-She paused. "Actually, could you tell me what the video looks like? That way, I'll know what I'm looking for!"
+She paused. [ali] "Actually, could you tell me what the video looks like? That way, I'll know what I'm looking for!"
 
 "Of course!" Setsuna nodded enthusiastically, raising her hands to illustrate what the video looked like.
 
