@@ -356,7 +356,7 @@ COTA.stories = (function () {
   function placeSpoilerVeil() {
     const veil = byId("stories-spoiler-veil");
     if (!veil) return;
-    const clearSpace = window.innerWidth < 700 ? 70 : 100;
+    const clearSpace = window.innerWidth < 700 ? 48 : 68;
     veil.style.top = window.innerHeight * CUE_LINE + clearSpace + "px";
   }
 
