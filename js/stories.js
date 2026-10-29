@@ -594,46 +594,41 @@ COTA.stories = (function () {
   }
 
   function renderGameDuos(duos) {
-    const group = el("section", "story-game-duos");
-    group.setAttribute("aria-label", "Game duos and player statistics");
+    const group = el("section", "box-score");
+    group.setAttribute("aria-label", "Duo of the game statistics");
 
     (duos || []).forEach((duo) => {
-      const card = el("article", "story-game-duo");
-      card.style.setProperty("--team-color", duo.color || "#6c7890");
+      const table = el("table", "box-score-team");
+      table.style.setProperty("--team", duo.color || "#6c7890");
 
-      const header = el("header", "story-game-duo-header");
-      const badge = el("span", "story-game-duo-badge", duo.abbr || "");
-      badge.setAttribute("aria-hidden", "true");
-      const teamInfo = el("div", "story-game-duo-team");
-      teamInfo.appendChild(el("span", "story-game-duo-kicker", "DUO OF THE GAME"));
-      teamInfo.appendChild(el("strong", "story-game-duo-school", duo.school || ""));
-      teamInfo.appendChild(el("span", "story-game-duo-name", duo.team || ""));
-      header.appendChild(badge);
-      header.appendChild(teamInfo);
-      card.appendChild(header);
+      const caption = el("caption", "");
+      caption.appendChild(el("span", "box-score-kicker", "Duo of the Game"));
+      caption.appendChild(el("span", "box-score-team-name", duo.short || duo.school || ""));
+      table.appendChild(caption);
 
-      const players = el("div", "story-game-players");
+      const labels = ((duo.players && duo.players[0] && duo.players[0].stats) || []).map((s) => s.label);
+      const head = el("thead", "");
+      const headRow = el("tr", "");
+      headRow.appendChild(el("th", "box-score-player-col", "Player"));
+      labels.forEach((label) => headRow.appendChild(el("th", "box-score-stat-col", label)));
+      head.appendChild(headRow);
+      table.appendChild(head);
+
+      const body = el("tbody", "");
       (duo.players || []).forEach((player) => {
-        const row = el("section", "story-game-player");
-        const playerHeader = el("div", "story-game-player-heading");
-        const playerInfo = el("div", "story-game-player-identity");
-        playerInfo.appendChild(el("strong", "story-game-player-name", player.name || ""));
-        playerInfo.appendChild(el("span", "story-game-player-position", player.position || ""));
-        playerHeader.appendChild(playerInfo);
-        row.appendChild(playerHeader);
-
-        const stats = el("div", "story-game-player-stats");
+        const row = el("tr", "");
+        const who = el("th", "box-score-player");
+        who.setAttribute("scope", "row");
+        who.appendChild(el("span", "box-score-name", player.name || ""));
+        who.appendChild(el("span", "box-score-position", player.position || ""));
+        row.appendChild(who);
         (player.stats || []).forEach((stat) => {
-          const item = el("span", "story-game-stat");
-          item.appendChild(el("strong", "story-game-stat-value", String(stat.value ?? "")));
-          item.appendChild(el("span", "story-game-stat-label", stat.label || ""));
-          stats.appendChild(item);
+          row.appendChild(el("td", "box-score-stat", String(stat.value ?? "")));
         });
-        row.appendChild(stats);
-        players.appendChild(row);
+        body.appendChild(row);
       });
-      card.appendChild(players);
-      group.appendChild(card);
+      table.appendChild(body);
+      group.appendChild(table);
     });
 
     return group;
