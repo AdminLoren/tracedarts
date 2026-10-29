@@ -200,7 +200,7 @@ Alicia froze. Slowly, she turned her head toward the boy now standing at the sid
 
 [ali] "F-Fumio-kun..."
 
-She wriggled out of her parents' embrace and hurried over to him, with her arms in the air "F-Fumio...!"
+[ali] She wriggled out of her parents' embrace and hurried over to him, with her arms in the air "F-Fumio...!"
 
 — Present Day —
 
@@ -341,7 +341,7 @@ With her medals hanging proudly on the wall, Alicia finished tying her hair into
 
 Without hesitation, she stepped out of her room and called out cheerfully.
 
-"Oka-chan, ohayō!! What's for breakfast?!"
+[ali] "Oka-chan, ohayō!! What's for breakfast?!"
 
 Alicia happily marched toward the dining table.
 
