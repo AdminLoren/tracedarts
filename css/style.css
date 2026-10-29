@@ -1476,6 +1476,31 @@ img { max-width: 100%; display: block; }
   .box-score-team th.box-score-stat-col { width: 13%; padding: 7px 6px; }
   .box-score-team-name { font-size: 14px; }
 }
+.scene-heading {
+  margin: 3.2em 0 2.4em;
+  padding: 1.1em 0;
+  text-align: center;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(90deg, transparent, var(--accent-magenta) 18%, var(--accent-magenta) 82%, transparent) 1;
+}
+.stories-text .scene-heading-line {
+  margin: 0;
+  font-family: var(--font-display), sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #f3f1ee;
+}
+.stories-text .scene-heading-line:first-child:not(:last-child) {
+  margin-bottom: 0.35em;
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  color: var(--text-dim);
+}
+.stories-text .scene-heading:first-child { margin-top: 0.6em; }
 .scene-break {
   width: 120px;
   margin: 2.2em auto;
