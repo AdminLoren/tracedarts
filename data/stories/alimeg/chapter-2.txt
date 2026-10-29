@@ -314,7 +314,7 @@ A girl's face, illuminated by the glow of a monitor in the corner of the room.
 
 THAT was the staff member she was looking for!
 
-"...Oh, cool!"
+[ali] "...Oh, cool!"
 
 Alicia's eyes sparkled, only for a thought to cross her mind.
 
@@ -340,7 +340,7 @@ A few seconds passed. Alicia's smile began to falter.
 
 The girl stared at her again. No reply. Not even a nod.
 
-"...The—uh... The editor? The person who makes videos? The one assigned by Yuki Setsu—"
+[ali] "...The—uh... The editor? The person who makes videos? The one assigned by Yuki Setsu—"
 
 Alicia stopped herself. "...What are we doing here?" She tapped her foot against the floor, growing increasingly agitated. "...Hellooo? Earth to... I.T. girl?"
 
@@ -374,7 +374,7 @@ Frozen in her spot, Alicia didn't know what to do. Should she run? Should she st
 
 ...Okay, that last one was a bit of a stretch.
 
-"...U-U-U-Um..." With all the courage she could muster, Alicia cautiously slid one foot forward, slowly inching toward the girl. "...H-Hey... I hope you don't mind, b-but I g-gotta..."
+[ali] "...U-U-U-Um..." With all the courage she could muster, Alicia cautiously slid one foot forward, slowly inching toward the girl. "...H-Hey... I hope you don't mind, b-but I g-gotta..."
 
 Gritting her teeth, she shakily extended one finger and poked the girl's sleeve.
 
@@ -402,19 +402,19 @@ Alicia crossed her arms and stared at the ceiling, trying to recall Setsuna's in
 
 Her eyes wandered as she tried to remember every little detail Setsuna had mentioned. She began gesturing in the air, attempting to recreate what the school idol had described.
 
-"Setsuna-chan said there weren't enough effects to capture her super special attack... She wanted this really specific—uh... effect or whatever to happen!"
+[ali] "Setsuna-chan said there weren't enough effects to capture her super special attack... She wanted this really specific—uh... effect or whatever to happen!"
 
 Alicia stepped into the open space and began pacing around the room, gesturing wildly as the girl watched her in silence.
 
 "It was like... THIS—AND THAT!" She swung her finger through the air before fluttering her fingers dramatically.
 
-"Then she wanted rose petals falling from the sky while she was doing it! And then—SETSUNA SCARLET STORMMMM!!"
+[ali] "Then she wanted rose petals falling from the sky while she was doing it! And then—SETSUNA SCARLET STORMMMM!!"
 
 Alicia struck a ridiculous finishing pose.
 
 "...O-Or something like that." By the time she finished, she was practically sweating from the sheer number of details Setsuna had thrown at her.
 
-"Heheh... It's a lot to take in, huh? Maybe it's best if I just give up and tell Setsu—...Euh?"
+[ali] "Heheh... It's a lot to take in, huh? Maybe it's best if I just give up and tell Setsu—...Euh?"
 
 Alicia stopped mid-sentence.
 
@@ -428,7 +428,7 @@ The special effects were there. The dramatic flourishes, the falling rose petals
 
 She leaned closer, practically sparkling with excitement.
 
-"Th-This is insane! It looks SO much better than the PV back at the stage!"Her eyes lit up as she imagined showing the finished video to Setsuna. "Ooooh! Setsuna-chan is gonna appreciate me now...!! Maybe we'll even get clos—"
+[ali] "Th-This is insane! It looks SO much better than the PV back at the stage!" Her eyes lit up as she imagined showing the finished video to Setsuna. [ali] "Ooooh! Setsuna-chan is gonna appreciate me now...!! Maybe we'll even get clos—"
 
 YANK.
 
@@ -436,7 +436,7 @@ Alicia felt someone tugging at the hem of her vest. She stopped mid-sentence and
 
 The girl was staring directly into her eyes.
 
-"...The IT Department isn't here today," she said in a small, gentle voice. "I'm not a ghost. And I'm not the original editor of the PV."
+[meg] "...The IT Department isn't here today," she said in a small, gentle voice. [meg] "I'm not a ghost. And I'm not the original editor of the PV."
 
 Alicia blinked.
 
@@ -448,11 +448,11 @@ She was confused by the girl's choice of words—until she remembered the barrag
 
 "Ooh, so you CAN talk! For a second there, I was worried I was hallucinating..." Alicia remarked.
 
-"Sorry for not speaking. It's just... you scared me a little."
+[meg] "Sorry for not speaking. It's just... you scared me a little."
 
 "Hm? Is that so?" Alicia giggled nervously. "Ehehe...! Sorry! I didn't mean to frighten you, miss, uhh..."
 
-"My name is Megumi." The girl blinked. "Williams Megumi."
+[meg] "My name is Megumi." The girl blinked. [meg] "Williams Megumi."
 
 "Ah, Megumi~n!" Alicia beamed. "It's nice to meet you!"
 
@@ -474,7 +474,7 @@ Megumi turned toward Alicia, her expression difficult to read. "I didn't expect 
 
 "It's fine, don't worry!" Alicia waved her hand dismissively. "This'll boost her viewership, thanks to you!"
 
-She extended her hand toward Megumi. "Come on! Let's go give this to her! Her show starts in half an hour!"
+She extended her hand toward Megumi. [ali] "Come on! Let's go give this to her! Her show starts in half an hour!"
 
 Megumi stared at Alicia's outstretched hand.
 
@@ -516,7 +516,7 @@ Megumi's heart skipped a beat. "...Me? Your friend?"
 
 She began counting on her fingers, already planning their next outing. She didn’t notice Megumi was staring at her in awe, admiring her generosity and kindness.
 
-"We're gonna need Fum-Fum, obviously... Karin-chan might be a little too much for you, but she'll do..."
+[ali] "We're gonna need Fum-Fum, obviously... Karin-chan might be a little too much for you, but she'll do..."
 
 She paused.
 
