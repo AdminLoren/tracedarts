@@ -1045,7 +1045,8 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "short": "UTX Reigners"
               },
               {
                 "id": "nhs",
@@ -1098,7 +1099,8 @@
                       }
                     ]
                   }
-                ]
+                ],
+                "short": "Nijigasaki Nijis"
               }
             ]
           }
