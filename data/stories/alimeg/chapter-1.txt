@@ -168,7 +168,7 @@ Satoshi paused, choosing his next words carefully.
 
 Michan gently brushed a stray lock of hair away from Alicia's face, still drenched in tears.
 
-[ali] "And that doesn't mean there's something wrong with you, sweetie. Everyone has different feelings, different boundaries, and different ways of understanding things."
+[Michan] "And that doesn't mean there's something wrong with you, sweetie. Everyone has different feelings, different boundaries, and different ways of understanding things."
 
 Alicia sniffled, her voice not louder than a whisper. "B-But... but I didn't..."
 
@@ -200,7 +200,7 @@ Alicia froze. Slowly, she turned her head toward the boy now standing at the sid
 
 [ali] "F-Fumio-kun..."
 
-[ali] She wriggled out of her parents' embrace and hurried over to him, with her arms in the air "F-Fumio...!"
+She wriggled out of her parents' embrace and hurried over to him, with her arms in the air. [ali] "F-Fumio...!"
 
 — Present Day —
 
