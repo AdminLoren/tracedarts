@@ -1,4 +1,4 @@
-— Discipline Office —
+[[SCENE: Discipline Office]]
 
 The atmosphere inside the Discipline Office was anything but pleasant.
 
@@ -44,7 +44,7 @@ Michan and Satoshi exchanged a brief glance before bowing their heads.
 
 Michan nodded in agreement.
 
-— MaHa Residence —
+[[SCENE: MaHa Residence]]
 
 [mea] "Aliciaaa... sweetheart?"
 
@@ -202,7 +202,7 @@ Alicia froze. Slowly, she turned her head toward the boy now standing at the sid
 
 She wriggled out of her parents' embrace and hurried over to him, with her arms in the air. [ali] "F-Fumio...!"
 
-— Present Day —
+[[SCENE: Present Day]]
 
 [ali] "FUMIOOOOOOO!!!"
 
@@ -333,11 +333,9 @@ Alicia slung an arm around his shoulders, despite their height difference. "All 
 
 "...N-No! He can go meet De’Aaron Fox for all I care!" Alicia planted her hands on her hips, looking away indignantly. "Hmph!"
 
-***
+[[SCENE: The Next Day...]]
 
-The Next Day...
-
-— MiSa Residence —
+[[SCENE: MiSa Residence]]
 
 With her medals hanging proudly on the wall, Alicia finished tying her hair into a ponytail while looking in the mirror. She wore a light brown vest over her long-sleeved uniform, complementing her star-shaped pupils.
 
