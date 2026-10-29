@@ -1203,10 +1203,10 @@
                 "title": "alimeg Chapter 2 — Song D",
                 "fadeIn": 2,
                 "scene": {
-                  "image": "assets/images/stories/alimeg/bg_chapter2D.jpg",
+                  "image": "assets/images/stories/alimeg/bg_chapter2F.jpg",
                   "colors": [
-                    "#315451",
-                    "#c38c4d"
+                    "#1a2b52",
+                    "#3b4f86"
                   ],
                   "setting": "Nijigasaki High School halls"
                 }
@@ -1215,7 +1215,7 @@
                 "text": "The girl turned her amber eyes toward the entrance",
                 "action": "stop",
                 "scene": {
-                  "image": "assets/images/stories/alimeg/bg_chapter2F.jpg",
+                  "image": "assets/images/stories/alimeg/bg_chapter2G.jpg",
                   "colors": [
                     "#171c2d",
                     "#45435a"
@@ -1266,19 +1266,12 @@
                 "fadeIn": 2
               },
               {
-                "text": "Aw, is that so?",
-                "action": "play",
-                "file": "lore/alimeg_chapter2I.mp3",
-                "title": "alimeg Chapter 2 — Song I",
-                "fadeIn": 2
-              },
-              {
                 "text": "Meanwhile, in the Halls",
                 "scene": {
-                  "image": "assets/images/stories/alimeg/bg_chapter2D.jpg",
+                  "image": "assets/images/stories/alimeg/bg_chapter2F.jpg",
                   "colors": [
-                    "#315451",
-                    "#c38c4d"
+                    "#1a2b52",
+                    "#3b4f86"
                   ],
                   "setting": "Nijigasaki High School halls"
                 }
