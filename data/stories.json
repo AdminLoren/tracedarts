@@ -602,6 +602,9 @@
       "title": "Untitled Story",
       "series": "The Happy Ever Party: Children of the Authors",
       "tagline": "Idk what to put here",
+      "aliasOverrides": {
+        "Hasashi": "Alicia"
+      },
       "status": "Ongoing",
       "summary": "Meppers",
       "synopsis": [
