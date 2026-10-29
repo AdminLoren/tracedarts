@@ -87,6 +87,11 @@ COTA.stories = (function () {
       (storySpeakers[key].nameAliases || []).forEach((alias) => { nameLookup[alias] = storySpeakers[key]; });
     });
 
+    const overrides = (currentStory && currentStory.aliasOverrides) || {};
+    Object.keys(overrides).forEach((alias) => {
+      if (nameLookup[overrides[alias]]) nameLookup[alias] = nameLookup[overrides[alias]];
+    });
+
     const aliases = Object.keys(nameLookup).sort((a, b) => b.length - a.length);
     if (aliases.length) {
       nameRegex = new RegExp(
