@@ -75,11 +75,13 @@ COTA.lore = (function () {
     gen2Wrap.innerHTML = allCharacters.filter((c) => c.gen === 2).map(cardTemplate).join("");
     gen1Wrap.innerHTML = allCharacters.filter((c) => c.gen === 1).map(cardTemplate).join("");
 
-    gen2Wrap.querySelectorAll(".select-card").forEach((cardEl) => {
-      cardEl.addEventListener("click", () => onCardClick(cardEl.dataset.id));
-    });
-    gen1Wrap.querySelectorAll(".select-card").forEach((cardEl) => {
-      cardEl.addEventListener("click", () => onCardClick(cardEl.dataset.id));
+    [gen2Wrap, gen1Wrap].forEach((wrap) => {
+      wrap.querySelectorAll(".select-card").forEach((cardEl) => {
+        cardEl.addEventListener("click", () => onCardClick(cardEl.dataset.id));
+        cardEl.addEventListener("pointerenter", (event) => {
+          if (event.pointerType === "mouse") onCardHover(cardEl.dataset.id);
+        });
+      });
     });
     highlightSelectedCard();
   }
@@ -88,6 +90,13 @@ COTA.lore = (function () {
     document.querySelectorAll(".select-card:not(.coming-soon-card)").forEach((el) => {
       el.classList.toggle("is-highlighted", el.dataset.id === selectedCode);
     });
+  }
+
+  function onCardHover(id) {
+    if (id === selectedCode) return;
+    selectedCode = id;
+    highlightSelectedCard();
+    COTA.audio.playSfx("char_switch.mp3");
   }
 
   function onCardClick(id) {
