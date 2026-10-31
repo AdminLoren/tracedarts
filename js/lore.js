@@ -329,7 +329,7 @@ COTA.lore = (function () {
     renderComingSoonGrids();
 
     await COTA.outfitSets.load();
-    COTA.outfitSets.createPicker("select", document.getElementById("lore-select-set-btn"), "Character Select", applySelectSet);
+    COTA.outfitSets.createSelect("select", document.getElementById("lore-select-set"), applySelectSet);
 
     document.getElementById("lore-index-mic-btn").addEventListener("click", () => {
       const character = allCharacters.find((c) => c.id === openCharacterId);
