@@ -199,7 +199,6 @@ COTA.relationship = (function () {
     COTA.outfitSets.createPicker("relationship", document.getElementById("rel-set-btn"), "Relationship Chart", () => {
       renderRoster();
       renderSlots();
-      playMusic();
     });
     document.getElementById("rel-link-another-btn").addEventListener("click", () => {
       COTA.audio.playSfx("ui_click.mp3");
@@ -207,10 +206,8 @@ COTA.relationship = (function () {
     });
   }
 
-  async function playMusic() {
-    await COTA.outfitSets.load();
-    const music = COTA.outfitSets.musicFor("relationship");
-    COTA.audio.playMusic(music.file, music.title);
+  function playMusic() {
+    COTA.audio.playMusic("relationship_bgm.mp3", "Menu (Mario Kart: Double Dash!!)");
   }
 
   async function enter() {
