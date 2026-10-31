@@ -245,11 +245,31 @@ COTA.audio = (function () {
     rampGain(0, seconds, stopMusic);
   }
 
+  const SFX_GAIN = {
+    "alt_confirm.mp3": 1.6,
+    "alt_switch.mp3": 1.6,
+    "outfit_select.mp3": 1.6,
+    "set_confirm.mp3": 1.6
+  };
+
   function playSfx(fileName) {
     if (muted || volume === 0) return;
     try {
       const sfx = new Audio(`assets/audio/${fileName}`);
-      sfx.volume = Math.min(1, volume * SFX_RATIO);
+      const level = Math.min(1, volume * SFX_RATIO);
+      const boost = SFX_GAIN[fileName] || 1;
+      const ctx = boost > 1 ? getVoiceCtx() : null;
+      if (ctx) {
+        if (ctx.state === "suspended") ctx.resume().catch(() => {});
+        const source = ctx.createMediaElementSource(sfx);
+        const gain = ctx.createGain();
+        gain.gain.value = level * boost;
+        source.connect(gain);
+        gain.connect(ctx.destination);
+        sfx.volume = 1;
+      } else {
+        sfx.volume = level;
+      }
       sfx.play().catch(() => {});
     } catch (err) {}
   }
