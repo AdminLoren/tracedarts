@@ -7,10 +7,11 @@ COTA.relationship = (function () {
   let initialized = false;
 
   function rosterCardTemplate(c) {
+    const boxart = COTA.outfitSets.boxartFile("relationship", c);
     return `
       <button class="rel-roster-card" data-id="${c.id}" style="--char-color:${c.color}">
         <span class="rel-roster-clip">
-          <img src="assets/images/boxart_${c.code}.png" alt="${c.name}" class="rel-roster-img" />
+          <img src="assets/images/${boxart}" alt="${c.name}" class="rel-roster-img" onerror="this.onerror=null;this.src='assets/images/boxart_${c.code}.png'" />
           <span class="rel-roster-nameplate">${c.name}</span>
         </span>
       </button>
@@ -60,7 +61,7 @@ COTA.relationship = (function () {
     slotEl.classList.add("is-filled");
     slotEl.innerHTML = `
       <button class="rel-slot-remove" data-slot="${index}" aria-label="Remove ${character.name}">&times;</button>
-      <img src="assets/images/boxart_${character.code}.png" alt="${character.name}" class="rel-slot-img" />
+      <img src="assets/images/${COTA.outfitSets.boxartFile("relationship", character)}" alt="${character.name}" class="rel-slot-img" onerror="this.onerror=null;this.src='assets/images/boxart_${character.code}.png'" />
       <span class="rel-slot-name">${character.name}</span>
     `;
   }
@@ -118,19 +119,29 @@ COTA.relationship = (function () {
     img.style.transform = `translateY(${(GROUND_LINE - feet) * 100}%) scale(${scale})`;
   }
 
+  function setRender(imgId, character) {
+    const img = document.getElementById(imgId);
+    const fallback = `assets/images/render_${character.code}.png`;
+    img.onerror = () => {
+      img.onerror = null;
+      img.src = fallback;
+    };
+    img.src = `assets/images/${COTA.outfitSets.renderFile("relationship", character)}`;
+  }
+
   function showRelationship(idA, idB) {
     const charA = COTA.data.findCharacter(allCharacters, idA);
     const charB = COTA.data.findCharacter(allCharacters, idB);
     const rel = COTA.data.findRelationship(allRelationships, idA, idB);
 
-    document.getElementById("rel-char-a-render").src = `assets/images/render_${charA.code}.png`;
+    setRender("rel-char-a-render", charA);
     document.getElementById("rel-char-a-render").alt = charA.name;
     setHeight("rel-char-a-render", charA);
     document.getElementById("rel-char-a-name").src = `assets/images/graffiti_${charA.code}.png`;
     document.getElementById("rel-char-a-name").alt = charA.name;
     document.getElementById("rel-char-a-name").dataset.code = charA.code;
 
-    document.getElementById("rel-char-b-render").src = `assets/images/render_${charB.code}.png`;
+    setRender("rel-char-b-render", charB);
     document.getElementById("rel-char-b-render").alt = charB.name;
     setHeight("rel-char-b-render", charB);
     document.getElementById("rel-char-b-name").src = `assets/images/graffiti_${charB.code}.png`;
@@ -182,12 +193,24 @@ COTA.relationship = (function () {
     initialized = true;
     allCharacters = await COTA.data.getCharacters();
     allRelationships = await COTA.data.getRelationships();
+    await COTA.outfitSets.load();
     renderRoster();
     renderSlots();
+    COTA.outfitSets.createPicker("relationship", document.getElementById("rel-set-btn"), "Relationship Chart", () => {
+      renderRoster();
+      renderSlots();
+      playMusic();
+    });
     document.getElementById("rel-link-another-btn").addEventListener("click", () => {
       COTA.audio.playSfx("ui_click.mp3");
       resetToSelect();
     });
+  }
+
+  async function playMusic() {
+    await COTA.outfitSets.load();
+    const music = COTA.outfitSets.musicFor("relationship");
+    COTA.audio.playMusic(music.file, music.title);
   }
 
   async function enter() {
@@ -195,5 +218,5 @@ COTA.relationship = (function () {
     resetToSelect();
   }
 
-  return { init, enter };
+  return { init, enter, playMusic };
 })();
