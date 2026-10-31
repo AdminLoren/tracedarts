@@ -176,7 +176,7 @@
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_vys_alt.png",
       "render": "render_vys_alt.png",
-      "heightScale": 1.055
+      "heightScale": 1.073
     }
   },
   {
@@ -231,7 +231,7 @@
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_riku_alt.png",
       "render": "render_riku_alt.png",
-      "heightScale": 1.073
+      "heightScale": 1.055
     }
   },
   {
@@ -452,7 +452,7 @@
       "name": "Nana Nakagawa",
       "boxart": "boxart_set_alt.png",
       "render": "render_set_alt.png",
-      "heightScale": 1.0
+      "heightScale": 0.959
     },
     "heightScale": 0.958,
     "feetLine": 0.992,
@@ -527,7 +527,7 @@
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_shi_alt.png",
       "render": "render_shi_alt.png",
-      "heightScale": 0.959
+      "heightScale": 1.0
     }
   },
   {
