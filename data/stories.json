@@ -276,11 +276,11 @@
           [
             {
               "name": "Fumio Hasashi",
-              "art": "assets/images/boxart_fum.png"
+              "art": "assets/images/boxart_fum_alt.png"
             },
             {
               "name": "Fumiko Sakura",
-              "art": "assets/images/boxart_fko.png"
+              "art": "assets/images/boxart_fko_alt_alt_alt.png"
             }
           ],
           [
@@ -290,21 +290,21 @@
             },
             {
               "name": "Shioriko Mifune",
-              "art": "assets/images/boxart_shi.png"
+              "art": "assets/images/boxart_shi_alt_alt_alt.png"
             }
           ],
           [
             {
               "name": "Vyse Liang",
-              "art": "assets/images/boxart_vys.png"
+              "art": "assets/images/boxart_vys_alt_alt.png"
             },
             {
               "name": "Karin Asaka",
-              "art": "assets/images/boxart_kar.png"
+              "art": "assets/images/boxart_kar_alt_alt_alt.png"
             },
             {
               "name": "Alicia Hasashi",
-              "art": "assets/images/boxart_ali.png"
+              "art": "assets/images/boxart_ali_alt_alt.png"
             }
           ],
           [
@@ -549,11 +549,11 @@
         "cast": [
           {
             "name": "Emma Verde",
-            "art": "assets/images/boxart_emm.png"
+            "art": "assets/images/boxart_emm_alt_alt.png"
           },
           {
             "name": "Vyse Liang",
-            "art": "assets/images/boxart_vys.png"
+            "art": "assets/images/boxart_vys_alt_alt.png"
           },
           {
             "name": "Makoto Williams",
@@ -561,11 +561,11 @@
           },
           {
             "name": "Shioriko Mifune",
-            "art": "assets/images/boxart_shi.png"
+            "art": "assets/images/boxart_shi_alt_alt_alt.png"
           },
           {
             "name": "Fumiko Sakura",
-            "art": "assets/images/boxart_fko.png"
+            "art": "assets/images/boxart_fko_alt_alt_alt.png"
           },
           {
             "name": "Nana Nakagawa (Setsuna Yuki)",
@@ -573,7 +573,7 @@
           },
           {
             "name": "Fumio Hasashi",
-            "art": "assets/images/boxart_fum.png"
+            "art": "assets/images/boxart_fum_alt.png"
           },
           {
             "name": "Matsuda Yuukashi",
