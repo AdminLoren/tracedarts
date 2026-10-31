@@ -112,8 +112,9 @@ COTA.relationship = (function () {
   const GROUND_LINE = 0.982;
 
   function setHeight(imgId, character) {
-    const scale = character.heightScale || 1;
-    const feet = character.feetLine || GROUND_LINE;
+    const alt = COTA.outfitSets.usesAlt("relationship", character) ? character.altArt : null;
+    const scale = (alt && alt.heightScale) || character.heightScale || 1;
+    const feet = (alt && alt.feetLine) || character.feetLine || GROUND_LINE;
     const img = document.getElementById(imgId);
     img.style.transformOrigin = `50% ${feet * 100}%`;
     img.style.transform = `translateY(${(GROUND_LINE - feet) * 100}%) scale(${scale})`;
