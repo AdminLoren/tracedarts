@@ -196,7 +196,7 @@ COTA.relationship = (function () {
     await COTA.outfitSets.load();
     renderRoster();
     renderSlots();
-    COTA.outfitSets.createPicker("relationship", document.getElementById("rel-set-btn"), "Relationship Chart", () => {
+    COTA.outfitSets.createSelect("relationship", document.getElementById("rel-set-select"), () => {
       renderRoster();
       renderSlots();
     });
