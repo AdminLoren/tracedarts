@@ -238,7 +238,7 @@ COTA.lore = (function () {
     if (!character) return;
     const total = getOutfits(character).length;
     outfitIndex = (outfitIndex + delta + total) % total;
-    COTA.audio.playSfx("char_switch.mp3");
+    COTA.audio.playSfx("alt_switch.mp3");
     renderOutfitModal();
   }
 
@@ -246,7 +246,7 @@ COTA.lore = (function () {
     const character = currentCharacter();
     if (!character) return;
     equippedAlt[character.id] = outfitIndex === 1;
-    COTA.audio.playSfx("char_confirm.mp3");
+    COTA.audio.playSfx("alt_confirm.mp3");
     closeOutfitModal();
     renderIndexContent(character);
   }
