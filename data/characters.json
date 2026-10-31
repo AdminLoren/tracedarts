@@ -56,7 +56,8 @@
     "altArt": {
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_fum_alt.png",
-      "render": "render_fum_alt.png"
+      "render": "render_fum_alt.png",
+      "heightScale": 1.0
     }
   },
   {
@@ -114,7 +115,8 @@
     "altArt": {
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_ali_alt.png",
-      "render": "render_ali_alt.png"
+      "render": "render_ali_alt.png",
+      "heightScale": 0.951
     }
   },
   {
@@ -173,7 +175,8 @@
     "altArt": {
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_vys_alt.png",
-      "render": "render_vys_alt.png"
+      "render": "render_vys_alt.png",
+      "heightScale": 1.055
     }
   },
   {
@@ -227,7 +230,8 @@
     "altArt": {
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_riku_alt.png",
-      "render": "render_riku_alt.png"
+      "render": "render_riku_alt.png",
+      "heightScale": 1.073
     }
   },
   {
@@ -285,7 +289,8 @@
     "altArt": {
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_emm_alt.png",
-      "render": "render_emm_alt.png"
+      "render": "render_emm_alt.png",
+      "heightScale": 1.008
     }
   },
   {
@@ -340,7 +345,8 @@
     "altArt": {
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_kar_alt.png",
-      "render": "render_kar_alt.png"
+      "render": "render_kar_alt.png",
+      "heightScale": 1.03
     }
   },
   {
@@ -398,7 +404,8 @@
     "altArt": {
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_fko_alt.png",
-      "render": "render_fko_alt.png"
+      "render": "render_fko_alt.png",
+      "heightScale": 1.002
     }
   },
   {
@@ -444,7 +451,8 @@
     "altArt": {
       "name": "Nana Nakagawa",
       "boxart": "boxart_set_alt.png",
-      "render": "render_set_alt.png"
+      "render": "render_set_alt.png",
+      "heightScale": 1.0
     },
     "heightScale": 0.958,
     "feetLine": 0.992,
@@ -518,7 +526,8 @@
     "altArt": {
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_shi_alt.png",
-      "render": "render_shi_alt.png"
+      "render": "render_shi_alt.png",
+      "heightScale": 0.959
     }
   },
   {
