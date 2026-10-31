@@ -1,0 +1,35 @@
+{
+  "sets": [
+    {
+      "id": "default",
+      "name": "Default",
+      "note": "Every character uses their original art"
+    },
+    {
+      "id": "nijigasaki",
+      "name": "Nijigasaki Uniform (2nd Gen.)",
+      "note": "Switches the 2nd Gen. cast to their Nijigasaki Uniform art",
+      "characters": ["fum", "ali", "vys", "riku", "emm", "kar", "fko", "shi"],
+      "music": {
+        "select": {
+          "file": "char_select_nijigasaki.mp3",
+          "title": "Character Select (Nijigasaki Uniform)"
+        },
+        "relationship": {
+          "file": "relationship_nijigasaki.mp3",
+          "title": "Relationship Chart (Nijigasaki Uniform)"
+        }
+      }
+    }
+  ],
+  "defaultMusic": {
+    "select": {
+      "file": "char_select.mp3",
+      "title": "Online Menu (Sonic Generations)"
+    },
+    "relationship": {
+      "file": "relationship_bgm.mp3",
+      "title": "Menu (Mario Kart: Double Dash!!)"
+    }
+  }
+}
