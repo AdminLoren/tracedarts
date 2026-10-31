@@ -71,7 +71,7 @@ COTA.outfitSets = (function () {
     selectEl.value = active[screen];
     selectEl.addEventListener("change", () => {
       active[screen] = selectEl.value;
-      COTA.audio.playSfx("char_confirm.mp3");
+      COTA.audio.playSfx("set_confirm.mp3");
       selectEl.blur();
       onChange(selectEl.value);
     });
