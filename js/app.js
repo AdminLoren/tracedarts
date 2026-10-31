@@ -34,7 +34,7 @@ COTA.app = (function () {
       }
       if (tabName === "relationship") {
         resetView ? COTA.relationship.enter() : COTA.relationship.init();
-        COTA.audio.playMusic("relationship_bgm.mp3", "Menu (Mario Kart: Double Dash!!)");
+        COTA.relationship.playMusic();
       }
 
       window.setTimeout(() => overlay.classList.remove("active"), 250);
