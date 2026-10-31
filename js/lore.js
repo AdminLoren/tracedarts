@@ -210,7 +210,7 @@ COTA.lore = (function () {
       panel.addEventListener("click", () => {
         if (i === outfitIndex) return;
         outfitIndex = i;
-        COTA.audio.playSfx("char_switch.mp3");
+        COTA.audio.playSfx("alt_switch.mp3");
         renderOutfitModal();
       });
       strip.appendChild(panel);
