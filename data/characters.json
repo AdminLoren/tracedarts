@@ -52,7 +52,12 @@
       "Fum-Fum",
       "Mio"
     ],
-    "pronoun": "he"
+    "pronoun": "he",
+    "altArt": {
+      "name": "Nijigasaki Uniform",
+      "boxart": "boxart_fum_alt.png",
+      "render": "render_fum_alt.png"
+    }
   },
   {
     "id": "A2",
@@ -105,7 +110,12 @@
       "Alicia Hasashi",
       "Ali"
     ],
-    "pronoun": "she"
+    "pronoun": "she",
+    "altArt": {
+      "name": "Nijigasaki Uniform",
+      "boxart": "boxart_ali_alt.png",
+      "render": "render_ali_alt.png"
+    }
   },
   {
     "id": "A3",
@@ -159,7 +169,12 @@
       "Vu~ise",
       "Vaisu"
     ],
-    "pronoun": "he"
+    "pronoun": "he",
+    "altArt": {
+      "name": "Nijigasaki Uniform",
+      "boxart": "boxart_vys_alt.png",
+      "render": "render_vys_alt.png"
+    }
   },
   {
     "id": "A4",
@@ -208,7 +223,12 @@
       "Riku.EXE",
       "Riku.EXE Shindou",
       "Riku"
-    ]
+    ],
+    "altArt": {
+      "name": "Nijigasaki Uniform",
+      "boxart": "boxart_riku_alt.png",
+      "render": "render_riku_alt.png"
+    }
   },
   {
     "id": "A5",
@@ -261,7 +281,12 @@
       "Emma Verde",
       "Verde"
     ],
-    "pronoun": "she"
+    "pronoun": "she",
+    "altArt": {
+      "name": "Nijigasaki Uniform",
+      "boxart": "boxart_emm_alt.png",
+      "render": "render_emm_alt.png"
+    }
   },
   {
     "id": "A6",
@@ -311,7 +336,12 @@
       "Karin",
       "Karin Asaka"
     ],
-    "pronoun": "she"
+    "pronoun": "she",
+    "altArt": {
+      "name": "Nijigasaki Uniform",
+      "boxart": "boxart_kar_alt.png",
+      "render": "render_kar_alt.png"
+    }
   },
   {
     "id": "A7",
@@ -364,7 +394,12 @@
       "Sakura",
       "Miko"
     ],
-    "pronoun": "she"
+    "pronoun": "she",
+    "altArt": {
+      "name": "Nijigasaki Uniform",
+      "boxart": "boxart_fko_alt.png",
+      "render": "render_fko_alt.png"
+    }
   },
   {
     "id": "A8",
@@ -479,7 +514,12 @@
       "Mifune",
       "Shio"
     ],
-    "pronoun": "she"
+    "pronoun": "she",
+    "altArt": {
+      "name": "Nijigasaki Uniform",
+      "boxart": "boxart_shi_alt.png",
+      "render": "render_shi_alt.png"
+    }
   },
   {
     "id": "A10",
