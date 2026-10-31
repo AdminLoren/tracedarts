@@ -61,6 +61,7 @@ COTA.stories = (function () {
   }
 
   let nameLookup = {};
+  let nameLookupLower = {};
   let nameRegex = null;
   let namesReady = false;
   let namesStory = "";
@@ -92,11 +93,28 @@ COTA.stories = (function () {
       if (nameLookup[overrides[alias]]) nameLookup[alias] = nameLookup[overrides[alias]];
     });
 
+    Object.keys(nameLookup).forEach((alias) => {
+      const parts = alias.split(" ");
+      if (parts.length !== 2 || !/^[A-Za-z]+$/.test(parts[0] + parts[1])) return;
+      const flipped = parts[1] + " " + parts[0];
+      if (!nameLookup[flipped]) nameLookup[flipped] = nameLookup[alias];
+    });
+
+    Object.keys(overrides).forEach((alias) => {
+      if (nameLookup[overrides[alias]]) nameLookup[alias] = nameLookup[overrides[alias]];
+    });
+
+    nameLookupLower = {};
+    Object.keys(nameLookup).forEach((alias) => {
+      const key = alias.toLowerCase();
+      if (!nameLookupLower[key]) nameLookupLower[key] = nameLookup[alias];
+    });
+
     const aliases = Object.keys(nameLookup).sort((a, b) => b.length - a.length);
     if (aliases.length) {
       nameRegex = new RegExp(
-        "(" + aliases.map(escapeRegex).join("|") + ")((?:-(?:kun|chan|san|sama|sensei|senpai|dono|tan))?)(?![A-Za-z])",
-        "g"
+        "(" + aliases.map(escapeRegex).join("|") + ")((?:-(?:kun|chan|san|sama|sensei|senpai|sempai|dono|tan|chin|nii|nee|niisan|neesan|oniisan|oneesan|oniichan|oneechan|senpai))?)(?![A-Za-z])",
+        "gi"
       );
     }
     namesReady = true;
@@ -120,14 +138,18 @@ COTA.stories = (function () {
       const before = match.index > 0 ? text[match.index - 1] : "";
       if (/[A-Za-z~]/.test(before)) continue;
 
+      const character = nameLookup[match[1]] || (match[1].length > 3 ? nameLookupLower[match[1].toLowerCase()] : null);
+      if (!character) continue;
+
       let start = match.index;
-      const lead = text.slice(Math.max(0, start - 6), start);
-      if (/(Uncle|Auntie) $/.test(lead)) {
-        start -= /Uncle $/.test(lead) ? 6 : 7;
+      const lead = text.slice(Math.max(0, start - 8), start);
+      const titleMatch = lead.match(/(Uncle|Auntie|Aunty|Aunt) $/i);
+      if (titleMatch) {
+        start -= titleMatch[0].length;
       } else if (/['\u2019]$/.test(lead) && !/[A-Za-z0-9]['\u2019]$/.test(lead)) {
         start -= 1;
       }
-      found.push({ start: start, end: match.index + match[0].length, character: nameLookup[match[1]] });
+      found.push({ start: start, end: match.index + match[0].length, character: character });
     }
     return found;
   }
