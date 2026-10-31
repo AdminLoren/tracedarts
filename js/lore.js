@@ -164,7 +164,7 @@ COTA.lore = (function () {
   function getOutfits(character) {
     const list = [
       {
-        name: character.name,
+        name: character.altArt ? "Default" : character.name,
         boxart: `boxart_${character.code}.png`,
         render: `render_${character.code}.png`,
       },
