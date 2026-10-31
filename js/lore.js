@@ -328,6 +328,9 @@ COTA.lore = (function () {
     renderGrids();
     renderComingSoonGrids();
 
+    await COTA.outfitSets.load();
+    COTA.outfitSets.createPicker("select", document.getElementById("lore-select-set-btn"), "Character Select", applySelectSet);
+
     document.getElementById("lore-index-mic-btn").addEventListener("click", () => {
       const character = allCharacters.find((c) => c.id === openCharacterId);
       if (!character || !character.quote) return;
@@ -365,10 +368,26 @@ COTA.lore = (function () {
     });
   }
 
+  function playSelectMusic() {
+    const music = COTA.outfitSets.musicFor("select");
+    COTA.audio.playMusic(music.file, music.title);
+  }
+
+  function applySelectSet(setId) {
+    const set = COTA.outfitSets.findSet(setId);
+    const members = COTA.outfitSets.memberCodes();
+    allCharacters.forEach((c) => {
+      if (!c.altArt || !members.includes(c.code)) return;
+      equippedAlt[c.id] = !!(set && set.characters && set.characters.includes(c.code));
+    });
+    renderGrids();
+    playSelectMusic();
+  }
+
   async function enter() {
     await init();
     showSelectScreen();
-    COTA.audio.playMusic("char_select.mp3", "Online Menu (Sonic Generations)");
+    playSelectMusic();
   }
 
   async function openCharacterById(id) {
