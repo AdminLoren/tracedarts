@@ -345,7 +345,7 @@ COTA.lore = (function () {
       COTA.audio.playVoice(`voice_${character.code}.mp3`, () => micBtn.classList.remove("is-playing"));
     });
     document.getElementById("lore-index-outfit-btn").addEventListener("click", () => {
-      COTA.audio.playSfx("ui_click.mp3");
+      COTA.audio.playSfx("outfit_select.mp3");
       openOutfitModal();
     });
     document.getElementById("outfit-prev-btn").addEventListener("click", () => stepOutfit(-1));
