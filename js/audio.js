@@ -246,10 +246,10 @@ COTA.audio = (function () {
   }
 
   const SFX_GAIN = {
-    "alt_confirm.mp3": 1.6,
-    "alt_switch.mp3": 1.6,
-    "outfit_select.mp3": 1.6,
-    "set_confirm.mp3": 1.6
+    "alt_confirm.mp3": 3.5,
+    "alt_switch.mp3": 3.5,
+    "outfit_select.mp3": 3.5,
+    "set_confirm.mp3": 3.5
   };
 
   function playSfx(fileName) {
@@ -264,8 +264,15 @@ COTA.audio = (function () {
         const source = ctx.createMediaElementSource(sfx);
         const gain = ctx.createGain();
         gain.gain.value = level * boost;
+        const limiter = ctx.createDynamicsCompressor();
+        limiter.threshold.value = -8;
+        limiter.knee.value = 6;
+        limiter.ratio.value = 12;
+        limiter.attack.value = 0.003;
+        limiter.release.value = 0.12;
         source.connect(gain);
-        gain.connect(ctx.destination);
+        gain.connect(limiter);
+        limiter.connect(ctx.destination);
         sfx.volume = 1;
       } else {
         sfx.volume = level;
