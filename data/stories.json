@@ -276,11 +276,11 @@
           [
             {
               "name": "Fumio Hasashi",
-              "art": "assets/images/boxart_fum_alt.png"
+              "art": "assets/images/boxart_fum.png"
             },
             {
               "name": "Fumiko Sakura",
-              "art": "assets/images/boxart_fko_alt_alt_alt.png"
+              "art": "assets/images/boxart_fko.png"
             }
           ],
           [
@@ -290,26 +290,26 @@
             },
             {
               "name": "Shioriko Mifune",
-              "art": "assets/images/boxart_shi_alt_alt_alt.png"
+              "art": "assets/images/boxart_shi.png"
             }
           ],
           [
             {
               "name": "Vyse Liang",
-              "art": "assets/images/boxart_vys_alt_alt.png"
+              "art": "assets/images/boxart_vys.png"
             },
             {
               "name": "Karin Asaka",
-              "art": "assets/images/boxart_kar_alt_alt_alt.png"
+              "art": "assets/images/boxart_kar.png"
             },
             {
               "name": "Alicia Hasashi",
-              "art": "assets/images/boxart_ali_alt_alt.png"
+              "art": "assets/images/boxart_ali.png"
             }
           ],
           [
             {
-              "name": "Meari Watanabe",
+              "name": "Meari Hasashi (née Watanabe)",
               "art": "assets/images/boxart_mea.png"
             },
             {
@@ -549,11 +549,11 @@
         "cast": [
           {
             "name": "Emma Verde",
-            "art": "assets/images/boxart_emm_alt_alt.png"
+            "art": "assets/images/boxart_emm.png"
           },
           {
             "name": "Vyse Liang",
-            "art": "assets/images/boxart_vys_alt_alt.png"
+            "art": "assets/images/boxart_vys.png"
           },
           {
             "name": "Makoto Williams",
@@ -561,11 +561,11 @@
           },
           {
             "name": "Shioriko Mifune",
-            "art": "assets/images/boxart_shi_alt_alt_alt.png"
+            "art": "assets/images/boxart_shi.png"
           },
           {
             "name": "Fumiko Sakura",
-            "art": "assets/images/boxart_fko_alt_alt_alt.png"
+            "art": "assets/images/boxart_fko.png"
           },
           {
             "name": "Nana Nakagawa (Setsuna Yuki)",
@@ -573,7 +573,7 @@
           },
           {
             "name": "Fumio Hasashi",
-            "art": "assets/images/boxart_fum_alt.png"
+            "art": "assets/images/boxart_fum.png"
           },
           {
             "name": "Matsuda Yuukashi",
@@ -692,7 +692,8 @@
             "#71bdb9",
             "#d0d48f"
           ],
-          "pronoun": null
+          "pronoun": null,
+          "narrationOnly": true
         },
         "referee": {
           "name": "Referee",
@@ -775,7 +776,8 @@
           "name": "Meari",
           "nameAliases": [
             "Meari",
-            "Meari Watanabe"
+            "Meari Watanabe",
+            "Meari Hasashi"
           ],
           "nameGradient": [
             "#4af1cc",
