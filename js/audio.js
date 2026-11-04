@@ -246,10 +246,10 @@ COTA.audio = (function () {
   }
 
   const SFX_GAIN = {
-    "alt_confirm.mp3": 3.5,
-    "alt_switch.mp3": 3.5,
-    "outfit_select.mp3": 3.5,
-    "set_confirm.mp3": 3.5
+    "alt_confirm.mp3": 5,
+    "alt_switch.mp3": 8,
+    "outfit_select.mp3": 5,
+    "set_confirm.mp3": 2.8
   };
 
   function playSfx(fileName) {
