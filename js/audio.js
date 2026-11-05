@@ -257,24 +257,10 @@ COTA.audio = (function () {
     "char_select_nijigasaki.mp3": 1.5
   };
 
-  const INTERRUPT_SFX = ["char_switch.mp3"];
-  const playingSfx = {};
-
   function playSfx(fileName) {
     if (muted || volume === 0) return;
-    if (INTERRUPT_SFX.indexOf(fileName) !== -1 && playingSfx[fileName]) {
-      playingSfx[fileName].pause();
-      playingSfx[fileName].currentTime = 0;
-      playingSfx[fileName] = null;
-    }
     try {
       const sfx = new Audio(`assets/audio/${fileName}`);
-      if (INTERRUPT_SFX.indexOf(fileName) !== -1) {
-        playingSfx[fileName] = sfx;
-        sfx.addEventListener("ended", () => {
-          if (playingSfx[fileName] === sfx) playingSfx[fileName] = null;
-        });
-      }
       const level = Math.min(1, volume * SFX_RATIO);
       const boost = SFX_GAIN[fileName] || 1;
       const ctx = boost > 1 ? getVoiceCtx() : null;
