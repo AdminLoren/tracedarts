@@ -739,7 +739,7 @@
     "cherishes": [
       "Detective Fiction",
       "Magazines",
-      "Fried Food"
+      "Mango Juice"
     ],
     "dislikes": [
       "Dumb People",
@@ -773,6 +773,68 @@
     ],
     "nameAliases": [
       "Marilu"
+    ]
+  },
+  {
+    "id": "A15",
+    "code": "akx",
+    "gen": 2,
+    "name": "Aki.EXE",
+    "nickname": "NOT REGISTERED YET",
+    "bio": "NOT REGISTERED YET",
+    "birthdate": "NOT REGISTERED YET",
+    "occupation": "NOT REGISTERED YET",
+    "cherishes": [
+      "NOT REGISTERED YET"
+    ],
+    "dislikes": [
+      "NOT REGISTERED YET"
+    ],
+    "abilities": [
+      {
+        "name": "NOT REGISTERED YET",
+        "desc": "NOT REGISTERED YET"
+      }
+    ],
+    "color": "#FFFFFF",
+    "bgm": {
+      "file": "bgm_akx.mp3",
+      "title": "NOT REGISTERED YET"
+    },
+    "heightScale": 1,
+    "nameAliases": [
+      "Aki.EXE"
+    ]
+  },
+  {
+    "id": "A16",
+    "code": "rko",
+    "gen": 2,
+    "name": "Riko.EXE",
+    "nickname": "NOT REGISTERED YET",
+    "bio": "NOT REGISTERED YET",
+    "birthdate": "NOT REGISTERED YET",
+    "occupation": "NOT REGISTERED YET",
+    "cherishes": [
+      "NOT REGISTERED YET"
+    ],
+    "dislikes": [
+      "NOT REGISTERED YET"
+    ],
+    "abilities": [
+      {
+        "name": "NOT REGISTERED YET",
+        "desc": "NOT REGISTERED YET"
+      }
+    ],
+    "color": "#FFFFFF",
+    "bgm": {
+      "file": "bgm_rko.mp3",
+      "title": "NOT REGISTERED YET"
+    },
+    "heightScale": 1,
+    "nameAliases": [
+      "Riko.EXE"
     ]
   },
   {
@@ -891,7 +953,7 @@
     ],
     "dislikes": [
       "Pessimism",
-      "Referees"
+      "Biased Referees"
     ],
     "abilities": [
       {
@@ -1370,7 +1432,7 @@
     "color": "#FFFFFF",
     "bgm": {
       "file": "bgm_mir.mp3",
-      "title": "Lake Lamode (Mario Kart World)"
+      "title": "Aquarium Park Act 2 (Sonic Colors)"
     },
     "quote": "I only wish the sea could be as leisurely as this a little more often... How greedy of me.",
     "heightScale": 1.021,
@@ -1432,22 +1494,6 @@
       "Leng",
       "Leng Tian"
     ]
-  },
-  {
-    "id": "C1",
-    "code": "akx",
-    "name": "Aki.EXE",
-    "comingSoon": true,
-    "comingSoonGroup": "2nd Gen",
-    "color": "#FFFFFF"
-  },
-  {
-    "id": "C2",
-    "code": "rko",
-    "name": "Riko.EXE",
-    "comingSoon": true,
-    "comingSoonGroup": "2nd Gen",
-    "color": "#FFFFFF"
   },
   {
     "id": "C3",
