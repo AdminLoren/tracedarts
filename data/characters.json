@@ -116,7 +116,7 @@
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_ali_alt.png",
       "render": "render_ali_alt.png",
-      "heightScale": 0.951
+      "heightScale": 1.016
     }
   },
   {
@@ -231,7 +231,7 @@
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_riku_alt.png",
       "render": "render_riku_alt.png",
-      "heightScale": 1.055
+      "heightScale": 1.01
     }
   },
   {
@@ -578,7 +578,13 @@
     "nameAliases": [
       "Rikki",
       "Rikki Yinqi"
-    ]
+    ],
+    "altArt": {
+      "name": "Nijigasaki Uniform",
+      "boxart": "boxart_rik_alt.png",
+      "render": "render_rik_alt.png",
+      "heightScale": 1.028
+    }
   },
   {
     "id": "A11",
@@ -678,7 +684,13 @@
       "Makoto Williams",
       "Williams"
     ],
-    "pronoun": "he"
+    "pronoun": "he",
+    "altArt": {
+      "name": "Nijigasaki Uniform",
+      "boxart": "boxart_mak_alt.png",
+      "render": "render_mak_alt.png",
+      "heightScale": 1.028
+    }
   },
   {
     "id": "A13",
@@ -725,7 +737,13 @@
     "nameAliases": [
       "Megumi",
       "Megumi Williams"
-    ]
+    ],
+    "altArt": {
+      "name": "Nijigasaki Uniform",
+      "boxart": "boxart_meg_alt.png",
+      "render": "render_meg_alt.png",
+      "heightScale": 0.989
+    }
   },
   {
     "id": "A14",
@@ -812,7 +830,7 @@
       "file": "bgm_akx.mp3",
       "title": "Dark Necrobat (Rockman X5)"
     },
-    "heightScale": 1,
+    "heightScale": 1.09,
     "nameAliases": [
       "Aki.EXE"
     ]
@@ -843,7 +861,7 @@
       "file": "bgm_rko.mp3",
       "title": "NOT REGISTERED YET"
     },
-    "heightScale": 1,
+    "heightScale": 1.05,
     "nameAliases": [
       "Riko.EXE"
     ]
