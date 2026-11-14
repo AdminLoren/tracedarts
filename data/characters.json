@@ -780,26 +780,37 @@
     "code": "akx",
     "gen": 2,
     "name": "Aki.EXE",
-    "nickname": "NOT REGISTERED YET",
-    "bio": "NOT REGISTERED YET",
-    "birthdate": "NOT REGISTERED YET",
-    "occupation": "NOT REGISTERED YET",
+    "nickname": "Aki.EXE Shindou",
+    "bio": "Once a whimsical and imaginative young girl, Aki has been fully swallowed by the harsh, exhausting reality of the modern workforce. Beyond proving herself as a fiercely capable office worker, she still carries the rigorous blade arts passed down from her renowned, now-retired father—bearing the full weight of his legacy on her shoulders. Crushed under immense self-imposed pressure, she rarely leaves her room except once in a blue moon, convinced that life simply leaves no room for distractions.\n\nLike any burned-out corporate worker, she secretly craves the day she can finally break free and enjoy a relaxing beach trip with her family. She likes to imagine she'd soften up and bond warmly with her younger siblings—right up until they inevitably push her buttons, leaving her wishing she could toss the whole lot of them straight into a dumpster fire.",
+    "birthdate": "April 11",
+    "occupation": "Military Adjutant / Staff Officer",
     "cherishes": [
-      "NOT REGISTERED YET"
+      "Dango",
+      "Magic Novels",
+      "Her Siblings"
     ],
     "dislikes": [
-      "NOT REGISTERED YET"
+      "Embarrassing Memories",
+      "Her Siblings"
     ],
     "abilities": [
       {
-        "name": "NOT REGISTERED YET",
-        "desc": "NOT REGISTERED YET"
+        "name": "Colonel's Legacy",
+        "desc": "Trained directly by her father, Colonel.EXE, Aki wields exclusive, disciplined sword techniques passed down solely through his lineage."
+      },
+      {
+        "name": "Deadline Drive",
+        "desc": "Driven by pure corporate tenacity, she refuses to falter when an objective is on the line—sharpening her focus and output the closer a deadline gets."
+      },
+      {
+        "name": "Combat Stamina Paradox",
+        "desc": "Built for the battlefield rather than a desk, Aki possesses tireless endurance in prolonged combat, ironically getting far more exhausted from doing paperwork than fighting."
       }
     ],
     "color": "#FFFFFF",
     "bgm": {
       "file": "bgm_akx.mp3",
-      "title": "NOT REGISTERED YET"
+      "title": "Dark Necrobat (Rockman X5)"
     },
     "heightScale": 1,
     "nameAliases": [
