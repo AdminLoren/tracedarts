@@ -581,7 +581,7 @@ img { max-width: 100%; display: block; }
   max-height: 22vh;
   width: auto;
   height: auto;
-  margin: 0 0 6px -4px;
+  margin: 0 auto 6px;
   filter: drop-shadow(3px 3px 0 rgba(0,0,0,0.5));
 }
 
@@ -589,7 +589,7 @@ img { max-width: 100%; display: block; }
 .index-graffiti-name[data-code="mir"] {
   width: 85%;
   object-fit: contain;
-  object-position: left;
+  object-position: center;
 }
 
 .index-fullname { color: var(--accent-cyan); font-weight: 700; font-size: 22px; margin: 4px 0 20px; text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.85); }
