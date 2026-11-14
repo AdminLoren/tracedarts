@@ -2099,5 +2099,71 @@
     "title": "Cradled by an Angel",
     "specificTitle": "NOT REGISTERED YET",
     "bio": "Marilu deeply adores Emma’s nurturing maternal care, occasionally preferring it over her own mother's attention. Given that Emma practically feels engineered to spoil those around her, Marilu takes full advantage of her soft voice as a lullaby, her comforting skin to rest against, and the built-in luxury of two very convenient large pillows to support her head while she naps."
+  },
+  {
+    "id": "fum-akx",
+    "pair": [
+      "A1",
+      "A15"
+    ],
+    "type": "Friends",
+    "title": "Shadows of the Stage",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Fumio faintly remembers Aki’s brighter days as a school idol, making it quietly heartbreaking for him to see how drastically she has changed. Watching a once-happy and promising singer turn into such a gloomy, exhausted woman leaves him feeling a genuine pang of sadness for the spark she lost along the way."
+  },
+  {
+    "id": "ali-akx",
+    "pair": [
+      "A2",
+      "A15"
+    ],
+    "type": "Friends",
+    "title": "A Sobering Reflection",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Alicia vividly remembers how cheerful and vibrant Aki used to be, fondly recalling the days when she would enthusiastically show off her childish wonder and fascination with wizards. Seeing what adulthood and corporate burnout have reduced her to, however, has turned Aki into a living cautionary tale, leaving Alicia with one clear takeaway: she must make sure she never ends up like her when she grows up."
+  },
+  {
+    "id": "riku-akx",
+    "pair": [
+      "A4",
+      "A15"
+    ],
+    "type": "Siblings",
+    "title": "Mutual Aggravation",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Aki and Riku rarely see eye to eye, capable of getting on each other’s nerves just by making eye contact. While nobody actually remembers how their endless feud started, it remains an unspoken rule that they will always cover each other's backs when things get serious. Secretly, Riku wishes he could remember more details from his older sister’s past days as a school idol—just so he could bring it up and watch her get a little bit flustered."
+  },
+  {
+    "id": "akx-mea",
+    "pair": [
+      "A15",
+      "B1"
+    ],
+    "type": "Aunt and Niece",
+    "title": "Permission to Dream",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "NOT REGISTERED YET"
+  },
+  {
+    "id": "akx-mat",
+    "pair": [
+      "A15",
+      "B5"
+    ],
+    "type": "One-Sided Rivalry",
+    "title": "Velvet Grudge",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "When Aki was just a toddler, Matsuda terrified her after she unknowingly touched his bag full of firearms—sparking an intense childhood hatred that she carefully concealed behind a cutesy, angelic facade. Now that she has grown up, Matsuda openly praises her for toughening up and becoming just as hardened as him. Despite his rare seal of approval, Aki still holds onto that early resentment and wants absolutely nothing to do with him."
+  },
+  {
+    "id": "akx-min",
+    "pair": [
+      "A15",
+      "B7"
+    ],
+    "type": "Adopted Siblings",
+    "title": "Trail of the Lost Sister",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Despite not sharing blood, Minna was the absolute ideal older sister to Aki, showering her with a genuine warmth and affection that Aki felt down to her core. The moment Minna disappeared, Aki felt her entire world turn upside down—a loss that fractured her bright childhood spirit. Behind closed doors, Aki occasionally puts her military tracking and intelligence methods to work, quietly hunting down leads to find whoever dared to hurt her big sister."
   }
 ]
