@@ -689,7 +689,7 @@
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_mak_alt.png",
       "render": "render_mak_alt.png",
-      "heightScale": 1.028
+      "heightScale": 1.03
     }
   },
   {
@@ -830,6 +830,7 @@
       "file": "bgm_akx.mp3",
       "title": "Dark Necrobat (Rockman X5)"
     },
+    "quote": "NOT REGISTERED YET",
     "heightScale": 1.09,
     "nameAliases": [
       "Aki.EXE"
@@ -861,6 +862,7 @@
       "file": "bgm_rko.mp3",
       "title": "NOT REGISTERED YET"
     },
+    "quote": "NOT REGISTERED YET",
     "heightScale": 1.05,
     "nameAliases": [
       "Riko.EXE"
@@ -1461,7 +1463,7 @@
     "color": "#FFFFFF",
     "bgm": {
       "file": "bgm_mir.mp3",
-      "title": "Aquarium Park Act 2 (Sonic Colors)"
+      "title": "Lake Lamode (Mario Kart World)"
     },
     "quote": "I only wish the sea could be as leisurely as this a little more often... How greedy of me.",
     "heightScale": 1.021,
