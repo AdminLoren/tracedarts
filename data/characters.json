@@ -838,29 +838,38 @@
   },
   {
     "id": "A16",
-    "code": "rko",
+    "code": "rkx",
     "gen": 2,
     "name": "Riko.EXE",
-    "nickname": "NOT REGISTERED YET",
-    "bio": "NOT REGISTERED YET",
-    "birthdate": "NOT REGISTERED YET",
-    "occupation": "NOT REGISTERED YET",
+    "nickname": "Riko.EXE Shindou",
+    "bio": "The tomboyish Shindou sister who directly inherited her mother's delinquent roots, Riko refuses to play by anyone's rules except her own. While her sharp, intimidating exterior might make strangers think twice, she is actually wildly popular with teachers and underclassmen alike—putting her raw brawn to good use around campus and lending her standout vocal talent to major school presentations.\n\nBehind her carefree campus reputation, however, she is counting down the days until she can leave college life behind and join her older sister in the military. Driven by fierce confidence, she genuinely believes the battlefield is where she truly belongs, convinced that her raw instincts and blade skills will eventually far surpass Aki's.",
+    "birthdate": "July 14",
+    "occupation": "Student",
     "cherishes": [
-      "NOT REGISTERED YET"
+      "Sugar-Free Lollipops"
     ],
     "dislikes": [
-      "NOT REGISTERED YET"
+      "Love Letters",
+      "Dogs"
     ],
     "abilities": [
       {
-        "name": "NOT REGISTERED YET",
-        "desc": "NOT REGISTERED YET"
+        "name": "Fencing Specialist",
+        "desc": "She is exceptionally skilled at fencing, having taken up the sport at a young age to eventually adapt it into her unique blended military melee style."
+      },
+      {
+        "name": "Cherry Sword Summoning",
+        "desc": "Through her mastery of Youmu arts, she can summon her mother's signature cherry sword, a blade that is exponentially sharper than a regular weapon."
+      },
+      {
+        "name": "Defensive Counterstance",
+        "desc": "Riko's rigid, specialized guard stance seamlessly compliments her counter-attacks, turning her defense into a highly dangerous offensive maneuver."
       }
     ],
     "color": "#FFFFFF",
     "bgm": {
-      "file": "bgm_rko.mp3",
-      "title": "NOT REGISTERED YET"
+      "file": "bgm_rkx.mp3",
+      "title": "Dynamo (Rockman X5)"
     },
     "quote": "NOT REGISTERED YET",
     "heightScale": 1.05,
