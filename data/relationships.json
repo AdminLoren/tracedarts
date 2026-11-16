@@ -2142,7 +2142,7 @@
     "type": "Aunt and Niece",
     "title": "Permission to Dream",
     "specificTitle": "NOT REGISTERED YET",
-    "bio": "NOT REGISTERED YET"
+    "bio": "Aki vividly remembers the era when Meari’s Dissociative Identity Disorder was still running rampant—something that completely baffled her as a child, though she now understands it with full adult clarity. Meari, in turn, feels a quiet sadness seeing that the sweet, imaginative girl who once found her chuuni persona genuinely entertaining has faded away. Still, Meari makes it a point to always remind Aki that no matter how heavy life gets, it is never a bad thing to let herself feel like a kid again."
   },
   {
     "id": "akx-mat",
@@ -2165,5 +2165,170 @@
     "title": "Trail of the Lost Sister",
     "specificTitle": "NOT REGISTERED YET",
     "bio": "Despite not sharing blood, Minna was the absolute ideal older sister to Aki, showering her with a genuine warmth and affection that Aki felt down to her core. The moment Minna disappeared, Aki felt her entire world turn upside down—a loss that fractured her bright childhood spirit. Behind closed doors, Aki occasionally puts her military tracking and intelligence methods to work, quietly hunting down leads to find whoever dared to hurt her big sister."
+  },
+  {
+    "id": "akx-rkx",
+    "pair": [
+      "A15",
+      "A16"
+    ],
+    "type": "Siblings",
+    "title": "Pride Before the Root",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Having watched Aki’s transformation unfold right before her own eyes, Riko remains baffled to this day by just how much her older sister has changed. While Riko still holds out hope that Aki will eventually reconnect with her softer, whimsical roots, she respects her sister enough not to push—recognizing that Aki is far too proud to swallow her ego right now and needs to find her way back on her own terms."
+  },
+  {
+    "id": "akx-mic",
+    "pair": [
+      "A15",
+      "B4"
+    ],
+    "type": "Friends",
+    "title": "Sweet Contraband",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Aki has always shared the exact same sweet tooth as Michan, fondly remembering how Michan used to sneak her treats and spoil her even during times when sweets were strictly forbidden. Now as an adult watching Michan keep up the exact same habits, Aki is mostly just genuinely impressed that she hasn't developed diabetes yet."
+  },
+  {
+    "id": "akx-mei",
+    "pair": [
+      "A15",
+      "B11"
+    ],
+    "type": "Friends",
+    "title": "Hope for a Lost Smile",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Meili may very well be even more impressed by Aki’s transformation than Aki’s own parents are at this point. Watching such an innocent child harden into a remarkably capable and independent woman fills her with genuine admiration—though Meili still quietly hopes that someone as beautiful as Aki will eventually allow herself to smile the way she used to."
+  },
+  {
+    "id": "kar-mrl",
+    "pair": [
+      "A6",
+      "A14"
+    ],
+    "type": "Friends",
+    "title": "Secret Connoisseur",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Karin is seemingly the only one among the 2nd Gen smart enough to realize just how self-aware Marilu actually is at such a young age, frequently catching the little kid rolling her eyes at the others' cluelessness. Despite Marilu's habit of mentally calling everyone else brainless, she holds a quiet respect for Karin and fully intends to hit her up for fashion advice once she's older—as expected from an amateur model."
+  },
+  {
+    "id": "fko-mrl",
+    "pair": [
+      "A7",
+      "A14"
+    ],
+    "type": "Friends",
+    "title": "Lil Sis' Approval",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "When Marilu was younger, she didn't trust Fumiko for a single second, acutely aware of how tightly she had her big brother wrapped around her finger and fearing she might deceive or hurt him. As she grew older and observed Fumiko more closely, Marilu can finally rest a little bit easier, realizing that Fumiko just might be worthy of her big brother after all."
+  },
+  {
+    "id": "rik-mrl",
+    "pair": [
+      "A10",
+      "A14"
+    ],
+    "type": "Half-\"Siblings\"",
+    "title": "Artificial Kinship",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Marilu was already well aware of the concept of individuals with unique circumstances, and Rikki was no exception. Understanding that he is an artificial being who happens to be her half-brother, she didn't hesitate for a second to accept him and love him as her own family."
+  },
+  {
+    "id": "geo-mrl",
+    "pair": [
+      "A11",
+      "A14"
+    ],
+    "type": "Acquaintances",
+    "title": "Unbearable Company",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Marilu does not like George at all. On top of being intensely gloomy, giving off bad vibes, and being flat-out boring, he also refuses to see eye to eye with her brother. George is quite literally the absolute last person Marilu would ever want to be stuck in a room with."
+  },
+  {
+    "id": "mak-mrl",
+    "pair": [
+      "A12",
+      "A14"
+    ],
+    "type": "Acquaintances",
+    "title": "Equal Terror",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Quite possibly the only person who can stand up to Makoto's reign of terror, Marilu can easily match and decipher his methods of manipulation. Watch out Makoto, once she's old enough, Marilu is coming for you."
+  },
+  {
+    "id": "mrl-mea",
+    "pair": [
+      "A14",
+      "B1"
+    ],
+    "type": "Parent and Child",
+    "title": "A Mini-Me",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Never in her life did Meari think she’d end up raising a miniature version of herself—let alone someone so gifted and, most importantly, as gorgeous as she is. It’s almost as if Hanzo’s genetics didn’t even try, with every last bit of the striking traits funneled straight into Marilu’s left eye."
+  },
+  {
+    "id": "mrl-han",
+    "pair": [
+      "A14",
+      "B2"
+    ],
+    "type": "Parent and Child",
+    "title": "Mirror of Cheated Fate",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "As a product of Hanzo cheating death, Marilu is widely believed to be the exact person Hanzo would have grown up to become if he hadn't been gatekept by his parents. She is someone who fully recognizes her own talents, is remarkably popular, and is very full of herself."
+  },
+  {
+    "id": "mrl-sat",
+    "pair": [
+      "A14",
+      "B3"
+    ],
+    "type": "Uncle and Niece",
+    "title": "Papa's better than you!",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Marilu genuinely enjoys her energetic uncle's company and views him as a nice mirror to her calm father, but it is that extra layer of sweetness she absolutely adores with her daddy that ultimately makes him the superior brother!"
+  },
+  {
+    "id": "mrl-mic",
+    "pair": [
+      "A14",
+      "B4"
+    ],
+    "type": "Aunt and Niece",
+    "title": "Sugar-Coated Immunity",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Marilu can't help but constantly deadpan at Auntie Michan's staggering sweets intake, figuring that the avalanche of calories and impending diseases waiting for her are completely inevitable. Yet, to Marilu's absolute bewilderment, her aunt remains just as fine as ever, cheerfully cuddling her the exact same way she always does."
+  },
+  {
+    "id": "mrl-mat",
+    "pair": [
+      "A14",
+      "B5"
+    ],
+    "type": "Uncle and Niece",
+    "title": "PTSD Kid",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "The way Marilu steadfastly refuses to make direct eye contact with Uncle Matsuda floods the man's mind with deeply uncomfortable, nostalgic memories of Meari. To Matsuda, it's living proof that the tiger-faced apple truly doesn't fall far from the tree."
+  },
+  {
+    "id": "fum-rkx",
+    "pair": [
+      "A1",
+      "A16"
+    ],
+    "type": "Friends",
+    "title": "Showboating Infant",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Back when she was a toddler, Riko had playdates with Baby Fumio and watched in utter bewilderment as the tiny dude danced, moved around, and beamed with absolute confidence. Seeing him act all smug whenever he soaked up adult attention made Riko feel ancient—especially since she was older and he apparently out-mogged her in pure popularity. Thankfully, she managed to even the playing field once she reached her teenage years."
+  },
+  {
+    "id": "ali-rkx",
+    "pair": [
+      "A2",
+      "A16"
+    ],
+    "type": "Confidants",
+    "title": "Big Sis Spectator",
+    "specificTitle": "NOT REGISTERED YET",
+    "bio": "Riko was always well aware of Riku's obvious crush on Alicia, though it eventually stopped being a laughing matter once she realized Alicia actually harbored mutual feelings for her younger brother. At that point, she stopped teasing and simply became thoroughly invested in watching how the two of them would fumble their way through it, knowing all too well how their minds function."
   }
 ]
