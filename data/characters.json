@@ -838,7 +838,7 @@
   },
   {
     "id": "A16",
-    "code": "rkx",
+    "code": "rko",
     "gen": 2,
     "name": "Riko.EXE",
     "nickname": "Riko.EXE Shindou",
@@ -868,7 +868,7 @@
     ],
     "color": "#FFFFFF",
     "bgm": {
-      "file": "bgm_rkx.mp3",
+      "file": "bgm_rko.mp3",
       "title": "Dynamo (Rockman X5)"
     },
     "quote": "NOT REGISTERED YET",
