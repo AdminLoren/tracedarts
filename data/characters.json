@@ -176,7 +176,7 @@
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_vys_alt.png",
       "render": "render_vys_alt.png",
-      "heightScale": 1.073
+      "heightScale": 1.074
     }
   },
   {
@@ -290,7 +290,7 @@
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_emm_alt.png",
       "render": "render_emm_alt.png",
-      "heightScale": 1.008
+      "heightScale": 0.998
     }
   },
   {
@@ -346,7 +346,7 @@
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_kar_alt.png",
       "render": "render_kar_alt.png",
-      "heightScale": 1.03
+      "heightScale": 1.022
     }
   },
   {
@@ -405,7 +405,7 @@
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_fko_alt.png",
       "render": "render_fko_alt.png",
-      "heightScale": 1.002
+      "heightScale": 0.998
     }
   },
   {
@@ -452,7 +452,7 @@
       "name": "Nana Nakagawa",
       "boxart": "boxart_set_alt.png",
       "render": "render_set_alt.png",
-      "heightScale": 0.959
+      "heightScale": 0.963
     },
     "heightScale": 0.958,
     "feetLine": 0.992,
@@ -527,7 +527,7 @@
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_shi_alt.png",
       "render": "render_shi_alt.png",
-      "heightScale": 1.0
+      "heightScale": 0.998
     }
   },
   {
@@ -583,7 +583,7 @@
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_rik_alt.png",
       "render": "render_rik_alt.png",
-      "heightScale": 1.028
+      "heightScale": 1.033
     }
   },
   {
@@ -689,7 +689,7 @@
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_mak_alt.png",
       "render": "render_mak_alt.png",
-      "heightScale": 1.03
+      "heightScale": 1.035
     }
   },
   {
@@ -742,7 +742,7 @@
       "name": "Nijigasaki Uniform",
       "boxart": "boxart_meg_alt.png",
       "render": "render_meg_alt.png",
-      "heightScale": 0.989
+      "heightScale": 0.971
     }
   },
   {
