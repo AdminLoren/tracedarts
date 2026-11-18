@@ -786,8 +786,10 @@
     "heightScale": 0.61,
     "pronoun": "she",
     "nameGradient": [
-      "#ffffff",
-      "#cfcfcf"
+      "#52e68f",
+      "#86eaa4",
+      "#a9f2bc",
+      "#ff8f88"
     ],
     "nameAliases": [
       "Marilu"
