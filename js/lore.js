@@ -15,6 +15,38 @@ COTA.lore = (function () {
     1: "assets/images/irregular_hunter_base_bg.png",
   };
 
+  function luminance(r, g, b) {
+    const parts = [r, g, b].map((v) => {
+      v = v / 255;
+      return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+    });
+    return 0.2126 * parts[0] + 0.7152 * parts[1] + 0.0722 * parts[2];
+  }
+
+  function readableStop(hex) {
+    if (!/^#[0-9a-f]{6}$/i.test(hex)) return [255, 255, 255];
+    let r = parseInt(hex.slice(1, 3), 16);
+    let g = parseInt(hex.slice(3, 5), 16);
+    let b = parseInt(hex.slice(5, 7), 16);
+    let tries = 0;
+    while (luminance(r, g, b) < 0.18 && tries < 40) {
+      r = r + (255 - r) * 0.08;
+      g = g + (255 - g) * 0.08;
+      b = b + (255 - b) * 0.08;
+      tries++;
+    }
+    return [Math.round(r), Math.round(g), Math.round(b)];
+  }
+
+  function nameStyle(c) {
+    if (!c.nameGradient) return "";
+    const stops = c.nameGradient.map(readableStop);
+    const css = stops.map((s) => `rgb(${s[0]}, ${s[1]}, ${s[2]})`);
+    const mid = stops[Math.floor(stops.length / 2)];
+    const grad = `linear-gradient(180deg, ${css.join(", ")})`;
+    return ` style="--name-grad:${grad};--name-glow:rgba(${mid[0]}, ${mid[1]}, ${mid[2]}, 0.55)"`;
+  }
+
   function cardTemplate(c) {
     const defaultBoxart = `boxart_${c.code}.png`;
     const boxart = c.altArt && equippedAlt[c.id] ? c.altArt.boxart : defaultBoxart;
@@ -22,7 +54,7 @@ COTA.lore = (function () {
       <button class="select-card" data-id="${c.id}" style="--char-color:${c.color}">
         <span class="select-card-clip">
           <img src="assets/images/${boxart}" alt="${c.name}" class="select-card-img" onerror="this.onerror=null;this.src='assets/images/${defaultBoxart}'" />
-          <span class="select-card-nameplate">${c.name}</span>
+          <span class="select-card-nameplate"><span class="select-card-name"${nameStyle(c)}>${c.name}</span></span>
         </span>
       </button>
     `;
