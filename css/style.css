@@ -472,7 +472,18 @@ img { max-width: 100%; display: block; }
   border-color: var(--accent-gold);
   box-shadow: 0 0 0 2px var(--accent-gold), 0 0 22px 4px var(--char-color, var(--accent-gold));
 }
-.select-card.is-highlighted .select-card-nameplate { color: var(--accent-gold); }
+.select-card-name {
+  display: inline-block;
+  background-image: var(--name-grad, linear-gradient(180deg, var(--text-main), var(--text-main)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 1px #000) drop-shadow(0 1px 1px rgba(0,0,0,0.95)) drop-shadow(0 0 3px var(--name-glow, transparent));
+}
+.select-card.is-highlighted .select-card-name {
+  filter: drop-shadow(0 0 1px #000) drop-shadow(0 1px 1px rgba(0,0,0,0.95)) drop-shadow(0 0 7px var(--name-glow, var(--accent-gold))) brightness(1.2);
+}
 
 .coming-soon-label { color: var(--text-dim); }
 .author-gods-label { color: var(--accent-gold); border-bottom-color: var(--accent-gold); }
