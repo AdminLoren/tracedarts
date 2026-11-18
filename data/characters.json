@@ -826,6 +826,11 @@
       }
     ],
     "color": "#FFFFFF",
+    "nameGradient": [
+      "#a5b9af",
+      "#879b9b",
+      "#697d87"
+    ],
     "bgm": {
       "file": "bgm_akx.mp3",
       "title": "Dark Necrobat (Rockman X5)"
@@ -867,6 +872,11 @@
       }
     ],
     "color": "#FFFFFF",
+    "nameGradient": [
+      "#837283",
+      "#a16767",
+      "#bd5757"
+    ],
     "bgm": {
       "file": "bgm_rko.mp3",
       "title": "Dynamo (Rockman X5)"
