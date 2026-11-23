@@ -13,6 +13,7 @@ COTA.lore = (function () {
   const BG_BY_GEN = {
     2: "assets/images/nijigasaki_bg.png",
     1: "assets/images/irregular_hunter_base_bg.png",
+    0: "assets/images/irregular_hunter_base_bg.png",
   };
 
   function luminance(r, g, b) {
@@ -104,10 +105,12 @@ COTA.lore = (function () {
   function renderGrids() {
     const gen2Wrap = document.getElementById("lore-select-gen2");
     const gen1Wrap = document.getElementById("lore-select-gen1");
+    const seniorsWrap = document.getElementById("lore-select-seniors");
     gen2Wrap.innerHTML = allCharacters.filter((c) => c.gen === 2).map(cardTemplate).join("");
     gen1Wrap.innerHTML = allCharacters.filter((c) => c.gen === 1).map(cardTemplate).join("");
+    seniorsWrap.innerHTML = allCharacters.filter((c) => c.gen === 0).map(cardTemplate).join("");
 
-    [gen2Wrap, gen1Wrap].forEach((wrap) => {
+    [gen2Wrap, gen1Wrap, seniorsWrap].forEach((wrap) => {
       wrap.querySelectorAll(".select-card").forEach((cardEl) => {
         cardEl.addEventListener("click", () => onCardClick(cardEl.dataset.id));
         cardEl.addEventListener("pointerenter", (event) => {
