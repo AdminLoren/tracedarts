@@ -6,14 +6,14 @@ COTA.data = (function () {
 
   async function getCharacters() {
     if (charactersCache) return charactersCache;
-    const res = await fetch("data/characters.json");
+    const res = await fetch("data/characters.json", { cache: "no-cache" });
     charactersCache = await res.json();
     return charactersCache;
   }
 
   async function getRelationships() {
     if (relationshipsCache) return relationshipsCache;
-    const res = await fetch("data/relationships.json");
+    const res = await fetch("data/relationships.json", { cache: "no-cache" });
     relationshipsCache = await res.json();
     return relationshipsCache;
   }
