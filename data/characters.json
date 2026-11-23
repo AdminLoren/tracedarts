@@ -1590,34 +1590,150 @@
   {
     "id": "S1",
     "code": "sor",
+    "gen": 0,
     "name": "Sora",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
+    "nickname": "NOT REGISTERED YET",
+    "bio": "NOT REGISTERED YET",
+    "birthdate": "NOT REGISTERED YET",
+    "occupation": "NOT REGISTERED YET",
+    "cherishes": [
+      "NOT REGISTERED YET"
+    ],
+    "dislikes": [
+      "NOT REGISTERED YET"
+    ],
+    "abilities": [
+      {
+        "name": "NOT REGISTERED YET",
+        "desc": "NOT REGISTERED YET"
+      }
+    ],
+    "color": "#FFFFFF",
+    "nameGradient": [
+      "#eceef3",
+      "#a3a8b5",
+      "#d3d6de"
+    ],
+    "bgm": {
+      "file": "bgm_sor.mp3",
+      "title": "NOT REGISTERED YET"
+    },
+    "quote": "NOT REGISTERED YET",
+    "heightScale": 1,
+    "nameAliases": [
+      "Sora"
+    ]
   },
   {
     "id": "S2",
     "code": "aya",
+    "gen": 0,
     "name": "Ayaka",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
+    "nickname": "NOT REGISTERED YET",
+    "bio": "NOT REGISTERED YET",
+    "birthdate": "NOT REGISTERED YET",
+    "occupation": "NOT REGISTERED YET",
+    "cherishes": [
+      "NOT REGISTERED YET"
+    ],
+    "dislikes": [
+      "NOT REGISTERED YET"
+    ],
+    "abilities": [
+      {
+        "name": "NOT REGISTERED YET",
+        "desc": "NOT REGISTERED YET"
+      }
+    ],
+    "color": "#FFFFFF",
+    "nameGradient": [
+      "#eceef3",
+      "#a3a8b5",
+      "#d3d6de"
+    ],
+    "bgm": {
+      "file": "bgm_aya.mp3",
+      "title": "NOT REGISTERED YET"
+    },
+    "quote": "NOT REGISTERED YET",
+    "heightScale": 1,
+    "nameAliases": [
+      "Ayaka"
+    ]
   },
   {
     "id": "S3",
     "code": "col",
+    "gen": 0,
     "name": "Colonel.EXE",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
+    "nickname": "NOT REGISTERED YET",
+    "bio": "NOT REGISTERED YET",
+    "birthdate": "NOT REGISTERED YET",
+    "occupation": "NOT REGISTERED YET",
+    "cherishes": [
+      "NOT REGISTERED YET"
+    ],
+    "dislikes": [
+      "NOT REGISTERED YET"
+    ],
+    "abilities": [
+      {
+        "name": "NOT REGISTERED YET",
+        "desc": "NOT REGISTERED YET"
+      }
+    ],
+    "color": "#FFFFFF",
+    "nameGradient": [
+      "#eceef3",
+      "#a3a8b5",
+      "#d3d6de"
+    ],
+    "bgm": {
+      "file": "bgm_col.mp3",
+      "title": "NOT REGISTERED YET"
+    },
+    "quote": "NOT REGISTERED YET",
+    "heightScale": 1,
+    "nameAliases": [
+      "Colonel.EXE"
+    ]
   },
   {
     "id": "S4",
     "code": "irx",
+    "gen": 0,
     "name": "Iris.EXE",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
+    "nickname": "NOT REGISTERED YET",
+    "bio": "NOT REGISTERED YET",
+    "birthdate": "NOT REGISTERED YET",
+    "occupation": "NOT REGISTERED YET",
+    "cherishes": [
+      "NOT REGISTERED YET"
+    ],
+    "dislikes": [
+      "NOT REGISTERED YET"
+    ],
+    "abilities": [
+      {
+        "name": "NOT REGISTERED YET",
+        "desc": "NOT REGISTERED YET"
+      }
+    ],
+    "color": "#FFFFFF",
+    "nameGradient": [
+      "#eceef3",
+      "#a3a8b5",
+      "#d3d6de"
+    ],
+    "bgm": {
+      "file": "bgm_irx.mp3",
+      "title": "NOT REGISTERED YET"
+    },
+    "quote": "NOT REGISTERED YET",
+    "heightScale": 1,
+    "nameAliases": [
+      "Iris.EXE"
+    ]
   },
   {
     "id": "S5",
@@ -1630,18 +1746,76 @@
   {
     "id": "S6",
     "code": "mri",
+    "gen": 0,
     "name": "Mari",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
+    "nickname": "NOT REGISTERED YET",
+    "bio": "NOT REGISTERED YET",
+    "birthdate": "NOT REGISTERED YET",
+    "occupation": "NOT REGISTERED YET",
+    "cherishes": [
+      "NOT REGISTERED YET"
+    ],
+    "dislikes": [
+      "NOT REGISTERED YET"
+    ],
+    "abilities": [
+      {
+        "name": "NOT REGISTERED YET",
+        "desc": "NOT REGISTERED YET"
+      }
+    ],
+    "color": "#FFFFFF",
+    "nameGradient": [
+      "#eceef3",
+      "#a3a8b5",
+      "#d3d6de"
+    ],
+    "bgm": {
+      "file": "bgm_mri.mp3",
+      "title": "NOT REGISTERED YET"
+    },
+    "quote": "NOT REGISTERED YET",
+    "heightScale": 1,
+    "nameAliases": [
+      "Mari"
+    ]
   },
   {
     "id": "S7",
     "code": "dia",
+    "gen": 0,
     "name": "Dia",
-    "comingSoon": true,
-    "comingSoonGroup": "Seniors",
-    "color": "#FFFFFF"
+    "nickname": "NOT REGISTERED YET",
+    "bio": "NOT REGISTERED YET",
+    "birthdate": "NOT REGISTERED YET",
+    "occupation": "NOT REGISTERED YET",
+    "cherishes": [
+      "NOT REGISTERED YET"
+    ],
+    "dislikes": [
+      "NOT REGISTERED YET"
+    ],
+    "abilities": [
+      {
+        "name": "NOT REGISTERED YET",
+        "desc": "NOT REGISTERED YET"
+      }
+    ],
+    "color": "#FFFFFF",
+    "nameGradient": [
+      "#eceef3",
+      "#a3a8b5",
+      "#d3d6de"
+    ],
+    "bgm": {
+      "file": "bgm_dia.mp3",
+      "title": "NOT REGISTERED YET"
+    },
+    "quote": "NOT REGISTERED YET",
+    "heightScale": 1,
+    "nameAliases": [
+      "Dia"
+    ]
   },
   {
     "id": "S8",
